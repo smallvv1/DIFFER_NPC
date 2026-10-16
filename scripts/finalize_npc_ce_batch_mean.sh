@@ -33,7 +33,6 @@ git -C "${ROOT}" add \
     "PHASE_NPC_CE_REDUCTION_ABLATION_REPORT.md" \
     "logs/NPC批均值正式训练启动_${RUN_TIME}.log" \
     "logs/NPC批均值正式训练_${RUN_TIME}.log" \
-    "logs/NPC批均值正式训练PID_${RUN_TIME}.txt" \
     "logs/NPC批均值自动收尾_${RUN_TIME}.log" \
     "logs/NPC批均值真实LTCC短程预检_20261016_140256.log" \
     "outputs/NPC_CE_REDUCTION_ABLATION_${RUN_TIME}/正式训练状态_${RUN_TIME}.txt" \
