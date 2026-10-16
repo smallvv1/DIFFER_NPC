@@ -27,8 +27,8 @@ PYTHONPATH="${ROOT}:/home/DIFFER_NPC" python3 "${ROOT}/scripts/generate_npc_ce_r
     2>&1 | tee -a "${FINAL_LOG}"
 
 # 上传代码、报告、日志、配置、指标和轻量诊断；checkpoints 由 .gitignore 排除，
-# 不进入 GitHub。reliability 全量 CSV 体积较大，报告使用 metrics 与 npc_weights
-# 及 GMM/记忆库摘要，完整文件仍保留在服务器实验目录。
+# 不进入 GitHub。逐样本权重与 reliability 全量 CSV 体积较大，完整文件保留在
+# 服务器实验目录，报告使用其离线汇总结果。
 git -C "${ROOT}" add \
     "PHASE_NPC_CE_REDUCTION_ABLATION_REPORT.md" \
     "logs/NPC批均值正式训练启动_${RUN_TIME}.log" \
@@ -43,14 +43,12 @@ git -C "${ROOT}" add \
     "outputs/NPC_CE_REDUCTION_ABLATION_${RUN_TIME}/ltcc/seed1234/N3/metrics/run_summary.json" \
     "outputs/NPC_CE_REDUCTION_ABLATION_${RUN_TIME}/ltcc/seed1234/N3/npc_diagnostics/gmm_epoch_*.json" \
     "outputs/NPC_CE_REDUCTION_ABLATION_${RUN_TIME}/ltcc/seed1234/N3/npc_diagnostics/memory_epoch_*.json" \
-    "outputs/NPC_CE_REDUCTION_ABLATION_${RUN_TIME}/ltcc/seed1234/N3/npc_diagnostics/npc_weights.csv" \
     "outputs/NPC_CE_REDUCTION_ABLATION_20261016_140256/ltcc/seed1234/N3/config.yml" \
     "outputs/NPC_CE_REDUCTION_ABLATION_20261016_140256/ltcc/seed1234/N3/train_log.txt" \
     "outputs/NPC_CE_REDUCTION_ABLATION_20261016_140256/ltcc/seed1234/N3/metrics/metrics_per_epoch.csv" \
     "outputs/NPC_CE_REDUCTION_ABLATION_20261016_140256/ltcc/seed1234/N3/metrics/run_summary.json" \
     "outputs/NPC_CE_REDUCTION_ABLATION_20261016_140256/ltcc/seed1234/N3/npc_diagnostics/gmm_epoch_*.json" \
-    "outputs/NPC_CE_REDUCTION_ABLATION_20261016_140256/ltcc/seed1234/N3/npc_diagnostics/memory_epoch_*.json" \
-    "outputs/NPC_CE_REDUCTION_ABLATION_20261016_140256/ltcc/seed1234/N3/npc_diagnostics/npc_weights.csv"
+    "outputs/NPC_CE_REDUCTION_ABLATION_20261016_140256/ltcc/seed1234/N3/npc_diagnostics/memory_epoch_*.json"
 
 if ! git -C "${ROOT}" diff --cached --quiet; then
     git -C "${ROOT}" commit -m "NPC: archive batch mean ablation logs and report"
