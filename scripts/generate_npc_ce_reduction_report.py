@@ -83,6 +83,18 @@ def load_json(path: Path) -> dict:
     return json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
 
 
+def log_metadata(project: Path, run: Path) -> dict[str, str]:
+    stamp = run.name.rsplit("_", 2)[-2:]
+    log_path = project / "logs" / f"NPC批均值正式训练_{'_'.join(stamp)}.log"
+    metadata = {}
+    if log_path.exists():
+        for line in log_path.read_text(encoding="utf-8", errors="replace").splitlines():
+            if "=" in line and line.split("=", 1)[0] in {"代码提交", "实验分支", "配置文件"}:
+                key, value = line.split("=", 1)
+                metadata[key] = value.strip()
+    return metadata
+
+
 def row_line(label: str, item: dict, prefix: str = "") -> str:
     return (
         f"- {label}{prefix}：Rank-1 {fmt(number(item, 'cc_rank1'))}，"
@@ -114,6 +126,7 @@ def main() -> None:
     pre = summary(pre_metrics)
     run_summary = load_json(run / "ltcc/seed1234/N3/metrics/run_summary.json")
     pre_summary = load_json(preflight / "ltcc/seed1234/N3/metrics/run_summary.json")
+    formal_metadata = log_metadata(project, run)
     weight_csv = run / "ltcc/seed1234/N3/npc_diagnostics/npc_weights.csv"
     weight_rows = read_metrics(weight_csv)
     valid_weight_rows = [row for row in weight_rows if row.get("reference_valid") == "True"]
@@ -158,8 +171,9 @@ def main() -> None:
         "## 1. 实验范围与代码版本",
         "",
         "本报告只验证 NPC 身份 CE reduction 的 batch_mean 消融。GMM、记忆库、临时更新、NPC 权重函数和记忆损失系数保持不变；没有引入新的 NPC 算法，也没有加载历史 N3 checkpoint 继续训练。",
-        f"- 实验分支：`{git_value(project, 'branch', '--show-current')}`。",
-        f"- 代码提交：`{git_value(project, 'rev-parse', 'HEAD')}`。",
+        f"- 实验分支：`{formal_metadata.get('实验分支', git_value(project, 'branch', '--show-current'))}`。",
+        f"- 正式训练实际代码提交：`{formal_metadata.get('代码提交', git_value(project, 'rev-parse', 'HEAD'))}`。",
+        f"- 报告生成时工作区提交：`{git_value(project, 'rev-parse', 'HEAD')}`；该提交只包含汇总脚本，不改变已启动训练。",
         "- 固定配置：LTCC、Seed1234、EVA02 初始化、60 epoch、原 20261014 N3 优化器/数据划分/评估协议、`TEST.WEIGHT=''`。",
         "- 唯一实验差异：`MODEL.NPC.CE_REDUCTION=batch_mean`，即 `(w * CE).mean()`；默认 `weight_sum` 保留历史行为。",
         f"- 受保护 NPC 文件与基线提交相同：`{'是' if protected_equal else '否'}`。",
