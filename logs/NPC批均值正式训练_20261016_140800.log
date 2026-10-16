@@ -1,0 +1,11 @@
+中文实验日志：DIFFER+NPC N3 batch_mean LTCC 正式训练
+北京时间=20261016_140800
+代码提交=7f95e6933cf76f27f232e26fbba8c51b0327f280
+实验分支=experiment/npc-ce-batch-mean-20261016
+配置文件=/home/DIFFER_NPC_worktrees/npc-ce-batch-mean-20261016/configs/ltcc/eva02_l_bio.yml
+唯一消融差异=MODEL.NPC.CE_REDUCTION batch_mean
+固定协议=Seed1234、60 epoch、EVA02初始化、空TEST.WEIGHT、20261014 N3数据与评估协议
+禁止项=不修改GMM、记忆库、临时更新、权重函数、记忆损失系数；不加载历史N3 checkpoint
+输出目录=/home/DIFFER_NPC_worktrees/npc-ce-batch-mean-20261016/outputs/NPC_CE_REDUCTION_ABLATION_20261016_140800
+日志文件=/home/DIFFER_NPC_worktrees/npc-ce-batch-mean-20261016/logs/NPC批均值正式训练_20261016_140800.log
+启动PID=34863

@@ -1,0 +1,10 @@
+{
+  "status": "completed",
+  "dataset": "ltcc",
+  "variant": "N3",
+  "seed": 1234,
+  "best_rank1": 0.1301020383834839,
+  "best_epoch": 1,
+  "final_checkpoint": "/home/DIFFER_NPC_worktrees/npc-ce-batch-mean-20261016/outputs/NPC_CE_REDUCTION_ABLATION_20261016_140256/ltcc/seed1234/N3/checkpoints/model_final.pth",
+  "elapsed_seconds": 196.67272639274597
+}
