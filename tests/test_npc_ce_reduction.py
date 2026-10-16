@@ -12,6 +12,22 @@ def test_legacy_weight_sum_matches_original():
     torch.testing.assert_close(new, old)
 
 
+@pytest.mark.parametrize("dtype", [torch.float64, torch.float32, torch.float16])
+def test_legacy_weight_sum_preserves_loss_and_gradient(dtype):
+    torch.manual_seed(1234)
+    old_values = torch.randn(17, dtype=dtype, requires_grad=True)
+    new_values = old_values.detach().clone().requires_grad_(True)
+    weights = torch.rand(17, dtype=dtype)
+
+    old = (old_values * weights).sum() / weights.sum().clamp_min(1e-12)
+    new = reduce_weighted_ce(new_values, weights, "weight_sum")
+    old.backward()
+    new.backward()
+
+    torch.testing.assert_close(new, old)
+    torch.testing.assert_close(new_values.grad, old_values.grad)
+
+
 def test_batch_mean_matches_npc_equation_nine():
     values = torch.tensor([1., 2., 4.], requires_grad=True)
     weights = torch.tensor([1., .6, .8])
