@@ -8,6 +8,7 @@ import math
 import torch.nn as nn
 import torch.nn.functional as F
 from .softmax_loss import CrossEntropyLabelSmooth
+from .npc_weighting import reduce_weighted_ce
 from .triplet_loss import TripletLoss,euclidean_dist
 from .center_loss import CenterLoss
 from .arcface import CrossEntropy
@@ -108,7 +109,10 @@ def make_loss(cfg, num_classes,lossTypes=None):    # modified by gu
                         ID_LOSS = sum(xent(scor, target) for scor in score[0:])
                     else:
                         weights = npc_weights.to(id_per_sample.device, dtype=id_per_sample.dtype)
-                        ID_LOSS = (id_per_sample * weights).sum() / weights.sum().clamp_min(1e-12)
+                        ID_LOSS = reduce_weighted_ce(
+                            id_per_sample, weights,
+                            reduction=getattr(cfg.MODEL.NPC, 'CE_REDUCTION', 'weight_sum'),
+                        )
                     id_acc = (score[0].argmax(-1) == target).sum() / len(target)
                 elif isinstance(score, dict):
                     if isinstance(score['cls_score'], list):
@@ -117,7 +121,10 @@ def make_loss(cfg, num_classes,lossTypes=None):    # modified by gu
                             ID_LOSS = sum(xent(s, target) for s in score['cls_score'])
                         else:
                             weights = npc_weights.to(id_per_sample.device, dtype=id_per_sample.dtype)
-                            ID_LOSS = (id_per_sample * weights).sum() / weights.sum().clamp_min(1e-12)
+                            ID_LOSS = reduce_weighted_ce(
+                            id_per_sample, weights,
+                            reduction=getattr(cfg.MODEL.NPC, 'CE_REDUCTION', 'weight_sum'),
+                        )
                        
                         for i in range(len(score['cls_score'])):
                             scalar_i = xent(score['cls_score'][i], target)
@@ -131,7 +138,10 @@ def make_loss(cfg, num_classes,lossTypes=None):    # modified by gu
                             ID_LOSS = xent(score['cls_score'], target)
                         else:
                             weights = npc_weights.to(id_per_sample.device, dtype=id_per_sample.dtype)
-                            ID_LOSS = (id_per_sample * weights).sum() / weights.sum().clamp_min(1e-12)
+                            ID_LOSS = reduce_weighted_ce(
+                            id_per_sample, weights,
+                            reduction=getattr(cfg.MODEL.NPC, 'CE_REDUCTION', 'weight_sum'),
+                        )
                         id_acc = (score['cls_score'].argmax(-1) == target).sum() / len(target)
                 else:
                     id_per_sample = _per_sample_ce(score, target)
@@ -139,7 +149,10 @@ def make_loss(cfg, num_classes,lossTypes=None):    # modified by gu
                         ID_LOSS = xent(score, target)
                     else:
                         weights = npc_weights.to(id_per_sample.device, dtype=id_per_sample.dtype)
-                        ID_LOSS = (id_per_sample * weights).sum() / weights.sum().clamp_min(1e-12)
+                        ID_LOSS = reduce_weighted_ce(
+                            id_per_sample, weights,
+                            reduction=getattr(cfg.MODEL.NPC, 'CE_REDUCTION', 'weight_sum'),
+                        )
                     id_acc = (score.argmax(-1) == target).sum() / len(target)
                 train_writer.add_scalar('loss/id', ID_LOSS.item(), step)
                 train_writer.add_scalar('acc/id', id_acc.item(), step)
