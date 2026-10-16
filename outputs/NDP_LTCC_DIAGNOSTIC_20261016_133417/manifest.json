@@ -1,0 +1,154 @@
+{
+  "created_beijing": "2026-10-16T13:48:07.178027+08:00",
+  "run_time": "20261016_133417",
+  "output_dir": "/home/DIFFER_NPC/outputs/NDP_LTCC_DIAGNOSTIC_20261016_133417",
+  "checkpoint": {
+    "path": "/home/DIFFER_NPC/outputs/final_confirmatory_gpc/ltcc/seed1234/gpc/model_final.pth",
+    "sha256": "51e94a312d09d4e172afb8c04d8988e6cf9ad3b8cf4c82bbdf003562a6f6da26",
+    "epoch": 60,
+    "read_only": true
+  },
+  "runtime": {
+    "torch_version": "2.4.0",
+    "torch_cuda": "11.8",
+    "device_count": 1,
+    "device_names": [
+      "PPU-ZW810E"
+    ],
+    "selected_device": "cuda:0",
+    "cpu_model_fallback": false,
+    "note": "本轮为单卡小规模诊断；当前环境只暴露一张 PPU。"
+  },
+  "amp_audit": {
+    "initial_amp_probe": {
+      "output_dir": "/home/DIFFER_NPC/outputs/NDP_LTCC_DIAGNOSTIC_20261016_132828",
+      "status": "FAILED_NONFINITE_GRADIENT",
+      "first_failure": "gpc repeat=1 step=3",
+      "interpretation": "PPU AMP 数值问题，未作为机制结果使用"
+    },
+    "technical_recovery": {
+      "output_dir": "/home/DIFFER_NPC/outputs/NDP_LTCC_DIAGNOSTIC_20261016_133417",
+      "mode": "FP32",
+      "status": "PASS",
+      "arms": 6,
+      "updates_per_arm": 64,
+      "skipped_steps": 0,
+      "nonfinite_events": 0
+    }
+  },
+  "workspace_compatibility": {
+    "missing_processor_package": true,
+    "processor_placeholder_callable": false,
+    "missing_caption_summary_file": "/home/data/DIFFER_TextCaption/LTCC_ReID/train_caption_summary_biometric.json",
+    "diagnostic_caption_mode": "SUMMERY_TEXT=false using train.npz",
+    "formal_gpc_retraining_equivalence": false
+  },
+  "dataset": "LTCC",
+  "train_only": true,
+  "formal_60_epoch_started": false,
+  "gpc_unchanged": true,
+  "ndp": {
+    "hard_k": 10,
+    "margin_probe": 0.05,
+    "lambda_probe": 0.1,
+    "reference_positive": "same PID + different clothes_id + not self; highest initial cosine among valid train candidates",
+    "reference_negative": "top-10 initial cosine neighbors with different PID",
+    "loss": "relu(margin + max_negative_cosine - positive_cosine)",
+    "reference_features_frozen_for_loss": true,
+    "risk_guided_weighting_enabled": false
+  },
+  "repeats": 3,
+  "steps": [
+    16,
+    32,
+    64
+  ],
+  "reference_library": {
+    "train_images": 9576,
+    "positive_coverage": 0.8737468671679198,
+    "full_reference_coverage": 0.8737468671679198,
+    "self_reference_count": 0,
+    "diagnostic_anchor_count": 96
+  },
+  "geometry": {
+    "gpc": {
+      "16": {
+        "count": 3,
+        "delta_margin_mean": -3.6463141441345215e-05,
+        "delta_margin_std": 0.001145492271127508,
+        "delta_cross_positive_mean": -0.0010270078976949055,
+        "delta_rank1_mean": -0.02083335320154826,
+        "delta_intrusion_mean": 0.020833338300387066,
+        "margin_signal_to_repeat_noise": 0.03183185287269948
+      },
+      "32": {
+        "count": 3,
+        "delta_margin_mean": -0.0019553452730178833,
+        "delta_margin_std": 0.0004431787682037714,
+        "delta_cross_positive_mean": -0.0033533175786336264,
+        "delta_rank1_mean": -0.0069444576899210615,
+        "delta_intrusion_mean": 0.006944447755813599,
+        "margin_signal_to_repeat_noise": 4.412091492882225
+      },
+      "64": {
+        "count": 3,
+        "delta_margin_mean": -0.00921231135725975,
+        "delta_margin_std": 0.005523273796205002,
+        "delta_cross_positive_mean": -0.009269853432973226,
+        "delta_rank1_mean": -0.0451388955116272,
+        "delta_intrusion_mean": 0.0451388955116272,
+        "margin_signal_to_repeat_noise": 1.667907783892491
+      }
+    },
+    "gpc_ndp": {
+      "16": {
+        "count": 3,
+        "delta_margin_mean": -0.00055660679936409,
+        "delta_margin_std": 0.0012090159010492878,
+        "delta_cross_positive_mean": -0.000629723072052002,
+        "delta_rank1_mean": -0.027777791023254395,
+        "delta_intrusion_mean": 0.02777778108914693,
+        "margin_signal_to_repeat_noise": 0.4603800486668693
+      },
+      "32": {
+        "count": 3,
+        "delta_margin_mean": -0.003419631471236547,
+        "delta_margin_std": 0.0012709870619961251,
+        "delta_cross_positive_mean": 1.4483928680419922e-05,
+        "delta_rank1_mean": -0.02083335320154826,
+        "delta_intrusion_mean": 0.020833333333333332,
+        "margin_signal_to_repeat_noise": 2.690532086035485
+      },
+      "64": {
+        "count": 3,
+        "delta_margin_mean": -0.007414227972428004,
+        "delta_margin_std": 0.005617872600444818,
+        "delta_cross_positive_mean": 0.0004971822102864584,
+        "delta_rank1_mean": -0.020833333333333332,
+        "delta_intrusion_mean": 0.020833338300387066,
+        "margin_signal_to_repeat_noise": 1.3197572283573948
+      }
+    }
+  },
+  "risk": {
+    "status": "DIAGNOSTIC_ONLY",
+    "rows": 864,
+    "pre_margin_to_deterioration_spearman": -0.003312871039547038,
+    "pre_margin_risk_auc": 0.4631681254538803,
+    "risk_weighting_enabled": false,
+    "interpretation": "仅检查更新前局部间隔能否预测后续恶化；未将预测结果用于任何优化权重。"
+  },
+  "source_hashes": {
+    "/home/DIFFER_NPC/scripts/train_final_gpc.py": "e72eeabdb923859f90b05f2f9cada61c0baa80a2f49c1b127af55a539f793762",
+    "/home/DIFFER_NPC/loss/make_loss.py": "97fb11d256ccacd55624a5262d5cc1d99f6dc80baea29a4f04640ce53527c7af",
+    "/home/DIFFER_NPC/model/build.py": "11177e9f7fdee671c3c031887bffa05e30bb2f64fb9fc88aa9e1002714c42aa9",
+    "/home/DIFFER_NPC/model/eva_meta_bio.py": "0a707bc0ecbe62816685147c3b2bb5534459b5110c34f457f405f472b62f9b76",
+    "/home/DIFFER_NPC/data/__init__.py": "73cb7baaae651ea7580af836cfaf8904dd2ede1b5c6b6a72f1e7c3b818a4499a",
+    "/home/DIFFER_NPC/data/dataset_loader.py": "536fd7a8d6718b15579d27549c5dde7db646b9e3923b36f4c3ce4cc7b79ab61c",
+    "/home/DIFFER_NPC/data/datasets/ltcc.py": "66e64354f42bd8ebb081228456cd43148511d9b22db0217dd9637ca49b0ebb4a",
+    "/home/DIFFER_NPC/ndp/local_margin.py": "6fcef454c7d591be54f4c5bd4ceefed5e8112b74f7fd86c64c65c556642dd50d",
+    "/home/DIFFER_NPC/scripts/ndp_ltcc_short_diagnostic.py": "a86ca1040ef42e0f99b2fe505ba776cbceee8dee14475747c92e90c06210451c",
+    "/home/DIFFER_NPC/configs/ltcc/eva02_l_bio.yml": "c0589950b23885c334c64c85bd6db9803935765d0647e02c1bb74b5b5ae00b97"
+  },
+  "elapsed_seconds": 830.1661922931671
+}

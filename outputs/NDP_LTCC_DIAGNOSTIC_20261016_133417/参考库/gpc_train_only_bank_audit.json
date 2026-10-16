@@ -1,0 +1,7 @@
+{
+  "source": "audited frozen binary exact-pair key set; SR3 score/weight columns ignored",
+  "source_path": "/home/DIFFER_NPC/outputs/new_method_track/phase6b_soft_relation_screen/artifacts/relation_source_rows.csv",
+  "cross_key_count": 43186,
+  "train_only": true,
+  "gpc_lambda": 0.1
+}

@@ -1,0 +1,60 @@
+{
+  "gpc": {
+    "16": {
+      "count": 3,
+      "delta_margin_mean": -3.6463141441345215e-05,
+      "delta_margin_std": 0.001145492271127508,
+      "delta_cross_positive_mean": -0.0010270078976949055,
+      "delta_rank1_mean": -0.02083335320154826,
+      "delta_intrusion_mean": 0.020833338300387066,
+      "margin_signal_to_repeat_noise": 0.03183185287269948
+    },
+    "32": {
+      "count": 3,
+      "delta_margin_mean": -0.0019553452730178833,
+      "delta_margin_std": 0.0004431787682037714,
+      "delta_cross_positive_mean": -0.0033533175786336264,
+      "delta_rank1_mean": -0.0069444576899210615,
+      "delta_intrusion_mean": 0.006944447755813599,
+      "margin_signal_to_repeat_noise": 4.412091492882225
+    },
+    "64": {
+      "count": 3,
+      "delta_margin_mean": -0.00921231135725975,
+      "delta_margin_std": 0.005523273796205002,
+      "delta_cross_positive_mean": -0.009269853432973226,
+      "delta_rank1_mean": -0.0451388955116272,
+      "delta_intrusion_mean": 0.0451388955116272,
+      "margin_signal_to_repeat_noise": 1.667907783892491
+    }
+  },
+  "gpc_ndp": {
+    "16": {
+      "count": 3,
+      "delta_margin_mean": -0.00055660679936409,
+      "delta_margin_std": 0.0012090159010492878,
+      "delta_cross_positive_mean": -0.000629723072052002,
+      "delta_rank1_mean": -0.027777791023254395,
+      "delta_intrusion_mean": 0.02777778108914693,
+      "margin_signal_to_repeat_noise": 0.4603800486668693
+    },
+    "32": {
+      "count": 3,
+      "delta_margin_mean": -0.003419631471236547,
+      "delta_margin_std": 0.0012709870619961251,
+      "delta_cross_positive_mean": 1.4483928680419922e-05,
+      "delta_rank1_mean": -0.02083335320154826,
+      "delta_intrusion_mean": 0.020833333333333332,
+      "margin_signal_to_repeat_noise": 2.690532086035485
+    },
+    "64": {
+      "count": 3,
+      "delta_margin_mean": -0.007414227972428004,
+      "delta_margin_std": 0.005617872600444818,
+      "delta_cross_positive_mean": 0.0004971822102864584,
+      "delta_rank1_mean": -0.020833333333333332,
+      "delta_intrusion_mean": 0.020833338300387066,
+      "margin_signal_to_repeat_noise": 1.3197572283573948
+    }
+  }
+}

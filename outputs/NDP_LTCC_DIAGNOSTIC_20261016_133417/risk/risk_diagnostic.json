@@ -1,0 +1,8 @@
+{
+  "status": "DIAGNOSTIC_ONLY",
+  "rows": 864,
+  "pre_margin_to_deterioration_spearman": -0.003312871039547038,
+  "pre_margin_risk_auc": 0.4631681254538803,
+  "risk_weighting_enabled": false,
+  "interpretation": "仅检查更新前局部间隔能否预测后续恶化；未将预测结果用于任何优化权重。"
+}

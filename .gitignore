@@ -11,6 +11,10 @@ outputs/**/*.pt
 outputs/**/*.bin
 outputs/**/*.safetensors
 outputs/**/events.out.tfevents.*
+outputs/**/*.npy
+outputs/**/*.npz
+outputs/**/reference_features*
+outputs/**/feature_bank*
 *.deb
 
 # 本地运行时和环境文件

@@ -1,0 +1,25 @@
+{
+  "created_beijing": "2026-10-16T13:34:19.572355+08:00",
+  "project_root": "/home/DIFFER_NPC",
+  "checkpoint": {
+    "path": "/home/DIFFER_NPC/outputs/final_confirmatory_gpc/ltcc/seed1234/gpc/model_final.pth",
+    "sha256": "51e94a312d09d4e172afb8c04d8988e6cf9ad3b8cf4c82bbdf003562a6f6da26",
+    "state_hash": "dbf88c301c4fdbfd097c2e52790d46f91ce9d9941e27723ae0d8ffd5a9aab18c",
+    "epoch": 60,
+    "read_only": true
+  },
+  "source_hashes": {
+    "/home/DIFFER_NPC/scripts/train_final_gpc.py": "e72eeabdb923859f90b05f2f9cada61c0baa80a2f49c1b127af55a539f793762",
+    "/home/DIFFER_NPC/loss/make_loss.py": "97fb11d256ccacd55624a5262d5cc1d99f6dc80baea29a4f04640ce53527c7af",
+    "/home/DIFFER_NPC/model/build.py": "11177e9f7fdee671c3c031887bffa05e30bb2f64fb9fc88aa9e1002714c42aa9",
+    "/home/DIFFER_NPC/model/eva_meta_bio.py": "0a707bc0ecbe62816685147c3b2bb5534459b5110c34f457f405f472b62f9b76",
+    "/home/DIFFER_NPC/data/__init__.py": "73cb7baaae651ea7580af836cfaf8904dd2ede1b5c6b6a72f1e7c3b818a4499a",
+    "/home/DIFFER_NPC/data/dataset_loader.py": "536fd7a8d6718b15579d27549c5dde7db646b9e3923b36f4c3ce4cc7b79ab61c",
+    "/home/DIFFER_NPC/data/datasets/ltcc.py": "66e64354f42bd8ebb081228456cd43148511d9b22db0217dd9637ca49b0ebb4a",
+    "/home/DIFFER_NPC/ndp/local_margin.py": "6fcef454c7d591be54f4c5bd4ceefed5e8112b74f7fd86c64c65c556642dd50d",
+    "/home/DIFFER_NPC/scripts/ndp_ltcc_short_diagnostic.py": "a86ca1040ef42e0f99b2fe505ba776cbceee8dee14475747c92e90c06210451c",
+    "/home/DIFFER_NPC/configs/ltcc/eva02_l_bio.yml": "c0589950b23885c334c64c85bd6db9803935765d0647e02c1bb74b5b5ae00b97"
+  },
+  "gpc_contract": "GPC selector/pair-budget/loss/lambda=0.1 unchanged; NDP only added outside forward_loss.",
+  "formal_training_started": false
+}

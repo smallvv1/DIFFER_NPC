@@ -1,0 +1,12 @@
+{
+  "train_count": 9576,
+  "query_count_not_used": 493,
+  "gallery_count_not_used": 7050,
+  "train_only": true,
+  "positive_coverage": 0.8737468671679198,
+  "full_reference_coverage": 0.8737468671679198,
+  "self_reference_count": 0,
+  "hard_k": 10,
+  "positive_rule": "same PID, different clothes_id, index != anchor",
+  "negative_rule": "different PID, top-K cosine neighbors from train-only features"
+}
