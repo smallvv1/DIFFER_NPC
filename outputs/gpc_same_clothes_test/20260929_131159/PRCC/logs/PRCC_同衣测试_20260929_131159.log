@@ -1,0 +1,19 @@
+2026-09-29 13:12:19,276 INFO ==================================================
+2026-09-29 13:12:19,277 INFO 数据集：PRCC
+2026-09-29 13:12:19,277 INFO 方法：Bio + GPC
+2026-09-29 13:12:19,277 INFO 测试类型：同衣测试
+2026-09-29 13:12:19,277 INFO 测试协议：query_same（B） -> gallery（A）
+2026-09-29 13:12:19,277 INFO query 数：3873；gallery 数：3384
+2026-09-29 13:12:19,277 INFO checkpoint：/home/DIFFER/outputs/gpc_final_retrain/20260928_173834/PRCC/checkpoints/model_final.pth
+2026-09-29 13:12:19,277 INFO checkpoint epoch：60
+2026-09-29 13:12:19,277 INFO checkpoint SHA256：df17e0edd74fb82f293ec2a8c0c3dd92c9b44284e3fb2d5b9d508b7259be711a
+2026-09-29 13:12:19,277 INFO PPU：是；CPU fallback：禁止；设备：PPU-ZW810E
+2026-09-29 13:12:19,277 INFO 本次只做测试，不训练、不更新参数、不选择 checkpoint
+2026-09-29 13:12:19,277 INFO ==================================================
+2026-09-29 13:12:19,793 INFO processing batch 0/57
+2026-09-29 13:13:16,316 INFO CMC curve, Rank-1  :100.0%
+2026-09-29 13:13:16,316 INFO CMC curve, Rank-5  :100.0%
+2026-09-29 13:13:16,316 INFO CMC curve, Rank-10 :100.0%
+2026-09-29 13:13:16,316 INFO mAP-:99.5%
+2026-09-29 13:13:17,702 INFO [PRCC][同衣测试] Rank-1：1.00000000；Rank-5：1.00000000；Rank-10：1.00000000；mAP：0.99476009；mINP：当前 evaluator 未提供
+2026-09-29 13:13:17,703 INFO [PRCC][同衣测试] 测试完成；结果：/home/DIFFER/outputs/gpc_same_clothes_test/20260929_131159/PRCC/test/PRCC_同衣测试结果_20260929_131159.json

@@ -1,0 +1,1519 @@
+2026-09-01 14:39:25,776 DIFFER INFO: Saving model in the path :/home/DIFFER/outputs/reproduction_phase2/LTCC/differ/run1/1[ltcc][eva02_l_bio][PHASE2_LTCC_DIFFER_RUN1]
+2026-09-01 14:39:26,994 DIFFER INFO: => LTCC loaded
+2026-09-01 14:39:26,994 DIFFER INFO: Dataset statistics:
+2026-09-01 14:39:26,994 DIFFER INFO:   ----------------------------------------
+2026-09-01 14:39:26,995 DIFFER INFO:   subset   | # ids | # images | # clothes
+2026-09-01 14:39:26,995 DIFFER INFO:   ----------------------------------------
+2026-09-01 14:39:26,995 DIFFER INFO:   train    |    77 |     9576 |       256
+2026-09-01 14:39:26,995 DIFFER INFO:   test     |    75 |     7543 |       221
+2026-09-01 14:39:26,995 DIFFER INFO:   query    |    75 |      493 |
+2026-09-01 14:39:26,995 DIFFER INFO:   gallery  |    75 |     7050 |
+2026-09-01 14:39:26,995 DIFFER INFO:   ----------------------------------------
+2026-09-01 14:39:26,995 DIFFER INFO:   total    |   152 |    17119 |       477
+2026-09-01 14:39:26,995 DIFFER INFO:   ----------------------------------------
+2026-09-01 14:39:33,188 DIFFER.train INFO: start training
+2026-09-01 14:39:55,692 DIFFER.train INFO: Epoch[1] Iteration[50/596] Loss: 12.270, Acc: 0.027, Base Lr: 8.42e-07
+2026-09-01 14:40:11,298 DIFFER.train INFO: Epoch[1] Iteration[100/596] Loss: 12.283, Acc: 0.045, Base Lr: 8.42e-07
+2026-09-01 14:40:22,479 DIFFER.train INFO: Epoch[1] Iteration[150/596] Loss: 12.251, Acc: 0.066, Base Lr: 8.42e-07
+2026-09-01 14:40:33,612 DIFFER.train INFO: Epoch[1] Iteration[200/596] Loss: 12.219, Acc: 0.068, Base Lr: 8.42e-07
+2026-09-01 14:40:44,640 DIFFER.train INFO: Epoch[1] Iteration[250/596] Loss: 12.123, Acc: 0.076, Base Lr: 8.42e-07
+2026-09-01 14:40:55,716 DIFFER.train INFO: Epoch[1] Iteration[300/596] Loss: 12.083, Acc: 0.078, Base Lr: 8.42e-07
+2026-09-01 14:41:06,729 DIFFER.train INFO: Epoch[1] Iteration[350/596] Loss: 12.019, Acc: 0.082, Base Lr: 8.42e-07
+2026-09-01 14:41:17,837 DIFFER.train INFO: Epoch[1] Iteration[400/596] Loss: 11.971, Acc: 0.081, Base Lr: 8.42e-07
+2026-09-01 14:41:28,928 DIFFER.train INFO: Epoch[1] Iteration[450/596] Loss: 11.948, Acc: 0.080, Base Lr: 8.42e-07
+2026-09-01 14:41:40,150 DIFFER.train INFO: Epoch[1] Iteration[500/596] Loss: 11.904, Acc: 0.076, Base Lr: 8.42e-07
+2026-09-01 14:41:51,397 DIFFER.train INFO: Epoch[1] Iteration[550/596] Loss: 11.860, Acc: 0.076, Base Lr: 8.42e-07
+2026-09-01 14:42:01,827 DIFFER.train INFO: Clothes changing setting
+2026-09-01 14:42:02,322 DIFFER.train INFO: processing batch 0/59
+2026-09-01 14:42:53,534 DIFFER.train INFO: CMC curve, Rank-1  :25.8%
+2026-09-01 14:42:53,535 DIFFER.train INFO: CMC curve, Rank-5  :44.6%
+2026-09-01 14:42:53,535 DIFFER.train INFO: CMC curve, Rank-10 :53.8%
+2026-09-01 14:42:53,535 DIFFER.train INFO: mAP-:9.8%
+2026-09-01 14:42:53,535 DIFFER.train INFO: Validation Results - Epoch: 1
+2026-09-01 14:42:53,548 DIFFER.train INFO: Standard setting
+2026-09-01 14:42:54,041 DIFFER.train INFO: processing batch 0/59
+2026-09-01 14:43:45,224 DIFFER.train INFO: CMC curve, Rank-1  :56.6%
+2026-09-01 14:43:45,224 DIFFER.train INFO: CMC curve, Rank-5  :72.2%
+2026-09-01 14:43:45,224 DIFFER.train INFO: CMC curve, Rank-10 :78.5%
+2026-09-01 14:43:45,224 DIFFER.train INFO: mAP-:20.6%
+2026-09-01 14:43:45,236 DIFFER.train INFO: ==> Best Rank-1 25.8%, achieved at epoch 1
+2026-09-01 14:43:57,793 DIFFER.train INFO: Epoch[2] Iteration[50/596] Loss: 11.506, Acc: 0.035, Base Lr: 9.03e-07
+2026-09-01 14:44:08,848 DIFFER.train INFO: Epoch[2] Iteration[100/596] Loss: 11.442, Acc: 0.037, Base Lr: 9.03e-07
+2026-09-01 14:44:19,895 DIFFER.train INFO: Epoch[2] Iteration[150/596] Loss: 11.473, Acc: 0.057, Base Lr: 9.03e-07
+2026-09-01 14:44:31,008 DIFFER.train INFO: Epoch[2] Iteration[200/596] Loss: 11.463, Acc: 0.057, Base Lr: 9.03e-07
+2026-09-01 14:44:42,095 DIFFER.train INFO: Epoch[2] Iteration[250/596] Loss: 11.423, Acc: 0.059, Base Lr: 9.03e-07
+2026-09-01 14:44:53,152 DIFFER.train INFO: Epoch[2] Iteration[300/596] Loss: 11.410, Acc: 0.058, Base Lr: 9.03e-07
+2026-09-01 14:45:04,269 DIFFER.train INFO: Epoch[2] Iteration[350/596] Loss: 11.386, Acc: 0.061, Base Lr: 9.03e-07
+2026-09-01 14:45:15,335 DIFFER.train INFO: Epoch[2] Iteration[400/596] Loss: 11.373, Acc: 0.061, Base Lr: 9.03e-07
+2026-09-01 14:45:26,446 DIFFER.train INFO: Epoch[2] Iteration[450/596] Loss: 11.364, Acc: 0.062, Base Lr: 9.03e-07
+2026-09-01 14:45:37,773 DIFFER.train INFO: Epoch[2] Iteration[500/596] Loss: 11.349, Acc: 0.059, Base Lr: 9.03e-07
+2026-09-01 14:45:49,002 DIFFER.train INFO: Epoch[2] Iteration[550/596] Loss: 11.337, Acc: 0.061, Base Lr: 9.03e-07
+2026-09-01 14:45:59,152 DIFFER.train INFO: Clothes changing setting
+2026-09-01 14:45:59,637 DIFFER.train INFO: processing batch 0/59
+2026-09-01 14:46:50,882 DIFFER.train INFO: CMC curve, Rank-1  :30.9%
+2026-09-01 14:46:50,882 DIFFER.train INFO: CMC curve, Rank-5  :46.4%
+2026-09-01 14:46:50,882 DIFFER.train INFO: CMC curve, Rank-10 :56.6%
+2026-09-01 14:46:50,882 DIFFER.train INFO: mAP-:12.6%
+2026-09-01 14:46:50,883 DIFFER.train INFO: Validation Results - Epoch: 2
+2026-09-01 14:46:50,896 DIFFER.train INFO: Standard setting
+2026-09-01 14:46:51,390 DIFFER.train INFO: processing batch 0/59
+2026-09-01 14:47:42,643 DIFFER.train INFO: CMC curve, Rank-1  :65.7%
+2026-09-01 14:47:42,643 DIFFER.train INFO: CMC curve, Rank-5  :78.1%
+2026-09-01 14:47:42,643 DIFFER.train INFO: CMC curve, Rank-10 :82.6%
+2026-09-01 14:47:42,643 DIFFER.train INFO: mAP-:27.8%
+2026-09-01 14:47:42,655 DIFFER.train INFO: ==> Best Rank-1 30.9%, achieved at epoch 2
+2026-09-01 14:47:55,364 DIFFER.train INFO: Epoch[3] Iteration[50/596] Loss: 11.266, Acc: 0.035, Base Lr: 9.64e-07
+2026-09-01 14:48:06,278 DIFFER.train INFO: Epoch[3] Iteration[100/596] Loss: 11.240, Acc: 0.037, Base Lr: 9.64e-07
+2026-09-01 14:48:17,155 DIFFER.train INFO: Epoch[3] Iteration[150/596] Loss: 11.269, Acc: 0.057, Base Lr: 9.64e-07
+2026-09-01 14:48:28,201 DIFFER.train INFO: Epoch[3] Iteration[200/596] Loss: 11.271, Acc: 0.057, Base Lr: 9.64e-07
+2026-09-01 14:48:39,129 DIFFER.train INFO: Epoch[3] Iteration[250/596] Loss: 11.250, Acc: 0.059, Base Lr: 9.64e-07
+2026-09-01 14:48:50,110 DIFFER.train INFO: Epoch[3] Iteration[300/596] Loss: 11.249, Acc: 0.056, Base Lr: 9.64e-07
+2026-09-01 14:49:01,163 DIFFER.train INFO: Epoch[3] Iteration[350/596] Loss: 11.231, Acc: 0.057, Base Lr: 9.64e-07
+2026-09-01 14:49:12,280 DIFFER.train INFO: Epoch[3] Iteration[400/596] Loss: 11.228, Acc: 0.057, Base Lr: 9.64e-07
+2026-09-01 14:49:23,296 DIFFER.train INFO: Epoch[3] Iteration[450/596] Loss: 11.217, Acc: 0.059, Base Lr: 9.64e-07
+2026-09-01 14:49:34,266 DIFFER.train INFO: Epoch[3] Iteration[500/596] Loss: 11.215, Acc: 0.056, Base Lr: 9.64e-07
+2026-09-01 14:49:45,339 DIFFER.train INFO: Epoch[3] Iteration[550/596] Loss: 11.204, Acc: 0.058, Base Lr: 9.64e-07
+2026-09-01 14:49:55,624 DIFFER.train INFO: Clothes changing setting
+2026-09-01 14:49:56,104 DIFFER.train INFO: processing batch 0/59
+2026-09-01 14:50:47,321 DIFFER.train INFO: CMC curve, Rank-1  :33.4%
+2026-09-01 14:50:47,321 DIFFER.train INFO: CMC curve, Rank-5  :50.8%
+2026-09-01 14:50:47,321 DIFFER.train INFO: CMC curve, Rank-10 :58.4%
+2026-09-01 14:50:47,321 DIFFER.train INFO: mAP-:15.3%
+2026-09-01 14:50:47,321 DIFFER.train INFO: Validation Results - Epoch: 3
+2026-09-01 14:50:47,334 DIFFER.train INFO: Standard setting
+2026-09-01 14:50:47,804 DIFFER.train INFO: processing batch 0/59
+2026-09-01 14:51:39,038 DIFFER.train INFO: CMC curve, Rank-1  :70.4%
+2026-09-01 14:51:39,038 DIFFER.train INFO: CMC curve, Rank-5  :81.5%
+2026-09-01 14:51:39,038 DIFFER.train INFO: CMC curve, Rank-10 :86.4%
+2026-09-01 14:51:39,038 DIFFER.train INFO: mAP-:33.5%
+2026-09-01 14:51:39,050 DIFFER.train INFO: ==> Best Rank-1 33.4%, achieved at epoch 3
+2026-09-01 14:51:51,978 DIFFER.train INFO: Epoch[4] Iteration[50/596] Loss: 11.160, Acc: 0.035, Base Lr: 1.02e-06
+2026-09-01 14:52:03,065 DIFFER.train INFO: Epoch[4] Iteration[100/596] Loss: 11.134, Acc: 0.037, Base Lr: 1.02e-06
+2026-09-01 14:52:14,174 DIFFER.train INFO: Epoch[4] Iteration[150/596] Loss: 11.164, Acc: 0.057, Base Lr: 1.02e-06
+2026-09-01 14:52:25,102 DIFFER.train INFO: Epoch[4] Iteration[200/596] Loss: 11.167, Acc: 0.057, Base Lr: 1.02e-06
+2026-09-01 14:52:36,274 DIFFER.train INFO: Epoch[4] Iteration[250/596] Loss: 11.144, Acc: 0.059, Base Lr: 1.02e-06
+2026-09-01 14:52:47,477 DIFFER.train INFO: Epoch[4] Iteration[300/596] Loss: 11.140, Acc: 0.056, Base Lr: 1.02e-06
+2026-09-01 14:52:58,434 DIFFER.train INFO: Epoch[4] Iteration[350/596] Loss: 11.122, Acc: 0.056, Base Lr: 1.02e-06
+2026-09-01 14:53:09,445 DIFFER.train INFO: Epoch[4] Iteration[400/596] Loss: 11.113, Acc: 0.057, Base Lr: 1.02e-06
+2026-09-01 14:53:20,442 DIFFER.train INFO: Epoch[4] Iteration[450/596] Loss: 11.112, Acc: 0.058, Base Lr: 1.02e-06
+2026-09-01 14:53:31,741 DIFFER.train INFO: Epoch[4] Iteration[500/596] Loss: 11.102, Acc: 0.056, Base Lr: 1.02e-06
+2026-09-01 14:53:42,950 DIFFER.train INFO: Epoch[4] Iteration[550/596] Loss: 11.089, Acc: 0.058, Base Lr: 1.02e-06
+2026-09-01 14:53:53,271 DIFFER.train INFO: Clothes changing setting
+2026-09-01 14:53:53,750 DIFFER.train INFO: processing batch 0/59
+2026-09-01 14:54:45,115 DIFFER.train INFO: CMC curve, Rank-1  :36.7%
+2026-09-01 14:54:45,115 DIFFER.train INFO: CMC curve, Rank-5  :54.6%
+2026-09-01 14:54:45,115 DIFFER.train INFO: CMC curve, Rank-10 :60.5%
+2026-09-01 14:54:45,115 DIFFER.train INFO: mAP-:16.8%
+2026-09-01 14:54:45,116 DIFFER.train INFO: Validation Results - Epoch: 4
+2026-09-01 14:54:45,130 DIFFER.train INFO: Standard setting
+2026-09-01 14:54:45,632 DIFFER.train INFO: processing batch 0/59
+2026-09-01 14:55:36,937 DIFFER.train INFO: CMC curve, Rank-1  :72.8%
+2026-09-01 14:55:36,937 DIFFER.train INFO: CMC curve, Rank-5  :83.6%
+2026-09-01 14:55:36,937 DIFFER.train INFO: CMC curve, Rank-10 :87.6%
+2026-09-01 14:55:36,937 DIFFER.train INFO: mAP-:36.3%
+2026-09-01 14:55:36,948 DIFFER.train INFO: ==> Best Rank-1 36.7%, achieved at epoch 4
+2026-09-01 14:55:49,826 DIFFER.train INFO: Epoch[5] Iteration[50/596] Loss: 11.105, Acc: 0.035, Base Lr: 1.09e-06
+2026-09-01 14:56:00,927 DIFFER.train INFO: Epoch[5] Iteration[100/596] Loss: 11.053, Acc: 0.037, Base Lr: 1.09e-06
+2026-09-01 14:56:12,063 DIFFER.train INFO: Epoch[5] Iteration[150/596] Loss: 11.054, Acc: 0.057, Base Lr: 1.09e-06
+2026-09-01 14:56:23,008 DIFFER.train INFO: Epoch[5] Iteration[200/596] Loss: 11.045, Acc: 0.057, Base Lr: 1.09e-06
+2026-09-01 14:56:34,111 DIFFER.train INFO: Epoch[5] Iteration[250/596] Loss: 11.021, Acc: 0.059, Base Lr: 1.09e-06
+2026-09-01 14:56:45,186 DIFFER.train INFO: Epoch[5] Iteration[300/596] Loss: 11.022, Acc: 0.056, Base Lr: 1.09e-06
+2026-09-01 14:56:56,376 DIFFER.train INFO: Epoch[5] Iteration[350/596] Loss: 11.011, Acc: 0.058, Base Lr: 1.09e-06
+2026-09-01 14:57:07,544 DIFFER.train INFO: Epoch[5] Iteration[400/596] Loss: 11.007, Acc: 0.058, Base Lr: 1.09e-06
+2026-09-01 14:57:18,613 DIFFER.train INFO: Epoch[5] Iteration[450/596] Loss: 11.002, Acc: 0.059, Base Lr: 1.09e-06
+2026-09-01 14:57:29,723 DIFFER.train INFO: Epoch[5] Iteration[500/596] Loss: 11.000, Acc: 0.057, Base Lr: 1.09e-06
+2026-09-01 14:57:40,751 DIFFER.train INFO: Epoch[5] Iteration[550/596] Loss: 10.995, Acc: 0.059, Base Lr: 1.09e-06
+2026-09-01 14:57:50,840 DIFFER.train INFO: Clothes changing setting
+2026-09-01 14:57:51,321 DIFFER.train INFO: processing batch 0/59
+2026-09-01 14:58:43,389 DIFFER.train INFO: CMC curve, Rank-1  :38.8%
+2026-09-01 14:58:43,389 DIFFER.train INFO: CMC curve, Rank-5  :55.9%
+2026-09-01 14:58:43,389 DIFFER.train INFO: CMC curve, Rank-10 :61.7%
+2026-09-01 14:58:43,390 DIFFER.train INFO: mAP-:18.2%
+2026-09-01 14:58:43,390 DIFFER.train INFO: Validation Results - Epoch: 5
+2026-09-01 14:58:43,406 DIFFER.train INFO: Standard setting
+2026-09-01 14:58:43,947 DIFFER.train INFO: processing batch 0/59
+2026-09-01 14:59:36,017 DIFFER.train INFO: CMC curve, Rank-1  :73.6%
+2026-09-01 14:59:36,017 DIFFER.train INFO: CMC curve, Rank-5  :84.4%
+2026-09-01 14:59:36,017 DIFFER.train INFO: CMC curve, Rank-10 :88.0%
+2026-09-01 14:59:36,017 DIFFER.train INFO: mAP-:38.6%
+2026-09-01 14:59:36,034 DIFFER.train INFO: ==> Best Rank-1 38.8%, achieved at epoch 5
+2026-09-01 14:59:47,612 DIFFER.train INFO: Epoch[6] Iteration[50/596] Loss: 11.008, Acc: 0.035, Base Lr: 1.15e-06
+2026-09-01 14:59:58,745 DIFFER.train INFO: Epoch[6] Iteration[100/596] Loss: 10.954, Acc: 0.037, Base Lr: 1.15e-06
+2026-09-01 15:00:09,939 DIFFER.train INFO: Epoch[6] Iteration[150/596] Loss: 10.952, Acc: 0.057, Base Lr: 1.15e-06
+2026-09-01 15:00:21,176 DIFFER.train INFO: Epoch[6] Iteration[200/596] Loss: 10.957, Acc: 0.057, Base Lr: 1.15e-06
+2026-09-01 15:00:32,217 DIFFER.train INFO: Epoch[6] Iteration[250/596] Loss: 10.933, Acc: 0.059, Base Lr: 1.15e-06
+2026-09-01 15:00:43,302 DIFFER.train INFO: Epoch[6] Iteration[300/596] Loss: 10.947, Acc: 0.058, Base Lr: 1.15e-06
+2026-09-01 15:00:54,289 DIFFER.train INFO: Epoch[6] Iteration[350/596] Loss: 10.941, Acc: 0.061, Base Lr: 1.15e-06
+2026-09-01 15:01:05,650 DIFFER.train INFO: Epoch[6] Iteration[400/596] Loss: 10.948, Acc: 0.061, Base Lr: 1.15e-06
+2026-09-01 15:01:16,887 DIFFER.train INFO: Epoch[6] Iteration[450/596] Loss: 10.941, Acc: 0.062, Base Lr: 1.15e-06
+2026-09-01 15:01:28,093 DIFFER.train INFO: Epoch[6] Iteration[500/596] Loss: 10.939, Acc: 0.060, Base Lr: 1.15e-06
+2026-09-01 15:01:39,456 DIFFER.train INFO: Epoch[6] Iteration[550/596] Loss: 10.928, Acc: 0.061, Base Lr: 1.15e-06
+2026-09-01 15:01:49,814 DIFFER.train INFO: Clothes changing setting
+2026-09-01 15:01:50,286 DIFFER.train INFO: processing batch 0/59
+2026-09-01 15:02:41,488 DIFFER.train INFO: CMC curve, Rank-1  :38.8%
+2026-09-01 15:02:41,488 DIFFER.train INFO: CMC curve, Rank-5  :56.1%
+2026-09-01 15:02:41,488 DIFFER.train INFO: CMC curve, Rank-10 :62.8%
+2026-09-01 15:02:41,488 DIFFER.train INFO: mAP-:19.1%
+2026-09-01 15:02:41,489 DIFFER.train INFO: Validation Results - Epoch: 6
+2026-09-01 15:02:41,502 DIFFER.train INFO: Standard setting
+2026-09-01 15:02:42,011 DIFFER.train INFO: processing batch 0/59
+2026-09-01 15:03:33,302 DIFFER.train INFO: CMC curve, Rank-1  :75.3%
+2026-09-01 15:03:33,302 DIFFER.train INFO: CMC curve, Rank-5  :85.2%
+2026-09-01 15:03:33,302 DIFFER.train INFO: CMC curve, Rank-10 :89.2%
+2026-09-01 15:03:33,302 DIFFER.train INFO: mAP-:40.2%
+2026-09-01 15:03:44,679 DIFFER.train INFO: Epoch[7] Iteration[50/596] Loss: 10.961, Acc: 0.035, Base Lr: 1.21e-06
+2026-09-01 15:03:55,866 DIFFER.train INFO: Epoch[7] Iteration[100/596] Loss: 10.909, Acc: 0.041, Base Lr: 1.21e-06
+2026-09-01 15:04:07,025 DIFFER.train INFO: Epoch[7] Iteration[150/596] Loss: 10.910, Acc: 0.062, Base Lr: 1.21e-06
+2026-09-01 15:04:18,133 DIFFER.train INFO: Epoch[7] Iteration[200/596] Loss: 10.912, Acc: 0.062, Base Lr: 1.21e-06
+2026-09-01 15:04:29,210 DIFFER.train INFO: Epoch[7] Iteration[250/596] Loss: 10.893, Acc: 0.068, Base Lr: 1.21e-06
+2026-09-01 15:04:40,366 DIFFER.train INFO: Epoch[7] Iteration[300/596] Loss: 10.903, Acc: 0.069, Base Lr: 1.21e-06
+2026-09-01 15:04:51,535 DIFFER.train INFO: Epoch[7] Iteration[350/596] Loss: 10.899, Acc: 0.073, Base Lr: 1.21e-06
+2026-09-01 15:05:02,722 DIFFER.train INFO: Epoch[7] Iteration[400/596] Loss: 10.900, Acc: 0.073, Base Lr: 1.21e-06
+2026-09-01 15:05:13,892 DIFFER.train INFO: Epoch[7] Iteration[450/596] Loss: 10.899, Acc: 0.074, Base Lr: 1.21e-06
+2026-09-01 15:05:25,139 DIFFER.train INFO: Epoch[7] Iteration[500/596] Loss: 10.895, Acc: 0.070, Base Lr: 1.21e-06
+2026-09-01 15:05:36,320 DIFFER.train INFO: Epoch[7] Iteration[550/596] Loss: 10.886, Acc: 0.072, Base Lr: 1.21e-06
+2026-09-01 15:05:46,596 DIFFER.train INFO: Clothes changing setting
+2026-09-01 15:05:47,080 DIFFER.train INFO: processing batch 0/59
+2026-09-01 15:06:38,288 DIFFER.train INFO: CMC curve, Rank-1  :39.8%
+2026-09-01 15:06:38,289 DIFFER.train INFO: CMC curve, Rank-5  :57.9%
+2026-09-01 15:06:38,289 DIFFER.train INFO: CMC curve, Rank-10 :64.0%
+2026-09-01 15:06:38,289 DIFFER.train INFO: mAP-:20.2%
+2026-09-01 15:06:38,289 DIFFER.train INFO: Validation Results - Epoch: 7
+2026-09-01 15:06:38,310 DIFFER.train INFO: Standard setting
+2026-09-01 15:06:38,788 DIFFER.train INFO: processing batch 0/59
+2026-09-01 15:07:30,047 DIFFER.train INFO: CMC curve, Rank-1  :76.9%
+2026-09-01 15:07:30,047 DIFFER.train INFO: CMC curve, Rank-5  :87.2%
+2026-09-01 15:07:30,048 DIFFER.train INFO: CMC curve, Rank-10 :90.3%
+2026-09-01 15:07:30,048 DIFFER.train INFO: mAP-:41.6%
+2026-09-01 15:07:30,062 DIFFER.train INFO: ==> Best Rank-1 39.8%, achieved at epoch 7
+2026-09-01 15:07:43,895 DIFFER.train INFO: Epoch[8] Iteration[50/596] Loss: 10.918, Acc: 0.065, Base Lr: 1.27e-06
+2026-09-01 15:07:55,054 DIFFER.train INFO: Epoch[8] Iteration[100/596] Loss: 10.886, Acc: 0.069, Base Lr: 1.27e-06
+2026-09-01 15:08:06,361 DIFFER.train INFO: Epoch[8] Iteration[150/596] Loss: 10.865, Acc: 0.090, Base Lr: 1.27e-06
+2026-09-01 15:08:17,618 DIFFER.train INFO: Epoch[8] Iteration[200/596] Loss: 10.871, Acc: 0.087, Base Lr: 1.27e-06
+2026-09-01 15:08:28,783 DIFFER.train INFO: Epoch[8] Iteration[250/596] Loss: 10.850, Acc: 0.092, Base Lr: 1.27e-06
+2026-09-01 15:08:39,904 DIFFER.train INFO: Epoch[8] Iteration[300/596] Loss: 10.861, Acc: 0.091, Base Lr: 1.27e-06
+2026-09-01 15:08:51,146 DIFFER.train INFO: Epoch[8] Iteration[350/596] Loss: 10.854, Acc: 0.094, Base Lr: 1.27e-06
+2026-09-01 15:09:02,238 DIFFER.train INFO: Epoch[8] Iteration[400/596] Loss: 10.856, Acc: 0.093, Base Lr: 1.27e-06
+2026-09-01 15:09:13,335 DIFFER.train INFO: Epoch[8] Iteration[450/596] Loss: 10.851, Acc: 0.095, Base Lr: 1.27e-06
+2026-09-01 15:09:24,416 DIFFER.train INFO: Epoch[8] Iteration[500/596] Loss: 10.848, Acc: 0.091, Base Lr: 1.27e-06
+2026-09-01 15:09:35,575 DIFFER.train INFO: Epoch[8] Iteration[550/596] Loss: 10.838, Acc: 0.094, Base Lr: 1.27e-06
+2026-09-01 15:09:45,626 DIFFER.train INFO: Clothes changing setting
+2026-09-01 15:09:46,099 DIFFER.train INFO: processing batch 0/59
+2026-09-01 15:10:37,405 DIFFER.train INFO: CMC curve, Rank-1  :42.1%
+2026-09-01 15:10:37,405 DIFFER.train INFO: CMC curve, Rank-5  :56.9%
+2026-09-01 15:10:37,405 DIFFER.train INFO: CMC curve, Rank-10 :63.5%
+2026-09-01 15:10:37,405 DIFFER.train INFO: mAP-:20.7%
+2026-09-01 15:10:37,406 DIFFER.train INFO: Validation Results - Epoch: 8
+2026-09-01 15:10:37,420 DIFFER.train INFO: Standard setting
+2026-09-01 15:10:37,908 DIFFER.train INFO: processing batch 0/59
+2026-09-01 15:11:29,166 DIFFER.train INFO: CMC curve, Rank-1  :77.9%
+2026-09-01 15:11:29,166 DIFFER.train INFO: CMC curve, Rank-5  :84.8%
+2026-09-01 15:11:29,166 DIFFER.train INFO: CMC curve, Rank-10 :89.7%
+2026-09-01 15:11:29,166 DIFFER.train INFO: mAP-:42.1%
+2026-09-01 15:11:29,177 DIFFER.train INFO: ==> Best Rank-1 42.1%, achieved at epoch 8
+2026-09-01 15:11:43,889 DIFFER.train INFO: Epoch[9] Iteration[50/596] Loss: 10.866, Acc: 0.082, Base Lr: 1.33e-06
+2026-09-01 15:11:55,094 DIFFER.train INFO: Epoch[9] Iteration[100/596] Loss: 10.839, Acc: 0.085, Base Lr: 1.33e-06
+2026-09-01 15:12:06,399 DIFFER.train INFO: Epoch[9] Iteration[150/596] Loss: 10.845, Acc: 0.107, Base Lr: 1.33e-06
+2026-09-01 15:12:17,573 DIFFER.train INFO: Epoch[9] Iteration[200/596] Loss: 10.840, Acc: 0.101, Base Lr: 1.33e-06
+2026-09-01 15:12:28,612 DIFFER.train INFO: Epoch[9] Iteration[250/596] Loss: 10.816, Acc: 0.103, Base Lr: 1.33e-06
+2026-09-01 15:12:39,714 DIFFER.train INFO: Epoch[9] Iteration[300/596] Loss: 10.824, Acc: 0.102, Base Lr: 1.33e-06
+2026-09-01 15:12:50,750 DIFFER.train INFO: Epoch[9] Iteration[350/596] Loss: 10.816, Acc: 0.104, Base Lr: 1.33e-06
+2026-09-01 15:13:01,821 DIFFER.train INFO: Epoch[9] Iteration[400/596] Loss: 10.816, Acc: 0.104, Base Lr: 1.33e-06
+2026-09-01 15:13:12,883 DIFFER.train INFO: Epoch[9] Iteration[450/596] Loss: 10.811, Acc: 0.104, Base Lr: 1.33e-06
+2026-09-01 15:13:23,967 DIFFER.train INFO: Epoch[9] Iteration[500/596] Loss: 10.813, Acc: 0.102, Base Lr: 1.33e-06
+2026-09-01 15:13:35,011 DIFFER.train INFO: Epoch[9] Iteration[550/596] Loss: 10.807, Acc: 0.105, Base Lr: 1.33e-06
+2026-09-01 15:13:45,222 DIFFER.train INFO: Clothes changing setting
+2026-09-01 15:13:45,709 DIFFER.train INFO: processing batch 0/59
+2026-09-01 15:14:37,044 DIFFER.train INFO: CMC curve, Rank-1  :42.1%
+2026-09-01 15:14:37,045 DIFFER.train INFO: CMC curve, Rank-5  :56.6%
+2026-09-01 15:14:37,045 DIFFER.train INFO: CMC curve, Rank-10 :65.3%
+2026-09-01 15:14:37,045 DIFFER.train INFO: mAP-:21.5%
+2026-09-01 15:14:37,045 DIFFER.train INFO: Validation Results - Epoch: 9
+2026-09-01 15:14:37,059 DIFFER.train INFO: Standard setting
+2026-09-01 15:14:37,519 DIFFER.train INFO: processing batch 0/59
+2026-09-01 15:15:28,721 DIFFER.train INFO: CMC curve, Rank-1  :78.7%
+2026-09-01 15:15:28,721 DIFFER.train INFO: CMC curve, Rank-5  :86.6%
+2026-09-01 15:15:28,721 DIFFER.train INFO: CMC curve, Rank-10 :89.9%
+2026-09-01 15:15:28,721 DIFFER.train INFO: mAP-:43.5%
+2026-09-01 15:15:39,987 DIFFER.train INFO: Epoch[10] Iteration[50/596] Loss: 10.834, Acc: 0.102, Base Lr: 1.39e-06
+2026-09-01 15:15:51,326 DIFFER.train INFO: Epoch[10] Iteration[100/596] Loss: 10.792, Acc: 0.094, Base Lr: 1.39e-06
+2026-09-01 15:16:02,835 DIFFER.train INFO: Epoch[10] Iteration[150/596] Loss: 10.789, Acc: 0.115, Base Lr: 1.39e-06
+2026-09-01 15:16:14,014 DIFFER.train INFO: Epoch[10] Iteration[200/596] Loss: 10.783, Acc: 0.109, Base Lr: 1.39e-06
+2026-09-01 15:16:25,139 DIFFER.train INFO: Epoch[10] Iteration[250/596] Loss: 10.763, Acc: 0.109, Base Lr: 1.39e-06
+2026-09-01 15:16:36,298 DIFFER.train INFO: Epoch[10] Iteration[300/596] Loss: 10.772, Acc: 0.108, Base Lr: 1.39e-06
+2026-09-01 15:16:47,392 DIFFER.train INFO: Epoch[10] Iteration[350/596] Loss: 10.764, Acc: 0.109, Base Lr: 1.39e-06
+2026-09-01 15:16:58,627 DIFFER.train INFO: Epoch[10] Iteration[400/596] Loss: 10.766, Acc: 0.108, Base Lr: 1.39e-06
+2026-09-01 15:17:09,761 DIFFER.train INFO: Epoch[10] Iteration[450/596] Loss: 10.762, Acc: 0.109, Base Lr: 1.39e-06
+2026-09-01 15:17:20,848 DIFFER.train INFO: Epoch[10] Iteration[500/596] Loss: 10.765, Acc: 0.106, Base Lr: 1.39e-06
+2026-09-01 15:17:32,144 DIFFER.train INFO: Epoch[10] Iteration[550/596] Loss: 10.756, Acc: 0.110, Base Lr: 1.39e-06
+2026-09-01 15:17:42,410 DIFFER.train INFO: Clothes changing setting
+2026-09-01 15:17:42,884 DIFFER.train INFO: processing batch 0/59
+2026-09-01 15:18:34,105 DIFFER.train INFO: CMC curve, Rank-1  :42.3%
+2026-09-01 15:18:34,106 DIFFER.train INFO: CMC curve, Rank-5  :58.7%
+2026-09-01 15:18:34,106 DIFFER.train INFO: CMC curve, Rank-10 :68.1%
+2026-09-01 15:18:34,106 DIFFER.train INFO: mAP-:22.4%
+2026-09-01 15:18:34,106 DIFFER.train INFO: Validation Results - Epoch: 10
+2026-09-01 15:18:34,119 DIFFER.train INFO: Standard setting
+2026-09-01 15:18:34,609 DIFFER.train INFO: processing batch 0/59
+2026-09-01 15:19:25,915 DIFFER.train INFO: CMC curve, Rank-1  :78.5%
+2026-09-01 15:19:25,915 DIFFER.train INFO: CMC curve, Rank-5  :87.2%
+2026-09-01 15:19:25,915 DIFFER.train INFO: CMC curve, Rank-10 :90.5%
+2026-09-01 15:19:25,915 DIFFER.train INFO: mAP-:44.8%
+2026-09-01 15:19:25,927 DIFFER.train INFO: ==> Best Rank-1 42.3%, achieved at epoch 10
+2026-09-01 15:19:38,787 DIFFER.train INFO: Epoch[11] Iteration[50/596] Loss: 10.809, Acc: 0.102, Base Lr: 1.45e-06
+2026-09-01 15:19:49,756 DIFFER.train INFO: Epoch[11] Iteration[100/596] Loss: 10.755, Acc: 0.097, Base Lr: 1.45e-06
+2026-09-01 15:20:00,851 DIFFER.train INFO: Epoch[11] Iteration[150/596] Loss: 10.749, Acc: 0.119, Base Lr: 1.45e-06
+2026-09-01 15:20:12,053 DIFFER.train INFO: Epoch[11] Iteration[200/596] Loss: 10.758, Acc: 0.112, Base Lr: 1.45e-06
+2026-09-01 15:20:23,455 DIFFER.train INFO: Epoch[11] Iteration[250/596] Loss: 10.745, Acc: 0.112, Base Lr: 1.45e-06
+2026-09-01 15:20:34,665 DIFFER.train INFO: Epoch[11] Iteration[300/596] Loss: 10.751, Acc: 0.110, Base Lr: 1.45e-06
+2026-09-01 15:20:45,780 DIFFER.train INFO: Epoch[11] Iteration[350/596] Loss: 10.747, Acc: 0.110, Base Lr: 1.45e-06
+2026-09-01 15:20:56,888 DIFFER.train INFO: Epoch[11] Iteration[400/596] Loss: 10.748, Acc: 0.110, Base Lr: 1.45e-06
+2026-09-01 15:21:08,068 DIFFER.train INFO: Epoch[11] Iteration[450/596] Loss: 10.745, Acc: 0.111, Base Lr: 1.45e-06
+2026-09-01 15:21:19,255 DIFFER.train INFO: Epoch[11] Iteration[500/596] Loss: 10.744, Acc: 0.109, Base Lr: 1.45e-06
+2026-09-01 15:21:30,516 DIFFER.train INFO: Epoch[11] Iteration[550/596] Loss: 10.733, Acc: 0.112, Base Lr: 1.45e-06
+2026-09-01 15:21:40,890 DIFFER.train INFO: Clothes changing setting
+2026-09-01 15:21:41,355 DIFFER.train INFO: processing batch 0/59
+2026-09-01 15:22:32,649 DIFFER.train INFO: CMC curve, Rank-1  :43.9%
+2026-09-01 15:22:32,649 DIFFER.train INFO: CMC curve, Rank-5  :60.2%
+2026-09-01 15:22:32,649 DIFFER.train INFO: CMC curve, Rank-10 :67.9%
+2026-09-01 15:22:32,649 DIFFER.train INFO: mAP-:23.0%
+2026-09-01 15:22:32,650 DIFFER.train INFO: Validation Results - Epoch: 11
+2026-09-01 15:22:32,662 DIFFER.train INFO: Standard setting
+2026-09-01 15:22:33,168 DIFFER.train INFO: processing batch 0/59
+2026-09-01 15:23:24,673 DIFFER.train INFO: CMC curve, Rank-1  :78.7%
+2026-09-01 15:23:24,673 DIFFER.train INFO: CMC curve, Rank-5  :87.8%
+2026-09-01 15:23:24,674 DIFFER.train INFO: CMC curve, Rank-10 :90.5%
+2026-09-01 15:23:24,674 DIFFER.train INFO: mAP-:45.5%
+2026-09-01 15:23:24,686 DIFFER.train INFO: ==> Best Rank-1 43.9%, achieved at epoch 11
+2026-09-01 15:23:37,273 DIFFER.train INFO: Epoch[12] Iteration[50/596] Loss: 10.759, Acc: 0.105, Base Lr: 1.51e-06
+2026-09-01 15:23:48,354 DIFFER.train INFO: Epoch[12] Iteration[100/596] Loss: 10.718, Acc: 0.097, Base Lr: 1.51e-06
+2026-09-01 15:23:59,462 DIFFER.train INFO: Epoch[12] Iteration[150/596] Loss: 10.713, Acc: 0.118, Base Lr: 1.51e-06
+2026-09-01 15:24:10,566 DIFFER.train INFO: Epoch[12] Iteration[200/596] Loss: 10.717, Acc: 0.112, Base Lr: 1.51e-06
+2026-09-01 15:24:21,518 DIFFER.train INFO: Epoch[12] Iteration[250/596] Loss: 10.703, Acc: 0.112, Base Lr: 1.51e-06
+2026-09-01 15:24:32,585 DIFFER.train INFO: Epoch[12] Iteration[300/596] Loss: 10.714, Acc: 0.110, Base Lr: 1.51e-06
+2026-09-01 15:24:43,611 DIFFER.train INFO: Epoch[12] Iteration[350/596] Loss: 10.713, Acc: 0.111, Base Lr: 1.51e-06
+2026-09-01 15:24:54,795 DIFFER.train INFO: Epoch[12] Iteration[400/596] Loss: 10.716, Acc: 0.110, Base Lr: 1.51e-06
+2026-09-01 15:25:05,852 DIFFER.train INFO: Epoch[12] Iteration[450/596] Loss: 10.711, Acc: 0.111, Base Lr: 1.51e-06
+2026-09-01 15:25:16,893 DIFFER.train INFO: Epoch[12] Iteration[500/596] Loss: 10.711, Acc: 0.109, Base Lr: 1.51e-06
+2026-09-01 15:25:28,052 DIFFER.train INFO: Epoch[12] Iteration[550/596] Loss: 10.709, Acc: 0.112, Base Lr: 1.51e-06
+2026-09-01 15:25:38,280 DIFFER.train INFO: Clothes changing setting
+2026-09-01 15:25:38,777 DIFFER.train INFO: processing batch 0/59
+2026-09-01 15:26:30,335 DIFFER.train INFO: CMC curve, Rank-1  :45.9%
+2026-09-01 15:26:30,335 DIFFER.train INFO: CMC curve, Rank-5  :61.7%
+2026-09-01 15:26:30,335 DIFFER.train INFO: CMC curve, Rank-10 :68.9%
+2026-09-01 15:26:30,335 DIFFER.train INFO: mAP-:24.0%
+2026-09-01 15:26:30,335 DIFFER.train INFO: Validation Results - Epoch: 12
+2026-09-01 15:26:30,350 DIFFER.train INFO: Standard setting
+2026-09-01 15:26:30,840 DIFFER.train INFO: processing batch 0/59
+2026-09-01 15:27:22,695 DIFFER.train INFO: CMC curve, Rank-1  :80.3%
+2026-09-01 15:27:22,695 DIFFER.train INFO: CMC curve, Rank-5  :88.4%
+2026-09-01 15:27:22,695 DIFFER.train INFO: CMC curve, Rank-10 :90.1%
+2026-09-01 15:27:22,695 DIFFER.train INFO: mAP-:46.5%
+2026-09-01 15:27:22,710 DIFFER.train INFO: ==> Best Rank-1 45.9%, achieved at epoch 12
+2026-09-01 15:27:34,706 DIFFER.train INFO: Epoch[13] Iteration[50/596] Loss: 10.714, Acc: 0.105, Base Lr: 1.57e-06
+2026-09-01 15:27:45,899 DIFFER.train INFO: Epoch[13] Iteration[100/596] Loss: 10.661, Acc: 0.100, Base Lr: 1.57e-06
+2026-09-01 15:27:57,045 DIFFER.train INFO: Epoch[13] Iteration[150/596] Loss: 10.666, Acc: 0.120, Base Lr: 1.57e-06
+2026-09-01 15:28:08,185 DIFFER.train INFO: Epoch[13] Iteration[200/596] Loss: 10.674, Acc: 0.112, Base Lr: 1.57e-06
+2026-09-01 15:28:19,269 DIFFER.train INFO: Epoch[13] Iteration[250/596] Loss: 10.657, Acc: 0.112, Base Lr: 1.57e-06
+2026-09-01 15:28:30,348 DIFFER.train INFO: Epoch[13] Iteration[300/596] Loss: 10.673, Acc: 0.109, Base Lr: 1.57e-06
+2026-09-01 15:28:41,412 DIFFER.train INFO: Epoch[13] Iteration[350/596] Loss: 10.677, Acc: 0.110, Base Lr: 1.57e-06
+2026-09-01 15:28:52,485 DIFFER.train INFO: Epoch[13] Iteration[400/596] Loss: 10.678, Acc: 0.109, Base Lr: 1.57e-06
+2026-09-01 15:29:03,560 DIFFER.train INFO: Epoch[13] Iteration[450/596] Loss: 10.680, Acc: 0.111, Base Lr: 1.57e-06
+2026-09-01 15:29:14,608 DIFFER.train INFO: Epoch[13] Iteration[500/596] Loss: 10.682, Acc: 0.109, Base Lr: 1.57e-06
+2026-09-01 15:29:25,761 DIFFER.train INFO: Epoch[13] Iteration[550/596] Loss: 10.673, Acc: 0.112, Base Lr: 1.57e-06
+2026-09-01 15:29:35,945 DIFFER.train INFO: Clothes changing setting
+2026-09-01 15:29:36,474 DIFFER.train INFO: processing batch 0/59
+2026-09-01 15:30:28,218 DIFFER.train INFO: CMC curve, Rank-1  :45.9%
+2026-09-01 15:30:28,218 DIFFER.train INFO: CMC curve, Rank-5  :61.7%
+2026-09-01 15:30:28,218 DIFFER.train INFO: CMC curve, Rank-10 :67.3%
+2026-09-01 15:30:28,218 DIFFER.train INFO: mAP-:24.3%
+2026-09-01 15:30:28,218 DIFFER.train INFO: Validation Results - Epoch: 13
+2026-09-01 15:30:28,233 DIFFER.train INFO: Standard setting
+2026-09-01 15:30:28,727 DIFFER.train INFO: processing batch 0/59
+2026-09-01 15:31:20,864 DIFFER.train INFO: CMC curve, Rank-1  :80.9%
+2026-09-01 15:31:20,864 DIFFER.train INFO: CMC curve, Rank-5  :88.6%
+2026-09-01 15:31:20,864 DIFFER.train INFO: CMC curve, Rank-10 :90.1%
+2026-09-01 15:31:20,864 DIFFER.train INFO: mAP-:47.1%
+2026-09-01 15:31:32,142 DIFFER.train INFO: Epoch[14] Iteration[50/596] Loss: 10.730, Acc: 0.102, Base Lr: 1.63e-06
+2026-09-01 15:31:43,321 DIFFER.train INFO: Epoch[14] Iteration[100/596] Loss: 10.667, Acc: 0.099, Base Lr: 1.63e-06
+2026-09-01 15:31:54,629 DIFFER.train INFO: Epoch[14] Iteration[150/596] Loss: 10.670, Acc: 0.121, Base Lr: 1.63e-06
+2026-09-01 15:32:05,955 DIFFER.train INFO: Epoch[14] Iteration[200/596] Loss: 10.675, Acc: 0.114, Base Lr: 1.63e-06
+2026-09-01 15:32:17,205 DIFFER.train INFO: Epoch[14] Iteration[250/596] Loss: 10.656, Acc: 0.113, Base Lr: 1.63e-06
+2026-09-01 15:32:28,399 DIFFER.train INFO: Epoch[14] Iteration[300/596] Loss: 10.662, Acc: 0.110, Base Lr: 1.63e-06
+2026-09-01 15:32:39,672 DIFFER.train INFO: Epoch[14] Iteration[350/596] Loss: 10.658, Acc: 0.111, Base Lr: 1.63e-06
+2026-09-01 15:32:50,735 DIFFER.train INFO: Epoch[14] Iteration[400/596] Loss: 10.656, Acc: 0.110, Base Lr: 1.63e-06
+2026-09-01 15:33:01,786 DIFFER.train INFO: Epoch[14] Iteration[450/596] Loss: 10.655, Acc: 0.112, Base Lr: 1.63e-06
+2026-09-01 15:33:12,823 DIFFER.train INFO: Epoch[14] Iteration[500/596] Loss: 10.656, Acc: 0.110, Base Lr: 1.63e-06
+2026-09-01 15:33:23,962 DIFFER.train INFO: Epoch[14] Iteration[550/596] Loss: 10.646, Acc: 0.113, Base Lr: 1.63e-06
+2026-09-01 15:33:34,064 DIFFER.train INFO: Clothes changing setting
+2026-09-01 15:33:34,549 DIFFER.train INFO: processing batch 0/59
+2026-09-01 15:34:26,069 DIFFER.train INFO: CMC curve, Rank-1  :48.5%
+2026-09-01 15:34:26,069 DIFFER.train INFO: CMC curve, Rank-5  :63.5%
+2026-09-01 15:34:26,069 DIFFER.train INFO: CMC curve, Rank-10 :67.3%
+2026-09-01 15:34:26,069 DIFFER.train INFO: mAP-:25.1%
+2026-09-01 15:34:26,070 DIFFER.train INFO: Validation Results - Epoch: 14
+2026-09-01 15:34:26,084 DIFFER.train INFO: Standard setting
+2026-09-01 15:34:26,592 DIFFER.train INFO: processing batch 0/59
+2026-09-01 15:35:17,899 DIFFER.train INFO: CMC curve, Rank-1  :82.2%
+2026-09-01 15:35:17,899 DIFFER.train INFO: CMC curve, Rank-5  :88.8%
+2026-09-01 15:35:17,899 DIFFER.train INFO: CMC curve, Rank-10 :90.3%
+2026-09-01 15:35:17,899 DIFFER.train INFO: mAP-:47.7%
+2026-09-01 15:35:17,912 DIFFER.train INFO: ==> Best Rank-1 48.5%, achieved at epoch 14
+2026-09-01 15:35:30,742 DIFFER.train INFO: Epoch[15] Iteration[50/596] Loss: 10.703, Acc: 0.105, Base Lr: 1.70e-06
+2026-09-01 15:35:42,004 DIFFER.train INFO: Epoch[15] Iteration[100/596] Loss: 10.623, Acc: 0.100, Base Lr: 1.70e-06
+2026-09-01 15:35:53,166 DIFFER.train INFO: Epoch[15] Iteration[150/596] Loss: 10.625, Acc: 0.123, Base Lr: 1.70e-06
+2026-09-01 15:36:04,313 DIFFER.train INFO: Epoch[15] Iteration[200/596] Loss: 10.639, Acc: 0.116, Base Lr: 1.70e-06
+2026-09-01 15:36:15,557 DIFFER.train INFO: Epoch[15] Iteration[250/596] Loss: 10.623, Acc: 0.114, Base Lr: 1.70e-06
+2026-09-01 15:36:26,655 DIFFER.train INFO: Epoch[15] Iteration[300/596] Loss: 10.630, Acc: 0.111, Base Lr: 1.70e-06
+2026-09-01 15:36:37,792 DIFFER.train INFO: Epoch[15] Iteration[350/596] Loss: 10.629, Acc: 0.112, Base Lr: 1.70e-06
+2026-09-01 15:36:49,003 DIFFER.train INFO: Epoch[15] Iteration[400/596] Loss: 10.628, Acc: 0.111, Base Lr: 1.70e-06
+2026-09-01 15:37:00,128 DIFFER.train INFO: Epoch[15] Iteration[450/596] Loss: 10.629, Acc: 0.112, Base Lr: 1.70e-06
+2026-09-01 15:37:11,326 DIFFER.train INFO: Epoch[15] Iteration[500/596] Loss: 10.628, Acc: 0.110, Base Lr: 1.70e-06
+2026-09-01 15:37:22,569 DIFFER.train INFO: Epoch[15] Iteration[550/596] Loss: 10.620, Acc: 0.113, Base Lr: 1.70e-06
+2026-09-01 15:37:32,787 DIFFER.train INFO: Clothes changing setting
+2026-09-01 15:37:33,275 DIFFER.train INFO: processing batch 0/59
+2026-09-01 15:38:24,540 DIFFER.train INFO: CMC curve, Rank-1  :49.7%
+2026-09-01 15:38:24,540 DIFFER.train INFO: CMC curve, Rank-5  :64.0%
+2026-09-01 15:38:24,540 DIFFER.train INFO: CMC curve, Rank-10 :69.1%
+2026-09-01 15:38:24,540 DIFFER.train INFO: mAP-:25.7%
+2026-09-01 15:38:24,541 DIFFER.train INFO: Validation Results - Epoch: 15
+2026-09-01 15:38:24,553 DIFFER.train INFO: Standard setting
+2026-09-01 15:38:25,047 DIFFER.train INFO: processing batch 0/59
+2026-09-01 15:39:16,300 DIFFER.train INFO: CMC curve, Rank-1  :81.1%
+2026-09-01 15:39:16,301 DIFFER.train INFO: CMC curve, Rank-5  :88.2%
+2026-09-01 15:39:16,301 DIFFER.train INFO: CMC curve, Rank-10 :90.5%
+2026-09-01 15:39:16,301 DIFFER.train INFO: mAP-:48.3%
+2026-09-01 15:39:16,312 DIFFER.train INFO: ==> Best Rank-1 49.7%, achieved at epoch 15
+2026-09-01 15:39:29,125 DIFFER.train INFO: Epoch[16] Iteration[50/596] Loss: 10.662, Acc: 0.105, Base Lr: 1.76e-06
+2026-09-01 15:39:40,218 DIFFER.train INFO: Epoch[16] Iteration[100/596] Loss: 10.594, Acc: 0.100, Base Lr: 1.76e-06
+2026-09-01 15:39:51,599 DIFFER.train INFO: Epoch[16] Iteration[150/596] Loss: 10.595, Acc: 0.123, Base Lr: 1.76e-06
+2026-09-01 15:40:02,973 DIFFER.train INFO: Epoch[16] Iteration[200/596] Loss: 10.606, Acc: 0.115, Base Lr: 1.76e-06
+2026-09-01 15:40:14,120 DIFFER.train INFO: Epoch[16] Iteration[250/596] Loss: 10.588, Acc: 0.114, Base Lr: 1.76e-06
+2026-09-01 15:40:25,276 DIFFER.train INFO: Epoch[16] Iteration[300/596] Loss: 10.604, Acc: 0.112, Base Lr: 1.76e-06
+2026-09-01 15:40:36,491 DIFFER.train INFO: Epoch[16] Iteration[350/596] Loss: 10.603, Acc: 0.112, Base Lr: 1.76e-06
+2026-09-01 15:40:47,614 DIFFER.train INFO: Epoch[16] Iteration[400/596] Loss: 10.595, Acc: 0.112, Base Lr: 1.76e-06
+2026-09-01 15:40:58,792 DIFFER.train INFO: Epoch[16] Iteration[450/596] Loss: 10.594, Acc: 0.113, Base Lr: 1.76e-06
+2026-09-01 15:41:09,854 DIFFER.train INFO: Epoch[16] Iteration[500/596] Loss: 10.597, Acc: 0.111, Base Lr: 1.76e-06
+2026-09-01 15:41:21,044 DIFFER.train INFO: Epoch[16] Iteration[550/596] Loss: 10.588, Acc: 0.113, Base Lr: 1.76e-06
+2026-09-01 15:41:31,159 DIFFER.train INFO: Clothes changing setting
+2026-09-01 15:41:31,641 DIFFER.train INFO: processing batch 0/59
+2026-09-01 15:42:23,113 DIFFER.train INFO: CMC curve, Rank-1  :47.7%
+2026-09-01 15:42:23,113 DIFFER.train INFO: CMC curve, Rank-5  :63.3%
+2026-09-01 15:42:23,113 DIFFER.train INFO: CMC curve, Rank-10 :68.9%
+2026-09-01 15:42:23,113 DIFFER.train INFO: mAP-:25.9%
+2026-09-01 15:42:23,113 DIFFER.train INFO: Validation Results - Epoch: 16
+2026-09-01 15:42:23,129 DIFFER.train INFO: Standard setting
+2026-09-01 15:42:23,630 DIFFER.train INFO: processing batch 0/59
+2026-09-01 15:43:15,353 DIFFER.train INFO: CMC curve, Rank-1  :82.6%
+2026-09-01 15:43:15,353 DIFFER.train INFO: CMC curve, Rank-5  :88.6%
+2026-09-01 15:43:15,353 DIFFER.train INFO: CMC curve, Rank-10 :91.1%
+2026-09-01 15:43:15,354 DIFFER.train INFO: mAP-:48.7%
+2026-09-01 15:43:26,595 DIFFER.train INFO: Epoch[17] Iteration[50/596] Loss: 10.608, Acc: 0.100, Base Lr: 1.82e-06
+2026-09-01 15:43:37,717 DIFFER.train INFO: Epoch[17] Iteration[100/596] Loss: 10.566, Acc: 0.097, Base Lr: 1.82e-06
+2026-09-01 15:43:48,847 DIFFER.train INFO: Epoch[17] Iteration[150/596] Loss: 10.579, Acc: 0.120, Base Lr: 1.82e-06
+2026-09-01 15:43:59,966 DIFFER.train INFO: Epoch[17] Iteration[200/596] Loss: 10.576, Acc: 0.114, Base Lr: 1.82e-06
+2026-09-01 15:44:11,150 DIFFER.train INFO: Epoch[17] Iteration[250/596] Loss: 10.562, Acc: 0.113, Base Lr: 1.82e-06
+2026-09-01 15:44:22,294 DIFFER.train INFO: Epoch[17] Iteration[300/596] Loss: 10.561, Acc: 0.111, Base Lr: 1.82e-06
+2026-09-01 15:44:33,493 DIFFER.train INFO: Epoch[17] Iteration[350/596] Loss: 10.558, Acc: 0.111, Base Lr: 1.82e-06
+2026-09-01 15:44:44,597 DIFFER.train INFO: Epoch[17] Iteration[400/596] Loss: 10.557, Acc: 0.111, Base Lr: 1.82e-06
+2026-09-01 15:44:55,762 DIFFER.train INFO: Epoch[17] Iteration[450/596] Loss: 10.559, Acc: 0.112, Base Lr: 1.82e-06
+2026-09-01 15:45:06,902 DIFFER.train INFO: Epoch[17] Iteration[500/596] Loss: 10.558, Acc: 0.110, Base Lr: 1.82e-06
+2026-09-01 15:45:18,035 DIFFER.train INFO: Epoch[17] Iteration[550/596] Loss: 10.548, Acc: 0.113, Base Lr: 1.82e-06
+2026-09-01 15:45:28,219 DIFFER.train INFO: Clothes changing setting
+2026-09-01 15:45:28,699 DIFFER.train INFO: processing batch 0/59
+2026-09-01 15:46:20,441 DIFFER.train INFO: CMC curve, Rank-1  :47.4%
+2026-09-01 15:46:20,442 DIFFER.train INFO: CMC curve, Rank-5  :63.0%
+2026-09-01 15:46:20,442 DIFFER.train INFO: CMC curve, Rank-10 :68.4%
+2026-09-01 15:46:20,442 DIFFER.train INFO: mAP-:25.6%
+2026-09-01 15:46:20,442 DIFFER.train INFO: Validation Results - Epoch: 17
+2026-09-01 15:46:20,456 DIFFER.train INFO: Standard setting
+2026-09-01 15:46:20,944 DIFFER.train INFO: processing batch 0/59
+2026-09-01 15:47:12,793 DIFFER.train INFO: CMC curve, Rank-1  :80.3%
+2026-09-01 15:47:12,793 DIFFER.train INFO: CMC curve, Rank-5  :88.2%
+2026-09-01 15:47:12,793 DIFFER.train INFO: CMC curve, Rank-10 :90.9%
+2026-09-01 15:47:12,793 DIFFER.train INFO: mAP-:48.2%
+2026-09-01 15:47:24,595 DIFFER.train INFO: Epoch[18] Iteration[50/596] Loss: 10.578, Acc: 0.102, Base Lr: 1.88e-06
+2026-09-01 15:47:35,741 DIFFER.train INFO: Epoch[18] Iteration[100/596] Loss: 10.540, Acc: 0.099, Base Lr: 1.88e-06
+2026-09-01 15:47:46,843 DIFFER.train INFO: Epoch[18] Iteration[150/596] Loss: 10.553, Acc: 0.120, Base Lr: 1.88e-06
+2026-09-01 15:47:57,836 DIFFER.train INFO: Epoch[18] Iteration[200/596] Loss: 10.561, Acc: 0.114, Base Lr: 1.88e-06
+2026-09-01 15:48:08,857 DIFFER.train INFO: Epoch[18] Iteration[250/596] Loss: 10.531, Acc: 0.113, Base Lr: 1.88e-06
+2026-09-01 15:48:20,016 DIFFER.train INFO: Epoch[18] Iteration[300/596] Loss: 10.534, Acc: 0.111, Base Lr: 1.88e-06
+2026-09-01 15:48:31,097 DIFFER.train INFO: Epoch[18] Iteration[350/596] Loss: 10.532, Acc: 0.112, Base Lr: 1.88e-06
+2026-09-01 15:48:42,251 DIFFER.train INFO: Epoch[18] Iteration[400/596] Loss: 10.530, Acc: 0.111, Base Lr: 1.88e-06
+2026-09-01 15:48:53,430 DIFFER.train INFO: Epoch[18] Iteration[450/596] Loss: 10.529, Acc: 0.112, Base Lr: 1.88e-06
+2026-09-01 15:49:04,752 DIFFER.train INFO: Epoch[18] Iteration[500/596] Loss: 10.530, Acc: 0.110, Base Lr: 1.88e-06
+2026-09-01 15:49:15,896 DIFFER.train INFO: Epoch[18] Iteration[550/596] Loss: 10.522, Acc: 0.113, Base Lr: 1.88e-06
+2026-09-01 15:49:26,187 DIFFER.train INFO: Clothes changing setting
+2026-09-01 15:49:26,676 DIFFER.train INFO: processing batch 0/59
+2026-09-01 15:50:18,373 DIFFER.train INFO: CMC curve, Rank-1  :50.0%
+2026-09-01 15:50:18,374 DIFFER.train INFO: CMC curve, Rank-5  :64.5%
+2026-09-01 15:50:18,374 DIFFER.train INFO: CMC curve, Rank-10 :68.6%
+2026-09-01 15:50:18,374 DIFFER.train INFO: mAP-:26.7%
+2026-09-01 15:50:18,374 DIFFER.train INFO: Validation Results - Epoch: 18
+2026-09-01 15:50:18,390 DIFFER.train INFO: Standard setting
+2026-09-01 15:50:18,896 DIFFER.train INFO: processing batch 0/59
+2026-09-01 15:51:10,197 DIFFER.train INFO: CMC curve, Rank-1  :81.9%
+2026-09-01 15:51:10,197 DIFFER.train INFO: CMC curve, Rank-5  :88.4%
+2026-09-01 15:51:10,197 DIFFER.train INFO: CMC curve, Rank-10 :90.5%
+2026-09-01 15:51:10,197 DIFFER.train INFO: mAP-:49.4%
+2026-09-01 15:51:10,209 DIFFER.train INFO: ==> Best Rank-1 50.0%, achieved at epoch 18
+2026-09-01 15:51:22,613 DIFFER.train INFO: Epoch[19] Iteration[50/596] Loss: 10.516, Acc: 0.105, Base Lr: 1.94e-06
+2026-09-01 15:51:33,711 DIFFER.train INFO: Epoch[19] Iteration[100/596] Loss: 10.467, Acc: 0.100, Base Lr: 1.94e-06
+2026-09-01 15:51:44,790 DIFFER.train INFO: Epoch[19] Iteration[150/596] Loss: 10.495, Acc: 0.122, Base Lr: 1.94e-06
+2026-09-01 15:51:55,855 DIFFER.train INFO: Epoch[19] Iteration[200/596] Loss: 10.489, Acc: 0.115, Base Lr: 1.94e-06
+2026-09-01 15:52:06,984 DIFFER.train INFO: Epoch[19] Iteration[250/596] Loss: 10.481, Acc: 0.114, Base Lr: 1.94e-06
+2026-09-01 15:52:18,276 DIFFER.train INFO: Epoch[19] Iteration[300/596] Loss: 10.499, Acc: 0.112, Base Lr: 1.94e-06
+2026-09-01 15:52:29,337 DIFFER.train INFO: Epoch[19] Iteration[350/596] Loss: 10.502, Acc: 0.112, Base Lr: 1.94e-06
+2026-09-01 15:52:40,562 DIFFER.train INFO: Epoch[19] Iteration[400/596] Loss: 10.502, Acc: 0.111, Base Lr: 1.94e-06
+2026-09-01 15:52:51,636 DIFFER.train INFO: Epoch[19] Iteration[450/596] Loss: 10.498, Acc: 0.113, Base Lr: 1.94e-06
+2026-09-01 15:53:02,630 DIFFER.train INFO: Epoch[19] Iteration[500/596] Loss: 10.498, Acc: 0.111, Base Lr: 1.94e-06
+2026-09-01 15:53:13,691 DIFFER.train INFO: Epoch[19] Iteration[550/596] Loss: 10.490, Acc: 0.114, Base Lr: 1.94e-06
+2026-09-01 15:53:23,863 DIFFER.train INFO: Clothes changing setting
+2026-09-01 15:53:24,337 DIFFER.train INFO: processing batch 0/59
+2026-09-01 15:54:16,094 DIFFER.train INFO: CMC curve, Rank-1  :50.3%
+2026-09-01 15:54:16,095 DIFFER.train INFO: CMC curve, Rank-5  :62.2%
+2026-09-01 15:54:16,095 DIFFER.train INFO: CMC curve, Rank-10 :69.9%
+2026-09-01 15:54:16,095 DIFFER.train INFO: mAP-:27.1%
+2026-09-01 15:54:16,095 DIFFER.train INFO: Validation Results - Epoch: 19
+2026-09-01 15:54:16,109 DIFFER.train INFO: Standard setting
+2026-09-01 15:54:16,589 DIFFER.train INFO: processing batch 0/59
+2026-09-01 15:55:08,665 DIFFER.train INFO: CMC curve, Rank-1  :82.4%
+2026-09-01 15:55:08,665 DIFFER.train INFO: CMC curve, Rank-5  :87.4%
+2026-09-01 15:55:08,665 DIFFER.train INFO: CMC curve, Rank-10 :89.5%
+2026-09-01 15:55:08,665 DIFFER.train INFO: mAP-:49.6%
+2026-09-01 15:55:08,678 DIFFER.train INFO: ==> Best Rank-1 50.3%, achieved at epoch 19
+2026-09-01 15:55:20,596 DIFFER.train INFO: Epoch[20] Iteration[50/596] Loss: 10.471, Acc: 0.105, Base Lr: 1.55e-06
+2026-09-01 15:55:31,860 DIFFER.train INFO: Epoch[20] Iteration[100/596] Loss: 10.445, Acc: 0.100, Base Lr: 1.55e-06
+2026-09-01 15:55:43,205 DIFFER.train INFO: Epoch[20] Iteration[150/596] Loss: 10.451, Acc: 0.122, Base Lr: 1.55e-06
+2026-09-01 15:55:54,686 DIFFER.train INFO: Epoch[20] Iteration[200/596] Loss: 10.465, Acc: 0.115, Base Lr: 1.55e-06
+2026-09-01 15:56:06,064 DIFFER.train INFO: Epoch[20] Iteration[250/596] Loss: 10.449, Acc: 0.114, Base Lr: 1.55e-06
+2026-09-01 15:56:17,267 DIFFER.train INFO: Epoch[20] Iteration[300/596] Loss: 10.455, Acc: 0.112, Base Lr: 1.55e-06
+2026-09-01 15:56:28,481 DIFFER.train INFO: Epoch[20] Iteration[350/596] Loss: 10.448, Acc: 0.112, Base Lr: 1.55e-06
+2026-09-01 15:56:39,761 DIFFER.train INFO: Epoch[20] Iteration[400/596] Loss: 10.446, Acc: 0.112, Base Lr: 1.55e-06
+2026-09-01 15:56:51,010 DIFFER.train INFO: Epoch[20] Iteration[450/596] Loss: 10.444, Acc: 0.113, Base Lr: 1.55e-06
+2026-09-01 15:57:02,271 DIFFER.train INFO: Epoch[20] Iteration[500/596] Loss: 10.448, Acc: 0.111, Base Lr: 1.55e-06
+2026-09-01 15:57:13,521 DIFFER.train INFO: Epoch[20] Iteration[550/596] Loss: 10.441, Acc: 0.114, Base Lr: 1.55e-06
+2026-09-01 15:57:23,860 DIFFER.train INFO: Clothes changing setting
+2026-09-01 15:57:24,329 DIFFER.train INFO: processing batch 0/59
+2026-09-01 15:58:16,059 DIFFER.train INFO: CMC curve, Rank-1  :48.5%
+2026-09-01 15:58:16,060 DIFFER.train INFO: CMC curve, Rank-5  :64.0%
+2026-09-01 15:58:16,060 DIFFER.train INFO: CMC curve, Rank-10 :69.6%
+2026-09-01 15:58:16,060 DIFFER.train INFO: mAP-:27.3%
+2026-09-01 15:58:16,060 DIFFER.train INFO: Validation Results - Epoch: 20
+2026-09-01 15:58:16,074 DIFFER.train INFO: Standard setting
+2026-09-01 15:58:16,559 DIFFER.train INFO: processing batch 0/59
+2026-09-01 15:59:08,551 DIFFER.train INFO: CMC curve, Rank-1  :81.9%
+2026-09-01 15:59:08,551 DIFFER.train INFO: CMC curve, Rank-5  :87.6%
+2026-09-01 15:59:08,551 DIFFER.train INFO: CMC curve, Rank-10 :90.3%
+2026-09-01 15:59:08,551 DIFFER.train INFO: mAP-:49.9%
+2026-09-01 15:59:19,973 DIFFER.train INFO: Epoch[21] Iteration[50/596] Loss: 10.426, Acc: 0.105, Base Lr: 1.51e-06
+2026-09-01 15:59:31,227 DIFFER.train INFO: Epoch[21] Iteration[100/596] Loss: 10.401, Acc: 0.100, Base Lr: 1.51e-06
+2026-09-01 15:59:42,498 DIFFER.train INFO: Epoch[21] Iteration[150/596] Loss: 10.404, Acc: 0.123, Base Lr: 1.51e-06
+2026-09-01 15:59:53,477 DIFFER.train INFO: Epoch[21] Iteration[200/596] Loss: 10.409, Acc: 0.116, Base Lr: 1.51e-06
+2026-09-01 16:00:04,453 DIFFER.train INFO: Epoch[21] Iteration[250/596] Loss: 10.391, Acc: 0.115, Base Lr: 1.51e-06
+2026-09-01 16:00:15,454 DIFFER.train INFO: Epoch[21] Iteration[300/596] Loss: 10.399, Acc: 0.113, Base Lr: 1.51e-06
+2026-09-01 16:00:26,680 DIFFER.train INFO: Epoch[21] Iteration[350/596] Loss: 10.399, Acc: 0.113, Base Lr: 1.51e-06
+2026-09-01 16:00:37,827 DIFFER.train INFO: Epoch[21] Iteration[400/596] Loss: 10.401, Acc: 0.112, Base Lr: 1.51e-06
+2026-09-01 16:00:48,933 DIFFER.train INFO: Epoch[21] Iteration[450/596] Loss: 10.399, Acc: 0.113, Base Lr: 1.51e-06
+2026-09-01 16:01:00,094 DIFFER.train INFO: Epoch[21] Iteration[500/596] Loss: 10.403, Acc: 0.111, Base Lr: 1.51e-06
+2026-09-01 16:01:11,203 DIFFER.train INFO: Epoch[21] Iteration[550/596] Loss: 10.396, Acc: 0.114, Base Lr: 1.51e-06
+2026-09-01 16:01:21,496 DIFFER.train INFO: Clothes changing setting
+2026-09-01 16:01:21,975 DIFFER.train INFO: processing batch 0/59
+2026-09-01 16:02:14,099 DIFFER.train INFO: CMC curve, Rank-1  :49.2%
+2026-09-01 16:02:14,100 DIFFER.train INFO: CMC curve, Rank-5  :63.8%
+2026-09-01 16:02:14,100 DIFFER.train INFO: CMC curve, Rank-10 :69.6%
+2026-09-01 16:02:14,100 DIFFER.train INFO: mAP-:27.3%
+2026-09-01 16:02:14,100 DIFFER.train INFO: Validation Results - Epoch: 21
+2026-09-01 16:02:14,115 DIFFER.train INFO: Standard setting
+2026-09-01 16:02:14,590 DIFFER.train INFO: processing batch 0/59
+2026-09-01 16:03:05,849 DIFFER.train INFO: CMC curve, Rank-1  :82.2%
+2026-09-01 16:03:05,849 DIFFER.train INFO: CMC curve, Rank-5  :87.8%
+2026-09-01 16:03:05,849 DIFFER.train INFO: CMC curve, Rank-10 :90.1%
+2026-09-01 16:03:05,849 DIFFER.train INFO: mAP-:50.1%
+2026-09-01 16:03:17,108 DIFFER.train INFO: Epoch[22] Iteration[50/596] Loss: 10.406, Acc: 0.105, Base Lr: 1.47e-06
+2026-09-01 16:03:28,124 DIFFER.train INFO: Epoch[22] Iteration[100/596] Loss: 10.378, Acc: 0.100, Base Lr: 1.47e-06
+2026-09-01 16:03:39,118 DIFFER.train INFO: Epoch[22] Iteration[150/596] Loss: 10.344, Acc: 0.123, Base Lr: 1.47e-06
+2026-09-01 16:03:50,129 DIFFER.train INFO: Epoch[22] Iteration[200/596] Loss: 10.358, Acc: 0.116, Base Lr: 1.47e-06
+2026-09-01 16:04:01,283 DIFFER.train INFO: Epoch[22] Iteration[250/596] Loss: 10.337, Acc: 0.115, Base Lr: 1.47e-06
+2026-09-01 16:04:12,406 DIFFER.train INFO: Epoch[22] Iteration[300/596] Loss: 10.349, Acc: 0.113, Base Lr: 1.47e-06
+2026-09-01 16:04:23,525 DIFFER.train INFO: Epoch[22] Iteration[350/596] Loss: 10.344, Acc: 0.113, Base Lr: 1.47e-06
+2026-09-01 16:04:34,643 DIFFER.train INFO: Epoch[22] Iteration[400/596] Loss: 10.352, Acc: 0.111, Base Lr: 1.47e-06
+2026-09-01 16:04:45,695 DIFFER.train INFO: Epoch[22] Iteration[450/596] Loss: 10.351, Acc: 0.113, Base Lr: 1.47e-06
+2026-09-01 16:04:56,687 DIFFER.train INFO: Epoch[22] Iteration[500/596] Loss: 10.356, Acc: 0.110, Base Lr: 1.47e-06
+2026-09-01 16:05:07,933 DIFFER.train INFO: Epoch[22] Iteration[550/596] Loss: 10.355, Acc: 0.114, Base Lr: 1.47e-06
+2026-09-01 16:05:18,268 DIFFER.train INFO: Clothes changing setting
+2026-09-01 16:05:18,779 DIFFER.train INFO: processing batch 0/59
+2026-09-01 16:06:10,811 DIFFER.train INFO: CMC curve, Rank-1  :49.7%
+2026-09-01 16:06:10,811 DIFFER.train INFO: CMC curve, Rank-5  :63.5%
+2026-09-01 16:06:10,811 DIFFER.train INFO: CMC curve, Rank-10 :70.2%
+2026-09-01 16:06:10,811 DIFFER.train INFO: mAP-:27.7%
+2026-09-01 16:06:10,811 DIFFER.train INFO: Validation Results - Epoch: 22
+2026-09-01 16:06:10,829 DIFFER.train INFO: Standard setting
+2026-09-01 16:06:11,304 DIFFER.train INFO: processing batch 0/59
+2026-09-01 16:07:02,554 DIFFER.train INFO: CMC curve, Rank-1  :83.0%
+2026-09-01 16:07:02,555 DIFFER.train INFO: CMC curve, Rank-5  :88.6%
+2026-09-01 16:07:02,555 DIFFER.train INFO: CMC curve, Rank-10 :90.5%
+2026-09-01 16:07:02,555 DIFFER.train INFO: mAP-:50.6%
+2026-09-01 16:07:14,065 DIFFER.train INFO: Epoch[23] Iteration[50/596] Loss: 10.388, Acc: 0.105, Base Lr: 1.42e-06
+2026-09-01 16:07:25,188 DIFFER.train INFO: Epoch[23] Iteration[100/596] Loss: 10.347, Acc: 0.100, Base Lr: 1.42e-06
+2026-09-01 16:07:36,170 DIFFER.train INFO: Epoch[23] Iteration[150/596] Loss: 10.332, Acc: 0.123, Base Lr: 1.42e-06
+2026-09-01 16:07:47,268 DIFFER.train INFO: Epoch[23] Iteration[200/596] Loss: 10.347, Acc: 0.116, Base Lr: 1.42e-06
+2026-09-01 16:07:58,322 DIFFER.train INFO: Epoch[23] Iteration[250/596] Loss: 10.330, Acc: 0.115, Base Lr: 1.42e-06
+2026-09-01 16:08:09,409 DIFFER.train INFO: Epoch[23] Iteration[300/596] Loss: 10.346, Acc: 0.113, Base Lr: 1.42e-06
+2026-09-01 16:08:20,436 DIFFER.train INFO: Epoch[23] Iteration[350/596] Loss: 10.339, Acc: 0.113, Base Lr: 1.42e-06
+2026-09-01 16:08:31,542 DIFFER.train INFO: Epoch[23] Iteration[400/596] Loss: 10.341, Acc: 0.112, Base Lr: 1.42e-06
+2026-09-01 16:08:42,562 DIFFER.train INFO: Epoch[23] Iteration[450/596] Loss: 10.337, Acc: 0.113, Base Lr: 1.42e-06
+2026-09-01 16:08:53,599 DIFFER.train INFO: Epoch[23] Iteration[500/596] Loss: 10.338, Acc: 0.111, Base Lr: 1.42e-06
+2026-09-01 16:09:04,612 DIFFER.train INFO: Epoch[23] Iteration[550/596] Loss: 10.324, Acc: 0.115, Base Lr: 1.42e-06
+2026-09-01 16:09:14,889 DIFFER.train INFO: Clothes changing setting
+2026-09-01 16:09:15,383 DIFFER.train INFO: processing batch 0/59
+2026-09-01 16:10:07,327 DIFFER.train INFO: CMC curve, Rank-1  :49.5%
+2026-09-01 16:10:07,327 DIFFER.train INFO: CMC curve, Rank-5  :63.3%
+2026-09-01 16:10:07,327 DIFFER.train INFO: CMC curve, Rank-10 :68.4%
+2026-09-01 16:10:07,327 DIFFER.train INFO: mAP-:27.7%
+2026-09-01 16:10:07,328 DIFFER.train INFO: Validation Results - Epoch: 23
+2026-09-01 16:10:07,343 DIFFER.train INFO: Standard setting
+2026-09-01 16:10:07,823 DIFFER.train INFO: processing batch 0/59
+2026-09-01 16:10:59,064 DIFFER.train INFO: CMC curve, Rank-1  :81.9%
+2026-09-01 16:10:59,064 DIFFER.train INFO: CMC curve, Rank-5  :89.0%
+2026-09-01 16:10:59,064 DIFFER.train INFO: CMC curve, Rank-10 :90.9%
+2026-09-01 16:10:59,064 DIFFER.train INFO: mAP-:50.5%
+2026-09-01 16:11:10,398 DIFFER.train INFO: Epoch[24] Iteration[50/596] Loss: 10.338, Acc: 0.110, Base Lr: 1.38e-06
+2026-09-01 16:11:21,318 DIFFER.train INFO: Epoch[24] Iteration[100/596] Loss: 10.305, Acc: 0.104, Base Lr: 1.38e-06
+2026-09-01 16:11:32,315 DIFFER.train INFO: Epoch[24] Iteration[150/596] Loss: 10.293, Acc: 0.127, Base Lr: 1.38e-06
+2026-09-01 16:11:43,264 DIFFER.train INFO: Epoch[24] Iteration[200/596] Loss: 10.298, Acc: 0.119, Base Lr: 1.38e-06
+2026-09-01 16:11:54,283 DIFFER.train INFO: Epoch[24] Iteration[250/596] Loss: 10.284, Acc: 0.118, Base Lr: 1.38e-06
+2026-09-01 16:12:05,424 DIFFER.train INFO: Epoch[24] Iteration[300/596] Loss: 10.312, Acc: 0.116, Base Lr: 1.38e-06
+2026-09-01 16:12:16,429 DIFFER.train INFO: Epoch[24] Iteration[350/596] Loss: 10.311, Acc: 0.116, Base Lr: 1.38e-06
+2026-09-01 16:12:27,523 DIFFER.train INFO: Epoch[24] Iteration[400/596] Loss: 10.308, Acc: 0.115, Base Lr: 1.38e-06
+2026-09-01 16:12:38,510 DIFFER.train INFO: Epoch[24] Iteration[450/596] Loss: 10.298, Acc: 0.117, Base Lr: 1.38e-06
+2026-09-01 16:12:49,544 DIFFER.train INFO: Epoch[24] Iteration[500/596] Loss: 10.307, Acc: 0.115, Base Lr: 1.38e-06
+2026-09-01 16:13:00,768 DIFFER.train INFO: Epoch[24] Iteration[550/596] Loss: 10.294, Acc: 0.119, Base Lr: 1.38e-06
+2026-09-01 16:13:11,067 DIFFER.train INFO: Clothes changing setting
+2026-09-01 16:13:11,555 DIFFER.train INFO: processing batch 0/59
+2026-09-01 16:14:03,646 DIFFER.train INFO: CMC curve, Rank-1  :49.7%
+2026-09-01 16:14:03,646 DIFFER.train INFO: CMC curve, Rank-5  :64.0%
+2026-09-01 16:14:03,646 DIFFER.train INFO: CMC curve, Rank-10 :68.4%
+2026-09-01 16:14:03,646 DIFFER.train INFO: mAP-:27.8%
+2026-09-01 16:14:03,647 DIFFER.train INFO: Validation Results - Epoch: 24
+2026-09-01 16:14:03,660 DIFFER.train INFO: Standard setting
+2026-09-01 16:14:04,182 DIFFER.train INFO: processing batch 0/59
+2026-09-01 16:14:55,988 DIFFER.train INFO: CMC curve, Rank-1  :82.8%
+2026-09-01 16:14:55,988 DIFFER.train INFO: CMC curve, Rank-5  :88.4%
+2026-09-01 16:14:55,988 DIFFER.train INFO: CMC curve, Rank-10 :89.5%
+2026-09-01 16:14:55,988 DIFFER.train INFO: mAP-:50.5%
+2026-09-01 16:15:07,329 DIFFER.train INFO: Epoch[25] Iteration[50/596] Loss: 10.311, Acc: 0.115, Base Lr: 1.33e-06
+2026-09-01 16:15:18,381 DIFFER.train INFO: Epoch[25] Iteration[100/596] Loss: 10.237, Acc: 0.109, Base Lr: 1.33e-06
+2026-09-01 16:15:29,351 DIFFER.train INFO: Epoch[25] Iteration[150/596] Loss: 10.242, Acc: 0.130, Base Lr: 1.33e-06
+2026-09-01 16:15:40,476 DIFFER.train INFO: Epoch[25] Iteration[200/596] Loss: 10.249, Acc: 0.124, Base Lr: 1.33e-06
+2026-09-01 16:15:51,670 DIFFER.train INFO: Epoch[25] Iteration[250/596] Loss: 10.228, Acc: 0.122, Base Lr: 1.33e-06
+2026-09-01 16:16:02,761 DIFFER.train INFO: Epoch[25] Iteration[300/596] Loss: 10.236, Acc: 0.120, Base Lr: 1.33e-06
+2026-09-01 16:16:13,846 DIFFER.train INFO: Epoch[25] Iteration[350/596] Loss: 10.238, Acc: 0.121, Base Lr: 1.33e-06
+2026-09-01 16:16:24,969 DIFFER.train INFO: Epoch[25] Iteration[400/596] Loss: 10.237, Acc: 0.121, Base Lr: 1.33e-06
+2026-09-01 16:16:36,084 DIFFER.train INFO: Epoch[25] Iteration[450/596] Loss: 10.236, Acc: 0.123, Base Lr: 1.33e-06
+2026-09-01 16:16:47,314 DIFFER.train INFO: Epoch[25] Iteration[500/596] Loss: 10.242, Acc: 0.122, Base Lr: 1.33e-06
+2026-09-01 16:16:58,586 DIFFER.train INFO: Epoch[25] Iteration[550/596] Loss: 10.229, Acc: 0.127, Base Lr: 1.33e-06
+2026-09-01 16:17:08,819 DIFFER.train INFO: Clothes changing setting
+2026-09-01 16:17:09,324 DIFFER.train INFO: processing batch 0/59
+2026-09-01 16:18:01,206 DIFFER.train INFO: CMC curve, Rank-1  :51.0%
+2026-09-01 16:18:01,206 DIFFER.train INFO: CMC curve, Rank-5  :63.3%
+2026-09-01 16:18:01,206 DIFFER.train INFO: CMC curve, Rank-10 :68.9%
+2026-09-01 16:18:01,206 DIFFER.train INFO: mAP-:27.9%
+2026-09-01 16:18:01,207 DIFFER.train INFO: Validation Results - Epoch: 25
+2026-09-01 16:18:01,220 DIFFER.train INFO: Standard setting
+2026-09-01 16:18:01,707 DIFFER.train INFO: processing batch 0/59
+2026-09-01 16:18:52,981 DIFFER.train INFO: CMC curve, Rank-1  :81.7%
+2026-09-01 16:18:52,981 DIFFER.train INFO: CMC curve, Rank-5  :88.2%
+2026-09-01 16:18:52,981 DIFFER.train INFO: CMC curve, Rank-10 :90.3%
+2026-09-01 16:18:52,981 DIFFER.train INFO: mAP-:50.9%
+2026-09-01 16:18:52,997 DIFFER.train INFO: ==> Best Rank-1 51.0%, achieved at epoch 25
+2026-09-01 16:19:05,300 DIFFER.train INFO: Epoch[26] Iteration[50/596] Loss: 10.202, Acc: 0.130, Base Lr: 1.29e-06
+2026-09-01 16:19:16,361 DIFFER.train INFO: Epoch[26] Iteration[100/596] Loss: 10.168, Acc: 0.121, Base Lr: 1.29e-06
+2026-09-01 16:19:27,376 DIFFER.train INFO: Epoch[26] Iteration[150/596] Loss: 10.188, Acc: 0.142, Base Lr: 1.29e-06
+2026-09-01 16:19:38,395 DIFFER.train INFO: Epoch[26] Iteration[200/596] Loss: 10.196, Acc: 0.132, Base Lr: 1.29e-06
+2026-09-01 16:19:49,397 DIFFER.train INFO: Epoch[26] Iteration[250/596] Loss: 10.182, Acc: 0.130, Base Lr: 1.29e-06
+2026-09-01 16:20:00,326 DIFFER.train INFO: Epoch[26] Iteration[300/596] Loss: 10.181, Acc: 0.128, Base Lr: 1.29e-06
+2026-09-01 16:20:11,387 DIFFER.train INFO: Epoch[26] Iteration[350/596] Loss: 10.176, Acc: 0.128, Base Lr: 1.29e-06
+2026-09-01 16:20:22,487 DIFFER.train INFO: Epoch[26] Iteration[400/596] Loss: 10.186, Acc: 0.127, Base Lr: 1.29e-06
+2026-09-01 16:20:33,663 DIFFER.train INFO: Epoch[26] Iteration[450/596] Loss: 10.183, Acc: 0.131, Base Lr: 1.29e-06
+2026-09-01 16:20:44,766 DIFFER.train INFO: Epoch[26] Iteration[500/596] Loss: 10.188, Acc: 0.129, Base Lr: 1.29e-06
+2026-09-01 16:20:55,868 DIFFER.train INFO: Epoch[26] Iteration[550/596] Loss: 10.177, Acc: 0.134, Base Lr: 1.29e-06
+2026-09-01 16:21:06,055 DIFFER.train INFO: Clothes changing setting
+2026-09-01 16:21:06,532 DIFFER.train INFO: processing batch 0/59
+2026-09-01 16:21:57,789 DIFFER.train INFO: CMC curve, Rank-1  :52.3%
+2026-09-01 16:21:57,790 DIFFER.train INFO: CMC curve, Rank-5  :64.3%
+2026-09-01 16:21:57,790 DIFFER.train INFO: CMC curve, Rank-10 :69.1%
+2026-09-01 16:21:57,790 DIFFER.train INFO: mAP-:28.0%
+2026-09-01 16:21:57,790 DIFFER.train INFO: Validation Results - Epoch: 26
+2026-09-01 16:21:57,805 DIFFER.train INFO: Standard setting
+2026-09-01 16:21:58,413 DIFFER.train INFO: processing batch 0/59
+2026-09-01 16:22:49,701 DIFFER.train INFO: CMC curve, Rank-1  :82.6%
+2026-09-01 16:22:49,701 DIFFER.train INFO: CMC curve, Rank-5  :88.6%
+2026-09-01 16:22:49,701 DIFFER.train INFO: CMC curve, Rank-10 :90.5%
+2026-09-01 16:22:49,701 DIFFER.train INFO: mAP-:50.9%
+2026-09-01 16:22:49,712 DIFFER.train INFO: ==> Best Rank-1 52.3%, achieved at epoch 26
+2026-09-01 16:23:04,506 DIFFER.train INFO: Epoch[27] Iteration[50/596] Loss: 10.248, Acc: 0.132, Base Lr: 1.24e-06
+2026-09-01 16:23:15,714 DIFFER.train INFO: Epoch[27] Iteration[100/596] Loss: 10.161, Acc: 0.124, Base Lr: 1.24e-06
+2026-09-01 16:23:26,857 DIFFER.train INFO: Epoch[27] Iteration[150/596] Loss: 10.131, Acc: 0.146, Base Lr: 1.24e-06
+2026-09-01 16:23:38,073 DIFFER.train INFO: Epoch[27] Iteration[200/596] Loss: 10.129, Acc: 0.137, Base Lr: 1.24e-06
+2026-09-01 16:23:49,295 DIFFER.train INFO: Epoch[27] Iteration[250/596] Loss: 10.116, Acc: 0.134, Base Lr: 1.24e-06
+2026-09-01 16:24:00,430 DIFFER.train INFO: Epoch[27] Iteration[300/596] Loss: 10.133, Acc: 0.133, Base Lr: 1.24e-06
+2026-09-01 16:24:11,599 DIFFER.train INFO: Epoch[27] Iteration[350/596] Loss: 10.141, Acc: 0.131, Base Lr: 1.24e-06
+2026-09-01 16:24:22,626 DIFFER.train INFO: Epoch[27] Iteration[400/596] Loss: 10.136, Acc: 0.131, Base Lr: 1.24e-06
+2026-09-01 16:24:33,793 DIFFER.train INFO: Epoch[27] Iteration[450/596] Loss: 10.131, Acc: 0.133, Base Lr: 1.24e-06
+2026-09-01 16:24:45,005 DIFFER.train INFO: Epoch[27] Iteration[500/596] Loss: 10.135, Acc: 0.132, Base Lr: 1.24e-06
+2026-09-01 16:24:56,245 DIFFER.train INFO: Epoch[27] Iteration[550/596] Loss: 10.122, Acc: 0.138, Base Lr: 1.24e-06
+2026-09-01 16:25:06,495 DIFFER.train INFO: Clothes changing setting
+2026-09-01 16:25:06,998 DIFFER.train INFO: processing batch 0/59
+2026-09-01 16:25:58,275 DIFFER.train INFO: CMC curve, Rank-1  :52.6%
+2026-09-01 16:25:58,275 DIFFER.train INFO: CMC curve, Rank-5  :65.1%
+2026-09-01 16:25:58,275 DIFFER.train INFO: CMC curve, Rank-10 :70.4%
+2026-09-01 16:25:58,275 DIFFER.train INFO: mAP-:28.2%
+2026-09-01 16:25:58,275 DIFFER.train INFO: Validation Results - Epoch: 27
+2026-09-01 16:25:58,288 DIFFER.train INFO: Standard setting
+2026-09-01 16:25:58,818 DIFFER.train INFO: processing batch 0/59
+2026-09-01 16:26:50,223 DIFFER.train INFO: CMC curve, Rank-1  :81.5%
+2026-09-01 16:26:50,223 DIFFER.train INFO: CMC curve, Rank-5  :88.8%
+2026-09-01 16:26:50,223 DIFFER.train INFO: CMC curve, Rank-10 :90.5%
+2026-09-01 16:26:50,223 DIFFER.train INFO: mAP-:50.6%
+2026-09-01 16:26:50,234 DIFFER.train INFO: ==> Best Rank-1 52.6%, achieved at epoch 27
+2026-09-01 16:27:04,231 DIFFER.train INFO: Epoch[28] Iteration[50/596] Loss: 10.069, Acc: 0.140, Base Lr: 1.19e-06
+2026-09-01 16:27:15,692 DIFFER.train INFO: Epoch[28] Iteration[100/596] Loss: 10.066, Acc: 0.132, Base Lr: 1.19e-06
+2026-09-01 16:27:27,117 DIFFER.train INFO: Epoch[28] Iteration[150/596] Loss: 10.063, Acc: 0.157, Base Lr: 1.19e-06
+2026-09-01 16:27:38,717 DIFFER.train INFO: Epoch[28] Iteration[200/596] Loss: 10.080, Acc: 0.149, Base Lr: 1.19e-06
+2026-09-01 16:27:50,257 DIFFER.train INFO: Epoch[28] Iteration[250/596] Loss: 10.064, Acc: 0.147, Base Lr: 1.19e-06
+2026-09-01 16:28:01,764 DIFFER.train INFO: Epoch[28] Iteration[300/596] Loss: 10.097, Acc: 0.145, Base Lr: 1.19e-06
+2026-09-01 16:28:13,151 DIFFER.train INFO: Epoch[28] Iteration[350/596] Loss: 10.097, Acc: 0.143, Base Lr: 1.19e-06
+2026-09-01 16:28:24,533 DIFFER.train INFO: Epoch[28] Iteration[400/596] Loss: 10.094, Acc: 0.142, Base Lr: 1.19e-06
+2026-09-01 16:28:36,299 DIFFER.train INFO: Epoch[28] Iteration[450/596] Loss: 10.088, Acc: 0.146, Base Lr: 1.19e-06
+2026-09-01 16:28:47,983 DIFFER.train INFO: Epoch[28] Iteration[500/596] Loss: 10.086, Acc: 0.145, Base Lr: 1.19e-06
+2026-09-01 16:28:59,826 DIFFER.train INFO: Epoch[28] Iteration[550/596] Loss: 10.072, Acc: 0.151, Base Lr: 1.19e-06
+2026-09-01 16:29:10,480 DIFFER.train INFO: Clothes changing setting
+2026-09-01 16:29:10,974 DIFFER.train INFO: processing batch 0/59
+2026-09-01 16:30:03,160 DIFFER.train INFO: CMC curve, Rank-1  :53.1%
+2026-09-01 16:30:03,161 DIFFER.train INFO: CMC curve, Rank-5  :64.8%
+2026-09-01 16:30:03,161 DIFFER.train INFO: CMC curve, Rank-10 :69.9%
+2026-09-01 16:30:03,161 DIFFER.train INFO: mAP-:28.6%
+2026-09-01 16:30:03,161 DIFFER.train INFO: Validation Results - Epoch: 28
+2026-09-01 16:30:03,180 DIFFER.train INFO: Standard setting
+2026-09-01 16:30:03,667 DIFFER.train INFO: processing batch 0/59
+2026-09-01 16:30:55,014 DIFFER.train INFO: CMC curve, Rank-1  :82.8%
+2026-09-01 16:30:55,014 DIFFER.train INFO: CMC curve, Rank-5  :89.5%
+2026-09-01 16:30:55,014 DIFFER.train INFO: CMC curve, Rank-10 :91.1%
+2026-09-01 16:30:55,014 DIFFER.train INFO: mAP-:51.1%
+2026-09-01 16:30:55,026 DIFFER.train INFO: ==> Best Rank-1 53.1%, achieved at epoch 28
+2026-09-01 16:31:06,997 DIFFER.train INFO: Epoch[29] Iteration[50/596] Loss: 10.079, Acc: 0.145, Base Lr: 1.15e-06
+2026-09-01 16:31:18,091 DIFFER.train INFO: Epoch[29] Iteration[100/596] Loss: 10.056, Acc: 0.144, Base Lr: 1.15e-06
+2026-09-01 16:31:29,101 DIFFER.train INFO: Epoch[29] Iteration[150/596] Loss: 10.050, Acc: 0.168, Base Lr: 1.15e-06
+2026-09-01 16:31:40,106 DIFFER.train INFO: Epoch[29] Iteration[200/596] Loss: 10.044, Acc: 0.162, Base Lr: 1.15e-06
+2026-09-01 16:31:51,127 DIFFER.train INFO: Epoch[29] Iteration[250/596] Loss: 10.014, Acc: 0.160, Base Lr: 1.15e-06
+2026-09-01 16:32:02,336 DIFFER.train INFO: Epoch[29] Iteration[300/596] Loss: 10.024, Acc: 0.157, Base Lr: 1.15e-06
+2026-09-01 16:32:13,734 DIFFER.train INFO: Epoch[29] Iteration[350/596] Loss: 10.029, Acc: 0.155, Base Lr: 1.15e-06
+2026-09-01 16:32:25,045 DIFFER.train INFO: Epoch[29] Iteration[400/596] Loss: 10.027, Acc: 0.153, Base Lr: 1.15e-06
+2026-09-01 16:32:36,296 DIFFER.train INFO: Epoch[29] Iteration[450/596] Loss: 10.022, Acc: 0.157, Base Lr: 1.15e-06
+2026-09-01 16:32:47,642 DIFFER.train INFO: Epoch[29] Iteration[500/596] Loss: 10.032, Acc: 0.155, Base Lr: 1.15e-06
+2026-09-01 16:32:58,946 DIFFER.train INFO: Epoch[29] Iteration[550/596] Loss: 10.019, Acc: 0.162, Base Lr: 1.15e-06
+2026-09-01 16:33:09,280 DIFFER.train INFO: Clothes changing setting
+2026-09-01 16:33:09,766 DIFFER.train INFO: processing batch 0/59
+2026-09-01 16:34:01,082 DIFFER.train INFO: CMC curve, Rank-1  :52.8%
+2026-09-01 16:34:01,083 DIFFER.train INFO: CMC curve, Rank-5  :64.8%
+2026-09-01 16:34:01,083 DIFFER.train INFO: CMC curve, Rank-10 :69.1%
+2026-09-01 16:34:01,083 DIFFER.train INFO: mAP-:28.5%
+2026-09-01 16:34:01,083 DIFFER.train INFO: Validation Results - Epoch: 29
+2026-09-01 16:34:01,096 DIFFER.train INFO: Standard setting
+2026-09-01 16:34:01,595 DIFFER.train INFO: processing batch 0/59
+2026-09-01 16:34:53,510 DIFFER.train INFO: CMC curve, Rank-1  :82.6%
+2026-09-01 16:34:53,510 DIFFER.train INFO: CMC curve, Rank-5  :89.2%
+2026-09-01 16:34:53,510 DIFFER.train INFO: CMC curve, Rank-10 :90.9%
+2026-09-01 16:34:53,511 DIFFER.train INFO: mAP-:50.6%
+2026-09-01 16:35:04,975 DIFFER.train INFO: Epoch[30] Iteration[50/596] Loss: 10.063, Acc: 0.165, Base Lr: 1.10e-06
+2026-09-01 16:35:16,259 DIFFER.train INFO: Epoch[30] Iteration[100/596] Loss: 10.004, Acc: 0.161, Base Lr: 1.10e-06
+2026-09-01 16:35:27,533 DIFFER.train INFO: Epoch[30] Iteration[150/596] Loss: 10.003, Acc: 0.181, Base Lr: 1.10e-06
+2026-09-01 16:35:38,863 DIFFER.train INFO: Epoch[30] Iteration[200/596] Loss: 10.006, Acc: 0.171, Base Lr: 1.10e-06
+2026-09-01 16:35:50,131 DIFFER.train INFO: Epoch[30] Iteration[250/596] Loss: 9.977, Acc: 0.170, Base Lr: 1.10e-06
+2026-09-01 16:36:01,078 DIFFER.train INFO: Epoch[30] Iteration[300/596] Loss: 9.984, Acc: 0.169, Base Lr: 1.10e-06
+2026-09-01 16:36:12,306 DIFFER.train INFO: Epoch[30] Iteration[350/596] Loss: 9.995, Acc: 0.166, Base Lr: 1.10e-06
+2026-09-01 16:36:23,399 DIFFER.train INFO: Epoch[30] Iteration[400/596] Loss: 9.991, Acc: 0.167, Base Lr: 1.10e-06
+2026-09-01 16:36:34,526 DIFFER.train INFO: Epoch[30] Iteration[450/596] Loss: 9.986, Acc: 0.172, Base Lr: 1.10e-06
+2026-09-01 16:36:45,658 DIFFER.train INFO: Epoch[30] Iteration[500/596] Loss: 9.999, Acc: 0.171, Base Lr: 1.10e-06
+2026-09-01 16:36:56,704 DIFFER.train INFO: Epoch[30] Iteration[550/596] Loss: 9.987, Acc: 0.177, Base Lr: 1.10e-06
+2026-09-01 16:37:06,853 DIFFER.train INFO: Clothes changing setting
+2026-09-01 16:37:07,322 DIFFER.train INFO: processing batch 0/59
+2026-09-01 16:37:58,591 DIFFER.train INFO: CMC curve, Rank-1  :52.0%
+2026-09-01 16:37:58,592 DIFFER.train INFO: CMC curve, Rank-5  :63.3%
+2026-09-01 16:37:58,592 DIFFER.train INFO: CMC curve, Rank-10 :69.1%
+2026-09-01 16:37:58,592 DIFFER.train INFO: mAP-:28.0%
+2026-09-01 16:37:58,592 DIFFER.train INFO: Validation Results - Epoch: 30
+2026-09-01 16:37:58,605 DIFFER.train INFO: Standard setting
+2026-09-01 16:37:59,090 DIFFER.train INFO: processing batch 0/59
+2026-09-01 16:38:50,437 DIFFER.train INFO: CMC curve, Rank-1  :82.8%
+2026-09-01 16:38:50,437 DIFFER.train INFO: CMC curve, Rank-5  :89.0%
+2026-09-01 16:38:50,437 DIFFER.train INFO: CMC curve, Rank-10 :90.7%
+2026-09-01 16:38:50,438 DIFFER.train INFO: mAP-:51.0%
+2026-09-01 16:39:01,761 DIFFER.train INFO: Epoch[31] Iteration[50/596] Loss: 9.979, Acc: 0.192, Base Lr: 1.05e-06
+2026-09-01 16:39:12,948 DIFFER.train INFO: Epoch[31] Iteration[100/596] Loss: 9.962, Acc: 0.194, Base Lr: 1.05e-06
+2026-09-01 16:39:24,095 DIFFER.train INFO: Epoch[31] Iteration[150/596] Loss: 9.925, Acc: 0.208, Base Lr: 1.05e-06
+2026-09-01 16:39:35,275 DIFFER.train INFO: Epoch[31] Iteration[200/596] Loss: 9.926, Acc: 0.195, Base Lr: 1.05e-06
+2026-09-01 16:39:46,241 DIFFER.train INFO: Epoch[31] Iteration[250/596] Loss: 9.903, Acc: 0.195, Base Lr: 1.05e-06
+2026-09-01 16:39:57,343 DIFFER.train INFO: Epoch[31] Iteration[300/596] Loss: 9.926, Acc: 0.191, Base Lr: 1.05e-06
+2026-09-01 16:40:08,571 DIFFER.train INFO: Epoch[31] Iteration[350/596] Loss: 9.929, Acc: 0.190, Base Lr: 1.05e-06
+2026-09-01 16:40:19,653 DIFFER.train INFO: Epoch[31] Iteration[400/596] Loss: 9.929, Acc: 0.189, Base Lr: 1.05e-06
+2026-09-01 16:40:30,919 DIFFER.train INFO: Epoch[31] Iteration[450/596] Loss: 9.923, Acc: 0.192, Base Lr: 1.05e-06
+2026-09-01 16:40:42,136 DIFFER.train INFO: Epoch[31] Iteration[500/596] Loss: 9.924, Acc: 0.191, Base Lr: 1.05e-06
+2026-09-01 16:40:53,385 DIFFER.train INFO: Epoch[31] Iteration[550/596] Loss: 9.913, Acc: 0.198, Base Lr: 1.05e-06
+2026-09-01 16:41:03,768 DIFFER.train INFO: Clothes changing setting
+2026-09-01 16:41:04,247 DIFFER.train INFO: processing batch 0/59
+2026-09-01 16:41:56,247 DIFFER.train INFO: CMC curve, Rank-1  :51.3%
+2026-09-01 16:41:56,247 DIFFER.train INFO: CMC curve, Rank-5  :64.0%
+2026-09-01 16:41:56,247 DIFFER.train INFO: CMC curve, Rank-10 :70.4%
+2026-09-01 16:41:56,247 DIFFER.train INFO: mAP-:27.9%
+2026-09-01 16:41:56,247 DIFFER.train INFO: Validation Results - Epoch: 31
+2026-09-01 16:41:56,264 DIFFER.train INFO: Standard setting
+2026-09-01 16:41:56,778 DIFFER.train INFO: processing batch 0/59
+2026-09-01 16:42:48,979 DIFFER.train INFO: CMC curve, Rank-1  :82.8%
+2026-09-01 16:42:48,979 DIFFER.train INFO: CMC curve, Rank-5  :88.8%
+2026-09-01 16:42:48,979 DIFFER.train INFO: CMC curve, Rank-10 :91.1%
+2026-09-01 16:42:48,979 DIFFER.train INFO: mAP-:50.8%
+2026-09-01 16:43:00,907 DIFFER.train INFO: Epoch[32] Iteration[50/596] Loss: 9.907, Acc: 0.190, Base Lr: 1.01e-06
+2026-09-01 16:43:12,625 DIFFER.train INFO: Epoch[32] Iteration[100/596] Loss: 9.866, Acc: 0.195, Base Lr: 1.01e-06
+2026-09-01 16:43:23,833 DIFFER.train INFO: Epoch[32] Iteration[150/596] Loss: 9.866, Acc: 0.215, Base Lr: 1.01e-06
+2026-09-01 16:43:35,049 DIFFER.train INFO: Epoch[32] Iteration[200/596] Loss: 9.859, Acc: 0.205, Base Lr: 1.01e-06
+2026-09-01 16:43:46,231 DIFFER.train INFO: Epoch[32] Iteration[250/596] Loss: 9.834, Acc: 0.206, Base Lr: 1.01e-06
+2026-09-01 16:43:57,206 DIFFER.train INFO: Epoch[32] Iteration[300/596] Loss: 9.845, Acc: 0.207, Base Lr: 1.01e-06
+2026-09-01 16:44:08,201 DIFFER.train INFO: Epoch[32] Iteration[350/596] Loss: 9.859, Acc: 0.206, Base Lr: 1.01e-06
+2026-09-01 16:44:19,345 DIFFER.train INFO: Epoch[32] Iteration[400/596] Loss: 9.859, Acc: 0.206, Base Lr: 1.01e-06
+2026-09-01 16:44:30,587 DIFFER.train INFO: Epoch[32] Iteration[450/596] Loss: 9.858, Acc: 0.210, Base Lr: 1.01e-06
+2026-09-01 16:44:41,569 DIFFER.train INFO: Epoch[32] Iteration[500/596] Loss: 9.864, Acc: 0.210, Base Lr: 1.01e-06
+2026-09-01 16:44:52,535 DIFFER.train INFO: Epoch[32] Iteration[550/596] Loss: 9.850, Acc: 0.216, Base Lr: 1.01e-06
+2026-09-01 16:45:02,786 DIFFER.train INFO: Clothes changing setting
+2026-09-01 16:45:03,273 DIFFER.train INFO: processing batch 0/59
+2026-09-01 16:45:55,422 DIFFER.train INFO: CMC curve, Rank-1  :52.0%
+2026-09-01 16:45:55,422 DIFFER.train INFO: CMC curve, Rank-5  :65.3%
+2026-09-01 16:45:55,422 DIFFER.train INFO: CMC curve, Rank-10 :70.2%
+2026-09-01 16:45:55,422 DIFFER.train INFO: mAP-:28.5%
+2026-09-01 16:45:55,422 DIFFER.train INFO: Validation Results - Epoch: 32
+2026-09-01 16:45:55,438 DIFFER.train INFO: Standard setting
+2026-09-01 16:45:55,921 DIFFER.train INFO: processing batch 0/59
+2026-09-01 16:46:47,288 DIFFER.train INFO: CMC curve, Rank-1  :83.2%
+2026-09-01 16:46:47,288 DIFFER.train INFO: CMC curve, Rank-5  :89.0%
+2026-09-01 16:46:47,288 DIFFER.train INFO: CMC curve, Rank-10 :91.1%
+2026-09-01 16:46:47,288 DIFFER.train INFO: mAP-:51.2%
+2026-09-01 16:46:58,729 DIFFER.train INFO: Epoch[33] Iteration[50/596] Loss: 9.832, Acc: 0.205, Base Lr: 9.59e-07
+2026-09-01 16:47:09,737 DIFFER.train INFO: Epoch[33] Iteration[100/596] Loss: 9.844, Acc: 0.210, Base Lr: 9.59e-07
+2026-09-01 16:47:20,874 DIFFER.train INFO: Epoch[33] Iteration[150/596] Loss: 9.850, Acc: 0.230, Base Lr: 9.59e-07
+2026-09-01 16:47:32,102 DIFFER.train INFO: Epoch[33] Iteration[200/596] Loss: 9.876, Acc: 0.222, Base Lr: 9.59e-07
+2026-09-01 16:47:43,281 DIFFER.train INFO: Epoch[33] Iteration[250/596] Loss: 9.854, Acc: 0.224, Base Lr: 9.59e-07
+2026-09-01 16:47:54,510 DIFFER.train INFO: Epoch[33] Iteration[300/596] Loss: 9.860, Acc: 0.223, Base Lr: 9.59e-07
+2026-09-01 16:48:05,713 DIFFER.train INFO: Epoch[33] Iteration[350/596] Loss: 9.849, Acc: 0.222, Base Lr: 9.59e-07
+2026-09-01 16:48:17,045 DIFFER.train INFO: Epoch[33] Iteration[400/596] Loss: 9.853, Acc: 0.223, Base Lr: 9.59e-07
+2026-09-01 16:48:28,234 DIFFER.train INFO: Epoch[33] Iteration[450/596] Loss: 9.845, Acc: 0.224, Base Lr: 9.59e-07
+2026-09-01 16:48:39,565 DIFFER.train INFO: Epoch[33] Iteration[500/596] Loss: 9.852, Acc: 0.225, Base Lr: 9.59e-07
+2026-09-01 16:48:50,867 DIFFER.train INFO: Epoch[33] Iteration[550/596] Loss: 9.838, Acc: 0.232, Base Lr: 9.59e-07
+2026-09-01 16:49:01,320 DIFFER.train INFO: Clothes changing setting
+2026-09-01 16:49:01,841 DIFFER.train INFO: processing batch 0/59
+2026-09-01 16:49:53,157 DIFFER.train INFO: CMC curve, Rank-1  :52.6%
+2026-09-01 16:49:53,157 DIFFER.train INFO: CMC curve, Rank-5  :65.1%
+2026-09-01 16:49:53,157 DIFFER.train INFO: CMC curve, Rank-10 :69.6%
+2026-09-01 16:49:53,157 DIFFER.train INFO: mAP-:28.4%
+2026-09-01 16:49:53,158 DIFFER.train INFO: Validation Results - Epoch: 33
+2026-09-01 16:49:53,171 DIFFER.train INFO: Standard setting
+2026-09-01 16:49:53,669 DIFFER.train INFO: processing batch 0/59
+2026-09-01 16:50:45,076 DIFFER.train INFO: CMC curve, Rank-1  :82.8%
+2026-09-01 16:50:45,077 DIFFER.train INFO: CMC curve, Rank-5  :89.0%
+2026-09-01 16:50:45,077 DIFFER.train INFO: CMC curve, Rank-10 :90.5%
+2026-09-01 16:50:45,077 DIFFER.train INFO: mAP-:51.1%
+2026-09-01 16:50:56,327 DIFFER.train INFO: Epoch[34] Iteration[50/596] Loss: 9.847, Acc: 0.220, Base Lr: 9.13e-07
+2026-09-01 16:51:07,364 DIFFER.train INFO: Epoch[34] Iteration[100/596] Loss: 9.810, Acc: 0.234, Base Lr: 9.13e-07
+2026-09-01 16:51:18,550 DIFFER.train INFO: Epoch[34] Iteration[150/596] Loss: 9.770, Acc: 0.252, Base Lr: 9.13e-07
+2026-09-01 16:51:29,769 DIFFER.train INFO: Epoch[34] Iteration[200/596] Loss: 9.767, Acc: 0.246, Base Lr: 9.13e-07
+2026-09-01 16:51:40,812 DIFFER.train INFO: Epoch[34] Iteration[250/596] Loss: 9.772, Acc: 0.242, Base Lr: 9.13e-07
+2026-09-01 16:51:52,028 DIFFER.train INFO: Epoch[34] Iteration[300/596] Loss: 9.784, Acc: 0.241, Base Lr: 9.13e-07
+2026-09-01 16:52:03,475 DIFFER.train INFO: Epoch[34] Iteration[350/596] Loss: 9.780, Acc: 0.239, Base Lr: 9.13e-07
+2026-09-01 16:52:15,220 DIFFER.train INFO: Epoch[34] Iteration[400/596] Loss: 9.788, Acc: 0.238, Base Lr: 9.13e-07
+2026-09-01 16:52:26,471 DIFFER.train INFO: Epoch[34] Iteration[450/596] Loss: 9.780, Acc: 0.238, Base Lr: 9.13e-07
+2026-09-01 16:52:37,588 DIFFER.train INFO: Epoch[34] Iteration[500/596] Loss: 9.786, Acc: 0.238, Base Lr: 9.13e-07
+2026-09-01 16:52:48,914 DIFFER.train INFO: Epoch[34] Iteration[550/596] Loss: 9.770, Acc: 0.245, Base Lr: 9.13e-07
+2026-09-01 16:52:59,183 DIFFER.train INFO: Clothes changing setting
+2026-09-01 16:52:59,705 DIFFER.train INFO: processing batch 0/59
+2026-09-01 16:53:51,562 DIFFER.train INFO: CMC curve, Rank-1  :51.8%
+2026-09-01 16:53:51,563 DIFFER.train INFO: CMC curve, Rank-5  :66.6%
+2026-09-01 16:53:51,563 DIFFER.train INFO: CMC curve, Rank-10 :70.7%
+2026-09-01 16:53:51,563 DIFFER.train INFO: mAP-:28.3%
+2026-09-01 16:53:51,563 DIFFER.train INFO: Validation Results - Epoch: 34
+2026-09-01 16:53:51,579 DIFFER.train INFO: Standard setting
+2026-09-01 16:53:52,093 DIFFER.train INFO: processing batch 0/59
+2026-09-01 16:54:44,406 DIFFER.train INFO: CMC curve, Rank-1  :82.6%
+2026-09-01 16:54:44,406 DIFFER.train INFO: CMC curve, Rank-5  :89.0%
+2026-09-01 16:54:44,406 DIFFER.train INFO: CMC curve, Rank-10 :91.7%
+2026-09-01 16:54:44,406 DIFFER.train INFO: mAP-:51.1%
+2026-09-01 16:54:56,139 DIFFER.train INFO: Epoch[35] Iteration[50/596] Loss: 9.802, Acc: 0.245, Base Lr: 8.67e-07
+2026-09-01 16:55:07,556 DIFFER.train INFO: Epoch[35] Iteration[100/596] Loss: 9.766, Acc: 0.259, Base Lr: 8.67e-07
+2026-09-01 16:55:18,684 DIFFER.train INFO: Epoch[35] Iteration[150/596] Loss: 9.747, Acc: 0.270, Base Lr: 8.67e-07
+2026-09-01 16:55:29,819 DIFFER.train INFO: Epoch[35] Iteration[200/596] Loss: 9.766, Acc: 0.262, Base Lr: 8.67e-07
+2026-09-01 16:55:41,021 DIFFER.train INFO: Epoch[35] Iteration[250/596] Loss: 9.756, Acc: 0.261, Base Lr: 8.67e-07
+2026-09-01 16:55:52,523 DIFFER.train INFO: Epoch[35] Iteration[300/596] Loss: 9.761, Acc: 0.257, Base Lr: 8.67e-07
+2026-09-01 16:56:03,470 DIFFER.train INFO: Epoch[35] Iteration[350/596] Loss: 9.762, Acc: 0.256, Base Lr: 8.67e-07
+2026-09-01 16:56:14,356 DIFFER.train INFO: Epoch[35] Iteration[400/596] Loss: 9.762, Acc: 0.256, Base Lr: 8.67e-07
+2026-09-01 16:56:25,476 DIFFER.train INFO: Epoch[35] Iteration[450/596] Loss: 9.757, Acc: 0.256, Base Lr: 8.67e-07
+2026-09-01 16:56:36,450 DIFFER.train INFO: Epoch[35] Iteration[500/596] Loss: 9.757, Acc: 0.255, Base Lr: 8.67e-07
+2026-09-01 16:56:47,765 DIFFER.train INFO: Epoch[35] Iteration[550/596] Loss: 9.746, Acc: 0.263, Base Lr: 8.67e-07
+2026-09-01 16:56:57,937 DIFFER.train INFO: Clothes changing setting
+2026-09-01 16:56:58,457 DIFFER.train INFO: processing batch 0/59
+2026-09-01 16:57:49,972 DIFFER.train INFO: CMC curve, Rank-1  :51.3%
+2026-09-01 16:57:49,972 DIFFER.train INFO: CMC curve, Rank-5  :65.6%
+2026-09-01 16:57:49,972 DIFFER.train INFO: CMC curve, Rank-10 :69.4%
+2026-09-01 16:57:49,972 DIFFER.train INFO: mAP-:28.3%
+2026-09-01 16:57:49,972 DIFFER.train INFO: Validation Results - Epoch: 35
+2026-09-01 16:57:49,987 DIFFER.train INFO: Standard setting
+2026-09-01 16:57:50,456 DIFFER.train INFO: processing batch 0/59
+2026-09-01 16:58:41,804 DIFFER.train INFO: CMC curve, Rank-1  :82.6%
+2026-09-01 16:58:41,805 DIFFER.train INFO: CMC curve, Rank-5  :89.2%
+2026-09-01 16:58:41,805 DIFFER.train INFO: CMC curve, Rank-10 :90.9%
+2026-09-01 16:58:41,805 DIFFER.train INFO: mAP-:51.3%
+2026-09-01 16:58:53,409 DIFFER.train INFO: Epoch[36] Iteration[50/596] Loss: 9.677, Acc: 0.257, Base Lr: 8.22e-07
+2026-09-01 16:59:04,790 DIFFER.train INFO: Epoch[36] Iteration[100/596] Loss: 9.665, Acc: 0.278, Base Lr: 8.22e-07
+2026-09-01 16:59:16,145 DIFFER.train INFO: Epoch[36] Iteration[150/596] Loss: 9.647, Acc: 0.288, Base Lr: 8.22e-07
+2026-09-01 16:59:27,444 DIFFER.train INFO: Epoch[36] Iteration[200/596] Loss: 9.668, Acc: 0.279, Base Lr: 8.22e-07
+2026-09-01 16:59:38,627 DIFFER.train INFO: Epoch[36] Iteration[250/596] Loss: 9.652, Acc: 0.279, Base Lr: 8.22e-07
+2026-09-01 16:59:49,710 DIFFER.train INFO: Epoch[36] Iteration[300/596] Loss: 9.673, Acc: 0.273, Base Lr: 8.22e-07
+2026-09-01 17:00:00,928 DIFFER.train INFO: Epoch[36] Iteration[350/596] Loss: 9.673, Acc: 0.270, Base Lr: 8.22e-07
+2026-09-01 17:00:12,669 DIFFER.train INFO: Epoch[36] Iteration[400/596] Loss: 9.691, Acc: 0.272, Base Lr: 8.22e-07
+2026-09-01 17:00:24,125 DIFFER.train INFO: Epoch[36] Iteration[450/596] Loss: 9.692, Acc: 0.271, Base Lr: 8.22e-07
+2026-09-01 17:00:35,343 DIFFER.train INFO: Epoch[36] Iteration[500/596] Loss: 9.709, Acc: 0.271, Base Lr: 8.22e-07
+2026-09-01 17:00:46,439 DIFFER.train INFO: Epoch[36] Iteration[550/596] Loss: 9.692, Acc: 0.277, Base Lr: 8.22e-07
+2026-09-01 17:00:56,652 DIFFER.train INFO: Clothes changing setting
+2026-09-01 17:00:57,140 DIFFER.train INFO: processing batch 0/59
+2026-09-01 17:01:48,872 DIFFER.train INFO: CMC curve, Rank-1  :51.8%
+2026-09-01 17:01:48,872 DIFFER.train INFO: CMC curve, Rank-5  :65.3%
+2026-09-01 17:01:48,872 DIFFER.train INFO: CMC curve, Rank-10 :69.9%
+2026-09-01 17:01:48,872 DIFFER.train INFO: mAP-:28.3%
+2026-09-01 17:01:48,873 DIFFER.train INFO: Validation Results - Epoch: 36
+2026-09-01 17:01:48,889 DIFFER.train INFO: Standard setting
+2026-09-01 17:01:49,361 DIFFER.train INFO: processing batch 0/59
+2026-09-01 17:02:40,752 DIFFER.train INFO: CMC curve, Rank-1  :82.6%
+2026-09-01 17:02:40,752 DIFFER.train INFO: CMC curve, Rank-5  :88.8%
+2026-09-01 17:02:40,752 DIFFER.train INFO: CMC curve, Rank-10 :91.3%
+2026-09-01 17:02:40,752 DIFFER.train INFO: mAP-:50.9%
+2026-09-01 17:02:52,212 DIFFER.train INFO: Epoch[37] Iteration[50/596] Loss: 9.712, Acc: 0.280, Base Lr: 7.77e-07
+2026-09-01 17:03:03,431 DIFFER.train INFO: Epoch[37] Iteration[100/596] Loss: 9.650, Acc: 0.284, Base Lr: 7.77e-07
+2026-09-01 17:03:14,807 DIFFER.train INFO: Epoch[37] Iteration[150/596] Loss: 9.642, Acc: 0.297, Base Lr: 7.77e-07
+2026-09-01 17:03:26,026 DIFFER.train INFO: Epoch[37] Iteration[200/596] Loss: 9.651, Acc: 0.286, Base Lr: 7.77e-07
+2026-09-01 17:03:37,394 DIFFER.train INFO: Epoch[37] Iteration[250/596] Loss: 9.642, Acc: 0.289, Base Lr: 7.77e-07
+2026-09-01 17:03:48,718 DIFFER.train INFO: Epoch[37] Iteration[300/596] Loss: 9.658, Acc: 0.282, Base Lr: 7.77e-07
+2026-09-01 17:04:00,007 DIFFER.train INFO: Epoch[37] Iteration[350/596] Loss: 9.663, Acc: 0.280, Base Lr: 7.77e-07
+2026-09-01 17:04:11,138 DIFFER.train INFO: Epoch[37] Iteration[400/596] Loss: 9.661, Acc: 0.282, Base Lr: 7.77e-07
+2026-09-01 17:04:22,393 DIFFER.train INFO: Epoch[37] Iteration[450/596] Loss: 9.658, Acc: 0.283, Base Lr: 7.77e-07
+2026-09-01 17:04:33,734 DIFFER.train INFO: Epoch[37] Iteration[500/596] Loss: 9.665, Acc: 0.283, Base Lr: 7.77e-07
+2026-09-01 17:04:44,990 DIFFER.train INFO: Epoch[37] Iteration[550/596] Loss: 9.654, Acc: 0.290, Base Lr: 7.77e-07
+2026-09-01 17:04:55,348 DIFFER.train INFO: Clothes changing setting
+2026-09-01 17:04:55,834 DIFFER.train INFO: processing batch 0/59
+2026-09-01 17:05:47,414 DIFFER.train INFO: CMC curve, Rank-1  :52.3%
+2026-09-01 17:05:47,414 DIFFER.train INFO: CMC curve, Rank-5  :64.8%
+2026-09-01 17:05:47,414 DIFFER.train INFO: CMC curve, Rank-10 :70.4%
+2026-09-01 17:05:47,414 DIFFER.train INFO: mAP-:28.3%
+2026-09-01 17:05:47,414 DIFFER.train INFO: Validation Results - Epoch: 37
+2026-09-01 17:05:47,430 DIFFER.train INFO: Standard setting
+2026-09-01 17:05:47,921 DIFFER.train INFO: processing batch 0/59
+2026-09-01 17:06:39,325 DIFFER.train INFO: CMC curve, Rank-1  :83.4%
+2026-09-01 17:06:39,325 DIFFER.train INFO: CMC curve, Rank-5  :89.0%
+2026-09-01 17:06:39,325 DIFFER.train INFO: CMC curve, Rank-10 :91.1%
+2026-09-01 17:06:39,325 DIFFER.train INFO: mAP-:51.1%
+2026-09-01 17:06:50,684 DIFFER.train INFO: Epoch[38] Iteration[50/596] Loss: 9.737, Acc: 0.273, Base Lr: 7.34e-07
+2026-09-01 17:07:02,072 DIFFER.train INFO: Epoch[38] Iteration[100/596] Loss: 9.703, Acc: 0.290, Base Lr: 7.34e-07
+2026-09-01 17:07:13,122 DIFFER.train INFO: Epoch[38] Iteration[150/596] Loss: 9.680, Acc: 0.306, Base Lr: 7.34e-07
+2026-09-01 17:07:24,433 DIFFER.train INFO: Epoch[38] Iteration[200/596] Loss: 9.680, Acc: 0.299, Base Lr: 7.34e-07
+2026-09-01 17:07:35,658 DIFFER.train INFO: Epoch[38] Iteration[250/596] Loss: 9.666, Acc: 0.299, Base Lr: 7.34e-07
+2026-09-01 17:07:46,905 DIFFER.train INFO: Epoch[38] Iteration[300/596] Loss: 9.669, Acc: 0.294, Base Lr: 7.34e-07
+2026-09-01 17:07:58,314 DIFFER.train INFO: Epoch[38] Iteration[350/596] Loss: 9.669, Acc: 0.294, Base Lr: 7.34e-07
+2026-09-01 17:08:09,625 DIFFER.train INFO: Epoch[38] Iteration[400/596] Loss: 9.658, Acc: 0.298, Base Lr: 7.34e-07
+2026-09-01 17:08:20,892 DIFFER.train INFO: Epoch[38] Iteration[450/596] Loss: 9.652, Acc: 0.298, Base Lr: 7.34e-07
+2026-09-01 17:08:32,130 DIFFER.train INFO: Epoch[38] Iteration[500/596] Loss: 9.655, Acc: 0.297, Base Lr: 7.34e-07
+2026-09-01 17:08:43,576 DIFFER.train INFO: Epoch[38] Iteration[550/596] Loss: 9.642, Acc: 0.304, Base Lr: 7.34e-07
+2026-09-01 17:08:53,968 DIFFER.train INFO: Clothes changing setting
+2026-09-01 17:08:54,463 DIFFER.train INFO: processing batch 0/59
+2026-09-01 17:09:46,001 DIFFER.train INFO: CMC curve, Rank-1  :51.3%
+2026-09-01 17:09:46,001 DIFFER.train INFO: CMC curve, Rank-5  :65.8%
+2026-09-01 17:09:46,002 DIFFER.train INFO: CMC curve, Rank-10 :70.2%
+2026-09-01 17:09:46,002 DIFFER.train INFO: mAP-:28.6%
+2026-09-01 17:09:46,002 DIFFER.train INFO: Validation Results - Epoch: 38
+2026-09-01 17:09:46,020 DIFFER.train INFO: Standard setting
+2026-09-01 17:09:46,498 DIFFER.train INFO: processing batch 0/59
+2026-09-01 17:10:38,002 DIFFER.train INFO: CMC curve, Rank-1  :82.2%
+2026-09-01 17:10:38,003 DIFFER.train INFO: CMC curve, Rank-5  :89.0%
+2026-09-01 17:10:38,003 DIFFER.train INFO: CMC curve, Rank-10 :91.5%
+2026-09-01 17:10:38,003 DIFFER.train INFO: mAP-:51.2%
+2026-09-01 17:10:50,256 DIFFER.train INFO: Epoch[39] Iteration[50/596] Loss: 9.604, Acc: 0.295, Base Lr: 6.91e-07
+2026-09-01 17:11:02,027 DIFFER.train INFO: Epoch[39] Iteration[100/596] Loss: 9.619, Acc: 0.304, Base Lr: 6.91e-07
+2026-09-01 17:11:13,403 DIFFER.train INFO: Epoch[39] Iteration[150/596] Loss: 9.587, Acc: 0.320, Base Lr: 6.91e-07
+2026-09-01 17:11:24,653 DIFFER.train INFO: Epoch[39] Iteration[200/596] Loss: 9.599, Acc: 0.315, Base Lr: 6.91e-07
+2026-09-01 17:11:35,964 DIFFER.train INFO: Epoch[39] Iteration[250/596] Loss: 9.589, Acc: 0.318, Base Lr: 6.91e-07
+2026-09-01 17:11:47,164 DIFFER.train INFO: Epoch[39] Iteration[300/596] Loss: 9.595, Acc: 0.310, Base Lr: 6.91e-07
+2026-09-01 17:11:58,502 DIFFER.train INFO: Epoch[39] Iteration[350/596] Loss: 9.595, Acc: 0.308, Base Lr: 6.91e-07
+2026-09-01 17:12:09,929 DIFFER.train INFO: Epoch[39] Iteration[400/596] Loss: 9.604, Acc: 0.311, Base Lr: 6.91e-07
+2026-09-01 17:12:21,353 DIFFER.train INFO: Epoch[39] Iteration[450/596] Loss: 9.604, Acc: 0.309, Base Lr: 6.91e-07
+2026-09-01 17:12:32,779 DIFFER.train INFO: Epoch[39] Iteration[500/596] Loss: 9.614, Acc: 0.308, Base Lr: 6.91e-07
+2026-09-01 17:12:44,233 DIFFER.train INFO: Epoch[39] Iteration[550/596] Loss: 9.599, Acc: 0.313, Base Lr: 6.91e-07
+2026-09-01 17:12:54,544 DIFFER.train INFO: Clothes changing setting
+2026-09-01 17:12:55,018 DIFFER.train INFO: processing batch 0/59
+2026-09-01 17:13:46,443 DIFFER.train INFO: CMC curve, Rank-1  :50.8%
+2026-09-01 17:13:46,443 DIFFER.train INFO: CMC curve, Rank-5  :65.3%
+2026-09-01 17:13:46,443 DIFFER.train INFO: CMC curve, Rank-10 :69.9%
+2026-09-01 17:13:46,443 DIFFER.train INFO: mAP-:28.1%
+2026-09-01 17:13:46,444 DIFFER.train INFO: Validation Results - Epoch: 39
+2026-09-01 17:13:46,458 DIFFER.train INFO: Standard setting
+2026-09-01 17:13:46,942 DIFFER.train INFO: processing batch 0/59
+2026-09-01 17:14:38,356 DIFFER.train INFO: CMC curve, Rank-1  :82.2%
+2026-09-01 17:14:38,356 DIFFER.train INFO: CMC curve, Rank-5  :89.5%
+2026-09-01 17:14:38,356 DIFFER.train INFO: CMC curve, Rank-10 :91.5%
+2026-09-01 17:14:38,357 DIFFER.train INFO: mAP-:50.9%
+2026-09-01 17:14:49,850 DIFFER.train INFO: Epoch[40] Iteration[50/596] Loss: 9.603, Acc: 0.290, Base Lr: 6.50e-07
+2026-09-01 17:15:01,143 DIFFER.train INFO: Epoch[40] Iteration[100/596] Loss: 9.580, Acc: 0.306, Base Lr: 6.50e-07
+2026-09-01 17:15:12,677 DIFFER.train INFO: Epoch[40] Iteration[150/596] Loss: 9.615, Acc: 0.319, Base Lr: 6.50e-07
+2026-09-01 17:15:24,066 DIFFER.train INFO: Epoch[40] Iteration[200/596] Loss: 9.614, Acc: 0.314, Base Lr: 6.50e-07
+2026-09-01 17:15:35,240 DIFFER.train INFO: Epoch[40] Iteration[250/596] Loss: 9.591, Acc: 0.319, Base Lr: 6.50e-07
+2026-09-01 17:15:46,401 DIFFER.train INFO: Epoch[40] Iteration[300/596] Loss: 9.591, Acc: 0.313, Base Lr: 6.50e-07
+2026-09-01 17:15:57,547 DIFFER.train INFO: Epoch[40] Iteration[350/596] Loss: 9.589, Acc: 0.312, Base Lr: 6.50e-07
+2026-09-01 17:16:08,758 DIFFER.train INFO: Epoch[40] Iteration[400/596] Loss: 9.582, Acc: 0.317, Base Lr: 6.50e-07
+2026-09-01 17:16:20,057 DIFFER.train INFO: Epoch[40] Iteration[450/596] Loss: 9.578, Acc: 0.315, Base Lr: 6.50e-07
+2026-09-01 17:16:31,185 DIFFER.train INFO: Epoch[40] Iteration[500/596] Loss: 9.585, Acc: 0.315, Base Lr: 6.50e-07
+2026-09-01 17:16:42,273 DIFFER.train INFO: Epoch[40] Iteration[550/596] Loss: 9.570, Acc: 0.320, Base Lr: 6.50e-07
+2026-09-01 17:16:52,596 DIFFER.train INFO: Clothes changing setting
+2026-09-01 17:16:53,070 DIFFER.train INFO: processing batch 0/59
+2026-09-01 17:17:44,495 DIFFER.train INFO: CMC curve, Rank-1  :51.5%
+2026-09-01 17:17:44,495 DIFFER.train INFO: CMC curve, Rank-5  :65.3%
+2026-09-01 17:17:44,495 DIFFER.train INFO: CMC curve, Rank-10 :69.4%
+2026-09-01 17:17:44,495 DIFFER.train INFO: mAP-:28.1%
+2026-09-01 17:17:44,495 DIFFER.train INFO: Validation Results - Epoch: 40
+2026-09-01 17:17:44,511 DIFFER.train INFO: Standard setting
+2026-09-01 17:17:44,992 DIFFER.train INFO: processing batch 0/59
+2026-09-01 17:18:36,545 DIFFER.train INFO: CMC curve, Rank-1  :82.4%
+2026-09-01 17:18:36,546 DIFFER.train INFO: CMC curve, Rank-5  :89.2%
+2026-09-01 17:18:36,546 DIFFER.train INFO: CMC curve, Rank-10 :91.5%
+2026-09-01 17:18:36,546 DIFFER.train INFO: mAP-:50.5%
+2026-09-01 17:18:47,854 DIFFER.train INFO: Epoch[41] Iteration[50/596] Loss: 9.609, Acc: 0.308, Base Lr: 6.10e-07
+2026-09-01 17:18:59,031 DIFFER.train INFO: Epoch[41] Iteration[100/596] Loss: 9.576, Acc: 0.316, Base Lr: 6.10e-07
+2026-09-01 17:19:10,155 DIFFER.train INFO: Epoch[41] Iteration[150/596] Loss: 9.547, Acc: 0.328, Base Lr: 6.10e-07
+2026-09-01 17:19:21,417 DIFFER.train INFO: Epoch[41] Iteration[200/596] Loss: 9.558, Acc: 0.322, Base Lr: 6.10e-07
+2026-09-01 17:19:32,800 DIFFER.train INFO: Epoch[41] Iteration[250/596] Loss: 9.541, Acc: 0.328, Base Lr: 6.10e-07
+2026-09-01 17:19:44,010 DIFFER.train INFO: Epoch[41] Iteration[300/596] Loss: 9.559, Acc: 0.323, Base Lr: 6.10e-07
+2026-09-01 17:19:55,417 DIFFER.train INFO: Epoch[41] Iteration[350/596] Loss: 9.565, Acc: 0.322, Base Lr: 6.10e-07
+2026-09-01 17:20:06,779 DIFFER.train INFO: Epoch[41] Iteration[400/596] Loss: 9.559, Acc: 0.326, Base Lr: 6.10e-07
+2026-09-01 17:20:18,120 DIFFER.train INFO: Epoch[41] Iteration[450/596] Loss: 9.555, Acc: 0.325, Base Lr: 6.10e-07
+2026-09-01 17:20:29,305 DIFFER.train INFO: Epoch[41] Iteration[500/596] Loss: 9.556, Acc: 0.323, Base Lr: 6.10e-07
+2026-09-01 17:20:40,470 DIFFER.train INFO: Epoch[41] Iteration[550/596] Loss: 9.543, Acc: 0.329, Base Lr: 6.10e-07
+2026-09-01 17:20:50,829 DIFFER.train INFO: Clothes changing setting
+2026-09-01 17:20:51,298 DIFFER.train INFO: processing batch 0/59
+2026-09-01 17:21:43,007 DIFFER.train INFO: CMC curve, Rank-1  :50.8%
+2026-09-01 17:21:43,008 DIFFER.train INFO: CMC curve, Rank-5  :65.6%
+2026-09-01 17:21:43,008 DIFFER.train INFO: CMC curve, Rank-10 :69.9%
+2026-09-01 17:21:43,008 DIFFER.train INFO: mAP-:27.8%
+2026-09-01 17:21:43,008 DIFFER.train INFO: Validation Results - Epoch: 41
+2026-09-01 17:21:43,021 DIFFER.train INFO: Standard setting
+2026-09-01 17:21:43,569 DIFFER.train INFO: processing batch 0/59
+2026-09-01 17:22:34,978 DIFFER.train INFO: CMC curve, Rank-1  :83.0%
+2026-09-01 17:22:34,979 DIFFER.train INFO: CMC curve, Rank-5  :89.9%
+2026-09-01 17:22:34,979 DIFFER.train INFO: CMC curve, Rank-10 :91.5%
+2026-09-01 17:22:34,979 DIFFER.train INFO: mAP-:51.0%
+2026-09-01 17:22:46,456 DIFFER.train INFO: Epoch[42] Iteration[50/596] Loss: 9.525, Acc: 0.317, Base Lr: 5.71e-07
+2026-09-01 17:22:57,584 DIFFER.train INFO: Epoch[42] Iteration[100/596] Loss: 9.489, Acc: 0.326, Base Lr: 5.71e-07
+2026-09-01 17:23:08,628 DIFFER.train INFO: Epoch[42] Iteration[150/596] Loss: 9.474, Acc: 0.343, Base Lr: 5.71e-07
+2026-09-01 17:23:19,689 DIFFER.train INFO: Epoch[42] Iteration[200/596] Loss: 9.487, Acc: 0.340, Base Lr: 5.71e-07
+2026-09-01 17:23:30,751 DIFFER.train INFO: Epoch[42] Iteration[250/596] Loss: 9.478, Acc: 0.342, Base Lr: 5.71e-07
+2026-09-01 17:23:41,796 DIFFER.train INFO: Epoch[42] Iteration[300/596] Loss: 9.492, Acc: 0.335, Base Lr: 5.71e-07
+2026-09-01 17:23:52,904 DIFFER.train INFO: Epoch[42] Iteration[350/596] Loss: 9.514, Acc: 0.333, Base Lr: 5.71e-07
+2026-09-01 17:24:03,884 DIFFER.train INFO: Epoch[42] Iteration[400/596] Loss: 9.516, Acc: 0.337, Base Lr: 5.71e-07
+2026-09-01 17:24:14,844 DIFFER.train INFO: Epoch[42] Iteration[450/596] Loss: 9.516, Acc: 0.336, Base Lr: 5.71e-07
+2026-09-01 17:24:25,763 DIFFER.train INFO: Epoch[42] Iteration[500/596] Loss: 9.521, Acc: 0.336, Base Lr: 5.71e-07
+2026-09-01 17:24:36,752 DIFFER.train INFO: Epoch[42] Iteration[550/596] Loss: 9.507, Acc: 0.341, Base Lr: 5.71e-07
+2026-09-01 17:24:47,117 DIFFER.train INFO: Clothes changing setting
+2026-09-01 17:24:47,607 DIFFER.train INFO: processing batch 0/59
+2026-09-01 17:25:38,961 DIFFER.train INFO: CMC curve, Rank-1  :51.5%
+2026-09-01 17:25:38,962 DIFFER.train INFO: CMC curve, Rank-5  :65.3%
+2026-09-01 17:25:38,962 DIFFER.train INFO: CMC curve, Rank-10 :70.2%
+2026-09-01 17:25:38,962 DIFFER.train INFO: mAP-:28.2%
+2026-09-01 17:25:38,962 DIFFER.train INFO: Validation Results - Epoch: 42
+2026-09-01 17:25:38,977 DIFFER.train INFO: Standard setting
+2026-09-01 17:25:39,512 DIFFER.train INFO: processing batch 0/59
+2026-09-01 17:26:30,943 DIFFER.train INFO: CMC curve, Rank-1  :82.8%
+2026-09-01 17:26:30,944 DIFFER.train INFO: CMC curve, Rank-5  :90.3%
+2026-09-01 17:26:30,944 DIFFER.train INFO: CMC curve, Rank-10 :91.5%
+2026-09-01 17:26:30,944 DIFFER.train INFO: mAP-:51.1%
+2026-09-01 17:26:42,787 DIFFER.train INFO: Epoch[43] Iteration[50/596] Loss: 9.567, Acc: 0.332, Base Lr: 5.34e-07
+2026-09-01 17:26:53,929 DIFFER.train INFO: Epoch[43] Iteration[100/596] Loss: 9.525, Acc: 0.346, Base Lr: 5.34e-07
+2026-09-01 17:27:05,373 DIFFER.train INFO: Epoch[43] Iteration[150/596] Loss: 9.525, Acc: 0.353, Base Lr: 5.34e-07
+2026-09-01 17:27:17,058 DIFFER.train INFO: Epoch[43] Iteration[200/596] Loss: 9.514, Acc: 0.349, Base Lr: 5.34e-07
+2026-09-01 17:27:28,503 DIFFER.train INFO: Epoch[43] Iteration[250/596] Loss: 9.494, Acc: 0.351, Base Lr: 5.34e-07
+2026-09-01 17:27:39,723 DIFFER.train INFO: Epoch[43] Iteration[300/596] Loss: 9.506, Acc: 0.343, Base Lr: 5.34e-07
+2026-09-01 17:27:50,871 DIFFER.train INFO: Epoch[43] Iteration[350/596] Loss: 9.513, Acc: 0.341, Base Lr: 5.34e-07
+2026-09-01 17:28:01,940 DIFFER.train INFO: Epoch[43] Iteration[400/596] Loss: 9.500, Acc: 0.346, Base Lr: 5.34e-07
+2026-09-01 17:28:13,119 DIFFER.train INFO: Epoch[43] Iteration[450/596] Loss: 9.497, Acc: 0.345, Base Lr: 5.34e-07
+2026-09-01 17:28:24,273 DIFFER.train INFO: Epoch[43] Iteration[500/596] Loss: 9.507, Acc: 0.343, Base Lr: 5.34e-07
+2026-09-01 17:28:35,528 DIFFER.train INFO: Epoch[43] Iteration[550/596] Loss: 9.489, Acc: 0.348, Base Lr: 5.34e-07
+2026-09-01 17:28:45,831 DIFFER.train INFO: Clothes changing setting
+2026-09-01 17:28:46,330 DIFFER.train INFO: processing batch 0/59
+2026-09-01 17:29:37,822 DIFFER.train INFO: CMC curve, Rank-1  :52.3%
+2026-09-01 17:29:37,822 DIFFER.train INFO: CMC curve, Rank-5  :66.6%
+2026-09-01 17:29:37,823 DIFFER.train INFO: CMC curve, Rank-10 :70.9%
+2026-09-01 17:29:37,823 DIFFER.train INFO: mAP-:28.5%
+2026-09-01 17:29:37,823 DIFFER.train INFO: Validation Results - Epoch: 43
+2026-09-01 17:29:37,837 DIFFER.train INFO: Standard setting
+2026-09-01 17:29:38,322 DIFFER.train INFO: processing batch 0/59
+2026-09-01 17:30:29,625 DIFFER.train INFO: CMC curve, Rank-1  :82.4%
+2026-09-01 17:30:29,626 DIFFER.train INFO: CMC curve, Rank-5  :90.7%
+2026-09-01 17:30:29,626 DIFFER.train INFO: CMC curve, Rank-10 :91.5%
+2026-09-01 17:30:29,626 DIFFER.train INFO: mAP-:51.1%
+2026-09-01 17:30:41,107 DIFFER.train INFO: Epoch[44] Iteration[50/596] Loss: 9.452, Acc: 0.338, Base Lr: 4.98e-07
+2026-09-01 17:30:52,302 DIFFER.train INFO: Epoch[44] Iteration[100/596] Loss: 9.442, Acc: 0.354, Base Lr: 4.98e-07
+2026-09-01 17:31:03,527 DIFFER.train INFO: Epoch[44] Iteration[150/596] Loss: 9.452, Acc: 0.353, Base Lr: 4.98e-07
+2026-09-01 17:31:14,755 DIFFER.train INFO: Epoch[44] Iteration[200/596] Loss: 9.452, Acc: 0.353, Base Lr: 4.98e-07
+2026-09-01 17:31:25,878 DIFFER.train INFO: Epoch[44] Iteration[250/596] Loss: 9.437, Acc: 0.357, Base Lr: 4.98e-07
+2026-09-01 17:31:37,140 DIFFER.train INFO: Epoch[44] Iteration[300/596] Loss: 9.442, Acc: 0.350, Base Lr: 4.98e-07
+2026-09-01 17:31:48,274 DIFFER.train INFO: Epoch[44] Iteration[350/596] Loss: 9.445, Acc: 0.349, Base Lr: 4.98e-07
+2026-09-01 17:31:59,473 DIFFER.train INFO: Epoch[44] Iteration[400/596] Loss: 9.455, Acc: 0.352, Base Lr: 4.98e-07
+2026-09-01 17:32:10,647 DIFFER.train INFO: Epoch[44] Iteration[450/596] Loss: 9.451, Acc: 0.352, Base Lr: 4.98e-07
+2026-09-01 17:32:21,975 DIFFER.train INFO: Epoch[44] Iteration[500/596] Loss: 9.453, Acc: 0.351, Base Lr: 4.98e-07
+2026-09-01 17:32:33,182 DIFFER.train INFO: Epoch[44] Iteration[550/596] Loss: 9.439, Acc: 0.357, Base Lr: 4.98e-07
+2026-09-01 17:32:43,383 DIFFER.train INFO: Clothes changing setting
+2026-09-01 17:32:43,887 DIFFER.train INFO: processing batch 0/59
+2026-09-01 17:33:35,506 DIFFER.train INFO: CMC curve, Rank-1  :51.3%
+2026-09-01 17:33:35,507 DIFFER.train INFO: CMC curve, Rank-5  :66.3%
+2026-09-01 17:33:35,507 DIFFER.train INFO: CMC curve, Rank-10 :70.7%
+2026-09-01 17:33:35,507 DIFFER.train INFO: mAP-:28.3%
+2026-09-01 17:33:35,507 DIFFER.train INFO: Validation Results - Epoch: 44
+2026-09-01 17:33:35,521 DIFFER.train INFO: Standard setting
+2026-09-01 17:33:36,022 DIFFER.train INFO: processing batch 0/59
+2026-09-01 17:34:27,383 DIFFER.train INFO: CMC curve, Rank-1  :81.5%
+2026-09-01 17:34:27,383 DIFFER.train INFO: CMC curve, Rank-5  :89.9%
+2026-09-01 17:34:27,384 DIFFER.train INFO: CMC curve, Rank-10 :91.5%
+2026-09-01 17:34:27,384 DIFFER.train INFO: mAP-:50.8%
+2026-09-01 17:34:38,791 DIFFER.train INFO: Epoch[45] Iteration[50/596] Loss: 9.512, Acc: 0.340, Base Lr: 4.64e-07
+2026-09-01 17:34:50,027 DIFFER.train INFO: Epoch[45] Iteration[100/596] Loss: 9.462, Acc: 0.365, Base Lr: 4.64e-07
+2026-09-01 17:35:01,215 DIFFER.train INFO: Epoch[45] Iteration[150/596] Loss: 9.457, Acc: 0.368, Base Lr: 4.64e-07
+2026-09-01 17:35:12,335 DIFFER.train INFO: Epoch[45] Iteration[200/596] Loss: 9.462, Acc: 0.364, Base Lr: 4.64e-07
+2026-09-01 17:35:23,349 DIFFER.train INFO: Epoch[45] Iteration[250/596] Loss: 9.435, Acc: 0.372, Base Lr: 4.64e-07
+2026-09-01 17:35:34,465 DIFFER.train INFO: Epoch[45] Iteration[300/596] Loss: 9.443, Acc: 0.365, Base Lr: 4.64e-07
+2026-09-01 17:35:45,502 DIFFER.train INFO: Epoch[45] Iteration[350/596] Loss: 9.440, Acc: 0.362, Base Lr: 4.64e-07
+2026-09-01 17:35:56,487 DIFFER.train INFO: Epoch[45] Iteration[400/596] Loss: 9.435, Acc: 0.367, Base Lr: 4.64e-07
+2026-09-01 17:36:07,446 DIFFER.train INFO: Epoch[45] Iteration[450/596] Loss: 9.426, Acc: 0.364, Base Lr: 4.64e-07
+2026-09-01 17:36:18,607 DIFFER.train INFO: Epoch[45] Iteration[500/596] Loss: 9.428, Acc: 0.362, Base Lr: 4.64e-07
+2026-09-01 17:36:29,649 DIFFER.train INFO: Epoch[45] Iteration[550/596] Loss: 9.415, Acc: 0.368, Base Lr: 4.64e-07
+2026-09-01 17:36:39,926 DIFFER.train INFO: Clothes changing setting
+2026-09-01 17:36:40,439 DIFFER.train INFO: processing batch 0/59
+2026-09-01 17:37:31,823 DIFFER.train INFO: CMC curve, Rank-1  :51.0%
+2026-09-01 17:37:31,824 DIFFER.train INFO: CMC curve, Rank-5  :64.8%
+2026-09-01 17:37:31,824 DIFFER.train INFO: CMC curve, Rank-10 :70.9%
+2026-09-01 17:37:31,824 DIFFER.train INFO: mAP-:28.3%
+2026-09-01 17:37:31,824 DIFFER.train INFO: Validation Results - Epoch: 45
+2026-09-01 17:37:31,839 DIFFER.train INFO: Standard setting
+2026-09-01 17:37:32,339 DIFFER.train INFO: processing batch 0/59
+2026-09-01 17:38:23,560 DIFFER.train INFO: CMC curve, Rank-1  :81.9%
+2026-09-01 17:38:23,561 DIFFER.train INFO: CMC curve, Rank-5  :89.7%
+2026-09-01 17:38:23,561 DIFFER.train INFO: CMC curve, Rank-10 :91.7%
+2026-09-01 17:38:23,561 DIFFER.train INFO: mAP-:51.0%
+2026-09-01 17:38:35,193 DIFFER.train INFO: Epoch[46] Iteration[50/596] Loss: 9.414, Acc: 0.340, Base Lr: 4.31e-07
+2026-09-01 17:38:46,347 DIFFER.train INFO: Epoch[46] Iteration[100/596] Loss: 9.416, Acc: 0.362, Base Lr: 4.31e-07
+2026-09-01 17:38:57,529 DIFFER.train INFO: Epoch[46] Iteration[150/596] Loss: 9.402, Acc: 0.371, Base Lr: 4.31e-07
+2026-09-01 17:39:08,726 DIFFER.train INFO: Epoch[46] Iteration[200/596] Loss: 9.424, Acc: 0.368, Base Lr: 4.31e-07
+2026-09-01 17:39:19,932 DIFFER.train INFO: Epoch[46] Iteration[250/596] Loss: 9.402, Acc: 0.369, Base Lr: 4.31e-07
+2026-09-01 17:39:31,035 DIFFER.train INFO: Epoch[46] Iteration[300/596] Loss: 9.407, Acc: 0.362, Base Lr: 4.31e-07
+2026-09-01 17:39:42,147 DIFFER.train INFO: Epoch[46] Iteration[350/596] Loss: 9.399, Acc: 0.362, Base Lr: 4.31e-07
+2026-09-01 17:39:53,270 DIFFER.train INFO: Epoch[46] Iteration[400/596] Loss: 9.394, Acc: 0.367, Base Lr: 4.31e-07
+2026-09-01 17:40:04,357 DIFFER.train INFO: Epoch[46] Iteration[450/596] Loss: 9.391, Acc: 0.368, Base Lr: 4.31e-07
+2026-09-01 17:40:15,293 DIFFER.train INFO: Epoch[46] Iteration[500/596] Loss: 9.401, Acc: 0.366, Base Lr: 4.31e-07
+2026-09-01 17:40:26,329 DIFFER.train INFO: Epoch[46] Iteration[550/596] Loss: 9.392, Acc: 0.371, Base Lr: 4.31e-07
+2026-09-01 17:40:36,582 DIFFER.train INFO: Clothes changing setting
+2026-09-01 17:40:37,052 DIFFER.train INFO: processing batch 0/59
+2026-09-01 17:41:28,404 DIFFER.train INFO: CMC curve, Rank-1  :51.0%
+2026-09-01 17:41:28,404 DIFFER.train INFO: CMC curve, Rank-5  :66.8%
+2026-09-01 17:41:28,404 DIFFER.train INFO: CMC curve, Rank-10 :70.7%
+2026-09-01 17:41:28,404 DIFFER.train INFO: mAP-:28.2%
+2026-09-01 17:41:28,405 DIFFER.train INFO: Validation Results - Epoch: 46
+2026-09-01 17:41:28,418 DIFFER.train INFO: Standard setting
+2026-09-01 17:41:28,999 DIFFER.train INFO: processing batch 0/59
+2026-09-01 17:42:20,323 DIFFER.train INFO: CMC curve, Rank-1  :81.9%
+2026-09-01 17:42:20,324 DIFFER.train INFO: CMC curve, Rank-5  :89.5%
+2026-09-01 17:42:20,324 DIFFER.train INFO: CMC curve, Rank-10 :91.3%
+2026-09-01 17:42:20,324 DIFFER.train INFO: mAP-:50.8%
+2026-09-01 17:42:31,998 DIFFER.train INFO: Epoch[47] Iteration[50/596] Loss: 9.384, Acc: 0.370, Base Lr: 4.01e-07
+2026-09-01 17:42:43,228 DIFFER.train INFO: Epoch[47] Iteration[100/596] Loss: 9.382, Acc: 0.382, Base Lr: 4.01e-07
+2026-09-01 17:42:54,337 DIFFER.train INFO: Epoch[47] Iteration[150/596] Loss: 9.366, Acc: 0.392, Base Lr: 4.01e-07
+2026-09-01 17:43:05,380 DIFFER.train INFO: Epoch[47] Iteration[200/596] Loss: 9.390, Acc: 0.383, Base Lr: 4.01e-07
+2026-09-01 17:43:16,395 DIFFER.train INFO: Epoch[47] Iteration[250/596] Loss: 9.377, Acc: 0.382, Base Lr: 4.01e-07
+2026-09-01 17:43:27,411 DIFFER.train INFO: Epoch[47] Iteration[300/596] Loss: 9.383, Acc: 0.373, Base Lr: 4.01e-07
+2026-09-01 17:43:38,496 DIFFER.train INFO: Epoch[47] Iteration[350/596] Loss: 9.385, Acc: 0.371, Base Lr: 4.01e-07
+2026-09-01 17:43:49,527 DIFFER.train INFO: Epoch[47] Iteration[400/596] Loss: 9.390, Acc: 0.377, Base Lr: 4.01e-07
+2026-09-01 17:44:00,574 DIFFER.train INFO: Epoch[47] Iteration[450/596] Loss: 9.387, Acc: 0.373, Base Lr: 4.01e-07
+2026-09-01 17:44:11,727 DIFFER.train INFO: Epoch[47] Iteration[500/596] Loss: 9.392, Acc: 0.372, Base Lr: 4.01e-07
+2026-09-01 17:44:22,835 DIFFER.train INFO: Epoch[47] Iteration[550/596] Loss: 9.379, Acc: 0.378, Base Lr: 4.01e-07
+2026-09-01 17:44:33,009 DIFFER.train INFO: Clothes changing setting
+2026-09-01 17:44:33,487 DIFFER.train INFO: processing batch 0/59
+2026-09-01 17:45:24,630 DIFFER.train INFO: CMC curve, Rank-1  :51.0%
+2026-09-01 17:45:24,630 DIFFER.train INFO: CMC curve, Rank-5  :65.8%
+2026-09-01 17:45:24,630 DIFFER.train INFO: CMC curve, Rank-10 :70.4%
+2026-09-01 17:45:24,630 DIFFER.train INFO: mAP-:28.4%
+2026-09-01 17:45:24,630 DIFFER.train INFO: Validation Results - Epoch: 47
+2026-09-01 17:45:24,648 DIFFER.train INFO: Standard setting
+2026-09-01 17:45:25,163 DIFFER.train INFO: processing batch 0/59
+2026-09-01 17:46:16,322 DIFFER.train INFO: CMC curve, Rank-1  :82.2%
+2026-09-01 17:46:16,322 DIFFER.train INFO: CMC curve, Rank-5  :88.8%
+2026-09-01 17:46:16,322 DIFFER.train INFO: CMC curve, Rank-10 :91.3%
+2026-09-01 17:46:16,323 DIFFER.train INFO: mAP-:50.9%
+2026-09-01 17:46:28,861 DIFFER.train INFO: Epoch[48] Iteration[50/596] Loss: 9.388, Acc: 0.362, Base Lr: 3.72e-07
+2026-09-01 17:46:40,327 DIFFER.train INFO: Epoch[48] Iteration[100/596] Loss: 9.376, Acc: 0.371, Base Lr: 3.72e-07
+2026-09-01 17:46:51,538 DIFFER.train INFO: Epoch[48] Iteration[150/596] Loss: 9.364, Acc: 0.377, Base Lr: 3.72e-07
+2026-09-01 17:47:02,701 DIFFER.train INFO: Epoch[48] Iteration[200/596] Loss: 9.379, Acc: 0.372, Base Lr: 3.72e-07
+2026-09-01 17:47:14,224 DIFFER.train INFO: Epoch[48] Iteration[250/596] Loss: 9.370, Acc: 0.374, Base Lr: 3.72e-07
+2026-09-01 17:47:25,814 DIFFER.train INFO: Epoch[48] Iteration[300/596] Loss: 9.386, Acc: 0.366, Base Lr: 3.72e-07
+2026-09-01 17:47:37,328 DIFFER.train INFO: Epoch[48] Iteration[350/596] Loss: 9.392, Acc: 0.364, Base Lr: 3.72e-07
+2026-09-01 17:47:48,709 DIFFER.train INFO: Epoch[48] Iteration[400/596] Loss: 9.388, Acc: 0.370, Base Lr: 3.72e-07
+2026-09-01 17:48:00,145 DIFFER.train INFO: Epoch[48] Iteration[450/596] Loss: 9.380, Acc: 0.369, Base Lr: 3.72e-07
+2026-09-01 17:48:11,377 DIFFER.train INFO: Epoch[48] Iteration[500/596] Loss: 9.386, Acc: 0.368, Base Lr: 3.72e-07
+2026-09-01 17:48:22,587 DIFFER.train INFO: Epoch[48] Iteration[550/596] Loss: 9.373, Acc: 0.376, Base Lr: 3.72e-07
+2026-09-01 17:48:32,814 DIFFER.train INFO: Clothes changing setting
+2026-09-01 17:48:33,331 DIFFER.train INFO: processing batch 0/59
+2026-09-01 17:49:24,486 DIFFER.train INFO: CMC curve, Rank-1  :51.0%
+2026-09-01 17:49:24,486 DIFFER.train INFO: CMC curve, Rank-5  :65.6%
+2026-09-01 17:49:24,486 DIFFER.train INFO: CMC curve, Rank-10 :71.7%
+2026-09-01 17:49:24,487 DIFFER.train INFO: mAP-:28.2%
+2026-09-01 17:49:24,487 DIFFER.train INFO: Validation Results - Epoch: 48
+2026-09-01 17:49:24,502 DIFFER.train INFO: Standard setting
+2026-09-01 17:49:25,021 DIFFER.train INFO: processing batch 0/59
+2026-09-01 17:50:16,358 DIFFER.train INFO: CMC curve, Rank-1  :82.6%
+2026-09-01 17:50:16,359 DIFFER.train INFO: CMC curve, Rank-5  :89.2%
+2026-09-01 17:50:16,359 DIFFER.train INFO: CMC curve, Rank-10 :91.5%
+2026-09-01 17:50:16,359 DIFFER.train INFO: mAP-:51.0%
+2026-09-01 17:50:28,349 DIFFER.train INFO: Epoch[49] Iteration[50/596] Loss: 9.403, Acc: 0.365, Base Lr: 3.45e-07
+2026-09-01 17:50:39,548 DIFFER.train INFO: Epoch[49] Iteration[100/596] Loss: 9.373, Acc: 0.376, Base Lr: 3.45e-07
+2026-09-01 17:50:50,654 DIFFER.train INFO: Epoch[49] Iteration[150/596] Loss: 9.339, Acc: 0.383, Base Lr: 3.45e-07
+2026-09-01 17:51:01,889 DIFFER.train INFO: Epoch[49] Iteration[200/596] Loss: 9.341, Acc: 0.377, Base Lr: 3.45e-07
+2026-09-01 17:51:13,085 DIFFER.train INFO: Epoch[49] Iteration[250/596] Loss: 9.331, Acc: 0.384, Base Lr: 3.45e-07
+2026-09-01 17:51:24,277 DIFFER.train INFO: Epoch[49] Iteration[300/596] Loss: 9.342, Acc: 0.375, Base Lr: 3.45e-07
+2026-09-01 17:51:35,501 DIFFER.train INFO: Epoch[49] Iteration[350/596] Loss: 9.350, Acc: 0.374, Base Lr: 3.45e-07
+2026-09-01 17:51:46,744 DIFFER.train INFO: Epoch[49] Iteration[400/596] Loss: 9.347, Acc: 0.380, Base Lr: 3.45e-07
+2026-09-01 17:51:57,938 DIFFER.train INFO: Epoch[49] Iteration[450/596] Loss: 9.344, Acc: 0.380, Base Lr: 3.45e-07
+2026-09-01 17:52:09,016 DIFFER.train INFO: Epoch[49] Iteration[500/596] Loss: 9.351, Acc: 0.379, Base Lr: 3.45e-07
+2026-09-01 17:52:20,279 DIFFER.train INFO: Epoch[49] Iteration[550/596] Loss: 9.348, Acc: 0.384, Base Lr: 3.45e-07
+2026-09-01 17:52:30,658 DIFFER.train INFO: Clothes changing setting
+2026-09-01 17:52:31,144 DIFFER.train INFO: processing batch 0/59
+2026-09-01 17:53:23,259 DIFFER.train INFO: CMC curve, Rank-1  :51.8%
+2026-09-01 17:53:23,259 DIFFER.train INFO: CMC curve, Rank-5  :65.6%
+2026-09-01 17:53:23,259 DIFFER.train INFO: CMC curve, Rank-10 :71.7%
+2026-09-01 17:53:23,259 DIFFER.train INFO: mAP-:28.3%
+2026-09-01 17:53:23,260 DIFFER.train INFO: Validation Results - Epoch: 49
+2026-09-01 17:53:23,277 DIFFER.train INFO: Standard setting
+2026-09-01 17:53:23,798 DIFFER.train INFO: processing batch 0/59
+2026-09-01 17:54:15,189 DIFFER.train INFO: CMC curve, Rank-1  :82.2%
+2026-09-01 17:54:15,189 DIFFER.train INFO: CMC curve, Rank-5  :89.9%
+2026-09-01 17:54:15,190 DIFFER.train INFO: CMC curve, Rank-10 :91.9%
+2026-09-01 17:54:15,190 DIFFER.train INFO: mAP-:51.0%
+2026-09-01 17:54:26,812 DIFFER.train INFO: Epoch[50] Iteration[50/596] Loss: 9.306, Acc: 0.365, Base Lr: 3.21e-07
+2026-09-01 17:54:37,813 DIFFER.train INFO: Epoch[50] Iteration[100/596] Loss: 9.325, Acc: 0.389, Base Lr: 3.21e-07
+2026-09-01 17:54:48,987 DIFFER.train INFO: Epoch[50] Iteration[150/596] Loss: 9.337, Acc: 0.398, Base Lr: 3.21e-07
+2026-09-01 17:55:00,301 DIFFER.train INFO: Epoch[50] Iteration[200/596] Loss: 9.343, Acc: 0.394, Base Lr: 3.21e-07
+2026-09-01 17:55:11,278 DIFFER.train INFO: Epoch[50] Iteration[250/596] Loss: 9.341, Acc: 0.396, Base Lr: 3.21e-07
+2026-09-01 17:55:22,372 DIFFER.train INFO: Epoch[50] Iteration[300/596] Loss: 9.341, Acc: 0.390, Base Lr: 3.21e-07
+2026-09-01 17:55:33,605 DIFFER.train INFO: Epoch[50] Iteration[350/596] Loss: 9.340, Acc: 0.387, Base Lr: 3.21e-07
+2026-09-01 17:55:44,831 DIFFER.train INFO: Epoch[50] Iteration[400/596] Loss: 9.339, Acc: 0.390, Base Lr: 3.21e-07
+2026-09-01 17:55:56,070 DIFFER.train INFO: Epoch[50] Iteration[450/596] Loss: 9.338, Acc: 0.389, Base Lr: 3.21e-07
+2026-09-01 17:56:06,975 DIFFER.train INFO: Epoch[50] Iteration[500/596] Loss: 9.344, Acc: 0.388, Base Lr: 3.21e-07
+2026-09-01 17:56:17,934 DIFFER.train INFO: Epoch[50] Iteration[550/596] Loss: 9.329, Acc: 0.393, Base Lr: 3.21e-07
+2026-09-01 17:56:28,162 DIFFER.train INFO: Clothes changing setting
+2026-09-01 17:56:28,640 DIFFER.train INFO: processing batch 0/59
+2026-09-01 17:57:19,805 DIFFER.train INFO: CMC curve, Rank-1  :51.5%
+2026-09-01 17:57:19,806 DIFFER.train INFO: CMC curve, Rank-5  :65.6%
+2026-09-01 17:57:19,806 DIFFER.train INFO: CMC curve, Rank-10 :71.9%
+2026-09-01 17:57:19,806 DIFFER.train INFO: mAP-:28.4%
+2026-09-01 17:57:19,806 DIFFER.train INFO: Validation Results - Epoch: 50
+2026-09-01 17:57:19,821 DIFFER.train INFO: Standard setting
+2026-09-01 17:57:20,473 DIFFER.train INFO: processing batch 0/59
+2026-09-01 17:58:11,875 DIFFER.train INFO: CMC curve, Rank-1  :81.9%
+2026-09-01 17:58:11,875 DIFFER.train INFO: CMC curve, Rank-5  :89.7%
+2026-09-01 17:58:11,875 DIFFER.train INFO: CMC curve, Rank-10 :91.7%
+2026-09-01 17:58:11,875 DIFFER.train INFO: mAP-:51.2%
+2026-09-01 17:58:24,289 DIFFER.train INFO: Epoch[51] Iteration[50/596] Loss: 9.341, Acc: 0.400, Base Lr: 2.98e-07
+2026-09-01 17:58:35,347 DIFFER.train INFO: Epoch[51] Iteration[100/596] Loss: 9.309, Acc: 0.397, Base Lr: 2.98e-07
+2026-09-01 17:58:46,488 DIFFER.train INFO: Epoch[51] Iteration[150/596] Loss: 9.296, Acc: 0.403, Base Lr: 2.98e-07
+2026-09-01 17:58:57,571 DIFFER.train INFO: Epoch[51] Iteration[200/596] Loss: 9.310, Acc: 0.397, Base Lr: 2.98e-07
+2026-09-01 17:59:08,780 DIFFER.train INFO: Epoch[51] Iteration[250/596] Loss: 9.297, Acc: 0.401, Base Lr: 2.98e-07
+2026-09-01 17:59:19,751 DIFFER.train INFO: Epoch[51] Iteration[300/596] Loss: 9.309, Acc: 0.394, Base Lr: 2.98e-07
+2026-09-01 17:59:30,753 DIFFER.train INFO: Epoch[51] Iteration[350/596] Loss: 9.310, Acc: 0.394, Base Lr: 2.98e-07
+2026-09-01 17:59:41,775 DIFFER.train INFO: Epoch[51] Iteration[400/596] Loss: 9.314, Acc: 0.397, Base Lr: 2.98e-07
+2026-09-01 17:59:52,874 DIFFER.train INFO: Epoch[51] Iteration[450/596] Loss: 9.313, Acc: 0.394, Base Lr: 2.98e-07
+2026-09-01 18:00:04,005 DIFFER.train INFO: Epoch[51] Iteration[500/596] Loss: 9.318, Acc: 0.393, Base Lr: 2.98e-07
+2026-09-01 18:00:15,214 DIFFER.train INFO: Epoch[51] Iteration[550/596] Loss: 9.310, Acc: 0.399, Base Lr: 2.98e-07
+2026-09-01 18:00:25,680 DIFFER.train INFO: Clothes changing setting
+2026-09-01 18:00:26,165 DIFFER.train INFO: processing batch 0/59
+2026-09-01 18:01:17,451 DIFFER.train INFO: CMC curve, Rank-1  :51.8%
+2026-09-01 18:01:17,451 DIFFER.train INFO: CMC curve, Rank-5  :66.6%
+2026-09-01 18:01:17,451 DIFFER.train INFO: CMC curve, Rank-10 :72.2%
+2026-09-01 18:01:17,452 DIFFER.train INFO: mAP-:28.7%
+2026-09-01 18:01:17,452 DIFFER.train INFO: Validation Results - Epoch: 51
+2026-09-01 18:01:17,465 DIFFER.train INFO: Standard setting
+2026-09-01 18:01:17,947 DIFFER.train INFO: processing batch 0/59
+2026-09-01 18:02:09,456 DIFFER.train INFO: CMC curve, Rank-1  :82.4%
+2026-09-01 18:02:09,457 DIFFER.train INFO: CMC curve, Rank-5  :90.1%
+2026-09-01 18:02:09,457 DIFFER.train INFO: CMC curve, Rank-10 :91.9%
+2026-09-01 18:02:09,457 DIFFER.train INFO: mAP-:51.3%
+2026-09-01 18:02:21,595 DIFFER.train INFO: Epoch[52] Iteration[50/596] Loss: 9.321, Acc: 0.395, Base Lr: 2.78e-07
+2026-09-01 18:02:32,990 DIFFER.train INFO: Epoch[52] Iteration[100/596] Loss: 9.301, Acc: 0.410, Base Lr: 2.78e-07
+2026-09-01 18:02:44,383 DIFFER.train INFO: Epoch[52] Iteration[150/596] Loss: 9.302, Acc: 0.410, Base Lr: 2.78e-07
+2026-09-01 18:02:55,594 DIFFER.train INFO: Epoch[52] Iteration[200/596] Loss: 9.319, Acc: 0.403, Base Lr: 2.78e-07
+2026-09-01 18:03:06,805 DIFFER.train INFO: Epoch[52] Iteration[250/596] Loss: 9.310, Acc: 0.406, Base Lr: 2.78e-07
+2026-09-01 18:03:18,004 DIFFER.train INFO: Epoch[52] Iteration[300/596] Loss: 9.320, Acc: 0.397, Base Lr: 2.78e-07
+2026-09-01 18:03:29,125 DIFFER.train INFO: Epoch[52] Iteration[350/596] Loss: 9.322, Acc: 0.395, Base Lr: 2.78e-07
+2026-09-01 18:03:40,267 DIFFER.train INFO: Epoch[52] Iteration[400/596] Loss: 9.325, Acc: 0.398, Base Lr: 2.78e-07
+2026-09-01 18:03:51,399 DIFFER.train INFO: Epoch[52] Iteration[450/596] Loss: 9.317, Acc: 0.397, Base Lr: 2.78e-07
+2026-09-01 18:04:02,583 DIFFER.train INFO: Epoch[52] Iteration[500/596] Loss: 9.319, Acc: 0.393, Base Lr: 2.78e-07
+2026-09-01 18:04:13,718 DIFFER.train INFO: Epoch[52] Iteration[550/596] Loss: 9.313, Acc: 0.397, Base Lr: 2.78e-07
+2026-09-01 18:04:23,928 DIFFER.train INFO: Clothes changing setting
+2026-09-01 18:04:24,415 DIFFER.train INFO: processing batch 0/59
+2026-09-01 18:05:15,797 DIFFER.train INFO: CMC curve, Rank-1  :52.0%
+2026-09-01 18:05:15,797 DIFFER.train INFO: CMC curve, Rank-5  :67.1%
+2026-09-01 18:05:15,797 DIFFER.train INFO: CMC curve, Rank-10 :71.4%
+2026-09-01 18:05:15,797 DIFFER.train INFO: mAP-:28.8%
+2026-09-01 18:05:15,798 DIFFER.train INFO: Validation Results - Epoch: 52
+2026-09-01 18:05:15,811 DIFFER.train INFO: Standard setting
+2026-09-01 18:05:16,335 DIFFER.train INFO: processing batch 0/59
+2026-09-01 18:06:07,974 DIFFER.train INFO: CMC curve, Rank-1  :82.8%
+2026-09-01 18:06:07,974 DIFFER.train INFO: CMC curve, Rank-5  :90.1%
+2026-09-01 18:06:07,975 DIFFER.train INFO: CMC curve, Rank-10 :91.7%
+2026-09-01 18:06:07,975 DIFFER.train INFO: mAP-:51.4%
+2026-09-01 18:06:19,341 DIFFER.train INFO: Epoch[53] Iteration[50/596] Loss: 9.331, Acc: 0.390, Base Lr: 2.60e-07
+2026-09-01 18:06:30,335 DIFFER.train INFO: Epoch[53] Iteration[100/596] Loss: 9.314, Acc: 0.409, Base Lr: 2.60e-07
+2026-09-01 18:06:41,384 DIFFER.train INFO: Epoch[53] Iteration[150/596] Loss: 9.278, Acc: 0.418, Base Lr: 2.60e-07
+2026-09-01 18:06:52,316 DIFFER.train INFO: Epoch[53] Iteration[200/596] Loss: 9.301, Acc: 0.411, Base Lr: 2.60e-07
+2026-09-01 18:07:03,262 DIFFER.train INFO: Epoch[53] Iteration[250/596] Loss: 9.285, Acc: 0.416, Base Lr: 2.60e-07
+2026-09-01 18:07:14,327 DIFFER.train INFO: Epoch[53] Iteration[300/596] Loss: 9.296, Acc: 0.405, Base Lr: 2.60e-07
+2026-09-01 18:07:25,561 DIFFER.train INFO: Epoch[53] Iteration[350/596] Loss: 9.293, Acc: 0.402, Base Lr: 2.60e-07
+2026-09-01 18:07:36,922 DIFFER.train INFO: Epoch[53] Iteration[400/596] Loss: 9.295, Acc: 0.403, Base Lr: 2.60e-07
+2026-09-01 18:07:48,292 DIFFER.train INFO: Epoch[53] Iteration[450/596] Loss: 9.291, Acc: 0.402, Base Lr: 2.60e-07
+2026-09-01 18:07:59,688 DIFFER.train INFO: Epoch[53] Iteration[500/596] Loss: 9.298, Acc: 0.399, Base Lr: 2.60e-07
+2026-09-01 18:08:10,918 DIFFER.train INFO: Epoch[53] Iteration[550/596] Loss: 9.287, Acc: 0.405, Base Lr: 2.60e-07
+2026-09-01 18:08:21,223 DIFFER.train INFO: Clothes changing setting
+2026-09-01 18:08:21,706 DIFFER.train INFO: processing batch 0/59
+2026-09-01 18:09:13,046 DIFFER.train INFO: CMC curve, Rank-1  :52.8%
+2026-09-01 18:09:13,046 DIFFER.train INFO: CMC curve, Rank-5  :66.3%
+2026-09-01 18:09:13,046 DIFFER.train INFO: CMC curve, Rank-10 :72.4%
+2026-09-01 18:09:13,046 DIFFER.train INFO: mAP-:29.0%
+2026-09-01 18:09:13,047 DIFFER.train INFO: Validation Results - Epoch: 53
+2026-09-01 18:09:13,060 DIFFER.train INFO: Standard setting
+2026-09-01 18:09:13,545 DIFFER.train INFO: processing batch 0/59
+2026-09-01 18:10:05,065 DIFFER.train INFO: CMC curve, Rank-1  :82.8%
+2026-09-01 18:10:05,066 DIFFER.train INFO: CMC curve, Rank-5  :90.1%
+2026-09-01 18:10:05,066 DIFFER.train INFO: CMC curve, Rank-10 :91.7%
+2026-09-01 18:10:05,066 DIFFER.train INFO: mAP-:51.5%
+2026-09-01 18:10:17,275 DIFFER.train INFO: Epoch[54] Iteration[50/596] Loss: 9.306, Acc: 0.387, Base Lr: 2.44e-07
+2026-09-01 18:10:28,374 DIFFER.train INFO: Epoch[54] Iteration[100/596] Loss: 9.263, Acc: 0.397, Base Lr: 2.44e-07
+2026-09-01 18:10:39,311 DIFFER.train INFO: Epoch[54] Iteration[150/596] Loss: 9.240, Acc: 0.405, Base Lr: 2.44e-07
+2026-09-01 18:10:50,278 DIFFER.train INFO: Epoch[54] Iteration[200/596] Loss: 9.263, Acc: 0.405, Base Lr: 2.44e-07
+2026-09-01 18:11:01,176 DIFFER.train INFO: Epoch[54] Iteration[250/596] Loss: 9.247, Acc: 0.408, Base Lr: 2.44e-07
+2026-09-01 18:11:12,067 DIFFER.train INFO: Epoch[54] Iteration[300/596] Loss: 9.263, Acc: 0.402, Base Lr: 2.44e-07
+2026-09-01 18:11:23,057 DIFFER.train INFO: Epoch[54] Iteration[350/596] Loss: 9.268, Acc: 0.400, Base Lr: 2.44e-07
+2026-09-01 18:11:34,130 DIFFER.train INFO: Epoch[54] Iteration[400/596] Loss: 9.269, Acc: 0.404, Base Lr: 2.44e-07
+2026-09-01 18:11:45,240 DIFFER.train INFO: Epoch[54] Iteration[450/596] Loss: 9.269, Acc: 0.404, Base Lr: 2.44e-07
+2026-09-01 18:11:56,269 DIFFER.train INFO: Epoch[54] Iteration[500/596] Loss: 9.272, Acc: 0.404, Base Lr: 2.44e-07
+2026-09-01 18:12:07,415 DIFFER.train INFO: Epoch[54] Iteration[550/596] Loss: 9.262, Acc: 0.409, Base Lr: 2.44e-07
+2026-09-01 18:12:17,587 DIFFER.train INFO: Clothes changing setting
+2026-09-01 18:12:18,072 DIFFER.train INFO: processing batch 0/59
+2026-09-01 18:13:09,545 DIFFER.train INFO: CMC curve, Rank-1  :52.3%
+2026-09-01 18:13:09,545 DIFFER.train INFO: CMC curve, Rank-5  :67.3%
+2026-09-01 18:13:09,545 DIFFER.train INFO: CMC curve, Rank-10 :71.7%
+2026-09-01 18:13:09,545 DIFFER.train INFO: mAP-:28.9%
+2026-09-01 18:13:09,545 DIFFER.train INFO: Validation Results - Epoch: 54
+2026-09-01 18:13:09,558 DIFFER.train INFO: Standard setting
+2026-09-01 18:13:10,040 DIFFER.train INFO: processing batch 0/59
+2026-09-01 18:14:01,161 DIFFER.train INFO: CMC curve, Rank-1  :83.0%
+2026-09-01 18:14:01,161 DIFFER.train INFO: CMC curve, Rank-5  :90.5%
+2026-09-01 18:14:01,161 DIFFER.train INFO: CMC curve, Rank-10 :91.7%
+2026-09-01 18:14:01,162 DIFFER.train INFO: mAP-:51.4%
+2026-09-01 18:14:13,324 DIFFER.train INFO: Epoch[55] Iteration[50/596] Loss: 9.338, Acc: 0.392, Base Lr: 2.31e-07
+2026-09-01 18:14:24,470 DIFFER.train INFO: Epoch[55] Iteration[100/596] Loss: 9.294, Acc: 0.401, Base Lr: 2.31e-07
+2026-09-01 18:14:35,728 DIFFER.train INFO: Epoch[55] Iteration[150/596] Loss: 9.269, Acc: 0.411, Base Lr: 2.31e-07
+2026-09-01 18:14:46,888 DIFFER.train INFO: Epoch[55] Iteration[200/596] Loss: 9.271, Acc: 0.409, Base Lr: 2.31e-07
+2026-09-01 18:14:58,046 DIFFER.train INFO: Epoch[55] Iteration[250/596] Loss: 9.258, Acc: 0.407, Base Lr: 2.31e-07
+2026-09-01 18:15:09,132 DIFFER.train INFO: Epoch[55] Iteration[300/596] Loss: 9.263, Acc: 0.399, Base Lr: 2.31e-07
+2026-09-01 18:15:20,214 DIFFER.train INFO: Epoch[55] Iteration[350/596] Loss: 9.266, Acc: 0.396, Base Lr: 2.31e-07
+2026-09-01 18:15:31,360 DIFFER.train INFO: Epoch[55] Iteration[400/596] Loss: 9.261, Acc: 0.402, Base Lr: 2.31e-07
+2026-09-01 18:15:42,454 DIFFER.train INFO: Epoch[55] Iteration[450/596] Loss: 9.265, Acc: 0.401, Base Lr: 2.31e-07
+2026-09-01 18:15:53,590 DIFFER.train INFO: Epoch[55] Iteration[500/596] Loss: 9.268, Acc: 0.400, Base Lr: 2.31e-07
+2026-09-01 18:16:04,680 DIFFER.train INFO: Epoch[55] Iteration[550/596] Loss: 9.260, Acc: 0.407, Base Lr: 2.31e-07
+2026-09-01 18:16:14,843 DIFFER.train INFO: Clothes changing setting
+2026-09-01 18:16:15,348 DIFFER.train INFO: processing batch 0/59
+2026-09-01 18:17:06,493 DIFFER.train INFO: CMC curve, Rank-1  :52.0%
+2026-09-01 18:17:06,493 DIFFER.train INFO: CMC curve, Rank-5  :67.6%
+2026-09-01 18:17:06,493 DIFFER.train INFO: CMC curve, Rank-10 :71.2%
+2026-09-01 18:17:06,493 DIFFER.train INFO: mAP-:29.0%
+2026-09-01 18:17:06,494 DIFFER.train INFO: Validation Results - Epoch: 55
+2026-09-01 18:17:06,508 DIFFER.train INFO: Standard setting
+2026-09-01 18:17:06,983 DIFFER.train INFO: processing batch 0/59
+2026-09-01 18:17:58,157 DIFFER.train INFO: CMC curve, Rank-1  :83.0%
+2026-09-01 18:17:58,158 DIFFER.train INFO: CMC curve, Rank-5  :90.1%
+2026-09-01 18:17:58,158 DIFFER.train INFO: CMC curve, Rank-10 :91.5%
+2026-09-01 18:17:58,158 DIFFER.train INFO: mAP-:51.5%
+2026-09-01 18:18:09,865 DIFFER.train INFO: Epoch[56] Iteration[50/596] Loss: 9.357, Acc: 0.392, Base Lr: 2.20e-07
+2026-09-01 18:18:20,986 DIFFER.train INFO: Epoch[56] Iteration[100/596] Loss: 9.306, Acc: 0.414, Base Lr: 2.20e-07
+2026-09-01 18:18:32,153 DIFFER.train INFO: Epoch[56] Iteration[150/596] Loss: 9.267, Acc: 0.419, Base Lr: 2.20e-07
+2026-09-01 18:18:43,245 DIFFER.train INFO: Epoch[56] Iteration[200/596] Loss: 9.282, Acc: 0.414, Base Lr: 2.20e-07
+2026-09-01 18:18:54,593 DIFFER.train INFO: Epoch[56] Iteration[250/596] Loss: 9.265, Acc: 0.416, Base Lr: 2.20e-07
+2026-09-01 18:19:05,797 DIFFER.train INFO: Epoch[56] Iteration[300/596] Loss: 9.266, Acc: 0.409, Base Lr: 2.20e-07
+2026-09-01 18:19:16,906 DIFFER.train INFO: Epoch[56] Iteration[350/596] Loss: 9.273, Acc: 0.408, Base Lr: 2.20e-07
+2026-09-01 18:19:28,040 DIFFER.train INFO: Epoch[56] Iteration[400/596] Loss: 9.282, Acc: 0.410, Base Lr: 2.20e-07
+2026-09-01 18:19:39,303 DIFFER.train INFO: Epoch[56] Iteration[450/596] Loss: 9.283, Acc: 0.409, Base Lr: 2.20e-07
+2026-09-01 18:19:50,407 DIFFER.train INFO: Epoch[56] Iteration[500/596] Loss: 9.283, Acc: 0.407, Base Lr: 2.20e-07
+2026-09-01 18:20:01,568 DIFFER.train INFO: Epoch[56] Iteration[550/596] Loss: 9.273, Acc: 0.411, Base Lr: 2.20e-07
+2026-09-01 18:20:11,742 DIFFER.train INFO: Clothes changing setting
+2026-09-01 18:20:12,252 DIFFER.train INFO: processing batch 0/59
+2026-09-01 18:21:03,377 DIFFER.train INFO: CMC curve, Rank-1  :52.8%
+2026-09-01 18:21:03,378 DIFFER.train INFO: CMC curve, Rank-5  :67.3%
+2026-09-01 18:21:03,378 DIFFER.train INFO: CMC curve, Rank-10 :71.9%
+2026-09-01 18:21:03,378 DIFFER.train INFO: mAP-:29.2%
+2026-09-01 18:21:03,378 DIFFER.train INFO: Validation Results - Epoch: 56
+2026-09-01 18:21:03,393 DIFFER.train INFO: Standard setting
+2026-09-01 18:21:03,882 DIFFER.train INFO: processing batch 0/59
+2026-09-01 18:21:55,002 DIFFER.train INFO: CMC curve, Rank-1  :82.8%
+2026-09-01 18:21:55,002 DIFFER.train INFO: CMC curve, Rank-5  :90.5%
+2026-09-01 18:21:55,002 DIFFER.train INFO: CMC curve, Rank-10 :92.1%
+2026-09-01 18:21:55,002 DIFFER.train INFO: mAP-:51.8%
+2026-09-01 18:22:07,508 DIFFER.train INFO: Epoch[57] Iteration[50/596] Loss: 9.312, Acc: 0.412, Base Lr: 2.11e-07
+2026-09-01 18:22:18,373 DIFFER.train INFO: Epoch[57] Iteration[100/596] Loss: 9.240, Acc: 0.422, Base Lr: 2.11e-07
+2026-09-01 18:22:29,283 DIFFER.train INFO: Epoch[57] Iteration[150/596] Loss: 9.224, Acc: 0.428, Base Lr: 2.11e-07
+2026-09-01 18:22:40,328 DIFFER.train INFO: Epoch[57] Iteration[200/596] Loss: 9.238, Acc: 0.421, Base Lr: 2.11e-07
+2026-09-01 18:22:51,409 DIFFER.train INFO: Epoch[57] Iteration[250/596] Loss: 9.221, Acc: 0.423, Base Lr: 2.11e-07
+2026-09-01 18:23:02,337 DIFFER.train INFO: Epoch[57] Iteration[300/596] Loss: 9.233, Acc: 0.415, Base Lr: 2.11e-07
+2026-09-01 18:23:13,327 DIFFER.train INFO: Epoch[57] Iteration[350/596] Loss: 9.245, Acc: 0.412, Base Lr: 2.11e-07
+2026-09-01 18:23:24,313 DIFFER.train INFO: Epoch[57] Iteration[400/596] Loss: 9.241, Acc: 0.414, Base Lr: 2.11e-07
+2026-09-01 18:23:35,300 DIFFER.train INFO: Epoch[57] Iteration[450/596] Loss: 9.243, Acc: 0.411, Base Lr: 2.11e-07
+2026-09-01 18:23:46,614 DIFFER.train INFO: Epoch[57] Iteration[500/596] Loss: 9.248, Acc: 0.409, Base Lr: 2.11e-07
+2026-09-01 18:23:57,792 DIFFER.train INFO: Epoch[57] Iteration[550/596] Loss: 9.239, Acc: 0.414, Base Lr: 2.11e-07
+2026-09-01 18:24:08,105 DIFFER.train INFO: Clothes changing setting
+2026-09-01 18:24:08,579 DIFFER.train INFO: processing batch 0/59
+2026-09-01 18:24:59,659 DIFFER.train INFO: CMC curve, Rank-1  :53.3%
+2026-09-01 18:24:59,660 DIFFER.train INFO: CMC curve, Rank-5  :67.3%
+2026-09-01 18:24:59,660 DIFFER.train INFO: CMC curve, Rank-10 :71.7%
+2026-09-01 18:24:59,660 DIFFER.train INFO: mAP-:29.3%
+2026-09-01 18:24:59,660 DIFFER.train INFO: Validation Results - Epoch: 57
+2026-09-01 18:24:59,673 DIFFER.train INFO: Standard setting
+2026-09-01 18:25:00,189 DIFFER.train INFO: processing batch 0/59
+2026-09-01 18:25:51,302 DIFFER.train INFO: CMC curve, Rank-1  :82.8%
+2026-09-01 18:25:51,302 DIFFER.train INFO: CMC curve, Rank-5  :90.1%
+2026-09-01 18:25:51,302 DIFFER.train INFO: CMC curve, Rank-10 :91.9%
+2026-09-01 18:25:51,302 DIFFER.train INFO: mAP-:51.8%
+2026-09-01 18:25:51,314 DIFFER.train INFO: ==> Best Rank-1 53.3%, achieved at epoch 57
+2026-09-01 18:26:05,064 DIFFER.train INFO: Epoch[58] Iteration[50/596] Loss: 9.262, Acc: 0.403, Base Lr: 2.05e-07
+2026-09-01 18:26:16,134 DIFFER.train INFO: Epoch[58] Iteration[100/596] Loss: 9.245, Acc: 0.421, Base Lr: 2.05e-07
+2026-09-01 18:26:27,061 DIFFER.train INFO: Epoch[58] Iteration[150/596] Loss: 9.234, Acc: 0.426, Base Lr: 2.05e-07
+2026-09-01 18:26:38,026 DIFFER.train INFO: Epoch[58] Iteration[200/596] Loss: 9.227, Acc: 0.417, Base Lr: 2.05e-07
+2026-09-01 18:26:48,930 DIFFER.train INFO: Epoch[58] Iteration[250/596] Loss: 9.215, Acc: 0.422, Base Lr: 2.05e-07
+2026-09-01 18:26:59,828 DIFFER.train INFO: Epoch[58] Iteration[300/596] Loss: 9.230, Acc: 0.413, Base Lr: 2.05e-07
+2026-09-01 18:27:10,817 DIFFER.train INFO: Epoch[58] Iteration[350/596] Loss: 9.233, Acc: 0.410, Base Lr: 2.05e-07
+2026-09-01 18:27:21,778 DIFFER.train INFO: Epoch[58] Iteration[400/596] Loss: 9.230, Acc: 0.415, Base Lr: 2.05e-07
+2026-09-01 18:27:33,059 DIFFER.train INFO: Epoch[58] Iteration[450/596] Loss: 9.230, Acc: 0.413, Base Lr: 2.05e-07
+2026-09-01 18:27:44,361 DIFFER.train INFO: Epoch[58] Iteration[500/596] Loss: 9.234, Acc: 0.409, Base Lr: 2.05e-07
+2026-09-01 18:27:55,483 DIFFER.train INFO: Epoch[58] Iteration[550/596] Loss: 9.223, Acc: 0.414, Base Lr: 2.05e-07
+2026-09-01 18:28:05,692 DIFFER.train INFO: Clothes changing setting
+2026-09-01 18:28:06,160 DIFFER.train INFO: processing batch 0/59
+2026-09-01 18:28:57,279 DIFFER.train INFO: CMC curve, Rank-1  :52.3%
+2026-09-01 18:28:57,279 DIFFER.train INFO: CMC curve, Rank-5  :66.8%
+2026-09-01 18:28:57,279 DIFFER.train INFO: CMC curve, Rank-10 :71.4%
+2026-09-01 18:28:57,279 DIFFER.train INFO: mAP-:29.1%
+2026-09-01 18:28:57,280 DIFFER.train INFO: Validation Results - Epoch: 58
+2026-09-01 18:28:57,294 DIFFER.train INFO: Standard setting
+2026-09-01 18:28:57,802 DIFFER.train INFO: processing batch 0/59
+2026-09-01 18:29:48,963 DIFFER.train INFO: CMC curve, Rank-1  :82.8%
+2026-09-01 18:29:48,963 DIFFER.train INFO: CMC curve, Rank-5  :90.1%
+2026-09-01 18:29:48,963 DIFFER.train INFO: CMC curve, Rank-10 :91.5%
+2026-09-01 18:29:48,963 DIFFER.train INFO: mAP-:51.7%
+2026-09-01 18:30:00,883 DIFFER.train INFO: Epoch[59] Iteration[50/596] Loss: 9.281, Acc: 0.392, Base Lr: 2.01e-07
+2026-09-01 18:30:12,060 DIFFER.train INFO: Epoch[59] Iteration[100/596] Loss: 9.250, Acc: 0.419, Base Lr: 2.01e-07
+2026-09-01 18:30:23,196 DIFFER.train INFO: Epoch[59] Iteration[150/596] Loss: 9.236, Acc: 0.430, Base Lr: 2.01e-07
+2026-09-01 18:30:34,428 DIFFER.train INFO: Epoch[59] Iteration[200/596] Loss: 9.249, Acc: 0.422, Base Lr: 2.01e-07
+2026-09-01 18:30:45,566 DIFFER.train INFO: Epoch[59] Iteration[250/596] Loss: 9.231, Acc: 0.425, Base Lr: 2.01e-07
+2026-09-01 18:30:56,705 DIFFER.train INFO: Epoch[59] Iteration[300/596] Loss: 9.237, Acc: 0.419, Base Lr: 2.01e-07
+2026-09-01 18:31:07,890 DIFFER.train INFO: Epoch[59] Iteration[350/596] Loss: 9.242, Acc: 0.414, Base Lr: 2.01e-07
+2026-09-01 18:31:18,998 DIFFER.train INFO: Epoch[59] Iteration[400/596] Loss: 9.248, Acc: 0.417, Base Lr: 2.01e-07
+2026-09-01 18:31:30,024 DIFFER.train INFO: Epoch[59] Iteration[450/596] Loss: 9.246, Acc: 0.416, Base Lr: 2.01e-07
+2026-09-01 18:31:41,101 DIFFER.train INFO: Epoch[59] Iteration[500/596] Loss: 9.251, Acc: 0.413, Base Lr: 2.01e-07
+2026-09-01 18:31:52,221 DIFFER.train INFO: Epoch[59] Iteration[550/596] Loss: 9.242, Acc: 0.418, Base Lr: 2.01e-07
+2026-09-01 18:32:02,333 DIFFER.train INFO: Clothes changing setting
+2026-09-01 18:32:02,828 DIFFER.train INFO: processing batch 0/59
+2026-09-01 18:32:53,998 DIFFER.train INFO: CMC curve, Rank-1  :52.3%
+2026-09-01 18:32:53,998 DIFFER.train INFO: CMC curve, Rank-5  :67.3%
+2026-09-01 18:32:53,998 DIFFER.train INFO: CMC curve, Rank-10 :71.2%
+2026-09-01 18:32:53,998 DIFFER.train INFO: mAP-:29.2%
+2026-09-01 18:32:53,998 DIFFER.train INFO: Validation Results - Epoch: 59
+2026-09-01 18:32:54,012 DIFFER.train INFO: Standard setting
+2026-09-01 18:32:54,485 DIFFER.train INFO: processing batch 0/59
+2026-09-01 18:33:45,661 DIFFER.train INFO: CMC curve, Rank-1  :82.4%
+2026-09-01 18:33:45,661 DIFFER.train INFO: CMC curve, Rank-5  :89.9%
+2026-09-01 18:33:45,661 DIFFER.train INFO: CMC curve, Rank-10 :91.7%
+2026-09-01 18:33:45,661 DIFFER.train INFO: mAP-:51.7%
+2026-09-01 18:33:57,127 DIFFER.train INFO: Epoch[60] Iteration[50/596] Loss: 9.230, Acc: 0.390, Base Lr: 2.00e-07
+2026-09-01 18:34:08,301 DIFFER.train INFO: Epoch[60] Iteration[100/596] Loss: 9.190, Acc: 0.417, Base Lr: 2.00e-07
+2026-09-01 18:34:19,452 DIFFER.train INFO: Epoch[60] Iteration[150/596] Loss: 9.188, Acc: 0.424, Base Lr: 2.00e-07
+2026-09-01 18:34:30,630 DIFFER.train INFO: Epoch[60] Iteration[200/596] Loss: 9.196, Acc: 0.419, Base Lr: 2.00e-07
+2026-09-01 18:34:41,782 DIFFER.train INFO: Epoch[60] Iteration[250/596] Loss: 9.200, Acc: 0.421, Base Lr: 2.00e-07
+2026-09-01 18:34:52,952 DIFFER.train INFO: Epoch[60] Iteration[300/596] Loss: 9.218, Acc: 0.416, Base Lr: 2.00e-07
+2026-09-01 18:35:03,976 DIFFER.train INFO: Epoch[60] Iteration[350/596] Loss: 9.223, Acc: 0.412, Base Lr: 2.00e-07
+2026-09-01 18:35:15,024 DIFFER.train INFO: Epoch[60] Iteration[400/596] Loss: 9.218, Acc: 0.415, Base Lr: 2.00e-07
+2026-09-01 18:35:26,123 DIFFER.train INFO: Epoch[60] Iteration[450/596] Loss: 9.219, Acc: 0.414, Base Lr: 2.00e-07
+2026-09-01 18:35:37,359 DIFFER.train INFO: Epoch[60] Iteration[500/596] Loss: 9.230, Acc: 0.412, Base Lr: 2.00e-07
+2026-09-01 18:35:48,583 DIFFER.train INFO: Epoch[60] Iteration[550/596] Loss: 9.223, Acc: 0.419, Base Lr: 2.00e-07
+2026-09-01 18:35:58,798 DIFFER.train INFO: Clothes changing setting
+2026-09-01 18:35:59,273 DIFFER.train INFO: processing batch 0/59
+2026-09-01 18:36:50,424 DIFFER.train INFO: CMC curve, Rank-1  :53.3%
+2026-09-01 18:36:50,424 DIFFER.train INFO: CMC curve, Rank-5  :68.1%
+2026-09-01 18:36:50,424 DIFFER.train INFO: CMC curve, Rank-10 :72.2%
+2026-09-01 18:36:50,424 DIFFER.train INFO: mAP-:29.5%
+2026-09-01 18:36:50,424 DIFFER.train INFO: Validation Results - Epoch: 60
+2026-09-01 18:36:50,439 DIFFER.train INFO: Standard setting
+2026-09-01 18:36:50,933 DIFFER.train INFO: processing batch 0/59
+2026-09-01 18:37:42,044 DIFFER.train INFO: CMC curve, Rank-1  :82.6%
+2026-09-01 18:37:42,045 DIFFER.train INFO: CMC curve, Rank-5  :90.3%
+2026-09-01 18:37:42,045 DIFFER.train INFO: CMC curve, Rank-10 :91.9%
+2026-09-01 18:37:42,045 DIFFER.train INFO: mAP-:51.8%
+2026-09-01 18:37:42,061 DIFFER.train INFO: Training time 3:58:07
+-01 18:31:07,891 DIFFER.train INFO: Epoch[59] Iteration[350/596] Loss: 9.203, Acc: 0.428, Base Lr: 2.01e-07
+2026-09-01 18:31:18,993 DIFFER.train INFO: Epoch[59] Iteration[400/596] Loss: 9.195, Acc: 0.435, Base Lr: 2.01e-07
+2026-09-01 18:31:30,019 DIFFER.train INFO: Epoch[59] Iteration[450/596] Loss: 9.188, Acc: 0.434, Base Lr: 2.01e-07
+2026-09-01 18:31:41,096 DIFFER.train INFO: Epoch[59] Iteration[500/596] Loss: 9.185, Acc: 0.434, Base Lr: 2.01e-07
+2026-09-01 18:31:52,216 DIFFER.train INFO: Epoch[59] Iteration[550/596] Loss: 9.183, Acc: 0.433, Base Lr: 2.01e-07
+2026-09-01 18:32:02,327 DIFFER.train INFO: Clothes changing setting
+2026-09-01 18:32:02,815 DIFFER.train INFO: processing batch 0/59
+2026-09-01 18:32:53,942 DIFFER.train INFO: CMC curve, Rank-1  :52.3%
+2026-09-01 18:32:53,943 DIFFER.train INFO: CMC curve, Rank-5  :67.3%
+2026-09-01 18:32:53,943 DIFFER.train INFO: CMC curve, Rank-10 :71.2%
+2026-09-01 18:32:53,943 DIFFER.train INFO: mAP-:29.2%
+2026-09-01 18:32:53,943 DIFFER.train INFO: Validation Results - Epoch: 59
+2026-09-01 18:32:53,955 DIFFER.train INFO: Standard setting
+2026-09-01 18:32:54,447 DIFFER.train INFO: processing batch 0/59
+2026-09-01 18:33:45,609 DIFFER.train INFO: CMC curve, Rank-1  :82.4%
+2026-09-01 18:33:45,610 DIFFER.train INFO: CMC curve, Rank-5  :89.9%
+2026-09-01 18:33:45,610 DIFFER.train INFO: CMC curve, Rank-10 :91.7%
+2026-09-01 18:33:45,610 DIFFER.train INFO: mAP-:51.7%
+2026-09-01 18:33:57,122 DIFFER.train INFO: Epoch[60] Iteration[50/596] Loss: 9.171, Acc: 0.407, Base Lr: 2.00e-07
+2026-09-01 18:34:08,295 DIFFER.train INFO: Epoch[60] Iteration[100/596] Loss: 9.190, Acc: 0.419, Base Lr: 2.00e-07
+2026-09-01 18:34:19,447 DIFFER.train INFO: Epoch[60] Iteration[150/596] Loss: 9.154, Acc: 0.426, Base Lr: 2.00e-07
+2026-09-01 18:34:30,625 DIFFER.train INFO: Epoch[60] Iteration[200/596] Loss: 9.183, Acc: 0.421, Base Lr: 2.00e-07
+2026-09-01 18:34:41,777 DIFFER.train INFO: Epoch[60] Iteration[250/596] Loss: 9.183, Acc: 0.423, Base Lr: 2.00e-07
+2026-09-01 18:34:52,947 DIFFER.train INFO: Epoch[60] Iteration[300/596] Loss: 9.195, Acc: 0.421, Base Lr: 2.00e-07
+2026-09-01 18:35:03,971 DIFFER.train INFO: Epoch[60] Iteration[350/596] Loss: 9.196, Acc: 0.425, Base Lr: 2.00e-07
+2026-09-01 18:35:15,028 DIFFER.train INFO: Epoch[60] Iteration[400/596] Loss: 9.174, Acc: 0.433, Base Lr: 2.00e-07
+2026-09-01 18:35:26,117 DIFFER.train INFO: Epoch[60] Iteration[450/596] Loss: 9.177, Acc: 0.433, Base Lr: 2.00e-07
+2026-09-01 18:35:37,363 DIFFER.train INFO: Epoch[60] Iteration[500/596] Loss: 9.173, Acc: 0.433, Base Lr: 2.00e-07
+2026-09-01 18:35:48,587 DIFFER.train INFO: Epoch[60] Iteration[550/596] Loss: 9.175, Acc: 0.435, Base Lr: 2.00e-07
+2026-09-01 18:35:58,800 DIFFER.train INFO: Clothes changing setting
+2026-09-01 18:35:59,290 DIFFER.train INFO: processing batch 0/59
+2026-09-01 18:36:51,245 DIFFER.train INFO: CMC curve, Rank-1  :53.3%
+2026-09-01 18:36:51,245 DIFFER.train INFO: CMC curve, Rank-5  :68.1%
+2026-09-01 18:36:51,245 DIFFER.train INFO: CMC curve, Rank-10 :72.2%
+2026-09-01 18:36:51,245 DIFFER.train INFO: mAP-:29.5%
+2026-09-01 18:36:51,246 DIFFER.train INFO: Validation Results - Epoch: 60
+2026-09-01 18:36:51,267 DIFFER.train INFO: Standard setting
+2026-09-01 18:36:51,734 DIFFER.train INFO: processing batch 0/59
+2026-09-01 18:37:42,801 DIFFER.train INFO: CMC curve, Rank-1  :82.6%
+2026-09-01 18:37:42,801 DIFFER.train INFO: CMC curve, Rank-5  :90.3%
+2026-09-01 18:37:42,801 DIFFER.train INFO: CMC curve, Rank-10 :91.9%
+2026-09-01 18:37:42,801 DIFFER.train INFO: mAP-:51.8%
+2026-09-01 18:37:43,977 DIFFER.train INFO: Save the final model at epoch 60
+2026-09-01 18:37:43,978 DIFFER.train INFO: ==> Best Rank-1 53.3%, achieved at epoch 57
+2026-09-01 18:37:43,978 DIFFER.train INFO: Training time 3:58:09

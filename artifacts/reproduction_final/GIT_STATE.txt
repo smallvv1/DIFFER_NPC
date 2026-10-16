@@ -1,0 +1,38 @@
+DIFFER Phase 3D frozen git state
+
+working_branch=main
+HEAD=67acb5d3658d103b4412c8c99f93ee8f085802fe
+new_method_branch=research/differ-new-method
+new_method_branch_target=67acb5d3658d103b4412c8c99f93ee8f085802fe
+HEAD_commit_date=2025-11-19T13:49:40-05:00
+HEAD_subject=Fix missing file issue
+
+The worktree was intentionally preserved as found. Existing modifications and
+untracked forensic/reproduction artifacts were not reset, deleted, or folded
+into the new branch pointer.
+
+Pre-existing modified tracked files:
+- data/datasets/ltcc.py
+- data/datasets/prcc.py
+- loss/make_loss.py
+- processor/processor.py
+- train.py
+
+Pre-existing/untracked artifact families include:
+- DIFFER_REPRO_FIDELITY_MATRIX.md
+- DIFFER_REPRO_PATCHLOG.md
+- cache/
+- diagnostics/
+- reports/
+- scripts/
+
+Phase-3D files added to the worktree:
+- BASELINE_FREEZE_MANIFEST.json
+- reports/DIFFER_FINAL_REPRODUCTION_MATRIX.md
+- reports/DIFFER_PPU_NUMERICAL_DIAGNOSIS_SUMMARY.md
+- reports/DIFFER_REPRODUCTION_MASTER_INDEX.md
+- artifacts/reproduction_final/
+
+No source commit was created in Phase 3D; the requested research branch is a
+pointer to the frozen formal-reproduction HEAD and does not alter the dirty
+worktree.

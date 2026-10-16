@@ -1,0 +1,24 @@
+开始时间：2026-09-28T09:35:06Z
+执行命令：/usr/local/bin/python3 /home/DIFFER/scripts/train_final_gpc.py --mode audit --dataset all --arm gpc --seed 1234 --output-dir /home/DIFFER/outputs/gpc_final_retrain/20260928_173506
+
+/usr/local/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/helpers.py:7: FutureWarning: Importing from timm.models.helpers is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/home/DIFFER/model/eva_embed.py:948: UserWarning: Overwriting eva02_large_patch14_clip_224 in registry with model.eva_embed.eva02_large_patch14_clip_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def eva02_large_patch14_clip_224(pretrained=False,config={}, **kwargs) -> Eva:
+{
+  "ltcc": {
+    "data_leakage": true,
+    "source_audit": true
+  },
+  "prcc": {
+    "data_leakage": true,
+    "source_audit": true
+  }
+}
+
+结束时间：2026-09-28T09:35:38Z
+返回码：0

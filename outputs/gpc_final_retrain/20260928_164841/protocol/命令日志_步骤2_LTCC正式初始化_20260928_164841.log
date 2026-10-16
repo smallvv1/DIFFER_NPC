@@ -1,0 +1,26 @@
+开始时间：2026-09-28T08:49:14Z
+执行命令：/usr/local/bin/python3 /home/DIFFER/scripts/train_final_gpc.py --mode init --dataset ltcc --arm gpc --seed 1234 --output-dir /home/DIFFER/outputs/gpc_final_retrain/20260928_164841
+
+/usr/local/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/helpers.py:7: FutureWarning: Importing from timm.models.helpers is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/home/DIFFER/model/eva_embed.py:948: UserWarning: Overwriting eva02_large_patch14_clip_224 in registry with model.eva_embed.eva02_large_patch14_clip_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def eva02_large_patch14_clip_224(pretrained=False,config={}, **kwargs) -> Eva:
+Unexpected keys (norm.bias, norm.weight) found while loading pretrained weights. This may be expected if model is being adapted.
+[
+  {
+    "dataset": "ltcc",
+    "file_sha256": "993a611b7bb49bca450aec094aba7775c8fed579f56218cb38f31b869a236486",
+    "path": "/home/DIFFER/outputs/gpc_final_retrain/20260928_164841/ltcc/seed1234/common_init/LTCC_COMMON_INIT_SEED1234.pth",
+    "reused_verified": false,
+    "state_hash": "c593b713f631fcc78087095d160b62de9ef3196cb7cefd0495d0daa62cc83202",
+    "state_key_count": 515,
+    "state_numel": 303933965
+  }
+]
+
+结束时间：2026-09-28T08:49:33Z
+返回码：0

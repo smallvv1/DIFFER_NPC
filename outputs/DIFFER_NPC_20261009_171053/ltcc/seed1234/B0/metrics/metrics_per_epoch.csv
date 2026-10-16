@@ -1,0 +1,2 @@
+epoch,train_loss,ce_loss,triplet_loss,memory_loss,lr,updates,amp_scale,cc_rank1,cc_rank5,cc_rank10,cc_mAP,general_rank1,general_mAP,npc_weight_mean,npc_weight_min,npc_weight_max,npc_low_weight_ratio
+1,8.13403606414795,4.34375,3.790286064147949,0.0,8.421875e-07,1,1024.0,0.13775509595870972,0.2806122303009033,0.3928571343421936,0.04481424804175391,0.13775509595870972,0.04481424804175391,NA,NA,NA,NA

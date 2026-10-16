@@ -1,0 +1,15 @@
+2026-09-28 19:53:32,586 INFO ==================================================
+2026-09-28 19:53:32,586 INFO 数据集：LTCC
+2026-09-28 19:53:32,586 INFO 方法：Bio + GPC
+2026-09-28 19:53:32,586 INFO 测试阶段：只使用 Epoch 60 最终 checkpoint
+2026-09-28 19:53:32,586 INFO checkpoint：/home/DIFFER/outputs/gpc_final_retrain/20260928_173834/LTCC/checkpoints/model_final.pth
+2026-09-28 19:53:32,586 INFO checkpoint SHA256：1d29d93d4c2958b2ff6bf046b338459ab72d9ada5257d971e7d1da45de6dc4d6
+2026-09-28 19:53:32,586 INFO 测试协议：LTCC query -> test gallery, changed clothes filter
+2026-09-28 19:53:32,586 INFO ==================================================
+2026-09-28 19:53:33,298 INFO processing batch 0/59
+2026-09-28 19:54:25,310 INFO CMC curve, Rank-1  :55.6%
+2026-09-28 19:54:25,310 INFO CMC curve, Rank-5  :69.6%
+2026-09-28 19:54:25,310 INFO CMC curve, Rank-10 :74.5%
+2026-09-28 19:54:25,310 INFO mAP-:33.3%
+2026-09-28 19:54:25,705 INFO [LTCC][测试] Rank-1：0.55612242；Rank-5：0.69642860；Rank-10：0.74489796；mAP：0.33264935；mINP：当前 evaluator 未提供
+2026-09-28 19:54:25,705 INFO [LTCC][测试] 正式测试完成；query 数：493；gallery 数：7050

@@ -1,0 +1,3 @@
+2026-09-10 10:26:15,127 INFO Calibration epoch 28: hair 2.080796 / cloth 2.075392; accuracy 0.1070 / 0.1583; skips 0
+2026-09-10 10:27:03,364 INFO Calibration epoch 29: hair 2.080835 / cloth 2.075046; accuracy 0.1082 / 0.1600; skips 0
+2026-09-10 10:27:51,628 INFO Calibration epoch 30: hair 2.080614 / cloth 2.074940; accuracy 0.1092 / 0.1587; skips 0

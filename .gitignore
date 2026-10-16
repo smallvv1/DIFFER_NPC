@@ -1,0 +1,19 @@
+# 仅上传代码、配置与日志；不上传数据、缓存、编译产物和模型检查点。
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+data/
+cache/
+outputs/**/checkpoints/
+outputs/**/*.pth
+outputs/**/*.pt
+outputs/**/*.bin
+outputs/**/*.safetensors
+outputs/**/events.out.tfevents.*
+*.deb
+
+# 本地运行时和环境文件
+*.swp
+.env
+outputs/**/source_snapshot/

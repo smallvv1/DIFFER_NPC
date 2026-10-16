@@ -1,0 +1,17 @@
+DIFFER Phase 3D environment snapshot
+
+python=3.10.13
+torch_runtime=2.4.0
+torch_distribution_expected=2.4.0+ppu1.5.0.oe
+cuda_available=True
+device_count=2
+device_0=PPU-ZW810E
+device_1=PPU-ZW810E
+timm=0.9.7
+xformers=0.0.27
+tensorboard=2.21.0
+protobuf=6.33.6
+
+Formal hardware: 2 x PPU-ZW810E; no CPU fallback.
+Formal Track-A AMP: LTCC initial GradScaler 1024; PRCC initial GradScaler 512;
+normal dynamic growth/backoff retained.

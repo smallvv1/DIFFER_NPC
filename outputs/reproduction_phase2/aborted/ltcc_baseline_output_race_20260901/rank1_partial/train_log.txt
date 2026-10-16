@@ -1,0 +1,14 @@
+2026-09-01 09:39:39,780 DIFFER INFO: Saving model in the path :/home/DIFFER/outputs/reproduction_phase2/LTCC/baseline/run1/1[ltcc][eva02_l_bio][PHASE2_LTCC_BASELINE_RUN1]
+2026-09-01 09:39:41,191 DIFFER INFO: => LTCC loaded
+2026-09-01 09:39:41,191 DIFFER INFO: Dataset statistics:
+2026-09-01 09:39:41,191 DIFFER INFO:   ----------------------------------------
+2026-09-01 09:39:41,191 DIFFER INFO:   subset   | # ids | # images | # clothes
+2026-09-01 09:39:41,191 DIFFER INFO:   ----------------------------------------
+2026-09-01 09:39:41,191 DIFFER INFO:   train    |    77 |     9576 |       256
+2026-09-01 09:39:41,191 DIFFER INFO:   test     |    75 |     7543 |       221
+2026-09-01 09:39:41,191 DIFFER INFO:   query    |    75 |      493 |
+2026-09-01 09:39:41,191 DIFFER INFO:   gallery  |    75 |     7050 |
+2026-09-01 09:39:41,191 DIFFER INFO:   ----------------------------------------
+2026-09-01 09:39:41,191 DIFFER INFO:   total    |   152 |    17119 |       477
+2026-09-01 09:39:41,191 DIFFER INFO:   ----------------------------------------
+2026-09-01 09:39:47,976 DIFFER.train INFO: start training

@@ -1,0 +1,960 @@
+2026-09-21 21:00:15,720 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 1, "iteration": 100, "loss": 9.106725692749023, "relation_loss": 0.06292638182640076, "scheduled": true}
+2026-09-21 21:00:40,146 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 1, "iteration": 200, "loss": 8.494267463684082, "relation_loss": 0.0551689974963665, "scheduled": true}
+2026-09-21 21:01:04,784 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 1, "iteration": 300, "loss": 8.104350090026855, "relation_loss": 0.051589369773864746, "scheduled": true}
+2026-09-21 21:01:29,125 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 1, "iteration": 400, "loss": 8.072420120239258, "relation_loss": 0.04752263426780701, "scheduled": true}
+2026-09-21 21:01:53,109 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 1, "iteration": 500, "loss": 8.827483177185059, "relation_loss": 0.03941449895501137, "scheduled": true}
+2026-09-21 21:02:05,725 INFO processing batch 0/55
+2026-09-21 21:02:54,233 INFO CMC curve, Rank-1  :43.2%
+2026-09-21 21:02:54,234 INFO CMC curve, Rank-5  :53.2%
+2026-09-21 21:02:54,234 INFO CMC curve, Rank-10 :57.3%
+2026-09-21 21:02:54,234 INFO mAP-:39.1%
+2026-09-21 21:02:54,234 INFO Validation Results - Epoch: 1
+2026-09-21 21:02:54,595 INFO processing batch 0/57
+2026-09-21 21:03:45,591 INFO CMC curve, Rank-1  :99.8%
+2026-09-21 21:03:45,592 INFO CMC curve, Rank-5  :100.0%
+2026-09-21 21:03:45,592 INFO CMC curve, Rank-10 :100.0%
+2026-09-21 21:03:45,592 INFO mAP-:93.9%
+2026-09-21 21:04:11,647 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 2, "iteration": 100, "loss": 8.871452331542969, "relation_loss": 0.05050678178668022, "scheduled": true}
+2026-09-21 21:04:35,934 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 2, "iteration": 200, "loss": 8.171269416809082, "relation_loss": 0.04319436475634575, "scheduled": true}
+2026-09-21 21:05:00,189 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 2, "iteration": 300, "loss": 8.180848121643066, "relation_loss": 0.04631467163562775, "scheduled": true}
+2026-09-21 21:05:24,504 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 2, "iteration": 400, "loss": 8.004179954528809, "relation_loss": 0.04042264074087143, "scheduled": true}
+2026-09-21 21:05:48,622 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 2, "iteration": 500, "loss": 8.40671157836914, "relation_loss": 0.03588755801320076, "scheduled": true}
+2026-09-21 21:06:01,776 INFO processing batch 0/55
+2026-09-21 21:06:50,350 INFO CMC curve, Rank-1  :52.2%
+2026-09-21 21:06:50,350 INFO CMC curve, Rank-5  :60.7%
+2026-09-21 21:06:50,350 INFO CMC curve, Rank-10 :65.0%
+2026-09-21 21:06:50,350 INFO mAP-:45.6%
+2026-09-21 21:06:50,350 INFO Validation Results - Epoch: 2
+2026-09-21 21:06:50,722 INFO processing batch 0/57
+2026-09-21 21:07:41,711 INFO CMC curve, Rank-1  :99.9%
+2026-09-21 21:07:41,711 INFO CMC curve, Rank-5  :100.0%
+2026-09-21 21:07:41,711 INFO CMC curve, Rank-10 :100.0%
+2026-09-21 21:07:41,711 INFO mAP-:95.7%
+2026-09-21 21:08:08,521 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 3, "iteration": 100, "loss": 8.596071243286133, "relation_loss": 0.04746972769498825, "scheduled": true}
+2026-09-21 21:08:32,800 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 3, "iteration": 200, "loss": 8.053872108459473, "relation_loss": 0.043129511177539825, "scheduled": true}
+2026-09-21 21:08:57,125 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 3, "iteration": 300, "loss": 8.13103199005127, "relation_loss": 0.04755846783518791, "scheduled": true}
+2026-09-21 21:09:21,574 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 3, "iteration": 400, "loss": 8.02248477935791, "relation_loss": 0.04207007214426994, "scheduled": true}
+2026-09-21 21:09:46,030 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 3, "iteration": 500, "loss": 8.384485244750977, "relation_loss": 0.031077584251761436, "scheduled": true}
+2026-09-21 21:09:58,786 INFO processing batch 0/55
+2026-09-21 21:10:47,338 INFO CMC curve, Rank-1  :57.6%
+2026-09-21 21:10:47,339 INFO CMC curve, Rank-5  :65.1%
+2026-09-21 21:10:47,339 INFO CMC curve, Rank-10 :68.6%
+2026-09-21 21:10:47,339 INFO mAP-:50.5%
+2026-09-21 21:10:47,339 INFO Validation Results - Epoch: 3
+2026-09-21 21:10:47,712 INFO processing batch 0/57
+2026-09-21 21:11:38,698 INFO CMC curve, Rank-1  :99.9%
+2026-09-21 21:11:38,699 INFO CMC curve, Rank-5  :99.9%
+2026-09-21 21:11:38,699 INFO CMC curve, Rank-10 :100.0%
+2026-09-21 21:11:38,699 INFO mAP-:96.9%
+2026-09-21 21:12:05,351 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 4, "iteration": 100, "loss": 8.420148849487305, "relation_loss": 0.04698450490832329, "scheduled": true}
+2026-09-21 21:12:29,544 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 4, "iteration": 200, "loss": 8.169791221618652, "relation_loss": 0.045642536133527756, "scheduled": true}
+2026-09-21 21:12:54,040 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 4, "iteration": 300, "loss": 8.05801773071289, "relation_loss": 0.0469181165099144, "scheduled": true}
+2026-09-21 21:13:18,686 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 4, "iteration": 400, "loss": 7.995248317718506, "relation_loss": 0.03724491596221924, "scheduled": true}
+2026-09-21 21:13:43,689 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 4, "iteration": 500, "loss": 8.289888381958008, "relation_loss": 0.03301846981048584, "scheduled": true}
+2026-09-21 21:13:56,835 INFO processing batch 0/55
+2026-09-21 21:14:45,349 INFO CMC curve, Rank-1  :60.6%
+2026-09-21 21:14:45,349 INFO CMC curve, Rank-5  :66.4%
+2026-09-21 21:14:45,350 INFO CMC curve, Rank-10 :69.4%
+2026-09-21 21:14:45,350 INFO mAP-:53.7%
+2026-09-21 21:14:45,350 INFO Validation Results - Epoch: 4
+2026-09-21 21:14:45,734 INFO processing batch 0/57
+2026-09-21 21:15:36,837 INFO CMC curve, Rank-1  :99.9%
+2026-09-21 21:15:36,837 INFO CMC curve, Rank-5  :100.0%
+2026-09-21 21:15:36,837 INFO CMC curve, Rank-10 :100.0%
+2026-09-21 21:15:36,837 INFO mAP-:97.5%
+2026-09-21 21:16:03,649 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 5, "iteration": 100, "loss": 8.687995910644531, "relation_loss": 0.046111099421978, "scheduled": true}
+2026-09-21 21:16:27,604 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 5, "iteration": 200, "loss": 8.058890342712402, "relation_loss": 0.04379870742559433, "scheduled": true}
+2026-09-21 21:16:51,705 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 5, "iteration": 300, "loss": 8.076661109924316, "relation_loss": 0.04199068993330002, "scheduled": true}
+2026-09-21 21:17:15,854 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 5, "iteration": 400, "loss": 8.024565696716309, "relation_loss": 0.03850582614541054, "scheduled": true}
+2026-09-21 21:17:40,063 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 5, "iteration": 500, "loss": 8.215270042419434, "relation_loss": 0.035887353122234344, "scheduled": true}
+2026-09-21 21:17:52,734 INFO processing batch 0/55
+2026-09-21 21:18:41,367 INFO CMC curve, Rank-1  :62.8%
+2026-09-21 21:18:41,368 INFO CMC curve, Rank-5  :68.6%
+2026-09-21 21:18:41,368 INFO CMC curve, Rank-10 :71.4%
+2026-09-21 21:18:41,368 INFO mAP-:56.6%
+2026-09-21 21:18:41,368 INFO Validation Results - Epoch: 5
+2026-09-21 21:18:41,750 INFO processing batch 0/57
+2026-09-21 21:19:32,744 INFO CMC curve, Rank-1  :99.9%
+2026-09-21 21:19:32,744 INFO CMC curve, Rank-5  :100.0%
+2026-09-21 21:19:32,745 INFO CMC curve, Rank-10 :100.0%
+2026-09-21 21:19:32,745 INFO mAP-:97.9%
+2026-09-21 21:19:59,540 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 6, "iteration": 100, "loss": 8.671807289123535, "relation_loss": 0.04464560002088547, "scheduled": true}
+2026-09-21 21:20:23,985 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 6, "iteration": 200, "loss": 7.862220764160156, "relation_loss": 0.03823113068938255, "scheduled": true}
+2026-09-21 21:20:48,780 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 6, "iteration": 300, "loss": 7.975527763366699, "relation_loss": 0.045594122260808945, "scheduled": true}
+2026-09-21 21:21:13,375 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 6, "iteration": 400, "loss": 8.097213745117188, "relation_loss": 0.046647123992443085, "scheduled": true}
+2026-09-21 21:21:38,130 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 6, "iteration": 500, "loss": 8.11446762084961, "relation_loss": 0.03372560068964958, "scheduled": true}
+2026-09-21 21:21:50,840 INFO processing batch 0/55
+2026-09-21 21:22:39,782 INFO CMC curve, Rank-1  :63.5%
+2026-09-21 21:22:39,782 INFO CMC curve, Rank-5  :69.8%
+2026-09-21 21:22:39,782 INFO CMC curve, Rank-10 :72.5%
+2026-09-21 21:22:39,782 INFO mAP-:58.5%
+2026-09-21 21:22:39,782 INFO Validation Results - Epoch: 6
+2026-09-21 21:22:40,167 INFO processing batch 0/57
+2026-09-21 21:23:31,176 INFO CMC curve, Rank-1  :99.9%
+2026-09-21 21:23:31,176 INFO CMC curve, Rank-5  :100.0%
+2026-09-21 21:23:31,176 INFO CMC curve, Rank-10 :100.0%
+2026-09-21 21:23:31,176 INFO mAP-:98.2%
+2026-09-21 21:23:57,889 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 7, "iteration": 100, "loss": 8.411454200744629, "relation_loss": 0.04940279573202133, "scheduled": true}
+2026-09-21 21:24:22,344 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 7, "iteration": 200, "loss": 8.117608070373535, "relation_loss": 0.045544713735580444, "scheduled": true}
+2026-09-21 21:24:46,327 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 7, "iteration": 300, "loss": 7.901279926300049, "relation_loss": 0.04351615160703659, "scheduled": true}
+2026-09-21 21:25:10,324 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 7, "iteration": 400, "loss": 7.848050117492676, "relation_loss": 0.03623228520154953, "scheduled": true}
+2026-09-21 21:25:34,256 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 7, "iteration": 500, "loss": 8.193885803222656, "relation_loss": 0.036299362778663635, "scheduled": true}
+2026-09-21 21:25:46,778 INFO processing batch 0/55
+2026-09-21 21:26:35,444 INFO CMC curve, Rank-1  :64.6%
+2026-09-21 21:26:35,445 INFO CMC curve, Rank-5  :70.3%
+2026-09-21 21:26:35,445 INFO CMC curve, Rank-10 :73.0%
+2026-09-21 21:26:35,445 INFO mAP-:59.6%
+2026-09-21 21:26:35,445 INFO Validation Results - Epoch: 7
+2026-09-21 21:26:35,823 INFO processing batch 0/57
+2026-09-21 21:27:27,482 INFO CMC curve, Rank-1  :99.9%
+2026-09-21 21:27:27,483 INFO CMC curve, Rank-5  :100.0%
+2026-09-21 21:27:27,483 INFO CMC curve, Rank-10 :100.0%
+2026-09-21 21:27:27,483 INFO mAP-:98.5%
+2026-09-21 21:27:54,071 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 8, "iteration": 100, "loss": 8.496973991394043, "relation_loss": 0.05018923804163933, "scheduled": true}
+2026-09-21 21:28:18,231 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 8, "iteration": 200, "loss": 7.87885856628418, "relation_loss": 0.03997345268726349, "scheduled": true}
+2026-09-21 21:28:42,316 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 8, "iteration": 300, "loss": 7.864151954650879, "relation_loss": 0.04142922908067703, "scheduled": true}
+2026-09-21 21:29:06,464 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 8, "iteration": 400, "loss": 7.840442657470703, "relation_loss": 0.04005061089992523, "scheduled": true}
+2026-09-21 21:29:30,622 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 8, "iteration": 500, "loss": 8.177095413208008, "relation_loss": 0.035439811646938324, "scheduled": true}
+2026-09-21 21:29:43,249 INFO processing batch 0/55
+2026-09-21 21:30:31,766 INFO CMC curve, Rank-1  :64.1%
+2026-09-21 21:30:31,767 INFO CMC curve, Rank-5  :70.5%
+2026-09-21 21:30:31,767 INFO CMC curve, Rank-10 :73.4%
+2026-09-21 21:30:31,767 INFO mAP-:60.0%
+2026-09-21 21:30:31,767 INFO Validation Results - Epoch: 8
+2026-09-21 21:30:32,133 INFO processing batch 0/57
+2026-09-21 21:31:23,202 INFO CMC curve, Rank-1  :99.9%
+2026-09-21 21:31:23,202 INFO CMC curve, Rank-5  :100.0%
+2026-09-21 21:31:23,203 INFO CMC curve, Rank-10 :100.0%
+2026-09-21 21:31:23,203 INFO mAP-:98.8%
+2026-09-21 21:31:48,093 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 9, "iteration": 100, "loss": 8.668645858764648, "relation_loss": 0.05266690254211426, "scheduled": true}
+2026-09-21 21:32:12,661 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 9, "iteration": 200, "loss": 8.047581672668457, "relation_loss": 0.04701019451022148, "scheduled": true}
+2026-09-21 21:32:36,995 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 9, "iteration": 300, "loss": 7.913104057312012, "relation_loss": 0.04701922461390495, "scheduled": true}
+2026-09-21 21:33:01,099 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 9, "iteration": 400, "loss": 7.798586368560791, "relation_loss": 0.042670153081417084, "scheduled": true}
+2026-09-21 21:33:25,349 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 9, "iteration": 500, "loss": 7.996493339538574, "relation_loss": 0.03231427073478699, "scheduled": true}
+2026-09-21 21:33:38,101 INFO processing batch 0/55
+2026-09-21 21:34:26,847 INFO CMC curve, Rank-1  :64.6%
+2026-09-21 21:34:26,848 INFO CMC curve, Rank-5  :71.2%
+2026-09-21 21:34:26,848 INFO CMC curve, Rank-10 :74.3%
+2026-09-21 21:34:26,848 INFO mAP-:60.5%
+2026-09-21 21:34:26,848 INFO Validation Results - Epoch: 9
+2026-09-21 21:34:27,223 INFO processing batch 0/57
+2026-09-21 21:35:18,231 INFO CMC curve, Rank-1  :99.9%
+2026-09-21 21:35:18,231 INFO CMC curve, Rank-5  :100.0%
+2026-09-21 21:35:18,231 INFO CMC curve, Rank-10 :100.0%
+2026-09-21 21:35:18,231 INFO mAP-:98.9%
+2026-09-21 21:35:43,116 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 10, "iteration": 100, "loss": 8.589402198791504, "relation_loss": 0.057740770280361176, "scheduled": true}
+2026-09-21 21:36:07,480 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 10, "iteration": 200, "loss": 8.062056541442871, "relation_loss": 0.05362933501601219, "scheduled": true}
+2026-09-21 21:36:31,995 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 10, "iteration": 300, "loss": 7.963639736175537, "relation_loss": 0.04899211227893829, "scheduled": true}
+2026-09-21 21:36:56,200 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 10, "iteration": 400, "loss": 7.78574800491333, "relation_loss": 0.042779531329870224, "scheduled": true}
+2026-09-21 21:37:20,609 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 10, "iteration": 500, "loss": 8.156259536743164, "relation_loss": 0.04031887650489807, "scheduled": true}
+2026-09-21 21:37:33,284 INFO processing batch 0/55
+2026-09-21 21:38:22,162 INFO CMC curve, Rank-1  :65.2%
+2026-09-21 21:38:22,162 INFO CMC curve, Rank-5  :71.9%
+2026-09-21 21:38:22,162 INFO CMC curve, Rank-10 :74.9%
+2026-09-21 21:38:22,162 INFO mAP-:60.9%
+2026-09-21 21:38:22,162 INFO Validation Results - Epoch: 10
+2026-09-21 21:38:22,558 INFO processing batch 0/57
+2026-09-21 21:39:13,752 INFO CMC curve, Rank-1  :100.0%
+2026-09-21 21:39:13,752 INFO CMC curve, Rank-5  :100.0%
+2026-09-21 21:39:13,752 INFO CMC curve, Rank-10 :100.0%
+2026-09-21 21:39:13,752 INFO mAP-:99.0%
+2026-09-21 21:39:43,085 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 11, "iteration": 100, "loss": 8.773425102233887, "relation_loss": 0.05997658520936966, "scheduled": true}
+2026-09-21 21:40:08,491 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 11, "iteration": 200, "loss": 7.848217487335205, "relation_loss": 0.0473843514919281, "scheduled": true}
+2026-09-21 21:40:34,135 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 11, "iteration": 300, "loss": 8.190935134887695, "relation_loss": 0.05932166427373886, "scheduled": true}
+2026-09-21 21:40:59,142 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 11, "iteration": 400, "loss": 7.856545925140381, "relation_loss": 0.047282420098781586, "scheduled": true}
+2026-09-21 21:41:23,709 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 11, "iteration": 500, "loss": 8.012630462646484, "relation_loss": 0.041196309030056, "scheduled": true}
+2026-09-21 21:41:36,576 INFO processing batch 0/55
+2026-09-21 21:42:25,110 INFO CMC curve, Rank-1  :64.3%
+2026-09-21 21:42:25,110 INFO CMC curve, Rank-5  :72.2%
+2026-09-21 21:42:25,111 INFO CMC curve, Rank-10 :75.7%
+2026-09-21 21:42:25,111 INFO mAP-:60.3%
+2026-09-21 21:42:25,111 INFO Validation Results - Epoch: 11
+2026-09-21 21:42:25,518 INFO processing batch 0/57
+2026-09-21 21:43:16,533 INFO CMC curve, Rank-1  :100.0%
+2026-09-21 21:43:16,533 INFO CMC curve, Rank-5  :100.0%
+2026-09-21 21:43:16,533 INFO CMC curve, Rank-10 :100.0%
+2026-09-21 21:43:16,533 INFO mAP-:99.1%
+2026-09-21 21:43:41,565 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 12, "iteration": 100, "loss": 8.254560470581055, "relation_loss": 0.05439335107803345, "scheduled": true}
+2026-09-21 21:44:06,210 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 12, "iteration": 200, "loss": 7.933000087738037, "relation_loss": 0.052399735897779465, "scheduled": true}
+2026-09-21 21:44:30,826 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 12, "iteration": 300, "loss": 7.8874897956848145, "relation_loss": 0.056154172867536545, "scheduled": true}
+2026-09-21 21:44:55,125 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 12, "iteration": 400, "loss": 7.795957565307617, "relation_loss": 0.0461348257958889, "scheduled": true}
+2026-09-21 21:45:19,510 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 12, "iteration": 500, "loss": 7.974014759063721, "relation_loss": 0.04075450450181961, "scheduled": true}
+2026-09-21 21:45:32,235 INFO processing batch 0/55
+2026-09-21 21:46:20,809 INFO CMC curve, Rank-1  :64.3%
+2026-09-21 21:46:20,809 INFO CMC curve, Rank-5  :72.6%
+2026-09-21 21:46:20,809 INFO CMC curve, Rank-10 :75.9%
+2026-09-21 21:46:20,809 INFO mAP-:61.0%
+2026-09-21 21:46:20,809 INFO Validation Results - Epoch: 12
+2026-09-21 21:46:21,209 INFO processing batch 0/57
+2026-09-21 21:47:12,158 INFO CMC curve, Rank-1  :100.0%
+2026-09-21 21:47:12,158 INFO CMC curve, Rank-5  :100.0%
+2026-09-21 21:47:12,158 INFO CMC curve, Rank-10 :100.0%
+2026-09-21 21:47:12,158 INFO mAP-:99.2%
+2026-09-21 21:47:36,635 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 13, "iteration": 100, "loss": 8.705117225646973, "relation_loss": 0.0674305409193039, "scheduled": true}
+2026-09-21 21:48:00,709 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 13, "iteration": 200, "loss": 7.844491004943848, "relation_loss": 0.05495181679725647, "scheduled": true}
+2026-09-21 21:48:24,874 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 13, "iteration": 300, "loss": 7.789629936218262, "relation_loss": 0.05336941406130791, "scheduled": true}
+2026-09-21 21:48:48,984 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 13, "iteration": 400, "loss": 7.7964558601379395, "relation_loss": 0.05444213002920151, "scheduled": true}
+2026-09-21 21:49:12,826 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 13, "iteration": 500, "loss": 8.023990631103516, "relation_loss": 0.048999618738889694, "scheduled": true}
+2026-09-21 21:49:25,347 INFO processing batch 0/55
+2026-09-21 21:50:13,903 INFO CMC curve, Rank-1  :64.9%
+2026-09-21 21:50:13,903 INFO CMC curve, Rank-5  :72.9%
+2026-09-21 21:50:13,903 INFO CMC curve, Rank-10 :76.9%
+2026-09-21 21:50:13,903 INFO mAP-:61.8%
+2026-09-21 21:50:13,903 INFO Validation Results - Epoch: 13
+2026-09-21 21:50:14,289 INFO processing batch 0/57
+2026-09-21 21:51:05,479 INFO CMC curve, Rank-1  :100.0%
+2026-09-21 21:51:05,480 INFO CMC curve, Rank-5  :100.0%
+2026-09-21 21:51:05,480 INFO CMC curve, Rank-10 :100.0%
+2026-09-21 21:51:05,480 INFO mAP-:99.4%
+2026-09-21 21:51:29,724 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 14, "iteration": 100, "loss": 8.552470207214355, "relation_loss": 0.07439205795526505, "scheduled": true}
+2026-09-21 21:51:53,956 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 14, "iteration": 200, "loss": 8.013490676879883, "relation_loss": 0.062348753213882446, "scheduled": true}
+2026-09-21 21:52:18,394 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 14, "iteration": 300, "loss": 8.02354621887207, "relation_loss": 0.060089390724897385, "scheduled": true}
+2026-09-21 21:52:42,971 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 14, "iteration": 400, "loss": 7.754497051239014, "relation_loss": 0.0522594079375267, "scheduled": true}
+2026-09-21 21:53:07,224 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 14, "iteration": 500, "loss": 7.806911945343018, "relation_loss": 0.04512989521026611, "scheduled": true}
+2026-09-21 21:53:19,989 INFO processing batch 0/55
+2026-09-21 21:54:08,803 INFO CMC curve, Rank-1  :64.9%
+2026-09-21 21:54:08,804 INFO CMC curve, Rank-5  :72.8%
+2026-09-21 21:54:08,804 INFO CMC curve, Rank-10 :76.9%
+2026-09-21 21:54:08,804 INFO mAP-:61.5%
+2026-09-21 21:54:08,804 INFO Validation Results - Epoch: 14
+2026-09-21 21:54:09,196 INFO processing batch 0/57
+2026-09-21 21:55:00,268 INFO CMC curve, Rank-1  :100.0%
+2026-09-21 21:55:00,268 INFO CMC curve, Rank-5  :100.0%
+2026-09-21 21:55:00,268 INFO CMC curve, Rank-10 :100.0%
+2026-09-21 21:55:00,268 INFO mAP-:99.4%
+2026-09-21 21:55:25,115 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 15, "iteration": 100, "loss": 8.239562034606934, "relation_loss": 0.07340002059936523, "scheduled": true}
+2026-09-21 21:55:49,343 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 15, "iteration": 200, "loss": 7.789210319519043, "relation_loss": 0.05977511405944824, "scheduled": true}
+2026-09-21 21:56:13,464 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 15, "iteration": 300, "loss": 7.847989559173584, "relation_loss": 0.06341329962015152, "scheduled": true}
+2026-09-21 21:56:37,641 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 15, "iteration": 400, "loss": 7.751882553100586, "relation_loss": 0.06386729329824448, "scheduled": true}
+2026-09-21 21:57:02,001 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 15, "iteration": 500, "loss": 7.91721773147583, "relation_loss": 0.04895490035414696, "scheduled": true}
+2026-09-21 21:57:14,912 INFO processing batch 0/55
+2026-09-21 21:58:03,465 INFO CMC curve, Rank-1  :64.7%
+2026-09-21 21:58:03,465 INFO CMC curve, Rank-5  :72.6%
+2026-09-21 21:58:03,466 INFO CMC curve, Rank-10 :76.0%
+2026-09-21 21:58:03,466 INFO mAP-:61.5%
+2026-09-21 21:58:03,466 INFO Validation Results - Epoch: 15
+2026-09-21 21:58:03,872 INFO processing batch 0/57
+2026-09-21 21:58:54,805 INFO CMC curve, Rank-1  :100.0%
+2026-09-21 21:58:54,805 INFO CMC curve, Rank-5  :100.0%
+2026-09-21 21:58:54,805 INFO CMC curve, Rank-10 :100.0%
+2026-09-21 21:58:54,805 INFO mAP-:99.5%
+2026-09-21 21:59:19,345 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 16, "iteration": 100, "loss": 8.218155860900879, "relation_loss": 0.08089742064476013, "scheduled": true}
+2026-09-21 21:59:43,601 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 16, "iteration": 200, "loss": 7.818752288818359, "relation_loss": 0.06736630946397781, "scheduled": true}
+2026-09-21 22:00:07,944 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 16, "iteration": 300, "loss": 7.921815395355225, "relation_loss": 0.0705731213092804, "scheduled": true}
+2026-09-21 22:00:32,590 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 16, "iteration": 400, "loss": 7.781871318817139, "relation_loss": 0.08155285567045212, "scheduled": true}
+2026-09-21 22:00:56,981 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 16, "iteration": 500, "loss": 7.790331840515137, "relation_loss": 0.053513847291469574, "scheduled": true}
+2026-09-21 22:01:09,699 INFO processing batch 0/55
+2026-09-21 22:01:58,371 INFO CMC curve, Rank-1  :65.3%
+2026-09-21 22:01:58,371 INFO CMC curve, Rank-5  :73.5%
+2026-09-21 22:01:58,371 INFO CMC curve, Rank-10 :77.1%
+2026-09-21 22:01:58,371 INFO mAP-:61.5%
+2026-09-21 22:01:58,371 INFO Validation Results - Epoch: 16
+2026-09-21 22:01:58,783 INFO processing batch 0/57
+2026-09-21 22:02:49,782 INFO CMC curve, Rank-1  :100.0%
+2026-09-21 22:02:49,782 INFO CMC curve, Rank-5  :100.0%
+2026-09-21 22:02:49,782 INFO CMC curve, Rank-10 :100.0%
+2026-09-21 22:02:49,782 INFO mAP-:99.5%
+2026-09-21 22:03:16,361 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 17, "iteration": 100, "loss": 7.925022125244141, "relation_loss": 0.08473517000675201, "scheduled": true}
+2026-09-21 22:03:40,501 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 17, "iteration": 200, "loss": 7.790752410888672, "relation_loss": 0.08056430518627167, "scheduled": true}
+2026-09-21 22:04:04,982 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 17, "iteration": 300, "loss": 8.026771545410156, "relation_loss": 0.08007293939590454, "scheduled": true}
+2026-09-21 22:04:29,299 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 17, "iteration": 400, "loss": 7.706332683563232, "relation_loss": 0.07479310035705566, "scheduled": true}
+2026-09-21 22:04:53,392 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 17, "iteration": 500, "loss": 7.802594184875488, "relation_loss": 0.06401383876800537, "scheduled": true}
+2026-09-21 22:05:06,139 INFO processing batch 0/55
+2026-09-21 22:05:54,823 INFO CMC curve, Rank-1  :65.9%
+2026-09-21 22:05:54,823 INFO CMC curve, Rank-5  :74.5%
+2026-09-21 22:05:54,823 INFO CMC curve, Rank-10 :78.2%
+2026-09-21 22:05:54,823 INFO mAP-:62.1%
+2026-09-21 22:05:54,823 INFO Validation Results - Epoch: 17
+2026-09-21 22:05:55,214 INFO processing batch 0/57
+2026-09-21 22:06:46,149 INFO CMC curve, Rank-1  :100.0%
+2026-09-21 22:06:46,150 INFO CMC curve, Rank-5  :100.0%
+2026-09-21 22:06:46,150 INFO CMC curve, Rank-10 :100.0%
+2026-09-21 22:06:46,150 INFO mAP-:99.5%
+2026-09-21 22:07:12,578 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 18, "iteration": 100, "loss": 8.035074234008789, "relation_loss": 0.0979074239730835, "scheduled": true}
+2026-09-21 22:07:36,758 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 18, "iteration": 200, "loss": 7.881023406982422, "relation_loss": 0.09831367433071136, "scheduled": true}
+2026-09-21 22:08:00,996 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 18, "iteration": 300, "loss": 7.96315860748291, "relation_loss": 0.08923085778951645, "scheduled": true}
+2026-09-21 22:08:25,280 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 18, "iteration": 400, "loss": 7.679782390594482, "relation_loss": 0.08532344549894333, "scheduled": true}
+2026-09-21 22:08:49,355 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 18, "iteration": 500, "loss": 7.700714111328125, "relation_loss": 0.07978112995624542, "scheduled": true}
+2026-09-21 22:09:02,011 INFO processing batch 0/55
+2026-09-21 22:09:50,562 INFO CMC curve, Rank-1  :65.8%
+2026-09-21 22:09:50,563 INFO CMC curve, Rank-5  :74.3%
+2026-09-21 22:09:50,563 INFO CMC curve, Rank-10 :78.1%
+2026-09-21 22:09:50,563 INFO mAP-:62.9%
+2026-09-21 22:09:50,563 INFO Validation Results - Epoch: 18
+2026-09-21 22:09:50,939 INFO processing batch 0/57
+2026-09-21 22:10:41,938 INFO CMC curve, Rank-1  :100.0%
+2026-09-21 22:10:41,938 INFO CMC curve, Rank-5  :100.0%
+2026-09-21 22:10:41,938 INFO CMC curve, Rank-10 :100.0%
+2026-09-21 22:10:41,938 INFO mAP-:99.6%
+2026-09-21 22:11:06,760 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 19, "iteration": 100, "loss": 8.268566131591797, "relation_loss": 0.11636859178543091, "scheduled": true}
+2026-09-21 22:11:30,934 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 19, "iteration": 200, "loss": 7.793885707855225, "relation_loss": 0.10219603776931763, "scheduled": true}
+2026-09-21 22:11:55,199 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 19, "iteration": 300, "loss": 7.730529308319092, "relation_loss": 0.08895464986562729, "scheduled": true}
+2026-09-21 22:12:19,680 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 19, "iteration": 400, "loss": 7.663488864898682, "relation_loss": 0.10595675557851791, "scheduled": true}
+2026-09-21 22:12:43,864 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 19, "iteration": 500, "loss": 7.678442001342773, "relation_loss": 0.08804937452077866, "scheduled": true}
+2026-09-21 22:12:56,487 INFO processing batch 0/55
+2026-09-21 22:13:45,040 INFO CMC curve, Rank-1  :65.3%
+2026-09-21 22:13:45,040 INFO CMC curve, Rank-5  :74.2%
+2026-09-21 22:13:45,040 INFO CMC curve, Rank-10 :78.2%
+2026-09-21 22:13:45,040 INFO mAP-:63.0%
+2026-09-21 22:13:45,040 INFO Validation Results - Epoch: 19
+2026-09-21 22:13:45,416 INFO processing batch 0/57
+2026-09-21 22:14:36,377 INFO CMC curve, Rank-1  :100.0%
+2026-09-21 22:14:36,378 INFO CMC curve, Rank-5  :100.0%
+2026-09-21 22:14:36,378 INFO CMC curve, Rank-10 :100.0%
+2026-09-21 22:14:36,378 INFO mAP-:99.6%
+2026-09-21 22:15:00,753 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 20, "iteration": 100, "loss": 7.827268123626709, "relation_loss": 0.12958508729934692, "scheduled": true}
+2026-09-21 22:15:24,917 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 20, "iteration": 200, "loss": 7.748420715332031, "relation_loss": 0.11268274486064911, "scheduled": true}
+2026-09-21 22:15:49,148 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 20, "iteration": 300, "loss": 7.7175984382629395, "relation_loss": 0.12633810937404633, "scheduled": true}
+2026-09-21 22:16:13,141 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 20, "iteration": 400, "loss": 7.6382551193237305, "relation_loss": 0.11911173909902573, "scheduled": true}
+2026-09-21 22:16:37,655 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 20, "iteration": 500, "loss": 7.793335914611816, "relation_loss": 0.10560989379882812, "scheduled": true}
+2026-09-21 22:16:50,329 INFO processing batch 0/55
+2026-09-21 22:17:38,907 INFO CMC curve, Rank-1  :65.3%
+2026-09-21 22:17:38,908 INFO CMC curve, Rank-5  :73.0%
+2026-09-21 22:17:38,908 INFO CMC curve, Rank-10 :76.7%
+2026-09-21 22:17:38,908 INFO mAP-:62.8%
+2026-09-21 22:17:38,908 INFO Validation Results - Epoch: 20
+2026-09-21 22:17:39,286 INFO processing batch 0/57
+2026-09-21 22:18:30,296 INFO CMC curve, Rank-1  :100.0%
+2026-09-21 22:18:30,296 INFO CMC curve, Rank-5  :100.0%
+2026-09-21 22:18:30,296 INFO CMC curve, Rank-10 :100.0%
+2026-09-21 22:18:30,296 INFO mAP-:99.6%
+2026-09-21 22:20:30,193 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 21, "iteration": 100, "loss": 8.100295066833496, "relation_loss": 0.15012243390083313, "scheduled": true}
+2026-09-21 22:20:54,439 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 21, "iteration": 200, "loss": 7.716672420501709, "relation_loss": 0.13112692534923553, "scheduled": true}
+2026-09-21 22:21:18,993 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 21, "iteration": 300, "loss": 7.681158065795898, "relation_loss": 0.12432833015918732, "scheduled": true}
+2026-09-21 22:21:43,349 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 21, "iteration": 400, "loss": 7.624503135681152, "relation_loss": 0.1421639621257782, "scheduled": true}
+2026-09-21 22:22:07,996 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 21, "iteration": 500, "loss": 7.628861904144287, "relation_loss": 0.11852794885635376, "scheduled": true}
+2026-09-21 22:22:21,090 INFO processing batch 0/55
+2026-09-21 22:23:09,864 INFO CMC curve, Rank-1  :65.0%
+2026-09-21 22:23:09,865 INFO CMC curve, Rank-5  :73.1%
+2026-09-21 22:23:09,865 INFO CMC curve, Rank-10 :77.2%
+2026-09-21 22:23:09,865 INFO mAP-:62.7%
+2026-09-21 22:23:09,865 INFO Validation Results - Epoch: 21
+2026-09-21 22:23:10,371 INFO processing batch 0/57
+2026-09-21 22:24:01,385 INFO CMC curve, Rank-1  :100.0%
+2026-09-21 22:24:01,385 INFO CMC curve, Rank-5  :100.0%
+2026-09-21 22:24:01,385 INFO CMC curve, Rank-10 :100.0%
+2026-09-21 22:24:01,385 INFO mAP-:99.6%
+2026-09-21 22:24:26,404 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 22, "iteration": 100, "loss": 8.151762008666992, "relation_loss": 0.18511544167995453, "scheduled": true}
+2026-09-21 22:24:50,714 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 22, "iteration": 200, "loss": 7.7593994140625, "relation_loss": 0.15209075808525085, "scheduled": true}
+2026-09-21 22:25:15,263 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 22, "iteration": 300, "loss": 7.67007303237915, "relation_loss": 0.13488754630088806, "scheduled": true}
+2026-09-21 22:25:39,986 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 22, "iteration": 400, "loss": 7.590466022491455, "relation_loss": 0.1565587967634201, "scheduled": true}
+2026-09-21 22:26:04,328 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 22, "iteration": 500, "loss": 7.61065673828125, "relation_loss": 0.11616577208042145, "scheduled": true}
+2026-09-21 22:26:17,367 INFO processing batch 0/55
+2026-09-21 22:27:06,444 INFO CMC curve, Rank-1  :64.1%
+2026-09-21 22:27:06,444 INFO CMC curve, Rank-5  :72.4%
+2026-09-21 22:27:06,444 INFO CMC curve, Rank-10 :76.8%
+2026-09-21 22:27:06,444 INFO mAP-:62.4%
+2026-09-21 22:27:06,445 INFO Validation Results - Epoch: 22
+2026-09-21 22:27:06,969 INFO processing batch 0/57
+2026-09-21 22:27:58,171 INFO CMC curve, Rank-1  :100.0%
+2026-09-21 22:27:58,171 INFO CMC curve, Rank-5  :100.0%
+2026-09-21 22:27:58,171 INFO CMC curve, Rank-10 :100.0%
+2026-09-21 22:27:58,171 INFO mAP-:99.6%
+2026-09-21 22:28:23,608 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 23, "iteration": 100, "loss": 7.722032070159912, "relation_loss": 0.1814321130514145, "scheduled": true}
+2026-09-21 22:28:47,843 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 23, "iteration": 200, "loss": 8.307515144348145, "relation_loss": 0.17753762006759644, "scheduled": true}
+2026-09-21 22:29:12,467 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 23, "iteration": 300, "loss": 7.622140407562256, "relation_loss": 0.14344605803489685, "scheduled": true}
+2026-09-21 22:29:36,641 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 23, "iteration": 400, "loss": 7.56303071975708, "relation_loss": 0.1554964780807495, "scheduled": true}
+2026-09-21 22:30:00,793 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 23, "iteration": 500, "loss": 7.578067302703857, "relation_loss": 0.13016514480113983, "scheduled": true}
+2026-09-21 22:30:13,875 INFO processing batch 0/55
+2026-09-21 22:31:03,050 INFO CMC curve, Rank-1  :65.1%
+2026-09-21 22:31:03,050 INFO CMC curve, Rank-5  :73.9%
+2026-09-21 22:31:03,051 INFO CMC curve, Rank-10 :77.5%
+2026-09-21 22:31:03,051 INFO mAP-:62.6%
+2026-09-21 22:31:03,051 INFO Validation Results - Epoch: 23
+2026-09-21 22:31:03,701 INFO processing batch 0/57
+2026-09-21 22:31:55,737 INFO CMC curve, Rank-1  :100.0%
+2026-09-21 22:31:55,737 INFO CMC curve, Rank-5  :100.0%
+2026-09-21 22:31:55,737 INFO CMC curve, Rank-10 :100.0%
+2026-09-21 22:31:55,737 INFO mAP-:99.6%
+2026-09-21 22:32:21,601 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 24, "iteration": 100, "loss": 8.01447582244873, "relation_loss": 0.19707262516021729, "scheduled": true}
+2026-09-21 22:32:46,570 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 24, "iteration": 200, "loss": 7.641406536102295, "relation_loss": 0.17896586656570435, "scheduled": true}
+2026-09-21 22:33:10,997 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 24, "iteration": 300, "loss": 7.623574733734131, "relation_loss": 0.16402789950370789, "scheduled": true}
+2026-09-21 22:33:35,990 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 24, "iteration": 400, "loss": 7.535454750061035, "relation_loss": 0.16226202249526978, "scheduled": true}
+2026-09-21 22:34:00,545 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 24, "iteration": 500, "loss": 7.646112442016602, "relation_loss": 0.15462124347686768, "scheduled": true}
+2026-09-21 22:34:13,789 INFO processing batch 0/55
+2026-09-21 22:35:02,601 INFO CMC curve, Rank-1  :65.5%
+2026-09-21 22:35:02,602 INFO CMC curve, Rank-5  :73.8%
+2026-09-21 22:35:02,602 INFO CMC curve, Rank-10 :77.8%
+2026-09-21 22:35:02,602 INFO mAP-:63.1%
+2026-09-21 22:35:02,602 INFO Validation Results - Epoch: 24
+2026-09-21 22:35:03,147 INFO processing batch 0/57
+2026-09-21 22:35:54,308 INFO CMC curve, Rank-1  :100.0%
+2026-09-21 22:35:54,308 INFO CMC curve, Rank-5  :100.0%
+2026-09-21 22:35:54,308 INFO CMC curve, Rank-10 :100.0%
+2026-09-21 22:35:54,308 INFO mAP-:99.6%
+2026-09-21 22:36:19,323 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 25, "iteration": 100, "loss": 8.034234046936035, "relation_loss": 0.23473607003688812, "scheduled": true}
+2026-09-21 22:36:43,540 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 25, "iteration": 200, "loss": 7.6002888679504395, "relation_loss": 0.1743493527173996, "scheduled": true}
+2026-09-21 22:37:08,155 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 25, "iteration": 300, "loss": 7.787537097930908, "relation_loss": 0.18860405683517456, "scheduled": true}
+2026-09-21 22:37:32,568 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 25, "iteration": 400, "loss": 7.524464130401611, "relation_loss": 0.19923126697540283, "scheduled": true}
+2026-09-21 22:37:56,820 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 25, "iteration": 500, "loss": 7.521054267883301, "relation_loss": 0.1425739824771881, "scheduled": true}
+2026-09-21 22:38:10,031 INFO processing batch 0/55
+2026-09-21 22:38:58,737 INFO CMC curve, Rank-1  :64.2%
+2026-09-21 22:38:58,738 INFO CMC curve, Rank-5  :72.3%
+2026-09-21 22:38:58,738 INFO CMC curve, Rank-10 :76.2%
+2026-09-21 22:38:58,738 INFO mAP-:62.1%
+2026-09-21 22:38:58,738 INFO Validation Results - Epoch: 25
+2026-09-21 22:38:59,263 INFO processing batch 0/57
+2026-09-21 22:39:50,423 INFO CMC curve, Rank-1  :100.0%
+2026-09-21 22:39:50,423 INFO CMC curve, Rank-5  :100.0%
+2026-09-21 22:39:50,423 INFO CMC curve, Rank-10 :100.0%
+2026-09-21 22:39:50,423 INFO mAP-:99.5%
+2026-09-21 22:40:15,469 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 26, "iteration": 100, "loss": 7.559427738189697, "relation_loss": 0.2151106297969818, "scheduled": true}
+2026-09-21 22:40:39,765 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 26, "iteration": 200, "loss": 7.626815319061279, "relation_loss": 0.2046685665845871, "scheduled": true}
+2026-09-21 22:41:04,012 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 26, "iteration": 300, "loss": 7.600863933563232, "relation_loss": 0.18650779128074646, "scheduled": true}
+2026-09-21 22:41:28,625 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 26, "iteration": 400, "loss": 7.495223522186279, "relation_loss": 0.1915512979030609, "scheduled": true}
+2026-09-21 22:41:52,663 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 26, "iteration": 500, "loss": 7.494619369506836, "relation_loss": 0.15266387164592743, "scheduled": true}
+2026-09-21 22:42:05,604 INFO processing batch 0/55
+2026-09-21 22:42:54,362 INFO CMC curve, Rank-1  :65.5%
+2026-09-21 22:42:54,363 INFO CMC curve, Rank-5  :74.0%
+2026-09-21 22:42:54,363 INFO CMC curve, Rank-10 :77.5%
+2026-09-21 22:42:54,363 INFO mAP-:63.2%
+2026-09-21 22:42:54,363 INFO Validation Results - Epoch: 26
+2026-09-21 22:42:54,886 INFO processing batch 0/57
+2026-09-21 22:43:46,573 INFO CMC curve, Rank-1  :100.0%
+2026-09-21 22:43:46,573 INFO CMC curve, Rank-5  :100.0%
+2026-09-21 22:43:46,573 INFO CMC curve, Rank-10 :100.0%
+2026-09-21 22:43:46,573 INFO mAP-:99.5%
+2026-09-21 22:44:11,932 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 27, "iteration": 100, "loss": 7.56409215927124, "relation_loss": 0.22514712810516357, "scheduled": true}
+2026-09-21 22:44:36,332 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 27, "iteration": 200, "loss": 7.564050674438477, "relation_loss": 0.19977092742919922, "scheduled": true}
+2026-09-21 22:45:00,599 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 27, "iteration": 300, "loss": 7.578891754150391, "relation_loss": 0.2060549259185791, "scheduled": true}
+2026-09-21 22:45:24,978 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 27, "iteration": 400, "loss": 7.477662086486816, "relation_loss": 0.20632611215114594, "scheduled": true}
+2026-09-21 22:45:49,263 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 27, "iteration": 500, "loss": 7.464001655578613, "relation_loss": 0.1640740931034088, "scheduled": true}
+2026-09-21 22:46:02,144 INFO processing batch 0/55
+2026-09-21 22:46:50,911 INFO CMC curve, Rank-1  :65.3%
+2026-09-21 22:46:50,911 INFO CMC curve, Rank-5  :74.1%
+2026-09-21 22:46:50,911 INFO CMC curve, Rank-10 :77.7%
+2026-09-21 22:46:50,911 INFO mAP-:63.4%
+2026-09-21 22:46:50,911 INFO Validation Results - Epoch: 27
+2026-09-21 22:46:51,417 INFO processing batch 0/57
+2026-09-21 22:47:42,642 INFO CMC curve, Rank-1  :100.0%
+2026-09-21 22:47:42,642 INFO CMC curve, Rank-5  :100.0%
+2026-09-21 22:47:42,642 INFO CMC curve, Rank-10 :100.0%
+2026-09-21 22:47:42,642 INFO mAP-:99.5%
+2026-09-21 22:48:07,954 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 28, "iteration": 100, "loss": 7.717784404754639, "relation_loss": 0.25045889616012573, "scheduled": true}
+2026-09-21 22:48:33,565 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 28, "iteration": 200, "loss": 7.55464506149292, "relation_loss": 0.21142415702342987, "scheduled": true}
+2026-09-21 22:48:57,933 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 28, "iteration": 300, "loss": 7.513926982879639, "relation_loss": 0.18452870845794678, "scheduled": true}
+2026-09-21 22:49:22,729 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 28, "iteration": 400, "loss": 7.475153923034668, "relation_loss": 0.22295522689819336, "scheduled": true}
+2026-09-21 22:49:47,275 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 28, "iteration": 500, "loss": 7.4614362716674805, "relation_loss": 0.15453864634037018, "scheduled": true}
+2026-09-21 22:50:00,162 INFO processing batch 0/55
+2026-09-21 22:50:49,114 INFO CMC curve, Rank-1  :64.0%
+2026-09-21 22:50:49,114 INFO CMC curve, Rank-5  :73.3%
+2026-09-21 22:50:49,114 INFO CMC curve, Rank-10 :77.4%
+2026-09-21 22:50:49,114 INFO mAP-:62.7%
+2026-09-21 22:50:49,114 INFO Validation Results - Epoch: 28
+2026-09-21 22:50:49,630 INFO processing batch 0/57
+2026-09-21 22:51:40,962 INFO CMC curve, Rank-1  :100.0%
+2026-09-21 22:51:40,963 INFO CMC curve, Rank-5  :100.0%
+2026-09-21 22:51:40,963 INFO CMC curve, Rank-10 :100.0%
+2026-09-21 22:51:40,963 INFO mAP-:99.4%
+2026-09-21 22:52:06,291 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 29, "iteration": 100, "loss": 7.7006964683532715, "relation_loss": 0.24768796563148499, "scheduled": true}
+2026-09-21 22:52:31,479 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 29, "iteration": 200, "loss": 7.510657787322998, "relation_loss": 0.20078051090240479, "scheduled": true}
+2026-09-21 22:52:56,061 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 29, "iteration": 300, "loss": 7.509669780731201, "relation_loss": 0.2042369246482849, "scheduled": true}
+2026-09-21 22:53:20,313 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 29, "iteration": 400, "loss": 7.42957878112793, "relation_loss": 0.20582658052444458, "scheduled": true}
+2026-09-21 22:53:44,701 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 29, "iteration": 500, "loss": 7.4453277587890625, "relation_loss": 0.18142127990722656, "scheduled": true}
+2026-09-21 22:53:57,626 INFO processing batch 0/55
+2026-09-21 22:54:46,271 INFO CMC curve, Rank-1  :64.4%
+2026-09-21 22:54:46,272 INFO CMC curve, Rank-5  :73.7%
+2026-09-21 22:54:46,272 INFO CMC curve, Rank-10 :77.6%
+2026-09-21 22:54:46,272 INFO mAP-:62.7%
+2026-09-21 22:54:46,272 INFO Validation Results - Epoch: 29
+2026-09-21 22:54:46,828 INFO processing batch 0/57
+2026-09-21 22:55:37,930 INFO CMC curve, Rank-1  :100.0%
+2026-09-21 22:55:37,931 INFO CMC curve, Rank-5  :100.0%
+2026-09-21 22:55:37,931 INFO CMC curve, Rank-10 :100.0%
+2026-09-21 22:55:37,931 INFO mAP-:99.4%
+2026-09-21 22:56:02,670 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 30, "iteration": 100, "loss": 7.522796630859375, "relation_loss": 0.2440011203289032, "scheduled": true}
+2026-09-21 22:56:27,233 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 30, "iteration": 200, "loss": 7.500188827514648, "relation_loss": 0.21764574944972992, "scheduled": true}
+2026-09-21 22:56:51,686 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 30, "iteration": 300, "loss": 7.5290961265563965, "relation_loss": 0.23482172191143036, "scheduled": true}
+2026-09-21 22:57:16,349 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 30, "iteration": 400, "loss": 7.430304527282715, "relation_loss": 0.2422727644443512, "scheduled": true}
+2026-09-21 22:57:40,827 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 30, "iteration": 500, "loss": 7.419346332550049, "relation_loss": 0.18471185863018036, "scheduled": true}
+2026-09-21 22:57:53,522 INFO processing batch 0/55
+2026-09-21 22:58:42,268 INFO CMC curve, Rank-1  :64.0%
+2026-09-21 22:58:42,268 INFO CMC curve, Rank-5  :72.1%
+2026-09-21 22:58:42,268 INFO CMC curve, Rank-10 :76.2%
+2026-09-21 22:58:42,268 INFO mAP-:62.4%
+2026-09-21 22:58:42,268 INFO Validation Results - Epoch: 30
+2026-09-21 22:58:42,794 INFO processing batch 0/57
+2026-09-21 22:59:34,267 INFO CMC curve, Rank-1  :100.0%
+2026-09-21 22:59:34,268 INFO CMC curve, Rank-5  :100.0%
+2026-09-21 22:59:34,268 INFO CMC curve, Rank-10 :100.0%
+2026-09-21 22:59:34,268 INFO mAP-:99.4%
+2026-09-21 23:00:01,981 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 31, "iteration": 100, "loss": 7.464832782745361, "relation_loss": 0.26152870059013367, "scheduled": true}
+2026-09-21 23:00:27,616 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 31, "iteration": 200, "loss": 7.465808868408203, "relation_loss": 0.20547911524772644, "scheduled": true}
+2026-09-21 23:00:53,200 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 31, "iteration": 300, "loss": 7.572051525115967, "relation_loss": 0.2297268509864807, "scheduled": true}
+2026-09-21 23:01:18,262 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 31, "iteration": 400, "loss": 7.397401809692383, "relation_loss": 0.21410727500915527, "scheduled": true}
+2026-09-21 23:01:43,251 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 31, "iteration": 500, "loss": 7.387955188751221, "relation_loss": 0.18427616357803345, "scheduled": true}
+2026-09-21 23:01:56,594 INFO processing batch 0/55
+2026-09-21 23:02:45,773 INFO CMC curve, Rank-1  :64.7%
+2026-09-21 23:02:45,773 INFO CMC curve, Rank-5  :73.6%
+2026-09-21 23:02:45,773 INFO CMC curve, Rank-10 :78.2%
+2026-09-21 23:02:45,773 INFO mAP-:63.3%
+2026-09-21 23:02:45,773 INFO Validation Results - Epoch: 31
+2026-09-21 23:02:46,390 INFO processing batch 0/57
+2026-09-21 23:03:38,088 INFO CMC curve, Rank-1  :100.0%
+2026-09-21 23:03:38,089 INFO CMC curve, Rank-5  :100.0%
+2026-09-21 23:03:38,089 INFO CMC curve, Rank-10 :100.0%
+2026-09-21 23:03:38,089 INFO mAP-:99.4%
+2026-09-21 23:04:03,575 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 32, "iteration": 100, "loss": 7.443850517272949, "relation_loss": 0.26387858390808105, "scheduled": true}
+2026-09-21 23:04:28,333 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 32, "iteration": 200, "loss": 7.61611795425415, "relation_loss": 0.23314911127090454, "scheduled": true}
+2026-09-21 23:04:53,462 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 32, "iteration": 300, "loss": 7.45306396484375, "relation_loss": 0.22471563518047333, "scheduled": true}
+2026-09-21 23:05:19,488 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 32, "iteration": 400, "loss": 7.360921859741211, "relation_loss": 0.20569531619548798, "scheduled": true}
+2026-09-21 23:05:45,395 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 32, "iteration": 500, "loss": 7.37418270111084, "relation_loss": 0.18319493532180786, "scheduled": true}
+2026-09-21 23:05:59,145 INFO processing batch 0/55
+2026-09-21 23:06:48,968 INFO CMC curve, Rank-1  :65.5%
+2026-09-21 23:06:48,968 INFO CMC curve, Rank-5  :73.9%
+2026-09-21 23:06:48,968 INFO CMC curve, Rank-10 :78.4%
+2026-09-21 23:06:48,969 INFO mAP-:63.5%
+2026-09-21 23:06:48,969 INFO Validation Results - Epoch: 32
+2026-09-21 23:06:49,632 INFO processing batch 0/57
+2026-09-21 23:07:41,883 INFO CMC curve, Rank-1  :100.0%
+2026-09-21 23:07:41,884 INFO CMC curve, Rank-5  :100.0%
+2026-09-21 23:07:41,884 INFO CMC curve, Rank-10 :100.0%
+2026-09-21 23:07:41,884 INFO mAP-:99.4%
+2026-09-21 23:08:09,076 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 33, "iteration": 100, "loss": 7.453634262084961, "relation_loss": 0.2906251549720764, "scheduled": true}
+2026-09-21 23:08:34,663 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 33, "iteration": 200, "loss": 7.561298370361328, "relation_loss": 0.2302226722240448, "scheduled": true}
+2026-09-21 23:09:00,614 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 33, "iteration": 300, "loss": 7.461332321166992, "relation_loss": 0.23542313277721405, "scheduled": true}
+2026-09-21 23:09:25,967 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 33, "iteration": 400, "loss": 7.330920219421387, "relation_loss": 0.19901293516159058, "scheduled": true}
+2026-09-21 23:09:51,328 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 33, "iteration": 500, "loss": 7.338987827301025, "relation_loss": 0.16616499423980713, "scheduled": true}
+2026-09-21 23:10:04,871 INFO processing batch 0/55
+2026-09-21 23:10:54,099 INFO CMC curve, Rank-1  :65.2%
+2026-09-21 23:10:54,099 INFO CMC curve, Rank-5  :72.9%
+2026-09-21 23:10:54,099 INFO CMC curve, Rank-10 :76.8%
+2026-09-21 23:10:54,099 INFO mAP-:62.7%
+2026-09-21 23:10:54,100 INFO Validation Results - Epoch: 33
+2026-09-21 23:10:54,719 INFO processing batch 0/57
+2026-09-21 23:11:46,471 INFO CMC curve, Rank-1  :100.0%
+2026-09-21 23:11:46,471 INFO CMC curve, Rank-5  :100.0%
+2026-09-21 23:11:46,471 INFO CMC curve, Rank-10 :100.0%
+2026-09-21 23:11:46,471 INFO mAP-:99.4%
+2026-09-21 23:12:11,342 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 34, "iteration": 100, "loss": 7.433854103088379, "relation_loss": 0.2937348783016205, "scheduled": true}
+2026-09-21 23:12:35,932 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 34, "iteration": 200, "loss": 7.421154499053955, "relation_loss": 0.22135591506958008, "scheduled": true}
+2026-09-21 23:13:00,688 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 34, "iteration": 300, "loss": 7.550560474395752, "relation_loss": 0.23412510752677917, "scheduled": true}
+2026-09-21 23:13:25,748 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 34, "iteration": 400, "loss": 7.324704170227051, "relation_loss": 0.21871811151504517, "scheduled": true}
+2026-09-21 23:13:50,338 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 34, "iteration": 500, "loss": 7.328846454620361, "relation_loss": 0.18756012618541718, "scheduled": true}
+2026-09-21 23:14:03,455 INFO processing batch 0/55
+2026-09-21 23:14:53,256 INFO CMC curve, Rank-1  :65.4%
+2026-09-21 23:14:53,256 INFO CMC curve, Rank-5  :73.1%
+2026-09-21 23:14:53,256 INFO CMC curve, Rank-10 :77.1%
+2026-09-21 23:14:53,256 INFO mAP-:63.0%
+2026-09-21 23:14:53,256 INFO Validation Results - Epoch: 34
+2026-09-21 23:14:53,816 INFO processing batch 0/57
+2026-09-21 23:15:45,924 INFO CMC curve, Rank-1  :100.0%
+2026-09-21 23:15:45,924 INFO CMC curve, Rank-5  :100.0%
+2026-09-21 23:15:45,924 INFO CMC curve, Rank-10 :100.0%
+2026-09-21 23:15:45,924 INFO mAP-:99.4%
+2026-09-21 23:16:10,837 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 35, "iteration": 100, "loss": 7.475181579589844, "relation_loss": 0.2679983973503113, "scheduled": true}
+2026-09-21 23:16:35,806 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 35, "iteration": 200, "loss": 7.674483776092529, "relation_loss": 0.25551584362983704, "scheduled": true}
+2026-09-21 23:17:00,633 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 35, "iteration": 300, "loss": 7.427304267883301, "relation_loss": 0.23947954177856445, "scheduled": true}
+2026-09-21 23:17:25,233 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 35, "iteration": 400, "loss": 7.304412841796875, "relation_loss": 0.222076416015625, "scheduled": true}
+2026-09-21 23:17:49,949 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 35, "iteration": 500, "loss": 7.432402610778809, "relation_loss": 0.23265668749809265, "scheduled": true}
+2026-09-21 23:18:03,051 INFO processing batch 0/55
+2026-09-21 23:18:51,907 INFO CMC curve, Rank-1  :64.6%
+2026-09-21 23:18:51,907 INFO CMC curve, Rank-5  :72.4%
+2026-09-21 23:18:51,907 INFO CMC curve, Rank-10 :76.5%
+2026-09-21 23:18:51,907 INFO mAP-:63.0%
+2026-09-21 23:18:51,907 INFO Validation Results - Epoch: 35
+2026-09-21 23:18:52,462 INFO processing batch 0/57
+2026-09-21 23:19:43,734 INFO CMC curve, Rank-1  :100.0%
+2026-09-21 23:19:43,734 INFO CMC curve, Rank-5  :100.0%
+2026-09-21 23:19:43,734 INFO CMC curve, Rank-10 :100.0%
+2026-09-21 23:19:43,734 INFO mAP-:99.4%
+2026-09-21 23:20:08,781 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 36, "iteration": 100, "loss": 7.3543291091918945, "relation_loss": 0.2613230347633362, "scheduled": true}
+2026-09-21 23:20:33,786 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 36, "iteration": 200, "loss": 7.677028656005859, "relation_loss": 0.23398002982139587, "scheduled": true}
+2026-09-21 23:20:58,463 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 36, "iteration": 300, "loss": 7.414928436279297, "relation_loss": 0.25459128618240356, "scheduled": true}
+2026-09-21 23:21:22,899 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 36, "iteration": 400, "loss": 7.304671287536621, "relation_loss": 0.2418321818113327, "scheduled": true}
+2026-09-21 23:21:46,981 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 36, "iteration": 500, "loss": 7.298030853271484, "relation_loss": 0.20107166469097137, "scheduled": true}
+2026-09-21 23:21:59,843 INFO processing batch 0/55
+2026-09-21 23:22:48,747 INFO CMC curve, Rank-1  :64.6%
+2026-09-21 23:22:48,748 INFO CMC curve, Rank-5  :72.5%
+2026-09-21 23:22:48,748 INFO CMC curve, Rank-10 :76.5%
+2026-09-21 23:22:48,748 INFO mAP-:63.1%
+2026-09-21 23:22:48,748 INFO Validation Results - Epoch: 36
+2026-09-21 23:22:49,281 INFO processing batch 0/57
+2026-09-21 23:23:40,652 INFO CMC curve, Rank-1  :100.0%
+2026-09-21 23:23:40,652 INFO CMC curve, Rank-5  :100.0%
+2026-09-21 23:23:40,652 INFO CMC curve, Rank-10 :100.0%
+2026-09-21 23:23:40,652 INFO mAP-:99.4%
+2026-09-21 23:24:05,590 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 37, "iteration": 100, "loss": 7.3408660888671875, "relation_loss": 0.26265454292297363, "scheduled": true}
+2026-09-21 23:24:30,199 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 37, "iteration": 200, "loss": 7.427651405334473, "relation_loss": 0.2376503199338913, "scheduled": true}
+2026-09-21 23:24:54,375 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 37, "iteration": 300, "loss": 7.349151134490967, "relation_loss": 0.22332452237606049, "scheduled": true}
+2026-09-21 23:25:18,712 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 37, "iteration": 400, "loss": 7.265830993652344, "relation_loss": 0.21591678261756897, "scheduled": true}
+2026-09-21 23:25:42,999 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 37, "iteration": 500, "loss": 7.274467945098877, "relation_loss": 0.18993239104747772, "scheduled": true}
+2026-09-21 23:25:55,910 INFO processing batch 0/55
+2026-09-21 23:26:44,747 INFO CMC curve, Rank-1  :64.4%
+2026-09-21 23:26:44,747 INFO CMC curve, Rank-5  :72.8%
+2026-09-21 23:26:44,747 INFO CMC curve, Rank-10 :76.7%
+2026-09-21 23:26:44,747 INFO mAP-:63.0%
+2026-09-21 23:26:44,747 INFO Validation Results - Epoch: 37
+2026-09-21 23:26:45,285 INFO processing batch 0/57
+2026-09-21 23:27:36,469 INFO CMC curve, Rank-1  :100.0%
+2026-09-21 23:27:36,469 INFO CMC curve, Rank-5  :100.0%
+2026-09-21 23:27:36,469 INFO CMC curve, Rank-10 :100.0%
+2026-09-21 23:27:36,469 INFO mAP-:99.3%
+2026-09-21 23:28:01,084 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 38, "iteration": 100, "loss": 7.373668670654297, "relation_loss": 0.2761545777320862, "scheduled": true}
+2026-09-21 23:28:25,283 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 38, "iteration": 200, "loss": 7.379453182220459, "relation_loss": 0.2376539707183838, "scheduled": true}
+2026-09-21 23:28:49,536 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 38, "iteration": 300, "loss": 7.329958438873291, "relation_loss": 0.222975954413414, "scheduled": true}
+2026-09-21 23:29:13,947 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 38, "iteration": 400, "loss": 7.256275653839111, "relation_loss": 0.2167607843875885, "scheduled": true}
+2026-09-21 23:29:38,216 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 38, "iteration": 500, "loss": 7.260161399841309, "relation_loss": 0.19643454253673553, "scheduled": true}
+2026-09-21 23:29:51,049 INFO processing batch 0/55
+2026-09-21 23:30:39,810 INFO CMC curve, Rank-1  :64.9%
+2026-09-21 23:30:39,810 INFO CMC curve, Rank-5  :72.9%
+2026-09-21 23:30:39,810 INFO CMC curve, Rank-10 :76.5%
+2026-09-21 23:30:39,811 INFO mAP-:63.3%
+2026-09-21 23:30:39,811 INFO Validation Results - Epoch: 38
+2026-09-21 23:30:40,321 INFO processing batch 0/57
+2026-09-21 23:31:31,474 INFO CMC curve, Rank-1  :100.0%
+2026-09-21 23:31:31,474 INFO CMC curve, Rank-5  :100.0%
+2026-09-21 23:31:31,474 INFO CMC curve, Rank-10 :100.0%
+2026-09-21 23:31:31,475 INFO mAP-:99.4%
+2026-09-21 23:31:57,391 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 39, "iteration": 100, "loss": 7.3311920166015625, "relation_loss": 0.2920408248901367, "scheduled": true}
+2026-09-21 23:32:22,008 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 39, "iteration": 200, "loss": 7.352608680725098, "relation_loss": 0.2414402961730957, "scheduled": true}
+2026-09-21 23:32:46,643 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 39, "iteration": 300, "loss": 7.366466999053955, "relation_loss": 0.25203070044517517, "scheduled": true}
+2026-09-21 23:33:11,377 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 39, "iteration": 400, "loss": 7.247562408447266, "relation_loss": 0.2425575703382492, "scheduled": true}
+2026-09-21 23:33:35,800 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 39, "iteration": 500, "loss": 7.239928245544434, "relation_loss": 0.19019608199596405, "scheduled": true}
+2026-09-21 23:33:48,684 INFO processing batch 0/55
+2026-09-21 23:34:37,558 INFO CMC curve, Rank-1  :63.9%
+2026-09-21 23:34:37,558 INFO CMC curve, Rank-5  :71.5%
+2026-09-21 23:34:37,558 INFO CMC curve, Rank-10 :75.4%
+2026-09-21 23:34:37,558 INFO mAP-:62.7%
+2026-09-21 23:34:37,558 INFO Validation Results - Epoch: 39
+2026-09-21 23:34:38,099 INFO processing batch 0/57
+2026-09-21 23:35:29,275 INFO CMC curve, Rank-1  :100.0%
+2026-09-21 23:35:29,276 INFO CMC curve, Rank-5  :100.0%
+2026-09-21 23:35:29,276 INFO CMC curve, Rank-10 :100.0%
+2026-09-21 23:35:29,276 INFO mAP-:99.3%
+2026-09-21 23:35:54,298 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 40, "iteration": 100, "loss": 7.33536434173584, "relation_loss": 0.28679969906806946, "scheduled": true}
+2026-09-21 23:36:19,159 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 40, "iteration": 200, "loss": 7.34747314453125, "relation_loss": 0.235943004488945, "scheduled": true}
+2026-09-21 23:36:43,509 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 40, "iteration": 300, "loss": 7.320716857910156, "relation_loss": 0.24032720923423767, "scheduled": true}
+2026-09-21 23:37:08,030 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 40, "iteration": 400, "loss": 7.24057674407959, "relation_loss": 0.2283334732055664, "scheduled": true}
+2026-09-21 23:37:32,234 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 40, "iteration": 500, "loss": 7.239014148712158, "relation_loss": 0.17609703540802002, "scheduled": true}
+2026-09-21 23:37:45,081 INFO processing batch 0/55
+2026-09-21 23:38:34,089 INFO CMC curve, Rank-1  :64.4%
+2026-09-21 23:38:34,089 INFO CMC curve, Rank-5  :72.1%
+2026-09-21 23:38:34,089 INFO CMC curve, Rank-10 :75.9%
+2026-09-21 23:38:34,089 INFO mAP-:62.9%
+2026-09-21 23:38:34,089 INFO Validation Results - Epoch: 40
+2026-09-21 23:38:34,603 INFO processing batch 0/57
+2026-09-21 23:39:26,018 INFO CMC curve, Rank-1  :100.0%
+2026-09-21 23:39:26,018 INFO CMC curve, Rank-5  :100.0%
+2026-09-21 23:39:26,018 INFO CMC curve, Rank-10 :100.0%
+2026-09-21 23:39:26,018 INFO mAP-:99.4%
+2026-09-21 23:41:25,860 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 41, "iteration": 100, "loss": 7.309799671173096, "relation_loss": 0.2947891056537628, "scheduled": true}
+2026-09-21 23:41:51,119 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 41, "iteration": 200, "loss": 7.5103631019592285, "relation_loss": 0.30514904856681824, "scheduled": true}
+2026-09-21 23:42:15,735 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 41, "iteration": 300, "loss": 7.302954196929932, "relation_loss": 0.2509295344352722, "scheduled": true}
+2026-09-21 23:42:40,411 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 41, "iteration": 400, "loss": 7.215845108032227, "relation_loss": 0.24163220822811127, "scheduled": true}
+2026-09-21 23:43:05,002 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 41, "iteration": 500, "loss": 7.222307205200195, "relation_loss": 0.20334038138389587, "scheduled": true}
+2026-09-21 23:43:18,267 INFO processing batch 0/55
+2026-09-21 23:44:08,579 INFO CMC curve, Rank-1  :64.9%
+2026-09-21 23:44:08,580 INFO CMC curve, Rank-5  :72.7%
+2026-09-21 23:44:08,580 INFO CMC curve, Rank-10 :76.1%
+2026-09-21 23:44:08,580 INFO mAP-:63.1%
+2026-09-21 23:44:08,580 INFO Validation Results - Epoch: 41
+2026-09-21 23:44:09,319 INFO processing batch 0/57
+2026-09-21 23:45:01,677 INFO CMC curve, Rank-1  :100.0%
+2026-09-21 23:45:01,678 INFO CMC curve, Rank-5  :100.0%
+2026-09-21 23:45:01,678 INFO CMC curve, Rank-10 :100.0%
+2026-09-21 23:45:01,678 INFO mAP-:99.3%
+2026-09-21 23:45:26,650 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 42, "iteration": 100, "loss": 7.416841983795166, "relation_loss": 0.323659211397171, "scheduled": true}
+2026-09-21 23:45:51,239 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 42, "iteration": 200, "loss": 7.411224365234375, "relation_loss": 0.2607088088989258, "scheduled": true}
+2026-09-21 23:46:15,911 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 42, "iteration": 300, "loss": 7.3026018142700195, "relation_loss": 0.24165520071983337, "scheduled": true}
+2026-09-21 23:46:40,227 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 42, "iteration": 400, "loss": 7.210680961608887, "relation_loss": 0.22968077659606934, "scheduled": true}
+2026-09-21 23:47:04,687 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 42, "iteration": 500, "loss": 7.21080207824707, "relation_loss": 0.19024571776390076, "scheduled": true}
+2026-09-21 23:47:17,726 INFO processing batch 0/55
+2026-09-21 23:48:07,716 INFO CMC curve, Rank-1  :64.4%
+2026-09-21 23:48:07,716 INFO CMC curve, Rank-5  :72.6%
+2026-09-21 23:48:07,716 INFO CMC curve, Rank-10 :76.2%
+2026-09-21 23:48:07,716 INFO mAP-:63.1%
+2026-09-21 23:48:07,716 INFO Validation Results - Epoch: 42
+2026-09-21 23:48:08,435 INFO processing batch 0/57
+2026-09-21 23:49:00,893 INFO CMC curve, Rank-1  :100.0%
+2026-09-21 23:49:00,893 INFO CMC curve, Rank-5  :100.0%
+2026-09-21 23:49:00,893 INFO CMC curve, Rank-10 :100.0%
+2026-09-21 23:49:00,893 INFO mAP-:99.3%
+2026-09-21 23:49:25,894 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 43, "iteration": 100, "loss": 7.304738998413086, "relation_loss": 0.3083125948905945, "scheduled": true}
+2026-09-21 23:49:50,453 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 43, "iteration": 200, "loss": 7.293522834777832, "relation_loss": 0.22760562598705292, "scheduled": true}
+2026-09-21 23:50:15,114 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 43, "iteration": 300, "loss": 7.276762962341309, "relation_loss": 0.23950237035751343, "scheduled": true}
+2026-09-21 23:50:39,915 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 43, "iteration": 400, "loss": 7.184388160705566, "relation_loss": 0.22049669921398163, "scheduled": true}
+2026-09-21 23:51:04,353 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 43, "iteration": 500, "loss": 7.193844795227051, "relation_loss": 0.19012203812599182, "scheduled": true}
+2026-09-21 23:51:17,581 INFO processing batch 0/55
+2026-09-21 23:52:06,506 INFO CMC curve, Rank-1  :64.4%
+2026-09-21 23:52:06,506 INFO CMC curve, Rank-5  :72.1%
+2026-09-21 23:52:06,506 INFO CMC curve, Rank-10 :75.6%
+2026-09-21 23:52:06,507 INFO mAP-:62.9%
+2026-09-21 23:52:06,507 INFO Validation Results - Epoch: 43
+2026-09-21 23:52:07,150 INFO processing batch 0/57
+2026-09-21 23:52:58,430 INFO CMC curve, Rank-1  :100.0%
+2026-09-21 23:52:58,430 INFO CMC curve, Rank-5  :100.0%
+2026-09-21 23:52:58,430 INFO CMC curve, Rank-10 :100.0%
+2026-09-21 23:52:58,430 INFO mAP-:99.3%
+2026-09-21 23:53:24,027 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 44, "iteration": 100, "loss": 7.2682061195373535, "relation_loss": 0.2847241163253784, "scheduled": true}
+2026-09-21 23:53:49,209 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 44, "iteration": 200, "loss": 7.338840007781982, "relation_loss": 0.243086576461792, "scheduled": true}
+2026-09-21 23:54:13,450 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 44, "iteration": 300, "loss": 7.26717472076416, "relation_loss": 0.2446332424879074, "scheduled": true}
+2026-09-21 23:54:38,158 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 44, "iteration": 400, "loss": 7.1758856773376465, "relation_loss": 0.23210808634757996, "scheduled": true}
+2026-09-21 23:55:03,392 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 44, "iteration": 500, "loss": 7.192785263061523, "relation_loss": 0.2175838202238083, "scheduled": true}
+2026-09-21 23:55:16,621 INFO processing batch 0/55
+2026-09-21 23:56:05,414 INFO CMC curve, Rank-1  :64.5%
+2026-09-21 23:56:05,415 INFO CMC curve, Rank-5  :71.9%
+2026-09-21 23:56:05,415 INFO CMC curve, Rank-10 :75.7%
+2026-09-21 23:56:05,415 INFO mAP-:62.8%
+2026-09-21 23:56:05,415 INFO Validation Results - Epoch: 44
+2026-09-21 23:56:06,009 INFO processing batch 0/57
+2026-09-21 23:56:57,151 INFO CMC curve, Rank-1  :100.0%
+2026-09-21 23:56:57,151 INFO CMC curve, Rank-5  :100.0%
+2026-09-21 23:56:57,151 INFO CMC curve, Rank-10 :100.0%
+2026-09-21 23:56:57,151 INFO mAP-:99.3%
+2026-09-21 23:57:21,702 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 45, "iteration": 100, "loss": 7.37076997756958, "relation_loss": 0.30156511068344116, "scheduled": true}
+2026-09-21 23:57:45,847 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 45, "iteration": 200, "loss": 7.306978225708008, "relation_loss": 0.27724510431289673, "scheduled": true}
+2026-09-21 23:58:10,267 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 45, "iteration": 300, "loss": 7.247215747833252, "relation_loss": 0.2237049788236618, "scheduled": true}
+2026-09-21 23:58:34,675 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 45, "iteration": 400, "loss": 7.171681880950928, "relation_loss": 0.23064856231212616, "scheduled": true}
+2026-09-21 23:58:59,276 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 45, "iteration": 500, "loss": 7.150163173675537, "relation_loss": 0.18148279190063477, "scheduled": true}
+2026-09-21 23:59:12,467 INFO processing batch 0/55
+2026-09-22 00:00:01,342 INFO CMC curve, Rank-1  :64.1%
+2026-09-22 00:00:01,343 INFO CMC curve, Rank-5  :71.8%
+2026-09-22 00:00:01,343 INFO CMC curve, Rank-10 :74.9%
+2026-09-22 00:00:01,343 INFO mAP-:62.6%
+2026-09-22 00:00:01,343 INFO Validation Results - Epoch: 45
+2026-09-22 00:00:02,020 INFO processing batch 0/57
+2026-09-22 00:00:53,381 INFO CMC curve, Rank-1  :100.0%
+2026-09-22 00:00:53,381 INFO CMC curve, Rank-5  :100.0%
+2026-09-22 00:00:53,381 INFO CMC curve, Rank-10 :100.0%
+2026-09-22 00:00:53,381 INFO mAP-:99.3%
+2026-09-22 00:01:19,206 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 46, "iteration": 100, "loss": 7.232638359069824, "relation_loss": 0.2767828106880188, "scheduled": true}
+2026-09-22 00:01:43,570 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 46, "iteration": 200, "loss": 7.30646276473999, "relation_loss": 0.25744950771331787, "scheduled": true}
+2026-09-22 00:02:08,165 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 46, "iteration": 300, "loss": 7.249420166015625, "relation_loss": 0.2422522008419037, "scheduled": true}
+2026-09-22 00:02:32,604 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 46, "iteration": 400, "loss": 7.181234359741211, "relation_loss": 0.2559469938278198, "scheduled": true}
+2026-09-22 00:02:58,063 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 46, "iteration": 500, "loss": 7.155944347381592, "relation_loss": 0.19822749495506287, "scheduled": true}
+2026-09-22 00:03:11,587 INFO processing batch 0/55
+2026-09-22 00:04:00,478 INFO CMC curve, Rank-1  :64.4%
+2026-09-22 00:04:00,478 INFO CMC curve, Rank-5  :72.0%
+2026-09-22 00:04:00,479 INFO CMC curve, Rank-10 :75.7%
+2026-09-22 00:04:00,479 INFO mAP-:62.9%
+2026-09-22 00:04:00,479 INFO Validation Results - Epoch: 46
+2026-09-22 00:04:01,105 INFO processing batch 0/57
+2026-09-22 00:04:52,390 INFO CMC curve, Rank-1  :100.0%
+2026-09-22 00:04:52,390 INFO CMC curve, Rank-5  :100.0%
+2026-09-22 00:04:52,391 INFO CMC curve, Rank-10 :100.0%
+2026-09-22 00:04:52,391 INFO mAP-:99.3%
+2026-09-22 00:05:17,497 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 47, "iteration": 100, "loss": 7.2740092277526855, "relation_loss": 0.32027778029441833, "scheduled": true}
+2026-09-22 00:05:41,924 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 47, "iteration": 200, "loss": 7.3773393630981445, "relation_loss": 0.23955121636390686, "scheduled": true}
+2026-09-22 00:06:06,463 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 47, "iteration": 300, "loss": 7.2322282791137695, "relation_loss": 0.24046646058559418, "scheduled": true}
+2026-09-22 00:06:30,714 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 47, "iteration": 400, "loss": 7.163059711456299, "relation_loss": 0.2577030658721924, "scheduled": true}
+2026-09-22 00:06:55,301 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 47, "iteration": 500, "loss": 7.161239147186279, "relation_loss": 0.2136327475309372, "scheduled": true}
+2026-09-22 00:07:08,435 INFO processing batch 0/55
+2026-09-22 00:07:57,256 INFO CMC curve, Rank-1  :64.6%
+2026-09-22 00:07:57,257 INFO CMC curve, Rank-5  :71.9%
+2026-09-22 00:07:57,257 INFO CMC curve, Rank-10 :75.8%
+2026-09-22 00:07:57,257 INFO mAP-:63.1%
+2026-09-22 00:07:57,257 INFO Validation Results - Epoch: 47
+2026-09-22 00:07:57,893 INFO processing batch 0/57
+2026-09-22 00:08:49,183 INFO CMC curve, Rank-1  :100.0%
+2026-09-22 00:08:49,184 INFO CMC curve, Rank-5  :100.0%
+2026-09-22 00:08:49,184 INFO CMC curve, Rank-10 :100.0%
+2026-09-22 00:08:49,184 INFO mAP-:99.3%
+2026-09-22 00:09:14,179 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 48, "iteration": 100, "loss": 7.2310686111450195, "relation_loss": 0.3053450584411621, "scheduled": true}
+2026-09-22 00:09:38,923 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 48, "iteration": 200, "loss": 7.253765106201172, "relation_loss": 0.24655573070049286, "scheduled": true}
+2026-09-22 00:10:03,421 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 48, "iteration": 300, "loss": 8.266143798828125, "relation_loss": 0.3030729591846466, "scheduled": true}
+2026-09-22 00:10:28,612 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 48, "iteration": 400, "loss": 7.133299827575684, "relation_loss": 0.23688966035842896, "scheduled": true}
+2026-09-22 00:10:54,208 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 48, "iteration": 500, "loss": 7.143446922302246, "relation_loss": 0.2015281319618225, "scheduled": true}
+2026-09-22 00:11:07,352 INFO processing batch 0/55
+2026-09-22 00:11:56,200 INFO CMC curve, Rank-1  :64.6%
+2026-09-22 00:11:56,201 INFO CMC curve, Rank-5  :71.8%
+2026-09-22 00:11:56,201 INFO CMC curve, Rank-10 :75.5%
+2026-09-22 00:11:56,201 INFO mAP-:63.0%
+2026-09-22 00:11:56,201 INFO Validation Results - Epoch: 48
+2026-09-22 00:11:56,850 INFO processing batch 0/57
+2026-09-22 00:12:48,012 INFO CMC curve, Rank-1  :100.0%
+2026-09-22 00:12:48,012 INFO CMC curve, Rank-5  :100.0%
+2026-09-22 00:12:48,012 INFO CMC curve, Rank-10 :100.0%
+2026-09-22 00:12:48,012 INFO mAP-:99.3%
+2026-09-22 00:13:13,106 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 49, "iteration": 100, "loss": 7.239835739135742, "relation_loss": 0.2927964925765991, "scheduled": true}
+2026-09-22 00:13:37,594 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 49, "iteration": 200, "loss": 7.331940650939941, "relation_loss": 0.24373114109039307, "scheduled": true}
+2026-09-22 00:14:02,108 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 49, "iteration": 300, "loss": 7.29910945892334, "relation_loss": 0.2660922706127167, "scheduled": true}
+2026-09-22 00:14:26,427 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 49, "iteration": 400, "loss": 7.140158176422119, "relation_loss": 0.2478065937757492, "scheduled": true}
+2026-09-22 00:14:51,011 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 49, "iteration": 500, "loss": 7.128155708312988, "relation_loss": 0.18192052841186523, "scheduled": true}
+2026-09-22 00:15:04,306 INFO processing batch 0/55
+2026-09-22 00:15:53,087 INFO CMC curve, Rank-1  :64.6%
+2026-09-22 00:15:53,087 INFO CMC curve, Rank-5  :71.6%
+2026-09-22 00:15:53,087 INFO CMC curve, Rank-10 :75.2%
+2026-09-22 00:15:53,087 INFO mAP-:63.0%
+2026-09-22 00:15:53,087 INFO Validation Results - Epoch: 49
+2026-09-22 00:15:53,660 INFO processing batch 0/57
+2026-09-22 00:16:44,795 INFO CMC curve, Rank-1  :100.0%
+2026-09-22 00:16:44,795 INFO CMC curve, Rank-5  :100.0%
+2026-09-22 00:16:44,795 INFO CMC curve, Rank-10 :100.0%
+2026-09-22 00:16:44,795 INFO mAP-:99.3%
+2026-09-22 00:17:09,897 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 50, "iteration": 100, "loss": 7.213912010192871, "relation_loss": 0.26848170161247253, "scheduled": true}
+2026-09-22 00:17:34,669 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 50, "iteration": 200, "loss": 7.247335910797119, "relation_loss": 0.2403968870639801, "scheduled": true}
+2026-09-22 00:18:00,166 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 50, "iteration": 300, "loss": 7.339871883392334, "relation_loss": 0.2670437693595886, "scheduled": true}
+2026-09-22 00:18:25,573 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 50, "iteration": 400, "loss": 7.115307807922363, "relation_loss": 0.21208888292312622, "scheduled": true}
+2026-09-22 00:18:51,120 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 50, "iteration": 500, "loss": 7.123889923095703, "relation_loss": 0.1916450709104538, "scheduled": true}
+2026-09-22 00:19:04,686 INFO processing batch 0/55
+2026-09-22 00:19:53,668 INFO CMC curve, Rank-1  :64.2%
+2026-09-22 00:19:53,668 INFO CMC curve, Rank-5  :71.7%
+2026-09-22 00:19:53,668 INFO CMC curve, Rank-10 :75.3%
+2026-09-22 00:19:53,668 INFO mAP-:63.0%
+2026-09-22 00:19:53,669 INFO Validation Results - Epoch: 50
+2026-09-22 00:19:54,252 INFO processing batch 0/57
+2026-09-22 00:20:45,522 INFO CMC curve, Rank-1  :100.0%
+2026-09-22 00:20:45,522 INFO CMC curve, Rank-5  :100.0%
+2026-09-22 00:20:45,522 INFO CMC curve, Rank-10 :100.0%
+2026-09-22 00:20:45,522 INFO mAP-:99.3%
+2026-09-22 00:21:11,006 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 51, "iteration": 100, "loss": 7.325351715087891, "relation_loss": 0.3142701983451843, "scheduled": true}
+2026-09-22 00:21:35,579 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 51, "iteration": 200, "loss": 7.226098537445068, "relation_loss": 0.24236594140529633, "scheduled": true}
+2026-09-22 00:21:59,990 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 51, "iteration": 300, "loss": 7.25045108795166, "relation_loss": 0.2767276465892792, "scheduled": true}
+2026-09-22 00:22:24,830 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 51, "iteration": 400, "loss": 7.130413055419922, "relation_loss": 0.2547164857387543, "scheduled": true}
+2026-09-22 00:22:50,217 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 51, "iteration": 500, "loss": 7.113643169403076, "relation_loss": 0.19376228749752045, "scheduled": true}
+2026-09-22 00:23:03,883 INFO processing batch 0/55
+2026-09-22 00:23:52,912 INFO CMC curve, Rank-1  :64.3%
+2026-09-22 00:23:52,912 INFO CMC curve, Rank-5  :71.7%
+2026-09-22 00:23:52,912 INFO CMC curve, Rank-10 :75.0%
+2026-09-22 00:23:52,912 INFO mAP-:62.9%
+2026-09-22 00:23:52,912 INFO Validation Results - Epoch: 51
+2026-09-22 00:23:53,491 INFO processing batch 0/57
+2026-09-22 00:24:44,801 INFO CMC curve, Rank-1  :100.0%
+2026-09-22 00:24:44,801 INFO CMC curve, Rank-5  :100.0%
+2026-09-22 00:24:44,801 INFO CMC curve, Rank-10 :100.0%
+2026-09-22 00:24:44,801 INFO mAP-:99.3%
+2026-09-22 00:25:10,637 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 52, "iteration": 100, "loss": 7.286111831665039, "relation_loss": 0.31200820207595825, "scheduled": true}
+2026-09-22 00:25:35,885 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 52, "iteration": 200, "loss": 7.502416610717773, "relation_loss": 0.258430540561676, "scheduled": true}
+2026-09-22 00:26:01,204 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 52, "iteration": 300, "loss": 7.194476127624512, "relation_loss": 0.22521065175533295, "scheduled": true}
+2026-09-22 00:26:26,410 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 52, "iteration": 400, "loss": 7.099552631378174, "relation_loss": 0.22926658391952515, "scheduled": true}
+2026-09-22 00:26:51,623 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 52, "iteration": 500, "loss": 7.108236312866211, "relation_loss": 0.19283252954483032, "scheduled": true}
+2026-09-22 00:27:05,109 INFO processing batch 0/55
+2026-09-22 00:27:54,523 INFO CMC curve, Rank-1  :64.5%
+2026-09-22 00:27:54,524 INFO CMC curve, Rank-5  :71.7%
+2026-09-22 00:27:54,524 INFO CMC curve, Rank-10 :75.0%
+2026-09-22 00:27:54,524 INFO mAP-:62.9%
+2026-09-22 00:27:54,524 INFO Validation Results - Epoch: 52
+2026-09-22 00:27:55,189 INFO processing batch 0/57
+2026-09-22 00:28:46,954 INFO CMC curve, Rank-1  :100.0%
+2026-09-22 00:28:46,954 INFO CMC curve, Rank-5  :100.0%
+2026-09-22 00:28:46,954 INFO CMC curve, Rank-10 :100.0%
+2026-09-22 00:28:46,954 INFO mAP-:99.3%
+2026-09-22 00:29:12,833 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 53, "iteration": 100, "loss": 7.18086051940918, "relation_loss": 0.27477988600730896, "scheduled": true}
+2026-09-22 00:29:37,944 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 53, "iteration": 200, "loss": 7.225473403930664, "relation_loss": 0.24894222617149353, "scheduled": true}
+2026-09-22 00:30:02,899 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 53, "iteration": 300, "loss": 7.198116302490234, "relation_loss": 0.238694429397583, "scheduled": true}
+2026-09-22 00:30:27,979 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 53, "iteration": 400, "loss": 7.103525161743164, "relation_loss": 0.23375515639781952, "scheduled": true}
+2026-09-22 00:30:52,987 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 53, "iteration": 500, "loss": 7.100963115692139, "relation_loss": 0.19212934374809265, "scheduled": true}
+2026-09-22 00:31:06,388 INFO processing batch 0/55
+2026-09-22 00:31:55,773 INFO CMC curve, Rank-1  :64.4%
+2026-09-22 00:31:55,773 INFO CMC curve, Rank-5  :71.6%
+2026-09-22 00:31:55,773 INFO CMC curve, Rank-10 :75.2%
+2026-09-22 00:31:55,774 INFO mAP-:62.9%
+2026-09-22 00:31:55,774 INFO Validation Results - Epoch: 53
+2026-09-22 00:31:56,461 INFO processing batch 0/57
+2026-09-22 00:32:47,993 INFO CMC curve, Rank-1  :100.0%
+2026-09-22 00:32:47,993 INFO CMC curve, Rank-5  :100.0%
+2026-09-22 00:32:47,993 INFO CMC curve, Rank-10 :100.0%
+2026-09-22 00:32:47,993 INFO mAP-:99.3%
+2026-09-22 00:33:14,002 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 54, "iteration": 100, "loss": 7.189802646636963, "relation_loss": 0.3019214868545532, "scheduled": true}
+2026-09-22 00:33:39,349 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 54, "iteration": 200, "loss": 7.21293306350708, "relation_loss": 0.2511471211910248, "scheduled": true}
+2026-09-22 00:34:04,741 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 54, "iteration": 300, "loss": 7.188512802124023, "relation_loss": 0.2324633002281189, "scheduled": true}
+2026-09-22 00:34:30,079 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 54, "iteration": 400, "loss": 7.1012959480285645, "relation_loss": 0.2306656837463379, "scheduled": true}
+2026-09-22 00:34:55,425 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 54, "iteration": 500, "loss": 7.085807800292969, "relation_loss": 0.1728748381137848, "scheduled": true}
+2026-09-22 00:35:09,072 INFO processing batch 0/55
+2026-09-22 00:35:58,140 INFO CMC curve, Rank-1  :64.4%
+2026-09-22 00:35:58,140 INFO CMC curve, Rank-5  :71.9%
+2026-09-22 00:35:58,140 INFO CMC curve, Rank-10 :75.2%
+2026-09-22 00:35:58,140 INFO mAP-:62.9%
+2026-09-22 00:35:58,140 INFO Validation Results - Epoch: 54
+2026-09-22 00:35:58,811 INFO processing batch 0/57
+2026-09-22 00:36:50,355 INFO CMC curve, Rank-1  :100.0%
+2026-09-22 00:36:50,355 INFO CMC curve, Rank-5  :100.0%
+2026-09-22 00:36:50,355 INFO CMC curve, Rank-10 :100.0%
+2026-09-22 00:36:50,355 INFO mAP-:99.3%
+2026-09-22 00:37:16,123 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 55, "iteration": 100, "loss": 7.194919586181641, "relation_loss": 0.291690468788147, "scheduled": true}
+2026-09-22 00:37:41,452 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 55, "iteration": 200, "loss": 7.204982757568359, "relation_loss": 0.2427590936422348, "scheduled": true}
+2026-09-22 00:38:06,620 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 55, "iteration": 300, "loss": 7.1998066902160645, "relation_loss": 0.2555693984031677, "scheduled": true}
+2026-09-22 00:38:31,673 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 55, "iteration": 400, "loss": 7.099834442138672, "relation_loss": 0.2505946457386017, "scheduled": true}
+2026-09-22 00:38:56,765 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 55, "iteration": 500, "loss": 7.14415979385376, "relation_loss": 0.20522098243236542, "scheduled": true}
+2026-09-22 00:39:10,052 INFO processing batch 0/55
+2026-09-22 00:39:59,218 INFO CMC curve, Rank-1  :64.3%
+2026-09-22 00:39:59,218 INFO CMC curve, Rank-5  :71.8%
+2026-09-22 00:39:59,218 INFO CMC curve, Rank-10 :75.0%
+2026-09-22 00:39:59,218 INFO mAP-:63.0%
+2026-09-22 00:39:59,218 INFO Validation Results - Epoch: 55
+2026-09-22 00:39:59,946 INFO processing batch 0/57
+2026-09-22 00:40:51,471 INFO CMC curve, Rank-1  :100.0%
+2026-09-22 00:40:51,471 INFO CMC curve, Rank-5  :100.0%
+2026-09-22 00:40:51,471 INFO CMC curve, Rank-10 :100.0%
+2026-09-22 00:40:51,471 INFO mAP-:99.3%
+2026-09-22 00:41:17,079 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 56, "iteration": 100, "loss": 7.173992156982422, "relation_loss": 0.2933288812637329, "scheduled": true}
+2026-09-22 00:41:42,012 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 56, "iteration": 200, "loss": 7.208608627319336, "relation_loss": 0.24890856444835663, "scheduled": true}
+2026-09-22 00:42:07,073 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 56, "iteration": 300, "loss": 7.19309139251709, "relation_loss": 0.2510397434234619, "scheduled": true}
+2026-09-22 00:42:32,390 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 56, "iteration": 400, "loss": 7.086787700653076, "relation_loss": 0.22199508547782898, "scheduled": true}
+2026-09-22 00:42:57,231 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 56, "iteration": 500, "loss": 7.069418907165527, "relation_loss": 0.16548913717269897, "scheduled": true}
+2026-09-22 00:43:10,701 INFO processing batch 0/55
+2026-09-22 00:43:59,872 INFO CMC curve, Rank-1  :64.4%
+2026-09-22 00:43:59,872 INFO CMC curve, Rank-5  :71.5%
+2026-09-22 00:43:59,872 INFO CMC curve, Rank-10 :75.1%
+2026-09-22 00:43:59,872 INFO mAP-:62.9%
+2026-09-22 00:43:59,872 INFO Validation Results - Epoch: 56
+2026-09-22 00:44:00,561 INFO processing batch 0/57
+2026-09-22 00:44:52,119 INFO CMC curve, Rank-1  :100.0%
+2026-09-22 00:44:52,119 INFO CMC curve, Rank-5  :100.0%
+2026-09-22 00:44:52,119 INFO CMC curve, Rank-10 :100.0%
+2026-09-22 00:44:52,119 INFO mAP-:99.3%
+2026-09-22 00:45:17,773 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 57, "iteration": 100, "loss": 7.165034770965576, "relation_loss": 0.2749418616294861, "scheduled": true}
+2026-09-22 00:45:42,916 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 57, "iteration": 200, "loss": 7.193546295166016, "relation_loss": 0.2324790209531784, "scheduled": true}
+2026-09-22 00:46:08,345 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 57, "iteration": 300, "loss": 7.257946014404297, "relation_loss": 0.2520178556442261, "scheduled": true}
+2026-09-22 00:46:33,423 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 57, "iteration": 400, "loss": 7.066379070281982, "relation_loss": 0.19454705715179443, "scheduled": true}
+2026-09-22 00:46:58,588 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 57, "iteration": 500, "loss": 7.084920883178711, "relation_loss": 0.20801100134849548, "scheduled": true}
+2026-09-22 00:47:12,100 INFO processing batch 0/55
+2026-09-22 00:48:01,237 INFO CMC curve, Rank-1  :64.2%
+2026-09-22 00:48:01,238 INFO CMC curve, Rank-5  :71.3%
+2026-09-22 00:48:01,238 INFO CMC curve, Rank-10 :75.0%
+2026-09-22 00:48:01,238 INFO mAP-:62.9%
+2026-09-22 00:48:01,238 INFO Validation Results - Epoch: 57
+2026-09-22 00:48:01,933 INFO processing batch 0/57
+2026-09-22 00:48:53,484 INFO CMC curve, Rank-1  :100.0%
+2026-09-22 00:48:53,484 INFO CMC curve, Rank-5  :100.0%
+2026-09-22 00:48:53,484 INFO CMC curve, Rank-10 :100.0%
+2026-09-22 00:48:53,484 INFO mAP-:99.3%
+2026-09-22 00:49:19,171 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 58, "iteration": 100, "loss": 7.519526481628418, "relation_loss": 0.3238910436630249, "scheduled": true}
+2026-09-22 00:49:44,305 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 58, "iteration": 200, "loss": 7.21592378616333, "relation_loss": 0.25919607281684875, "scheduled": true}
+2026-09-22 00:50:09,347 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 58, "iteration": 300, "loss": 7.245922088623047, "relation_loss": 0.2610611617565155, "scheduled": true}
+2026-09-22 00:50:34,448 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 58, "iteration": 400, "loss": 7.0903778076171875, "relation_loss": 0.24786648154258728, "scheduled": true}
+2026-09-22 00:50:59,704 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 58, "iteration": 500, "loss": 7.098282337188721, "relation_loss": 0.20570242404937744, "scheduled": true}
+2026-09-22 00:51:13,223 INFO processing batch 0/55
+2026-09-22 00:52:02,304 INFO CMC curve, Rank-1  :64.5%
+2026-09-22 00:52:02,304 INFO CMC curve, Rank-5  :71.8%
+2026-09-22 00:52:02,304 INFO CMC curve, Rank-10 :75.1%
+2026-09-22 00:52:02,304 INFO mAP-:62.9%
+2026-09-22 00:52:02,305 INFO Validation Results - Epoch: 58
+2026-09-22 00:52:03,003 INFO processing batch 0/57
+2026-09-22 00:52:54,599 INFO CMC curve, Rank-1  :100.0%
+2026-09-22 00:52:54,600 INFO CMC curve, Rank-5  :100.0%
+2026-09-22 00:52:54,600 INFO CMC curve, Rank-10 :100.0%
+2026-09-22 00:52:54,600 INFO mAP-:99.3%
+2026-09-22 00:53:20,170 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 59, "iteration": 100, "loss": 7.291675567626953, "relation_loss": 0.3310830593109131, "scheduled": true}
+2026-09-22 00:53:45,143 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 59, "iteration": 200, "loss": 7.399869918823242, "relation_loss": 0.2627139091491699, "scheduled": true}
+2026-09-22 00:54:10,073 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 59, "iteration": 300, "loss": 7.175448894500732, "relation_loss": 0.25616294145584106, "scheduled": true}
+2026-09-22 00:54:35,188 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 59, "iteration": 400, "loss": 7.078036785125732, "relation_loss": 0.24081769585609436, "scheduled": true}
+2026-09-22 00:55:00,352 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 59, "iteration": 500, "loss": 7.101944923400879, "relation_loss": 0.20845435559749603, "scheduled": true}
+2026-09-22 00:55:13,794 INFO processing batch 0/55
+2026-09-22 00:56:02,921 INFO CMC curve, Rank-1  :64.5%
+2026-09-22 00:56:02,921 INFO CMC curve, Rank-5  :71.7%
+2026-09-22 00:56:02,921 INFO CMC curve, Rank-10 :75.1%
+2026-09-22 00:56:02,921 INFO mAP-:63.0%
+2026-09-22 00:56:02,921 INFO Validation Results - Epoch: 59
+2026-09-22 00:56:03,635 INFO processing batch 0/57
+2026-09-22 00:56:55,186 INFO CMC curve, Rank-1  :100.0%
+2026-09-22 00:56:55,186 INFO CMC curve, Rank-5  :100.0%
+2026-09-22 00:56:55,186 INFO CMC curve, Rank-10 :100.0%
+2026-09-22 00:56:55,186 INFO mAP-:99.3%
+2026-09-22 00:57:20,874 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 60, "iteration": 100, "loss": 7.198571681976318, "relation_loss": 0.3188241124153137, "scheduled": true}
+2026-09-22 00:57:45,857 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 60, "iteration": 200, "loss": 7.208209037780762, "relation_loss": 0.267642080783844, "scheduled": true}
+2026-09-22 00:58:10,841 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 60, "iteration": 300, "loss": 7.203769207000732, "relation_loss": 0.27312397956848145, "scheduled": true}
+2026-09-22 00:58:35,914 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 60, "iteration": 400, "loss": 7.068612098693848, "relation_loss": 0.21920526027679443, "scheduled": true}
+2026-09-22 00:59:01,250 INFO {"active": true, "amp_skip": 0, "arm": "L1", "candidate_pairs": 24, "epoch": 60, "iteration": 500, "loss": 7.069846153259277, "relation_loss": 0.207838237285614, "scheduled": true}
+2026-09-22 00:59:14,882 INFO processing batch 0/55
+2026-09-22 01:00:04,172 INFO CMC curve, Rank-1  :64.5%
+2026-09-22 01:00:04,172 INFO CMC curve, Rank-5  :71.6%
+2026-09-22 01:00:04,172 INFO CMC curve, Rank-10 :75.3%
+2026-09-22 01:00:04,172 INFO mAP-:63.0%
+2026-09-22 01:00:04,172 INFO Validation Results - Epoch: 60
+2026-09-22 01:00:04,892 INFO processing batch 0/57
+2026-09-22 01:00:56,454 INFO CMC curve, Rank-1  :100.0%
+2026-09-22 01:00:56,454 INFO CMC curve, Rank-5  :100.0%
+2026-09-22 01:00:56,454 INFO CMC curve, Rank-10 :100.0%
+2026-09-22 01:00:56,454 INFO mAP-:99.3%

@@ -1,0 +1,29 @@
+2026-09-01 18:38:41,874 DIFFER INFO: Phase-2 evaluation adapter args: Namespace(config_file='/home/DIFFER/configs/ltcc/eva02_l_bio.yml', weight='/home/DIFFER/outputs/reproduction_phase2/LTCC/differ/run1/1[ltcc][eva02_l_bio][PHASE2_LTCC_DIFFER_RUN1]/eva02_l_bio_best.pth', local_rank=0, opts=['DATA.CAPTION_DIR', '/home/data/DIFFER_TextCaption/LTCC_ReID', 'DATA.ROOT', '/home/data', 'DATA.TEXT_MODEL_VERSION', 'EVA02-CLIP-B-16', 'MODEL.CLIP_DIM', '512', 'MODEL.DIST_TRAIN', 'False', 'OUTPUT_DIR', '/home/DIFFER/outputs/reproduction_phase2/LTCC/differ/run1/eval_best'])
+2026-09-01 18:38:41,875 DIFFER INFO: Evaluating checkpoint: /home/DIFFER/outputs/reproduction_phase2/LTCC/differ/run1/1[ltcc][eva02_l_bio][PHASE2_LTCC_DIFFER_RUN1]/eva02_l_bio_best.pth
+2026-09-01 18:38:43,229 DIFFER INFO: => LTCC loaded
+2026-09-01 18:38:43,229 DIFFER INFO: Dataset statistics:
+2026-09-01 18:38:43,229 DIFFER INFO:   ----------------------------------------
+2026-09-01 18:38:43,230 DIFFER INFO:   subset   | # ids | # images | # clothes
+2026-09-01 18:38:43,230 DIFFER INFO:   ----------------------------------------
+2026-09-01 18:38:43,230 DIFFER INFO:   train    |    77 |     9576 |       256
+2026-09-01 18:38:43,230 DIFFER INFO:   test     |    75 |     7543 |       221
+2026-09-01 18:38:43,230 DIFFER INFO:   query    |    75 |      493 |
+2026-09-01 18:38:43,230 DIFFER INFO:   gallery  |    75 |     7050 |
+2026-09-01 18:38:43,230 DIFFER INFO:   ----------------------------------------
+2026-09-01 18:38:43,230 DIFFER INFO:   total    |   152 |    17119 |       477
+2026-09-01 18:38:43,230 DIFFER INFO:   ----------------------------------------
+2026-09-01 18:38:51,211 DIFFER INFO: Checkpoint load missing_keys=[] unexpected_keys=['head_clip_bioReverse.0.head_fc.weight', 'head_clip_bioReverse.1.head_fc.weight']
+2026-09-01 18:38:51,211 DIFFER.test INFO: Enter inferencing
+2026-09-01 18:38:51,211 DIFFER.test INFO: transreid inferencing
+2026-09-01 18:38:51,448 DIFFER.test INFO: Clothes changing setting
+2026-09-01 18:38:51,934 DIFFER.test INFO: processing batch 0/59
+2026-09-01 18:39:44,460 DIFFER.test INFO: CMC curve, Rank-1  :53.3%
+2026-09-01 18:39:44,460 DIFFER.test INFO: CMC curve, Rank-5  :67.3%
+2026-09-01 18:39:44,461 DIFFER.test INFO: CMC curve, Rank-10 :71.7%
+2026-09-01 18:39:44,461 DIFFER.test INFO: mAP-:29.3%
+2026-09-01 18:39:44,472 DIFFER.test INFO: Standard setting
+2026-09-01 18:39:44,965 DIFFER.test INFO: processing batch 0/59
+2026-09-01 18:40:36,023 DIFFER.test INFO: CMC curve, Rank-1  :82.8%
+2026-09-01 18:40:36,023 DIFFER.test INFO: CMC curve, Rank-5  :90.1%
+2026-09-01 18:40:36,024 DIFFER.test INFO: CMC curve, Rank-10 :91.9%
+2026-09-01 18:40:36,024 DIFFER.test INFO: mAP-:51.8%

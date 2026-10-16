@@ -1,0 +1,1 @@
+     23 Tue Sep 22 12:08:16 2026 Sl   /usr/local/bin/python3 /usr/local/bin/jupyter-lab --notebook-dir=/ --ip=127.0.0.1 --port=8888 --allow-root --no-browser --NotebookApp.token= --NotebookApp.password= --ServerApp.token= --ServerApp.password= --ServerApp.allow_remote_access=True --ServerApp.allow_origin=* --ServerApp.base_url=/nb-a431f85a02d6004f02/jupyter/

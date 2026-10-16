@@ -1,0 +1,10 @@
+{
+  "status": "completed",
+  "dataset": "ltcc",
+  "variant": "N2",
+  "seed": 1234,
+  "best_rank1": 0.5637755393981934,
+  "best_epoch": 18,
+  "final_checkpoint": "/home/DIFFER_NPC/outputs/NPC_CONFIRMATORY_20261014_140116/ltcc/seed1234/N2/checkpoints/model_final.pth",
+  "elapsed_seconds": 32268.329319000244
+}

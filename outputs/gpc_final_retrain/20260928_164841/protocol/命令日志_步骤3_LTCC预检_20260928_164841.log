@@ -1,0 +1,87 @@
+开始时间：2026-09-28T08:49:33Z
+执行命令：/usr/local/bin/torchrun --standalone --nproc_per_node=2 /home/DIFFER/scripts/train_final_gpc.py --mode dry-run --dataset ltcc --arm gpc --seed 1234 --output-dir /home/DIFFER/outputs/gpc_final_retrain/20260928_164841 --dry-steps 8
+
+W0928 16:49:35.018000 2477685 site-packages/torch/distributed/run.py:792] 
+W0928 16:49:35.018000 2477685 site-packages/torch/distributed/run.py:792] *****************************************
+W0928 16:49:35.018000 2477685 site-packages/torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0928 16:49:35.018000 2477685 site-packages/torch/distributed/run.py:792] *****************************************
+/usr/local/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/helpers.py:7: FutureWarning: Importing from timm.models.helpers is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/helpers.py:7: FutureWarning: Importing from timm.models.helpers is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/home/DIFFER/model/eva_embed.py:948: UserWarning: Overwriting eva02_large_patch14_clip_224 in registry with model.eva_embed.eva02_large_patch14_clip_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def eva02_large_patch14_clip_224(pretrained=False,config={}, **kwargs) -> Eva:
+/home/DIFFER/model/eva_embed.py:948: UserWarning: Overwriting eva02_large_patch14_clip_224 in registry with model.eva_embed.eva02_large_patch14_clip_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def eva02_large_patch14_clip_224(pretrained=False,config={}, **kwargs) -> Eva:
+using soft triplet loss for training
+/home/DIFFER/scripts/train_final_gpc.py:1191: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = amp.GradScaler(init_scale=int(SPEC[dataset_name]["initial_scale"]))
+using soft triplet loss for training
+/home/DIFFER/scripts/train_final_gpc.py:1191: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = amp.GradScaler(init_scale=int(SPEC[dataset_name]["initial_scale"]))
+/home/DIFFER/scripts/train_final_gpc.py:936: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(enabled=True):
+/home/DIFFER/scripts/train_final_gpc.py:936: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(enabled=True):
+[2026-09-28 16:49:54:603737][ALINPU INFO]: [/job_3220189/source/acompute/include/accontext.hpp:174][34m ACOMPUTE: [device caps] dev=0, name=PPU-ZW810E, sm8.0, smem=256KB, num_of_sm=64, freq_of_sm=1700MHz[0m
+[2026-09-28 16:49:54:624213][ALINPU INFO]: [/job_3220189/source/acompute/include/accontext.hpp:174][34m ACOMPUTE: [device caps] dev=1, name=PPU-ZW810E, sm8.0, smem=256KB, num_of_sm=64, freq_of_sm=1700MHz[0m
+[2026-09-28 16:49:55:85838][ALINPU INFO]: [/job_3220189/source/acompute/include/accontext.hpp:174][34m ACOMPUTE: [device caps] dev=1, name=PPU-ZW810E, sm8.0, smem=256KB, num_of_sm=64, freq_of_sm=1700MHz[0m
+[2026-09-28 16:49:55:105374][ALINPU INFO]: [/job_3220189/source/acompute/include/accontext.hpp:174][34m ACOMPUTE: [device caps] dev=0, name=PPU-ZW810E, sm8.0, smem=256KB, num_of_sm=64, freq_of_sm=1700MHz[0m
+[33m[2026-09-28 16:49:55:960353][ALINPU WARNING]: [offline_cache.hpp:574]The set dir is not accessable: /PPU0010[0m
+[2026-09-28 16:49:55:960441][ALINPU INFO]: [offline_cache.hpp:583]Use root dir: /rtccache/PPU0010
+[33m[2026-09-28 16:49:55:960492][ALINPU WARNING]: [offline_cache.hpp:574]The set dir is not accessable: /PPU0015[0m
+[2026-09-28 16:49:55:960511][ALINPU INFO]: [offline_cache.hpp:583]Use root dir: /rtccache/PPU0015
+[2026-09-28 16:49:55:960586][ALINPU INFO]: [kernel_factory.cu:258]Rtc cache load all offline-cache done.
+
+[33m[2026-09-28 16:49:55:967293][ALINPU WARNING]: [offline_cache.hpp:74]No cache file exist: /rtccache/PPU0010/ppu-64_3016079961_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile32x128x16x32x128x3_layout0x1x0x0_align1x1x8x8_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin[0m
+[33m[2026-09-28 16:49:55:972646][ALINPU WARNING]: [offline_cache.hpp:574]The set dir is not accessable: /PPU0010[0m
+[2026-09-28 16:49:55:972734][ALINPU INFO]: [offline_cache.hpp:583]Use root dir: /rtccache/PPU0010
+[33m[2026-09-28 16:49:55:972800][ALINPU WARNING]: [offline_cache.hpp:574]The set dir is not accessable: /PPU0015[0m
+[2026-09-28 16:49:55:972821][ALINPU INFO]: [offline_cache.hpp:583]Use root dir: /rtccache/PPU0015
+[2026-09-28 16:49:55:972893][ALINPU INFO]: [kernel_factory.cu:258]Rtc cache load all offline-cache done.
+
+[2026-09-28 16:49:55:976680] [ERROR:at /job_3220189/source/acompute/rtc/rtc_kernel.cu:182] Both PPU_SDK and PPU_HOME are not exist
+[33m[2026-09-28 16:49:55:978769][ALINPU WARNING]: [offline_cache.hpp:74]No cache file exist: /rtccache/PPU0010/ppu-64_3016079961_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile32x128x16x32x128x3_layout0x1x0x0_align1x1x8x8_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin[0m
+[2026-09-28 16:49:55:987766] [ERROR:at /job_3220189/source/acompute/rtc/rtc_kernel.cu:182] Both PPU_SDK and PPU_HOME are not exist
+W0928 16:50:13.210000 2477685 site-packages/torch/distributed/elastic/multiprocessing/api.py:897] Sending process 2477763 closing signal SIGTERM
+E0928 16:50:13.775000 2477685 site-packages/torch/distributed/elastic/multiprocessing/api.py:869] failed (exitcode: -6) local_rank: 1 (pid: 2477764) of binary: /usr/local/bin/python3
+Traceback (most recent call last):
+  File "/usr/local/bin/torchrun", line 8, in <module>
+    sys.exit(main())
+  File "/usr/local/lib/python3.10/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 355, in wrapper
+    return f(*args, **kwargs)
+  File "/usr/local/lib/python3.10/site-packages/torch/distributed/run.py", line 918, in main
+    run(args)
+  File "/usr/local/lib/python3.10/site-packages/torch/distributed/run.py", line 909, in run
+    elastic_launch(
+  File "/usr/local/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 138, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+  File "/usr/local/lib/python3.10/site-packages/torch/distributed/launcher/api.py", line 269, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+========================================================
+/home/DIFFER/scripts/train_final_gpc.py FAILED
+--------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+--------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-09-28_16:50:13
+  host      : nb-695386d801a3d04b75-7754bfbc9c-l2jdj
+  rank      : 1 (local_rank: 1)
+  exitcode  : -6 (pid: 2477764)
+  error_file: <N/A>
+  traceback : Signal 6 (SIGABRT) received by PID 2477764
+========================================================
+
+结束时间：2026-09-28T08:50:14Z
+返回码：1

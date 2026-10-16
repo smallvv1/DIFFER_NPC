@@ -1,0 +1,1 @@
+epoch,train_loss,ce_loss,triplet_loss,bio_loss,reverse_hair_loss,reverse_cloth_loss,lr,lr_bias,amp_scale_min,amp_scale_max,amp_scale_end,skipped_steps,found_inf_count,nonfinite_events,train_accuracy,cc_rank1,cc_rank5,cc_rank10,cc_mAP,cc_mINP,general_rank1,general_rank5,general_rank10,general_mAP,general_mINP

@@ -1,0 +1,1 @@
+epoch,train_loss,ce_loss,triplet_loss,memory_loss,lr,updates,amp_scale,cc_rank1,cc_rank5,cc_rank10,cc_mAP,general_rank1,general_mAP,npc_weight_mean,npc_weight_min,npc_weight_max,npc_low_weight_ratio

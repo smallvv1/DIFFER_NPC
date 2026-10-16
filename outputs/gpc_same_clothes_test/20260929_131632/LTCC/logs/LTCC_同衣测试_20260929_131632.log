@@ -1,0 +1,20 @@
+2026-09-29 13:16:52,182 INFO ==================================================
+2026-09-29 13:16:52,182 INFO 数据集：LTCC
+2026-09-29 13:16:52,182 INFO 方法：Bio + GPC
+2026-09-29 13:16:52,182 INFO 测试类型：同衣/标准设置
+2026-09-29 13:16:52,182 INFO 测试协议：原始 query -> gallery；过滤同身份同摄像头，不进行衣物过滤
+2026-09-29 13:16:52,182 INFO 说明：LTCC 没有独立 query_same 划分，本次复用仓库现有 Standard setting
+2026-09-29 13:16:52,182 INFO query 数：493；gallery 数：7050
+2026-09-29 13:16:52,182 INFO checkpoint：/home/DIFFER/outputs/gpc_final_retrain/20260928_173834/LTCC/checkpoints/model_final.pth
+2026-09-29 13:16:52,183 INFO checkpoint epoch：60
+2026-09-29 13:16:52,183 INFO checkpoint SHA256：1d29d93d4c2958b2ff6bf046b338459ab72d9ada5257d971e7d1da45de6dc4d6
+2026-09-29 13:16:52,183 INFO PPU：是；CPU fallback：禁止；设备：PPU-ZW810E
+2026-09-29 13:16:52,183 INFO 本次只做测试，不训练、不更新参数、不选择 checkpoint
+2026-09-29 13:16:52,183 INFO ==================================================
+2026-09-29 13:16:52,747 INFO processing batch 0/59
+2026-09-29 13:17:51,995 INFO CMC curve, Rank-1  :83.2%
+2026-09-29 13:17:51,995 INFO CMC curve, Rank-5  :90.1%
+2026-09-29 13:17:51,995 INFO CMC curve, Rank-10 :91.7%
+2026-09-29 13:17:51,995 INFO mAP-:53.5%
+2026-09-29 13:17:52,381 INFO [LTCC][同衣测试] Rank-1：0.83164299；Rank-5：0.90060854；Rank-10：0.91683573；mAP：0.53524564；mINP：当前 evaluator 未提供
+2026-09-29 13:17:52,382 INFO [LTCC][同衣测试] 测试完成；结果：/home/DIFFER/outputs/gpc_same_clothes_test/20260929_131632/LTCC/test/LTCC_同衣测试结果_20260929_131632.json

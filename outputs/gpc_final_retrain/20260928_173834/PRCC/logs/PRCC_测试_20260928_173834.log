@@ -1,0 +1,15 @@
+2026-09-28 22:58:23,017 INFO ==================================================
+2026-09-28 22:58:23,017 INFO 数据集：PRCC
+2026-09-28 22:58:23,017 INFO 方法：Bio + GPC
+2026-09-28 22:58:23,017 INFO 测试阶段：只使用 Epoch 60 最终 checkpoint
+2026-09-28 22:58:23,017 INFO checkpoint：/home/DIFFER/outputs/gpc_final_retrain/20260928_173834/PRCC/checkpoints/model_final.pth
+2026-09-28 22:58:23,017 INFO checkpoint SHA256：df17e0edd74fb82f293ec2a8c0c3dd92c9b44284e3fb2d5b9d508b7259be711a
+2026-09-28 22:58:23,017 INFO 测试协议：PRCC changed clothes C -> A gallery
+2026-09-28 22:58:23,018 INFO ==================================================
+2026-09-28 22:58:23,950 INFO processing batch 0/55
+2026-09-28 22:59:12,521 INFO CMC curve, Rank-1  :62.8%
+2026-09-28 22:59:12,522 INFO CMC curve, Rank-5  :70.4%
+2026-09-28 22:59:12,522 INFO CMC curve, Rank-10 :74.1%
+2026-09-28 22:59:12,522 INFO mAP-:63.5%
+2026-09-28 22:59:13,896 INFO [PRCC][测试] Rank-1：0.62771660；Rank-5：0.70420545；Rank-10：0.74117976；mAP：0.63516887；mINP：当前 evaluator 未提供
+2026-09-28 22:59:13,896 INFO [PRCC][测试] 正式测试完成；query 数：3543；gallery 数：3384

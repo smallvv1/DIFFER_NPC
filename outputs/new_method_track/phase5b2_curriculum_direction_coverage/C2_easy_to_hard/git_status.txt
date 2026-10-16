@@ -1,0 +1,23 @@
+ M processor/__pycache__/processor.cpython-310.pyc
+ M scripts/__pycache__/phase4r_a2.cpython-310.pyc
+?? diagnostics/reverse_bias_paired_200iter_phase2h_full.json.gz
+?? reports/PHASE_4R_A2_FORENSIC.md
+?? reports/PHASE_4R_A2_FORENSIC_AUDIT.md
+?? reports/PHASE_4R_B_MATCHED_TWIN_GRL_CAUSAL.md
+?? reports/PHASE_4R_C_NONBIO_SIGNAL_FORENSICS.md
+?? reports/PHASE_4R_D_MATCHED_PREFIX_TIMING.md
+?? reports/PHASE_4R_D_TWO_STAGE_FULL_RECOVERY.md
+?? reports/PHASE_5A_CLOTHING_HARDNESS_FEASIBILITY.md
+?? reports/PHASE_5B_ID_DAMAGE_DS_TRAINING.md
+?? scripts/phase4r_a2_forensics.py
+?? scripts/phase4r_b_matched_twin.py
+?? scripts/phase4r_c_checkpoint_features.py
+?? scripts/phase4r_c_feature_analysis.py
+?? scripts/phase4r_c_semantic_forensics.py
+?? scripts/phase4r_c_target_permutation.py
+?? scripts/phase4r_c_trajectory_analysis.py
+?? scripts/phase4r_d_matched_prefix.py
+?? scripts/phase4r_d_two_stage_recovery.py
+?? scripts/phase5a_clothing_hardness.py
+?? scripts/phase5b2_curriculum_direction_coverage.py
+?? scripts/phase5b_id_damage_ds.py

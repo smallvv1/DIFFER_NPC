@@ -1,0 +1,960 @@
+2026-09-18 11:23:58,258 INFO {"arm": "C2", "epoch": 1, "iteration": 100, "loss": 8.740338325500488, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 11:24:23,692 INFO {"arm": "C2", "epoch": 1, "iteration": 200, "loss": 8.248740196228027, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 11:24:49,135 INFO {"arm": "C2", "epoch": 1, "iteration": 300, "loss": 8.677166938781738, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 11:25:14,589 INFO {"arm": "C2", "epoch": 1, "iteration": 400, "loss": 7.97459602355957, "image_relations": 12, "proto_relations": 12, "amp_skip": 0}
+2026-09-18 11:25:39,992 INFO {"arm": "C2", "epoch": 1, "iteration": 500, "loss": 8.620508193969727, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 11:25:53,372 INFO processing batch 0/55
+2026-09-18 11:26:41,550 INFO CMC curve, Rank-1  :42.5%
+2026-09-18 11:26:41,550 INFO CMC curve, Rank-5  :53.3%
+2026-09-18 11:26:41,550 INFO CMC curve, Rank-10 :57.8%
+2026-09-18 11:26:41,551 INFO mAP-:39.1%
+2026-09-18 11:26:41,551 INFO Validation Results - Epoch: 1
+2026-09-18 11:26:41,958 INFO processing batch 0/57
+2026-09-18 11:27:32,521 INFO CMC curve, Rank-1  :99.8%
+2026-09-18 11:27:32,521 INFO CMC curve, Rank-5  :100.0%
+2026-09-18 11:27:32,521 INFO CMC curve, Rank-10 :100.0%
+2026-09-18 11:27:32,521 INFO mAP-:94.1%
+2026-09-18 11:27:59,270 INFO {"arm": "C2", "epoch": 2, "iteration": 100, "loss": 9.163647651672363, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 11:28:24,544 INFO {"arm": "C2", "epoch": 2, "iteration": 200, "loss": 7.977135181427002, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 11:28:49,965 INFO {"arm": "C2", "epoch": 2, "iteration": 300, "loss": 8.375542640686035, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 11:29:15,239 INFO {"arm": "C2", "epoch": 2, "iteration": 400, "loss": 8.052130699157715, "image_relations": 12, "proto_relations": 12, "amp_skip": 0}
+2026-09-18 11:29:40,535 INFO {"arm": "C2", "epoch": 2, "iteration": 500, "loss": 8.285414695739746, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 11:29:53,783 INFO processing batch 0/55
+2026-09-18 11:30:41,906 INFO CMC curve, Rank-1  :51.4%
+2026-09-18 11:30:41,907 INFO CMC curve, Rank-5  :60.1%
+2026-09-18 11:30:41,907 INFO CMC curve, Rank-10 :64.3%
+2026-09-18 11:30:41,907 INFO mAP-:45.5%
+2026-09-18 11:30:41,907 INFO Validation Results - Epoch: 2
+2026-09-18 11:30:42,316 INFO processing batch 0/57
+2026-09-18 11:31:32,783 INFO CMC curve, Rank-1  :99.9%
+2026-09-18 11:31:32,783 INFO CMC curve, Rank-5  :100.0%
+2026-09-18 11:31:32,783 INFO CMC curve, Rank-10 :100.0%
+2026-09-18 11:31:32,783 INFO mAP-:95.7%
+2026-09-18 11:32:00,413 INFO {"arm": "C2", "epoch": 3, "iteration": 100, "loss": 8.758892059326172, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 11:32:25,595 INFO {"arm": "C2", "epoch": 3, "iteration": 200, "loss": 7.977067470550537, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 11:32:51,023 INFO {"arm": "C2", "epoch": 3, "iteration": 300, "loss": 8.562431335449219, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 11:33:16,237 INFO {"arm": "C2", "epoch": 3, "iteration": 400, "loss": 7.976551532745361, "image_relations": 12, "proto_relations": 12, "amp_skip": 0}
+2026-09-18 11:33:41,579 INFO {"arm": "C2", "epoch": 3, "iteration": 500, "loss": 8.301576614379883, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 11:33:55,043 INFO processing batch 0/55
+2026-09-18 11:34:43,089 INFO CMC curve, Rank-1  :56.6%
+2026-09-18 11:34:43,089 INFO CMC curve, Rank-5  :64.4%
+2026-09-18 11:34:43,089 INFO CMC curve, Rank-10 :67.9%
+2026-09-18 11:34:43,090 INFO mAP-:50.3%
+2026-09-18 11:34:43,090 INFO Validation Results - Epoch: 3
+2026-09-18 11:34:43,499 INFO processing batch 0/57
+2026-09-18 11:35:35,007 INFO CMC curve, Rank-1  :99.9%
+2026-09-18 11:35:35,008 INFO CMC curve, Rank-5  :100.0%
+2026-09-18 11:35:35,008 INFO CMC curve, Rank-10 :100.0%
+2026-09-18 11:35:35,008 INFO mAP-:97.1%
+2026-09-18 11:36:04,387 INFO {"arm": "C2", "epoch": 4, "iteration": 100, "loss": 8.451119422912598, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 11:36:31,135 INFO {"arm": "C2", "epoch": 4, "iteration": 200, "loss": 8.06273365020752, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 11:36:58,007 INFO {"arm": "C2", "epoch": 4, "iteration": 300, "loss": 8.250844955444336, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 11:37:24,763 INFO {"arm": "C2", "epoch": 4, "iteration": 400, "loss": 7.907484531402588, "image_relations": 12, "proto_relations": 12, "amp_skip": 0}
+2026-09-18 11:37:51,501 INFO {"arm": "C2", "epoch": 4, "iteration": 500, "loss": 8.146674156188965, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 11:38:05,653 INFO processing batch 0/55
+2026-09-18 11:38:54,030 INFO CMC curve, Rank-1  :60.0%
+2026-09-18 11:38:54,031 INFO CMC curve, Rank-5  :67.6%
+2026-09-18 11:38:54,031 INFO CMC curve, Rank-10 :71.2%
+2026-09-18 11:38:54,031 INFO mAP-:53.8%
+2026-09-18 11:38:54,031 INFO Validation Results - Epoch: 4
+2026-09-18 11:38:54,457 INFO processing batch 0/57
+2026-09-18 11:39:45,142 INFO CMC curve, Rank-1  :99.9%
+2026-09-18 11:39:45,142 INFO CMC curve, Rank-5  :99.9%
+2026-09-18 11:39:45,143 INFO CMC curve, Rank-10 :100.0%
+2026-09-18 11:39:45,143 INFO mAP-:97.4%
+2026-09-18 11:40:14,032 INFO {"arm": "C2", "epoch": 5, "iteration": 100, "loss": 8.273183822631836, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 11:40:40,330 INFO {"arm": "C2", "epoch": 5, "iteration": 200, "loss": 8.024991989135742, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 11:41:06,927 INFO {"arm": "C2", "epoch": 5, "iteration": 300, "loss": 8.31577205657959, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 11:41:33,408 INFO {"arm": "C2", "epoch": 5, "iteration": 400, "loss": 7.912829399108887, "image_relations": 12, "proto_relations": 12, "amp_skip": 0}
+2026-09-18 11:41:59,790 INFO {"arm": "C2", "epoch": 5, "iteration": 500, "loss": 8.421247482299805, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 11:42:13,671 INFO processing batch 0/55
+2026-09-18 11:43:01,925 INFO CMC curve, Rank-1  :60.9%
+2026-09-18 11:43:01,926 INFO CMC curve, Rank-5  :68.6%
+2026-09-18 11:43:01,926 INFO CMC curve, Rank-10 :72.5%
+2026-09-18 11:43:01,926 INFO mAP-:56.1%
+2026-09-18 11:43:01,926 INFO Validation Results - Epoch: 5
+2026-09-18 11:43:02,392 INFO processing batch 0/57
+2026-09-18 11:43:53,169 INFO CMC curve, Rank-1  :99.9%
+2026-09-18 11:43:53,170 INFO CMC curve, Rank-5  :99.9%
+2026-09-18 11:43:53,170 INFO CMC curve, Rank-10 :100.0%
+2026-09-18 11:43:53,170 INFO mAP-:97.9%
+2026-09-18 11:44:22,233 INFO {"arm": "C2", "epoch": 6, "iteration": 100, "loss": 8.738085746765137, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 11:44:48,358 INFO {"arm": "C2", "epoch": 6, "iteration": 200, "loss": 7.882979393005371, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 11:45:14,527 INFO {"arm": "C2", "epoch": 6, "iteration": 300, "loss": 8.068962097167969, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 11:45:40,394 INFO {"arm": "C2", "epoch": 6, "iteration": 400, "loss": 7.900358200073242, "image_relations": 12, "proto_relations": 12, "amp_skip": 0}
+2026-09-18 11:46:05,862 INFO {"arm": "C2", "epoch": 6, "iteration": 500, "loss": 7.969942092895508, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 11:46:19,287 INFO processing batch 0/55
+2026-09-18 11:47:07,551 INFO CMC curve, Rank-1  :61.2%
+2026-09-18 11:47:07,551 INFO CMC curve, Rank-5  :68.9%
+2026-09-18 11:47:07,551 INFO CMC curve, Rank-10 :72.6%
+2026-09-18 11:47:07,551 INFO mAP-:57.2%
+2026-09-18 11:47:07,551 INFO Validation Results - Epoch: 6
+2026-09-18 11:47:07,968 INFO processing batch 0/57
+2026-09-18 11:47:58,756 INFO CMC curve, Rank-1  :99.9%
+2026-09-18 11:47:58,756 INFO CMC curve, Rank-5  :99.9%
+2026-09-18 11:47:58,756 INFO CMC curve, Rank-10 :100.0%
+2026-09-18 11:47:58,756 INFO mAP-:98.4%
+2026-09-18 11:48:27,108 INFO {"arm": "C2", "epoch": 7, "iteration": 100, "loss": 8.344669342041016, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 11:48:52,823 INFO {"arm": "C2", "epoch": 7, "iteration": 200, "loss": 8.11727237701416, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 11:49:18,506 INFO {"arm": "C2", "epoch": 7, "iteration": 300, "loss": 8.014263153076172, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 11:49:44,070 INFO {"arm": "C2", "epoch": 7, "iteration": 400, "loss": 7.83126974105835, "image_relations": 12, "proto_relations": 12, "amp_skip": 0}
+2026-09-18 11:50:09,718 INFO {"arm": "C2", "epoch": 7, "iteration": 500, "loss": 8.069524765014648, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 11:50:23,235 INFO processing batch 0/55
+2026-09-18 11:51:11,436 INFO CMC curve, Rank-1  :63.0%
+2026-09-18 11:51:11,437 INFO CMC curve, Rank-5  :70.3%
+2026-09-18 11:51:11,437 INFO CMC curve, Rank-10 :73.5%
+2026-09-18 11:51:11,437 INFO mAP-:58.4%
+2026-09-18 11:51:11,437 INFO Validation Results - Epoch: 7
+2026-09-18 11:51:11,886 INFO processing batch 0/57
+2026-09-18 11:52:02,448 INFO CMC curve, Rank-1  :99.9%
+2026-09-18 11:52:02,448 INFO CMC curve, Rank-5  :99.9%
+2026-09-18 11:52:02,448 INFO CMC curve, Rank-10 :100.0%
+2026-09-18 11:52:02,448 INFO mAP-:98.5%
+2026-09-18 11:52:30,639 INFO {"arm": "C2", "epoch": 8, "iteration": 100, "loss": 8.573948860168457, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 11:52:56,064 INFO {"arm": "C2", "epoch": 8, "iteration": 200, "loss": 7.934338092803955, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 11:53:21,647 INFO {"arm": "C2", "epoch": 8, "iteration": 300, "loss": 8.046174049377441, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 11:53:47,366 INFO {"arm": "C2", "epoch": 8, "iteration": 400, "loss": 7.807267665863037, "image_relations": 12, "proto_relations": 12, "amp_skip": 0}
+2026-09-18 11:54:13,068 INFO {"arm": "C2", "epoch": 8, "iteration": 500, "loss": 7.964391231536865, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 11:54:26,719 INFO processing batch 0/55
+2026-09-18 11:55:14,966 INFO CMC curve, Rank-1  :64.2%
+2026-09-18 11:55:14,966 INFO CMC curve, Rank-5  :71.2%
+2026-09-18 11:55:14,967 INFO CMC curve, Rank-10 :74.3%
+2026-09-18 11:55:14,967 INFO mAP-:59.3%
+2026-09-18 11:55:14,967 INFO Validation Results - Epoch: 8
+2026-09-18 11:55:15,404 INFO processing batch 0/57
+2026-09-18 11:56:06,164 INFO CMC curve, Rank-1  :99.9%
+2026-09-18 11:56:06,164 INFO CMC curve, Rank-5  :100.0%
+2026-09-18 11:56:06,164 INFO CMC curve, Rank-10 :100.0%
+2026-09-18 11:56:06,164 INFO mAP-:98.6%
+2026-09-18 11:56:34,361 INFO {"arm": "C2", "epoch": 9, "iteration": 100, "loss": 8.490724563598633, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 11:56:59,918 INFO {"arm": "C2", "epoch": 9, "iteration": 200, "loss": 8.11176872253418, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 11:57:25,401 INFO {"arm": "C2", "epoch": 9, "iteration": 300, "loss": 8.024309158325195, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 11:57:50,949 INFO {"arm": "C2", "epoch": 9, "iteration": 400, "loss": 7.850310325622559, "image_relations": 12, "proto_relations": 12, "amp_skip": 0}
+2026-09-18 11:58:16,547 INFO {"arm": "C2", "epoch": 9, "iteration": 500, "loss": 8.02357006072998, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 11:58:30,077 INFO processing batch 0/55
+2026-09-18 11:59:18,308 INFO CMC curve, Rank-1  :62.4%
+2026-09-18 11:59:18,309 INFO CMC curve, Rank-5  :69.8%
+2026-09-18 11:59:18,309 INFO CMC curve, Rank-10 :73.2%
+2026-09-18 11:59:18,309 INFO mAP-:58.9%
+2026-09-18 11:59:18,309 INFO Validation Results - Epoch: 9
+2026-09-18 11:59:18,732 INFO processing batch 0/57
+2026-09-18 12:00:09,507 INFO CMC curve, Rank-1  :100.0%
+2026-09-18 12:00:09,507 INFO CMC curve, Rank-5  :100.0%
+2026-09-18 12:00:09,507 INFO CMC curve, Rank-10 :100.0%
+2026-09-18 12:00:09,507 INFO mAP-:98.9%
+2026-09-18 12:00:35,411 INFO {"arm": "C2", "epoch": 10, "iteration": 100, "loss": 8.491991996765137, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 12:01:00,822 INFO {"arm": "C2", "epoch": 10, "iteration": 200, "loss": 8.003523826599121, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 12:01:26,446 INFO {"arm": "C2", "epoch": 10, "iteration": 300, "loss": 7.947535991668701, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 12:01:52,365 INFO {"arm": "C2", "epoch": 10, "iteration": 400, "loss": 7.767446041107178, "image_relations": 12, "proto_relations": 12, "amp_skip": 0}
+2026-09-18 12:02:17,960 INFO {"arm": "C2", "epoch": 10, "iteration": 500, "loss": 7.983034133911133, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 12:02:31,384 INFO processing batch 0/55
+2026-09-18 12:03:19,679 INFO CMC curve, Rank-1  :62.6%
+2026-09-18 12:03:19,679 INFO CMC curve, Rank-5  :69.8%
+2026-09-18 12:03:19,680 INFO CMC curve, Rank-10 :72.7%
+2026-09-18 12:03:19,680 INFO mAP-:59.2%
+2026-09-18 12:03:19,680 INFO Validation Results - Epoch: 10
+2026-09-18 12:03:20,099 INFO processing batch 0/57
+2026-09-18 12:04:10,916 INFO CMC curve, Rank-1  :100.0%
+2026-09-18 12:04:10,917 INFO CMC curve, Rank-5  :100.0%
+2026-09-18 12:04:10,917 INFO CMC curve, Rank-10 :100.0%
+2026-09-18 12:04:10,917 INFO mAP-:98.9%
+2026-09-18 12:04:36,785 INFO {"arm": "C2", "epoch": 11, "iteration": 100, "loss": 8.456356048583984, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 12:05:02,277 INFO {"arm": "C2", "epoch": 11, "iteration": 200, "loss": 7.849149227142334, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 12:05:27,764 INFO {"arm": "C2", "epoch": 11, "iteration": 300, "loss": 8.10995101928711, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 12:05:53,462 INFO {"arm": "C2", "epoch": 11, "iteration": 400, "loss": 7.806799411773682, "image_relations": 12, "proto_relations": 12, "amp_skip": 0}
+2026-09-18 12:06:19,054 INFO {"arm": "C2", "epoch": 11, "iteration": 500, "loss": 8.032629013061523, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 12:06:32,564 INFO processing batch 0/55
+2026-09-18 12:07:20,842 INFO CMC curve, Rank-1  :62.2%
+2026-09-18 12:07:20,843 INFO CMC curve, Rank-5  :70.0%
+2026-09-18 12:07:20,843 INFO CMC curve, Rank-10 :73.1%
+2026-09-18 12:07:20,843 INFO mAP-:59.2%
+2026-09-18 12:07:20,843 INFO Validation Results - Epoch: 11
+2026-09-18 12:07:21,261 INFO processing batch 0/57
+2026-09-18 12:08:11,841 INFO CMC curve, Rank-1  :99.9%
+2026-09-18 12:08:11,842 INFO CMC curve, Rank-5  :100.0%
+2026-09-18 12:08:11,842 INFO CMC curve, Rank-10 :100.0%
+2026-09-18 12:08:11,842 INFO mAP-:99.1%
+2026-09-18 12:08:37,857 INFO {"arm": "C2", "epoch": 12, "iteration": 100, "loss": 8.186662673950195, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 12:09:03,448 INFO {"arm": "C2", "epoch": 12, "iteration": 200, "loss": 7.964797019958496, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 12:09:29,084 INFO {"arm": "C2", "epoch": 12, "iteration": 300, "loss": 7.965086460113525, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 12:09:54,625 INFO {"arm": "C2", "epoch": 12, "iteration": 400, "loss": 7.7951812744140625, "image_relations": 12, "proto_relations": 12, "amp_skip": 0}
+2026-09-18 12:10:20,136 INFO {"arm": "C2", "epoch": 12, "iteration": 500, "loss": 8.088419914245605, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 12:10:33,673 INFO processing batch 0/55
+2026-09-18 12:11:21,923 INFO CMC curve, Rank-1  :63.3%
+2026-09-18 12:11:21,923 INFO CMC curve, Rank-5  :71.6%
+2026-09-18 12:11:21,923 INFO CMC curve, Rank-10 :75.0%
+2026-09-18 12:11:21,923 INFO mAP-:60.2%
+2026-09-18 12:11:21,923 INFO Validation Results - Epoch: 12
+2026-09-18 12:11:22,356 INFO processing batch 0/57
+2026-09-18 12:12:13,171 INFO CMC curve, Rank-1  :100.0%
+2026-09-18 12:12:13,171 INFO CMC curve, Rank-5  :100.0%
+2026-09-18 12:12:13,171 INFO CMC curve, Rank-10 :100.0%
+2026-09-18 12:12:13,171 INFO mAP-:99.2%
+2026-09-18 12:12:39,254 INFO {"arm": "C2", "epoch": 13, "iteration": 100, "loss": 8.796698570251465, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 12:13:04,963 INFO {"arm": "C2", "epoch": 13, "iteration": 200, "loss": 7.7876667976379395, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 12:13:30,845 INFO {"arm": "C2", "epoch": 13, "iteration": 300, "loss": 7.867271423339844, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 12:13:56,498 INFO {"arm": "C2", "epoch": 13, "iteration": 400, "loss": 7.772652626037598, "image_relations": 12, "proto_relations": 12, "amp_skip": 0}
+2026-09-18 12:14:22,064 INFO {"arm": "C2", "epoch": 13, "iteration": 500, "loss": 7.869767665863037, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 12:14:35,544 INFO processing batch 0/55
+2026-09-18 12:15:23,775 INFO CMC curve, Rank-1  :64.4%
+2026-09-18 12:15:23,776 INFO CMC curve, Rank-5  :72.6%
+2026-09-18 12:15:23,776 INFO CMC curve, Rank-10 :76.4%
+2026-09-18 12:15:23,776 INFO mAP-:61.2%
+2026-09-18 12:15:23,776 INFO Validation Results - Epoch: 13
+2026-09-18 12:15:24,203 INFO processing batch 0/57
+2026-09-18 12:16:14,985 INFO CMC curve, Rank-1  :100.0%
+2026-09-18 12:16:14,986 INFO CMC curve, Rank-5  :100.0%
+2026-09-18 12:16:14,986 INFO CMC curve, Rank-10 :100.0%
+2026-09-18 12:16:14,986 INFO mAP-:99.3%
+2026-09-18 12:16:43,026 INFO {"arm": "C2", "epoch": 14, "iteration": 100, "loss": 8.077577590942383, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 12:17:08,486 INFO {"arm": "C2", "epoch": 14, "iteration": 200, "loss": 7.80078125, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 12:17:34,028 INFO {"arm": "C2", "epoch": 14, "iteration": 300, "loss": 7.89055871963501, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 12:17:59,602 INFO {"arm": "C2", "epoch": 14, "iteration": 400, "loss": 7.806093692779541, "image_relations": 12, "proto_relations": 12, "amp_skip": 0}
+2026-09-18 12:18:25,477 INFO {"arm": "C2", "epoch": 14, "iteration": 500, "loss": 7.8810882568359375, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 12:18:39,157 INFO processing batch 0/55
+2026-09-18 12:19:27,361 INFO CMC curve, Rank-1  :63.4%
+2026-09-18 12:19:27,362 INFO CMC curve, Rank-5  :71.1%
+2026-09-18 12:19:27,362 INFO CMC curve, Rank-10 :74.3%
+2026-09-18 12:19:27,362 INFO mAP-:60.7%
+2026-09-18 12:19:27,362 INFO Validation Results - Epoch: 14
+2026-09-18 12:19:27,804 INFO processing batch 0/57
+2026-09-18 12:20:18,463 INFO CMC curve, Rank-1  :100.0%
+2026-09-18 12:20:18,463 INFO CMC curve, Rank-5  :100.0%
+2026-09-18 12:20:18,463 INFO CMC curve, Rank-10 :100.0%
+2026-09-18 12:20:18,463 INFO mAP-:99.4%
+2026-09-18 12:20:44,469 INFO {"arm": "C2", "epoch": 15, "iteration": 100, "loss": 8.003764152526855, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 12:21:10,069 INFO {"arm": "C2", "epoch": 15, "iteration": 200, "loss": 7.7737717628479, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 12:21:35,666 INFO {"arm": "C2", "epoch": 15, "iteration": 300, "loss": 7.822943687438965, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 12:22:01,231 INFO {"arm": "C2", "epoch": 15, "iteration": 400, "loss": 7.726175785064697, "image_relations": 12, "proto_relations": 12, "amp_skip": 0}
+2026-09-18 12:22:26,892 INFO {"arm": "C2", "epoch": 15, "iteration": 500, "loss": 7.786024570465088, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 12:22:40,407 INFO processing batch 0/55
+2026-09-18 12:23:28,699 INFO CMC curve, Rank-1  :62.7%
+2026-09-18 12:23:28,699 INFO CMC curve, Rank-5  :71.6%
+2026-09-18 12:23:28,699 INFO CMC curve, Rank-10 :75.0%
+2026-09-18 12:23:28,699 INFO mAP-:60.4%
+2026-09-18 12:23:28,699 INFO Validation Results - Epoch: 15
+2026-09-18 12:23:29,148 INFO processing batch 0/57
+2026-09-18 12:24:19,853 INFO CMC curve, Rank-1  :100.0%
+2026-09-18 12:24:19,854 INFO CMC curve, Rank-5  :100.0%
+2026-09-18 12:24:19,854 INFO CMC curve, Rank-10 :100.0%
+2026-09-18 12:24:19,854 INFO mAP-:99.5%
+2026-09-18 12:24:45,777 INFO {"arm": "C2", "epoch": 16, "iteration": 100, "loss": 8.072237968444824, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 12:25:11,144 INFO {"arm": "C2", "epoch": 16, "iteration": 200, "loss": 7.778599262237549, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 12:25:36,561 INFO {"arm": "C2", "epoch": 16, "iteration": 300, "loss": 7.786016941070557, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 12:26:02,223 INFO {"arm": "C2", "epoch": 16, "iteration": 400, "loss": 7.709033489227295, "image_relations": 12, "proto_relations": 12, "amp_skip": 0}
+2026-09-18 12:26:27,818 INFO {"arm": "C2", "epoch": 16, "iteration": 500, "loss": 7.875621318817139, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 12:26:41,371 INFO processing batch 0/55
+2026-09-18 12:27:29,617 INFO CMC curve, Rank-1  :63.2%
+2026-09-18 12:27:29,617 INFO CMC curve, Rank-5  :72.2%
+2026-09-18 12:27:29,617 INFO CMC curve, Rank-10 :75.7%
+2026-09-18 12:27:29,617 INFO mAP-:60.9%
+2026-09-18 12:27:29,617 INFO Validation Results - Epoch: 16
+2026-09-18 12:27:30,054 INFO processing batch 0/57
+2026-09-18 12:28:20,614 INFO CMC curve, Rank-1  :100.0%
+2026-09-18 12:28:20,614 INFO CMC curve, Rank-5  :100.0%
+2026-09-18 12:28:20,614 INFO CMC curve, Rank-10 :100.0%
+2026-09-18 12:28:20,614 INFO mAP-:99.4%
+2026-09-18 12:28:46,833 INFO {"arm": "C2", "epoch": 17, "iteration": 100, "loss": 8.089127540588379, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 12:29:12,312 INFO {"arm": "C2", "epoch": 17, "iteration": 200, "loss": 7.743979454040527, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 12:29:38,050 INFO {"arm": "C2", "epoch": 17, "iteration": 300, "loss": 7.970712184906006, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 12:30:03,825 INFO {"arm": "C2", "epoch": 17, "iteration": 400, "loss": 7.677588939666748, "image_relations": 12, "proto_relations": 12, "amp_skip": 0}
+2026-09-18 12:30:29,296 INFO {"arm": "C2", "epoch": 17, "iteration": 500, "loss": 7.73983097076416, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 12:30:42,811 INFO processing batch 0/55
+2026-09-18 12:31:31,094 INFO CMC curve, Rank-1  :63.4%
+2026-09-18 12:31:31,095 INFO CMC curve, Rank-5  :72.4%
+2026-09-18 12:31:31,095 INFO CMC curve, Rank-10 :75.6%
+2026-09-18 12:31:31,095 INFO mAP-:61.3%
+2026-09-18 12:31:31,095 INFO Validation Results - Epoch: 17
+2026-09-18 12:31:31,514 INFO processing batch 0/57
+2026-09-18 12:32:22,173 INFO CMC curve, Rank-1  :100.0%
+2026-09-18 12:32:22,173 INFO CMC curve, Rank-5  :100.0%
+2026-09-18 12:32:22,173 INFO CMC curve, Rank-10 :100.0%
+2026-09-18 12:32:22,173 INFO mAP-:99.4%
+2026-09-18 12:32:47,991 INFO {"arm": "C2", "epoch": 18, "iteration": 100, "loss": 7.984289646148682, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 12:33:13,403 INFO {"arm": "C2", "epoch": 18, "iteration": 200, "loss": 7.826850891113281, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 12:33:38,856 INFO {"arm": "C2", "epoch": 18, "iteration": 300, "loss": 7.93787145614624, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 12:34:04,509 INFO {"arm": "C2", "epoch": 18, "iteration": 400, "loss": 7.654761791229248, "image_relations": 12, "proto_relations": 12, "amp_skip": 0}
+2026-09-18 12:34:30,069 INFO {"arm": "C2", "epoch": 18, "iteration": 500, "loss": 7.685587406158447, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 12:34:43,601 INFO processing batch 0/55
+2026-09-18 12:35:31,863 INFO CMC curve, Rank-1  :64.3%
+2026-09-18 12:35:31,863 INFO CMC curve, Rank-5  :73.9%
+2026-09-18 12:35:31,863 INFO CMC curve, Rank-10 :77.6%
+2026-09-18 12:35:31,864 INFO mAP-:61.2%
+2026-09-18 12:35:31,864 INFO Validation Results - Epoch: 18
+2026-09-18 12:35:32,302 INFO processing batch 0/57
+2026-09-18 12:36:23,001 INFO CMC curve, Rank-1  :100.0%
+2026-09-18 12:36:23,001 INFO CMC curve, Rank-5  :100.0%
+2026-09-18 12:36:23,001 INFO CMC curve, Rank-10 :100.0%
+2026-09-18 12:36:23,001 INFO mAP-:99.4%
+2026-09-18 12:36:48,996 INFO {"arm": "C2", "epoch": 19, "iteration": 100, "loss": 8.129951477050781, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 12:37:14,767 INFO {"arm": "C2", "epoch": 19, "iteration": 200, "loss": 7.70389461517334, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 12:37:40,480 INFO {"arm": "C2", "epoch": 19, "iteration": 300, "loss": 8.04378604888916, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 12:38:06,144 INFO {"arm": "C2", "epoch": 19, "iteration": 400, "loss": 7.630992889404297, "image_relations": 12, "proto_relations": 12, "amp_skip": 0}
+2026-09-18 12:38:31,644 INFO {"arm": "C2", "epoch": 19, "iteration": 500, "loss": 7.739558219909668, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 12:38:45,106 INFO processing batch 0/55
+2026-09-18 12:39:33,380 INFO CMC curve, Rank-1  :63.4%
+2026-09-18 12:39:33,380 INFO CMC curve, Rank-5  :71.8%
+2026-09-18 12:39:33,380 INFO CMC curve, Rank-10 :75.4%
+2026-09-18 12:39:33,380 INFO mAP-:61.3%
+2026-09-18 12:39:33,380 INFO Validation Results - Epoch: 19
+2026-09-18 12:39:33,798 INFO processing batch 0/57
+2026-09-18 12:40:24,456 INFO CMC curve, Rank-1  :100.0%
+2026-09-18 12:40:24,456 INFO CMC curve, Rank-5  :100.0%
+2026-09-18 12:40:24,457 INFO CMC curve, Rank-10 :100.0%
+2026-09-18 12:40:24,457 INFO mAP-:99.5%
+2026-09-18 12:40:50,357 INFO {"arm": "C2", "epoch": 20, "iteration": 100, "loss": 7.716723918914795, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 12:41:15,923 INFO {"arm": "C2", "epoch": 20, "iteration": 200, "loss": 7.6661272048950195, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 12:41:41,512 INFO {"arm": "C2", "epoch": 20, "iteration": 300, "loss": 7.6945319175720215, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 12:42:06,979 INFO {"arm": "C2", "epoch": 20, "iteration": 400, "loss": 7.622984409332275, "image_relations": 12, "proto_relations": 12, "amp_skip": 0}
+2026-09-18 12:42:32,529 INFO {"arm": "C2", "epoch": 20, "iteration": 500, "loss": 7.709887504577637, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 12:42:45,977 INFO processing batch 0/55
+2026-09-18 12:43:34,279 INFO CMC curve, Rank-1  :64.4%
+2026-09-18 12:43:34,280 INFO CMC curve, Rank-5  :72.6%
+2026-09-18 12:43:34,280 INFO CMC curve, Rank-10 :76.4%
+2026-09-18 12:43:34,280 INFO mAP-:62.0%
+2026-09-18 12:43:34,280 INFO Validation Results - Epoch: 20
+2026-09-18 12:43:34,695 INFO processing batch 0/57
+2026-09-18 12:44:25,278 INFO CMC curve, Rank-1  :100.0%
+2026-09-18 12:44:25,278 INFO CMC curve, Rank-5  :100.0%
+2026-09-18 12:44:25,278 INFO CMC curve, Rank-10 :100.0%
+2026-09-18 12:44:25,278 INFO mAP-:99.5%
+2026-09-18 12:46:27,320 INFO {"arm": "C2", "epoch": 21, "iteration": 100, "loss": 7.713362693786621, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 12:46:53,049 INFO {"arm": "C2", "epoch": 21, "iteration": 200, "loss": 7.642717361450195, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 12:47:18,868 INFO {"arm": "C2", "epoch": 21, "iteration": 300, "loss": 7.821384429931641, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 12:47:44,577 INFO {"arm": "C2", "epoch": 21, "iteration": 400, "loss": 7.575251579284668, "image_relations": 12, "proto_relations": 12, "amp_skip": 0}
+2026-09-18 12:48:10,243 INFO {"arm": "C2", "epoch": 21, "iteration": 500, "loss": 7.633698463439941, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 12:48:24,082 INFO processing batch 0/55
+2026-09-18 12:49:12,726 INFO CMC curve, Rank-1  :64.3%
+2026-09-18 12:49:12,726 INFO CMC curve, Rank-5  :74.0%
+2026-09-18 12:49:12,726 INFO CMC curve, Rank-10 :78.4%
+2026-09-18 12:49:12,726 INFO mAP-:62.8%
+2026-09-18 12:49:12,726 INFO Validation Results - Epoch: 21
+2026-09-18 12:49:13,371 INFO processing batch 0/57
+2026-09-18 12:50:04,381 INFO CMC curve, Rank-1  :100.0%
+2026-09-18 12:50:04,382 INFO CMC curve, Rank-5  :100.0%
+2026-09-18 12:50:04,382 INFO CMC curve, Rank-10 :100.0%
+2026-09-18 12:50:04,382 INFO mAP-:99.5%
+2026-09-18 12:50:30,613 INFO {"arm": "C2", "epoch": 22, "iteration": 100, "loss": 7.686498641967773, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 12:50:56,211 INFO {"arm": "C2", "epoch": 22, "iteration": 200, "loss": 7.616357803344727, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 12:51:21,821 INFO {"arm": "C2", "epoch": 22, "iteration": 300, "loss": 7.971538066864014, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 12:51:47,717 INFO {"arm": "C2", "epoch": 22, "iteration": 400, "loss": 7.591357231140137, "image_relations": 12, "proto_relations": 12, "amp_skip": 0}
+2026-09-18 12:52:13,507 INFO {"arm": "C2", "epoch": 22, "iteration": 500, "loss": 7.5669846534729, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 12:52:27,303 INFO processing batch 0/55
+2026-09-18 12:53:15,907 INFO CMC curve, Rank-1  :62.6%
+2026-09-18 12:53:15,907 INFO CMC curve, Rank-5  :73.1%
+2026-09-18 12:53:15,907 INFO CMC curve, Rank-10 :77.2%
+2026-09-18 12:53:15,907 INFO mAP-:61.7%
+2026-09-18 12:53:15,907 INFO Validation Results - Epoch: 22
+2026-09-18 12:53:16,508 INFO processing batch 0/57
+2026-09-18 12:54:07,481 INFO CMC curve, Rank-1  :100.0%
+2026-09-18 12:54:07,481 INFO CMC curve, Rank-5  :100.0%
+2026-09-18 12:54:07,481 INFO CMC curve, Rank-10 :100.0%
+2026-09-18 12:54:07,481 INFO mAP-:99.5%
+2026-09-18 12:54:33,702 INFO {"arm": "C2", "epoch": 23, "iteration": 100, "loss": 7.629571914672852, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 12:54:59,256 INFO {"arm": "C2", "epoch": 23, "iteration": 200, "loss": 7.600775718688965, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 12:55:24,785 INFO {"arm": "C2", "epoch": 23, "iteration": 300, "loss": 7.956446170806885, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 12:55:50,375 INFO {"arm": "C2", "epoch": 23, "iteration": 400, "loss": 7.520604610443115, "image_relations": 12, "proto_relations": 12, "amp_skip": 0}
+2026-09-18 12:56:16,133 INFO {"arm": "C2", "epoch": 23, "iteration": 500, "loss": 7.579453468322754, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 12:56:29,986 INFO processing batch 0/55
+2026-09-18 12:57:19,267 INFO CMC curve, Rank-1  :62.7%
+2026-09-18 12:57:19,267 INFO CMC curve, Rank-5  :72.7%
+2026-09-18 12:57:19,267 INFO CMC curve, Rank-10 :76.8%
+2026-09-18 12:57:19,267 INFO mAP-:61.7%
+2026-09-18 12:57:19,267 INFO Validation Results - Epoch: 23
+2026-09-18 12:57:19,868 INFO processing batch 0/57
+2026-09-18 12:58:10,934 INFO CMC curve, Rank-1  :100.0%
+2026-09-18 12:58:10,934 INFO CMC curve, Rank-5  :100.0%
+2026-09-18 12:58:10,934 INFO CMC curve, Rank-10 :100.0%
+2026-09-18 12:58:10,934 INFO mAP-:99.5%
+2026-09-18 12:58:37,241 INFO {"arm": "C2", "epoch": 24, "iteration": 100, "loss": 7.641489505767822, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 12:59:02,837 INFO {"arm": "C2", "epoch": 24, "iteration": 200, "loss": 7.572701930999756, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 12:59:28,466 INFO {"arm": "C2", "epoch": 24, "iteration": 300, "loss": 7.958085536956787, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 12:59:53,957 INFO {"arm": "C2", "epoch": 24, "iteration": 400, "loss": 7.549819469451904, "image_relations": 12, "proto_relations": 12, "amp_skip": 0}
+2026-09-18 13:00:19,524 INFO {"arm": "C2", "epoch": 24, "iteration": 500, "loss": 7.749819755554199, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 13:00:33,194 INFO processing batch 0/55
+2026-09-18 13:01:22,371 INFO CMC curve, Rank-1  :63.0%
+2026-09-18 13:01:22,371 INFO CMC curve, Rank-5  :72.5%
+2026-09-18 13:01:22,371 INFO CMC curve, Rank-10 :76.4%
+2026-09-18 13:01:22,371 INFO mAP-:61.9%
+2026-09-18 13:01:22,371 INFO Validation Results - Epoch: 24
+2026-09-18 13:01:23,056 INFO processing batch 0/57
+2026-09-18 13:02:14,127 INFO CMC curve, Rank-1  :100.0%
+2026-09-18 13:02:14,128 INFO CMC curve, Rank-5  :100.0%
+2026-09-18 13:02:14,128 INFO CMC curve, Rank-10 :100.0%
+2026-09-18 13:02:14,128 INFO mAP-:99.4%
+2026-09-18 13:02:40,751 INFO {"arm": "C2", "epoch": 25, "iteration": 100, "loss": 7.576381683349609, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 13:03:06,474 INFO {"arm": "C2", "epoch": 25, "iteration": 200, "loss": 7.566793441772461, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 13:03:32,225 INFO {"arm": "C2", "epoch": 25, "iteration": 300, "loss": 7.972007751464844, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 13:03:57,768 INFO {"arm": "C2", "epoch": 25, "iteration": 400, "loss": 7.486132621765137, "image_relations": 12, "proto_relations": 12, "amp_skip": 0}
+2026-09-18 13:04:23,532 INFO {"arm": "C2", "epoch": 25, "iteration": 500, "loss": 7.47636604309082, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 13:04:37,294 INFO processing batch 0/55
+2026-09-18 13:05:26,472 INFO CMC curve, Rank-1  :63.1%
+2026-09-18 13:05:26,472 INFO CMC curve, Rank-5  :71.1%
+2026-09-18 13:05:26,472 INFO CMC curve, Rank-10 :74.9%
+2026-09-18 13:05:26,472 INFO mAP-:61.9%
+2026-09-18 13:05:26,473 INFO Validation Results - Epoch: 25
+2026-09-18 13:05:27,087 INFO processing batch 0/57
+2026-09-18 13:06:18,094 INFO CMC curve, Rank-1  :100.0%
+2026-09-18 13:06:18,094 INFO CMC curve, Rank-5  :100.0%
+2026-09-18 13:06:18,094 INFO CMC curve, Rank-10 :100.0%
+2026-09-18 13:06:18,094 INFO mAP-:99.5%
+2026-09-18 13:06:44,436 INFO {"arm": "C2", "epoch": 26, "iteration": 100, "loss": 7.536970138549805, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 13:07:10,115 INFO {"arm": "C2", "epoch": 26, "iteration": 200, "loss": 7.6155009269714355, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 13:07:35,687 INFO {"arm": "C2", "epoch": 26, "iteration": 300, "loss": 7.669528484344482, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 13:08:01,266 INFO {"arm": "C2", "epoch": 26, "iteration": 400, "loss": 7.4513678550720215, "image_relations": 12, "proto_relations": 12, "amp_skip": 0}
+2026-09-18 13:08:26,857 INFO {"arm": "C2", "epoch": 26, "iteration": 500, "loss": 7.4539008140563965, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 13:08:40,570 INFO processing batch 0/55
+2026-09-18 13:09:30,703 INFO CMC curve, Rank-1  :63.0%
+2026-09-18 13:09:30,703 INFO CMC curve, Rank-5  :72.2%
+2026-09-18 13:09:30,703 INFO CMC curve, Rank-10 :76.1%
+2026-09-18 13:09:30,703 INFO mAP-:62.0%
+2026-09-18 13:09:30,704 INFO Validation Results - Epoch: 26
+2026-09-18 13:09:31,323 INFO processing batch 0/57
+2026-09-18 13:10:22,387 INFO CMC curve, Rank-1  :100.0%
+2026-09-18 13:10:22,387 INFO CMC curve, Rank-5  :100.0%
+2026-09-18 13:10:22,387 INFO CMC curve, Rank-10 :100.0%
+2026-09-18 13:10:22,387 INFO mAP-:99.3%
+2026-09-18 13:10:48,763 INFO {"arm": "C2", "epoch": 27, "iteration": 100, "loss": 7.491469860076904, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 13:11:14,411 INFO {"arm": "C2", "epoch": 27, "iteration": 200, "loss": 7.532708644866943, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 13:11:39,871 INFO {"arm": "C2", "epoch": 27, "iteration": 300, "loss": 7.628042221069336, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 13:12:05,407 INFO {"arm": "C2", "epoch": 27, "iteration": 400, "loss": 7.4226908683776855, "image_relations": 12, "proto_relations": 12, "amp_skip": 0}
+2026-09-18 13:12:30,978 INFO {"arm": "C2", "epoch": 27, "iteration": 500, "loss": 7.423810958862305, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 13:12:44,893 INFO processing batch 0/55
+2026-09-18 13:13:34,804 INFO CMC curve, Rank-1  :64.0%
+2026-09-18 13:13:34,805 INFO CMC curve, Rank-5  :72.8%
+2026-09-18 13:13:34,805 INFO CMC curve, Rank-10 :76.3%
+2026-09-18 13:13:34,805 INFO mAP-:62.6%
+2026-09-18 13:13:34,805 INFO Validation Results - Epoch: 27
+2026-09-18 13:13:35,416 INFO processing batch 0/57
+2026-09-18 13:14:26,452 INFO CMC curve, Rank-1  :100.0%
+2026-09-18 13:14:26,452 INFO CMC curve, Rank-5  :100.0%
+2026-09-18 13:14:26,452 INFO CMC curve, Rank-10 :100.0%
+2026-09-18 13:14:26,452 INFO mAP-:99.3%
+2026-09-18 13:14:52,791 INFO {"arm": "C2", "epoch": 28, "iteration": 100, "loss": 7.605334758758545, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 13:15:18,474 INFO {"arm": "C2", "epoch": 28, "iteration": 200, "loss": 7.497103214263916, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 13:15:44,181 INFO {"arm": "C2", "epoch": 28, "iteration": 300, "loss": 7.972151756286621, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 13:16:09,883 INFO {"arm": "C2", "epoch": 28, "iteration": 400, "loss": 7.406711101531982, "image_relations": 12, "proto_relations": 12, "amp_skip": 0}
+2026-09-18 13:16:35,688 INFO {"arm": "C2", "epoch": 28, "iteration": 500, "loss": 7.5116143226623535, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 13:16:49,520 INFO processing batch 0/55
+2026-09-18 13:17:39,535 INFO CMC curve, Rank-1  :64.4%
+2026-09-18 13:17:39,536 INFO CMC curve, Rank-5  :73.7%
+2026-09-18 13:17:39,536 INFO CMC curve, Rank-10 :77.3%
+2026-09-18 13:17:39,536 INFO mAP-:62.7%
+2026-09-18 13:17:39,536 INFO Validation Results - Epoch: 28
+2026-09-18 13:17:40,190 INFO processing batch 0/57
+2026-09-18 13:18:31,290 INFO CMC curve, Rank-1  :100.0%
+2026-09-18 13:18:31,291 INFO CMC curve, Rank-5  :100.0%
+2026-09-18 13:18:31,291 INFO CMC curve, Rank-10 :100.0%
+2026-09-18 13:18:31,291 INFO mAP-:99.4%
+2026-09-18 13:18:57,769 INFO {"arm": "C2", "epoch": 29, "iteration": 100, "loss": 7.6103410720825195, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 13:19:23,559 INFO {"arm": "C2", "epoch": 29, "iteration": 200, "loss": 7.470897197723389, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 13:19:49,336 INFO {"arm": "C2", "epoch": 29, "iteration": 300, "loss": 7.5374226570129395, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 13:20:15,019 INFO {"arm": "C2", "epoch": 29, "iteration": 400, "loss": 7.380104064941406, "image_relations": 12, "proto_relations": 12, "amp_skip": 0}
+2026-09-18 13:20:40,630 INFO {"arm": "C2", "epoch": 29, "iteration": 500, "loss": 7.477787971496582, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 13:20:54,508 INFO processing batch 0/55
+2026-09-18 13:21:44,415 INFO CMC curve, Rank-1  :64.5%
+2026-09-18 13:21:44,415 INFO CMC curve, Rank-5  :73.1%
+2026-09-18 13:21:44,415 INFO CMC curve, Rank-10 :76.8%
+2026-09-18 13:21:44,415 INFO mAP-:62.9%
+2026-09-18 13:21:44,415 INFO Validation Results - Epoch: 29
+2026-09-18 13:21:45,057 INFO processing batch 0/57
+2026-09-18 13:22:36,657 INFO CMC curve, Rank-1  :100.0%
+2026-09-18 13:22:36,657 INFO CMC curve, Rank-5  :100.0%
+2026-09-18 13:22:36,657 INFO CMC curve, Rank-10 :100.0%
+2026-09-18 13:22:36,657 INFO mAP-:99.3%
+2026-09-18 13:23:06,186 INFO {"arm": "C2", "epoch": 30, "iteration": 100, "loss": 7.623157501220703, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 13:23:32,474 INFO {"arm": "C2", "epoch": 30, "iteration": 200, "loss": 7.438484191894531, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 13:23:58,749 INFO {"arm": "C2", "epoch": 30, "iteration": 300, "loss": 7.845827579498291, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 13:24:24,793 INFO {"arm": "C2", "epoch": 30, "iteration": 400, "loss": 7.380001544952393, "image_relations": 12, "proto_relations": 12, "amp_skip": 0}
+2026-09-18 13:24:50,516 INFO {"arm": "C2", "epoch": 30, "iteration": 500, "loss": 7.375093936920166, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 13:25:04,480 INFO processing batch 0/55
+2026-09-18 13:25:54,344 INFO CMC curve, Rank-1  :63.7%
+2026-09-18 13:25:54,345 INFO CMC curve, Rank-5  :72.1%
+2026-09-18 13:25:54,345 INFO CMC curve, Rank-10 :76.4%
+2026-09-18 13:25:54,345 INFO mAP-:62.2%
+2026-09-18 13:25:54,345 INFO Validation Results - Epoch: 30
+2026-09-18 13:25:55,061 INFO processing batch 0/57
+2026-09-18 13:26:46,399 INFO CMC curve, Rank-1  :100.0%
+2026-09-18 13:26:46,400 INFO CMC curve, Rank-5  :100.0%
+2026-09-18 13:26:46,400 INFO CMC curve, Rank-10 :100.0%
+2026-09-18 13:26:46,400 INFO mAP-:99.4%
+2026-09-18 13:27:12,990 INFO {"arm": "C2", "epoch": 31, "iteration": 100, "loss": 7.455818176269531, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 13:27:38,775 INFO {"arm": "C2", "epoch": 31, "iteration": 200, "loss": 7.415350914001465, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 13:28:04,572 INFO {"arm": "C2", "epoch": 31, "iteration": 300, "loss": 7.453817844390869, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 13:28:30,366 INFO {"arm": "C2", "epoch": 31, "iteration": 400, "loss": 7.338247299194336, "image_relations": 12, "proto_relations": 12, "amp_skip": 0}
+2026-09-18 13:28:56,235 INFO {"arm": "C2", "epoch": 31, "iteration": 500, "loss": 7.361488342285156, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 13:29:10,272 INFO processing batch 0/55
+2026-09-18 13:30:00,147 INFO CMC curve, Rank-1  :63.4%
+2026-09-18 13:30:00,147 INFO CMC curve, Rank-5  :72.2%
+2026-09-18 13:30:00,147 INFO CMC curve, Rank-10 :76.4%
+2026-09-18 13:30:00,147 INFO mAP-:62.0%
+2026-09-18 13:30:00,147 INFO Validation Results - Epoch: 31
+2026-09-18 13:30:00,900 INFO processing batch 0/57
+2026-09-18 13:30:52,449 INFO CMC curve, Rank-1  :100.0%
+2026-09-18 13:30:52,450 INFO CMC curve, Rank-5  :100.0%
+2026-09-18 13:30:52,450 INFO CMC curve, Rank-10 :100.0%
+2026-09-18 13:30:52,450 INFO mAP-:99.4%
+2026-09-18 13:31:19,121 INFO {"arm": "C2", "epoch": 32, "iteration": 100, "loss": 7.38377046585083, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 13:31:44,969 INFO {"arm": "C2", "epoch": 32, "iteration": 200, "loss": 7.491605758666992, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 13:32:10,827 INFO {"arm": "C2", "epoch": 32, "iteration": 300, "loss": 7.433266639709473, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 13:32:36,662 INFO {"arm": "C2", "epoch": 32, "iteration": 400, "loss": 7.312528133392334, "image_relations": 12, "proto_relations": 12, "amp_skip": 0}
+2026-09-18 13:33:02,689 INFO {"arm": "C2", "epoch": 32, "iteration": 500, "loss": 7.3147711753845215, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 13:33:16,710 INFO processing batch 0/55
+2026-09-18 13:34:06,583 INFO CMC curve, Rank-1  :63.9%
+2026-09-18 13:34:06,584 INFO CMC curve, Rank-5  :72.0%
+2026-09-18 13:34:06,584 INFO CMC curve, Rank-10 :75.3%
+2026-09-18 13:34:06,584 INFO mAP-:62.6%
+2026-09-18 13:34:06,584 INFO Validation Results - Epoch: 32
+2026-09-18 13:34:07,345 INFO processing batch 0/57
+2026-09-18 13:34:58,701 INFO CMC curve, Rank-1  :100.0%
+2026-09-18 13:34:58,701 INFO CMC curve, Rank-5  :100.0%
+2026-09-18 13:34:58,701 INFO CMC curve, Rank-10 :100.0%
+2026-09-18 13:34:58,701 INFO mAP-:99.3%
+2026-09-18 13:35:25,148 INFO {"arm": "C2", "epoch": 33, "iteration": 100, "loss": 7.389205455780029, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 13:35:51,024 INFO {"arm": "C2", "epoch": 33, "iteration": 200, "loss": 7.397083759307861, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 13:36:16,844 INFO {"arm": "C2", "epoch": 33, "iteration": 300, "loss": 7.417338848114014, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 13:36:42,623 INFO {"arm": "C2", "epoch": 33, "iteration": 400, "loss": 7.293032169342041, "image_relations": 12, "proto_relations": 12, "amp_skip": 0}
+2026-09-18 13:37:08,539 INFO {"arm": "C2", "epoch": 33, "iteration": 500, "loss": 7.3024396896362305, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 13:37:22,453 INFO processing batch 0/55
+2026-09-18 13:38:12,351 INFO CMC curve, Rank-1  :63.5%
+2026-09-18 13:38:12,351 INFO CMC curve, Rank-5  :71.2%
+2026-09-18 13:38:12,351 INFO CMC curve, Rank-10 :75.4%
+2026-09-18 13:38:12,351 INFO mAP-:62.4%
+2026-09-18 13:38:12,351 INFO Validation Results - Epoch: 33
+2026-09-18 13:38:13,128 INFO processing batch 0/57
+2026-09-18 13:39:04,567 INFO CMC curve, Rank-1  :100.0%
+2026-09-18 13:39:04,568 INFO CMC curve, Rank-5  :100.0%
+2026-09-18 13:39:04,568 INFO CMC curve, Rank-10 :100.0%
+2026-09-18 13:39:04,568 INFO mAP-:99.3%
+2026-09-18 13:39:31,537 INFO {"arm": "C2", "epoch": 34, "iteration": 100, "loss": 7.408736228942871, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 13:39:57,347 INFO {"arm": "C2", "epoch": 34, "iteration": 200, "loss": 7.359785556793213, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 13:40:23,295 INFO {"arm": "C2", "epoch": 34, "iteration": 300, "loss": 7.631820201873779, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 13:40:49,087 INFO {"arm": "C2", "epoch": 34, "iteration": 400, "loss": 7.279962539672852, "image_relations": 12, "proto_relations": 12, "amp_skip": 0}
+2026-09-18 13:41:14,834 INFO {"arm": "C2", "epoch": 34, "iteration": 500, "loss": 7.2869038581848145, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 13:41:28,822 INFO processing batch 0/55
+2026-09-18 13:42:18,810 INFO CMC curve, Rank-1  :62.5%
+2026-09-18 13:42:18,810 INFO CMC curve, Rank-5  :71.8%
+2026-09-18 13:42:18,811 INFO CMC curve, Rank-10 :75.2%
+2026-09-18 13:42:18,811 INFO mAP-:61.9%
+2026-09-18 13:42:18,811 INFO Validation Results - Epoch: 34
+2026-09-18 13:42:19,559 INFO processing batch 0/57
+2026-09-18 13:43:10,967 INFO CMC curve, Rank-1  :100.0%
+2026-09-18 13:43:10,967 INFO CMC curve, Rank-5  :100.0%
+2026-09-18 13:43:10,967 INFO CMC curve, Rank-10 :100.0%
+2026-09-18 13:43:10,967 INFO mAP-:99.2%
+2026-09-18 13:43:37,503 INFO {"arm": "C2", "epoch": 35, "iteration": 100, "loss": 7.410396575927734, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 13:44:03,243 INFO {"arm": "C2", "epoch": 35, "iteration": 200, "loss": 7.3469696044921875, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 13:44:29,121 INFO {"arm": "C2", "epoch": 35, "iteration": 300, "loss": 7.474757194519043, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 13:44:54,802 INFO {"arm": "C2", "epoch": 35, "iteration": 400, "loss": 7.262858867645264, "image_relations": 12, "proto_relations": 12, "amp_skip": 0}
+2026-09-18 13:45:20,593 INFO {"arm": "C2", "epoch": 35, "iteration": 500, "loss": 7.305284023284912, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 13:45:34,538 INFO processing batch 0/55
+2026-09-18 13:46:23,451 INFO CMC curve, Rank-1  :64.0%
+2026-09-18 13:46:23,451 INFO CMC curve, Rank-5  :72.3%
+2026-09-18 13:46:23,451 INFO CMC curve, Rank-10 :76.1%
+2026-09-18 13:46:23,451 INFO mAP-:62.4%
+2026-09-18 13:46:23,451 INFO Validation Results - Epoch: 35
+2026-09-18 13:46:24,226 INFO processing batch 0/57
+2026-09-18 13:47:15,464 INFO CMC curve, Rank-1  :100.0%
+2026-09-18 13:47:15,464 INFO CMC curve, Rank-5  :100.0%
+2026-09-18 13:47:15,464 INFO CMC curve, Rank-10 :100.0%
+2026-09-18 13:47:15,464 INFO mAP-:99.3%
+2026-09-18 13:47:42,631 INFO {"arm": "C2", "epoch": 36, "iteration": 100, "loss": 7.325962066650391, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 13:48:08,609 INFO {"arm": "C2", "epoch": 36, "iteration": 200, "loss": 7.366846561431885, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 13:48:34,553 INFO {"arm": "C2", "epoch": 36, "iteration": 300, "loss": 7.355062961578369, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 13:49:00,631 INFO {"arm": "C2", "epoch": 36, "iteration": 400, "loss": 7.240414619445801, "image_relations": 12, "proto_relations": 12, "amp_skip": 0}
+2026-09-18 13:49:26,466 INFO {"arm": "C2", "epoch": 36, "iteration": 500, "loss": 7.335387706756592, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 13:49:40,499 INFO processing batch 0/55
+2026-09-18 13:50:30,337 INFO CMC curve, Rank-1  :63.7%
+2026-09-18 13:50:30,337 INFO CMC curve, Rank-5  :71.9%
+2026-09-18 13:50:30,337 INFO CMC curve, Rank-10 :75.2%
+2026-09-18 13:50:30,337 INFO mAP-:62.2%
+2026-09-18 13:50:30,337 INFO Validation Results - Epoch: 36
+2026-09-18 13:50:31,098 INFO processing batch 0/57
+2026-09-18 13:51:22,840 INFO CMC curve, Rank-1  :100.0%
+2026-09-18 13:51:22,840 INFO CMC curve, Rank-5  :100.0%
+2026-09-18 13:51:22,840 INFO CMC curve, Rank-10 :100.0%
+2026-09-18 13:51:22,840 INFO mAP-:99.3%
+2026-09-18 13:51:49,854 INFO {"arm": "C2", "epoch": 37, "iteration": 100, "loss": 7.309361934661865, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 13:52:15,897 INFO {"arm": "C2", "epoch": 37, "iteration": 200, "loss": 7.350649356842041, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 13:52:41,854 INFO {"arm": "C2", "epoch": 37, "iteration": 300, "loss": 7.349369049072266, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 13:53:07,721 INFO {"arm": "C2", "epoch": 37, "iteration": 400, "loss": 7.220944881439209, "image_relations": 12, "proto_relations": 12, "amp_skip": 0}
+2026-09-18 13:53:33,541 INFO {"arm": "C2", "epoch": 37, "iteration": 500, "loss": 7.2160162925720215, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 13:53:47,598 INFO processing batch 0/55
+2026-09-18 13:54:37,451 INFO CMC curve, Rank-1  :64.4%
+2026-09-18 13:54:37,451 INFO CMC curve, Rank-5  :72.4%
+2026-09-18 13:54:37,451 INFO CMC curve, Rank-10 :76.3%
+2026-09-18 13:54:37,451 INFO mAP-:63.0%
+2026-09-18 13:54:37,451 INFO Validation Results - Epoch: 37
+2026-09-18 13:54:38,217 INFO processing batch 0/57
+2026-09-18 13:55:29,644 INFO CMC curve, Rank-1  :100.0%
+2026-09-18 13:55:29,644 INFO CMC curve, Rank-5  :100.0%
+2026-09-18 13:55:29,644 INFO CMC curve, Rank-10 :100.0%
+2026-09-18 13:55:29,644 INFO mAP-:99.3%
+2026-09-18 13:55:56,194 INFO {"arm": "C2", "epoch": 38, "iteration": 100, "loss": 7.280559062957764, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 13:56:21,991 INFO {"arm": "C2", "epoch": 38, "iteration": 200, "loss": 7.295838356018066, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 13:56:48,028 INFO {"arm": "C2", "epoch": 38, "iteration": 300, "loss": 7.3647661209106445, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 13:57:14,039 INFO {"arm": "C2", "epoch": 38, "iteration": 400, "loss": 7.209203243255615, "image_relations": 12, "proto_relations": 12, "amp_skip": 0}
+2026-09-18 13:57:39,988 INFO {"arm": "C2", "epoch": 38, "iteration": 500, "loss": 7.200023174285889, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 13:57:54,009 INFO processing batch 0/55
+2026-09-18 13:58:43,996 INFO CMC curve, Rank-1  :64.2%
+2026-09-18 13:58:43,997 INFO CMC curve, Rank-5  :71.9%
+2026-09-18 13:58:43,997 INFO CMC curve, Rank-10 :75.4%
+2026-09-18 13:58:43,997 INFO mAP-:62.6%
+2026-09-18 13:58:43,997 INFO Validation Results - Epoch: 38
+2026-09-18 13:58:44,782 INFO processing batch 0/57
+2026-09-18 13:59:36,120 INFO CMC curve, Rank-1  :100.0%
+2026-09-18 13:59:36,121 INFO CMC curve, Rank-5  :100.0%
+2026-09-18 13:59:36,121 INFO CMC curve, Rank-10 :100.0%
+2026-09-18 13:59:36,121 INFO mAP-:99.3%
+2026-09-18 14:00:02,393 INFO {"arm": "C2", "epoch": 39, "iteration": 100, "loss": 7.27980375289917, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 14:00:28,091 INFO {"arm": "C2", "epoch": 39, "iteration": 200, "loss": 7.4765167236328125, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 14:00:53,989 INFO {"arm": "C2", "epoch": 39, "iteration": 300, "loss": 7.81087589263916, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 14:01:19,872 INFO {"arm": "C2", "epoch": 39, "iteration": 400, "loss": 7.19642448425293, "image_relations": 12, "proto_relations": 12, "amp_skip": 0}
+2026-09-18 14:01:45,817 INFO {"arm": "C2", "epoch": 39, "iteration": 500, "loss": 7.200108528137207, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 14:01:59,857 INFO processing batch 0/55
+2026-09-18 14:02:50,051 INFO CMC curve, Rank-1  :63.8%
+2026-09-18 14:02:50,052 INFO CMC curve, Rank-5  :71.9%
+2026-09-18 14:02:50,052 INFO CMC curve, Rank-10 :75.6%
+2026-09-18 14:02:50,052 INFO mAP-:62.4%
+2026-09-18 14:02:50,052 INFO Validation Results - Epoch: 39
+2026-09-18 14:02:50,844 INFO processing batch 0/57
+2026-09-18 14:03:42,154 INFO CMC curve, Rank-1  :100.0%
+2026-09-18 14:03:42,154 INFO CMC curve, Rank-5  :100.0%
+2026-09-18 14:03:42,154 INFO CMC curve, Rank-10 :100.0%
+2026-09-18 14:03:42,154 INFO mAP-:99.3%
+2026-09-18 14:04:09,061 INFO {"arm": "C2", "epoch": 40, "iteration": 100, "loss": 7.255871772766113, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 14:04:35,214 INFO {"arm": "C2", "epoch": 40, "iteration": 200, "loss": 7.267909049987793, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 14:05:01,283 INFO {"arm": "C2", "epoch": 40, "iteration": 300, "loss": 7.258945941925049, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 14:05:27,133 INFO {"arm": "C2", "epoch": 40, "iteration": 400, "loss": 7.183692932128906, "image_relations": 12, "proto_relations": 12, "amp_skip": 0}
+2026-09-18 14:05:53,152 INFO {"arm": "C2", "epoch": 40, "iteration": 500, "loss": 7.170387268066406, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 14:06:07,421 INFO processing batch 0/55
+2026-09-18 14:06:57,285 INFO CMC curve, Rank-1  :64.6%
+2026-09-18 14:06:57,285 INFO CMC curve, Rank-5  :72.1%
+2026-09-18 14:06:57,285 INFO CMC curve, Rank-10 :76.0%
+2026-09-18 14:06:57,285 INFO mAP-:63.1%
+2026-09-18 14:06:57,285 INFO Validation Results - Epoch: 40
+2026-09-18 14:06:58,272 INFO processing batch 0/57
+2026-09-18 14:07:49,582 INFO CMC curve, Rank-1  :100.0%
+2026-09-18 14:07:49,582 INFO CMC curve, Rank-5  :100.0%
+2026-09-18 14:07:49,582 INFO CMC curve, Rank-10 :100.0%
+2026-09-18 14:07:49,582 INFO mAP-:99.4%
+2026-09-18 14:09:57,112 INFO {"arm": "C2", "epoch": 41, "iteration": 100, "loss": 7.27414608001709, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 14:10:23,322 INFO {"arm": "C2", "epoch": 41, "iteration": 200, "loss": 7.4834489822387695, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 14:10:49,519 INFO {"arm": "C2", "epoch": 41, "iteration": 300, "loss": 7.4100189208984375, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 14:11:15,843 INFO {"arm": "C2", "epoch": 41, "iteration": 400, "loss": 7.16591215133667, "image_relations": 12, "proto_relations": 12, "amp_skip": 0}
+2026-09-18 14:11:42,210 INFO {"arm": "C2", "epoch": 41, "iteration": 500, "loss": 7.1614179611206055, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 14:11:56,413 INFO processing batch 0/55
+2026-09-18 14:12:46,205 INFO CMC curve, Rank-1  :63.9%
+2026-09-18 14:12:46,205 INFO CMC curve, Rank-5  :71.5%
+2026-09-18 14:12:46,206 INFO CMC curve, Rank-10 :75.0%
+2026-09-18 14:12:46,206 INFO mAP-:62.6%
+2026-09-18 14:12:46,206 INFO Validation Results - Epoch: 41
+2026-09-18 14:12:47,072 INFO processing batch 0/57
+2026-09-18 14:13:39,304 INFO CMC curve, Rank-1  :100.0%
+2026-09-18 14:13:39,304 INFO CMC curve, Rank-5  :100.0%
+2026-09-18 14:13:39,304 INFO CMC curve, Rank-10 :100.0%
+2026-09-18 14:13:39,304 INFO mAP-:99.4%
+2026-09-18 14:14:05,993 INFO {"arm": "C2", "epoch": 42, "iteration": 100, "loss": 7.293515205383301, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 14:14:31,964 INFO {"arm": "C2", "epoch": 42, "iteration": 200, "loss": 7.329601764678955, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 14:14:57,758 INFO {"arm": "C2", "epoch": 42, "iteration": 300, "loss": 7.297954082489014, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 14:15:23,530 INFO {"arm": "C2", "epoch": 42, "iteration": 400, "loss": 7.148634433746338, "image_relations": 12, "proto_relations": 12, "amp_skip": 0}
+2026-09-18 14:15:49,473 INFO {"arm": "C2", "epoch": 42, "iteration": 500, "loss": 7.165857791900635, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 14:16:03,622 INFO processing batch 0/55
+2026-09-18 14:16:53,372 INFO CMC curve, Rank-1  :64.5%
+2026-09-18 14:16:53,372 INFO CMC curve, Rank-5  :72.2%
+2026-09-18 14:16:53,372 INFO CMC curve, Rank-10 :75.9%
+2026-09-18 14:16:53,372 INFO mAP-:63.0%
+2026-09-18 14:16:53,372 INFO Validation Results - Epoch: 42
+2026-09-18 14:16:54,240 INFO processing batch 0/57
+2026-09-18 14:17:46,650 INFO CMC curve, Rank-1  :100.0%
+2026-09-18 14:17:46,650 INFO CMC curve, Rank-5  :100.0%
+2026-09-18 14:17:46,650 INFO CMC curve, Rank-10 :100.0%
+2026-09-18 14:17:46,650 INFO mAP-:99.3%
+2026-09-18 14:18:13,071 INFO {"arm": "C2", "epoch": 43, "iteration": 100, "loss": 7.2987446784973145, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 14:18:38,687 INFO {"arm": "C2", "epoch": 43, "iteration": 200, "loss": 7.232379913330078, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 14:19:04,543 INFO {"arm": "C2", "epoch": 43, "iteration": 300, "loss": 7.264726638793945, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 14:19:30,367 INFO {"arm": "C2", "epoch": 43, "iteration": 400, "loss": 7.121230125427246, "image_relations": 12, "proto_relations": 12, "amp_skip": 0}
+2026-09-18 14:19:56,065 INFO {"arm": "C2", "epoch": 43, "iteration": 500, "loss": 7.149448871612549, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 14:20:10,101 INFO processing batch 0/55
+2026-09-18 14:20:59,879 INFO CMC curve, Rank-1  :64.9%
+2026-09-18 14:20:59,880 INFO CMC curve, Rank-5  :72.1%
+2026-09-18 14:20:59,880 INFO CMC curve, Rank-10 :75.8%
+2026-09-18 14:20:59,880 INFO mAP-:63.1%
+2026-09-18 14:20:59,880 INFO Validation Results - Epoch: 43
+2026-09-18 14:21:00,917 INFO processing batch 0/57
+2026-09-18 14:21:53,392 INFO CMC curve, Rank-1  :100.0%
+2026-09-18 14:21:53,392 INFO CMC curve, Rank-5  :100.0%
+2026-09-18 14:21:53,392 INFO CMC curve, Rank-10 :100.0%
+2026-09-18 14:21:53,392 INFO mAP-:99.3%
+2026-09-18 14:22:22,763 INFO {"arm": "C2", "epoch": 44, "iteration": 100, "loss": 7.220309257507324, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 14:22:48,511 INFO {"arm": "C2", "epoch": 44, "iteration": 200, "loss": 7.211437702178955, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 14:23:14,509 INFO {"arm": "C2", "epoch": 44, "iteration": 300, "loss": 7.179580211639404, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 14:23:40,435 INFO {"arm": "C2", "epoch": 44, "iteration": 400, "loss": 7.11724853515625, "image_relations": 12, "proto_relations": 12, "amp_skip": 0}
+2026-09-18 14:24:06,423 INFO {"arm": "C2", "epoch": 44, "iteration": 500, "loss": 7.143389701843262, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 14:24:20,959 INFO processing batch 0/55
+2026-09-18 14:25:10,846 INFO CMC curve, Rank-1  :65.2%
+2026-09-18 14:25:10,846 INFO CMC curve, Rank-5  :72.4%
+2026-09-18 14:25:10,846 INFO CMC curve, Rank-10 :75.9%
+2026-09-18 14:25:10,846 INFO mAP-:63.2%
+2026-09-18 14:25:10,846 INFO Validation Results - Epoch: 44
+2026-09-18 14:25:11,727 INFO processing batch 0/57
+2026-09-18 14:26:03,717 INFO CMC curve, Rank-1  :100.0%
+2026-09-18 14:26:03,717 INFO CMC curve, Rank-5  :100.0%
+2026-09-18 14:26:03,717 INFO CMC curve, Rank-10 :100.0%
+2026-09-18 14:26:03,717 INFO mAP-:99.3%
+2026-09-18 14:26:32,398 INFO {"arm": "C2", "epoch": 45, "iteration": 100, "loss": 7.285052299499512, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 14:26:58,151 INFO {"arm": "C2", "epoch": 45, "iteration": 200, "loss": 7.225513458251953, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 14:27:24,066 INFO {"arm": "C2", "epoch": 45, "iteration": 300, "loss": 7.198080539703369, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 14:27:50,050 INFO {"arm": "C2", "epoch": 45, "iteration": 400, "loss": 7.113677978515625, "image_relations": 12, "proto_relations": 12, "amp_skip": 0}
+2026-09-18 14:28:16,035 INFO {"arm": "C2", "epoch": 45, "iteration": 500, "loss": 7.112873077392578, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 14:28:30,114 INFO processing batch 0/55
+2026-09-18 14:29:19,431 INFO CMC curve, Rank-1  :64.5%
+2026-09-18 14:29:19,432 INFO CMC curve, Rank-5  :71.5%
+2026-09-18 14:29:19,432 INFO CMC curve, Rank-10 :75.2%
+2026-09-18 14:29:19,432 INFO mAP-:62.8%
+2026-09-18 14:29:19,432 INFO Validation Results - Epoch: 45
+2026-09-18 14:29:20,283 INFO processing batch 0/57
+2026-09-18 14:30:11,689 INFO CMC curve, Rank-1  :100.0%
+2026-09-18 14:30:11,690 INFO CMC curve, Rank-5  :100.0%
+2026-09-18 14:30:11,690 INFO CMC curve, Rank-10 :100.0%
+2026-09-18 14:30:11,690 INFO mAP-:99.3%
+2026-09-18 14:30:38,171 INFO {"arm": "C2", "epoch": 46, "iteration": 100, "loss": 7.202248573303223, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 14:31:04,062 INFO {"arm": "C2", "epoch": 46, "iteration": 200, "loss": 7.212901592254639, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 14:31:29,803 INFO {"arm": "C2", "epoch": 46, "iteration": 300, "loss": 7.246059417724609, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 14:31:55,567 INFO {"arm": "C2", "epoch": 46, "iteration": 400, "loss": 7.115505218505859, "image_relations": 12, "proto_relations": 12, "amp_skip": 0}
+2026-09-18 14:32:21,488 INFO {"arm": "C2", "epoch": 46, "iteration": 500, "loss": 7.092607498168945, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 14:32:35,522 INFO processing batch 0/55
+2026-09-18 14:33:24,905 INFO CMC curve, Rank-1  :64.3%
+2026-09-18 14:33:24,905 INFO CMC curve, Rank-5  :71.6%
+2026-09-18 14:33:24,905 INFO CMC curve, Rank-10 :75.0%
+2026-09-18 14:33:24,905 INFO mAP-:62.7%
+2026-09-18 14:33:24,906 INFO Validation Results - Epoch: 46
+2026-09-18 14:33:25,744 INFO processing batch 0/57
+2026-09-18 14:34:17,627 INFO CMC curve, Rank-1  :100.0%
+2026-09-18 14:34:17,628 INFO CMC curve, Rank-5  :100.0%
+2026-09-18 14:34:17,628 INFO CMC curve, Rank-10 :100.0%
+2026-09-18 14:34:17,628 INFO mAP-:99.3%
+2026-09-18 14:34:45,126 INFO {"arm": "C2", "epoch": 47, "iteration": 100, "loss": 7.207714557647705, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 14:35:11,039 INFO {"arm": "C2", "epoch": 47, "iteration": 200, "loss": 7.195527076721191, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 14:35:36,972 INFO {"arm": "C2", "epoch": 47, "iteration": 300, "loss": 7.240935325622559, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 14:36:02,870 INFO {"arm": "C2", "epoch": 47, "iteration": 400, "loss": 7.0924530029296875, "image_relations": 12, "proto_relations": 12, "amp_skip": 0}
+2026-09-18 14:36:28,828 INFO {"arm": "C2", "epoch": 47, "iteration": 500, "loss": 7.121862888336182, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 14:36:42,956 INFO processing batch 0/55
+2026-09-18 14:37:32,460 INFO CMC curve, Rank-1  :64.6%
+2026-09-18 14:37:32,461 INFO CMC curve, Rank-5  :71.7%
+2026-09-18 14:37:32,461 INFO CMC curve, Rank-10 :75.1%
+2026-09-18 14:37:32,461 INFO mAP-:62.9%
+2026-09-18 14:37:32,461 INFO Validation Results - Epoch: 47
+2026-09-18 14:37:33,392 INFO processing batch 0/57
+2026-09-18 14:38:25,708 INFO CMC curve, Rank-1  :100.0%
+2026-09-18 14:38:25,708 INFO CMC curve, Rank-5  :100.0%
+2026-09-18 14:38:25,709 INFO CMC curve, Rank-10 :100.0%
+2026-09-18 14:38:25,709 INFO mAP-:99.3%
+2026-09-18 14:38:52,780 INFO {"arm": "C2", "epoch": 48, "iteration": 100, "loss": 7.20406436920166, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 14:39:18,596 INFO {"arm": "C2", "epoch": 48, "iteration": 200, "loss": 7.196295738220215, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 14:39:44,542 INFO {"arm": "C2", "epoch": 48, "iteration": 300, "loss": 8.36482048034668, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 14:40:10,327 INFO {"arm": "C2", "epoch": 48, "iteration": 400, "loss": 7.082188129425049, "image_relations": 12, "proto_relations": 12, "amp_skip": 0}
+2026-09-18 14:40:36,134 INFO {"arm": "C2", "epoch": 48, "iteration": 500, "loss": 7.080399990081787, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 14:40:50,165 INFO processing batch 0/55
+2026-09-18 14:41:39,923 INFO CMC curve, Rank-1  :64.7%
+2026-09-18 14:41:39,924 INFO CMC curve, Rank-5  :71.5%
+2026-09-18 14:41:39,924 INFO CMC curve, Rank-10 :75.0%
+2026-09-18 14:41:39,924 INFO mAP-:62.7%
+2026-09-18 14:41:39,924 INFO Validation Results - Epoch: 48
+2026-09-18 14:41:40,778 INFO processing batch 0/57
+2026-09-18 14:42:32,959 INFO CMC curve, Rank-1  :100.0%
+2026-09-18 14:42:32,959 INFO CMC curve, Rank-5  :100.0%
+2026-09-18 14:42:32,959 INFO CMC curve, Rank-10 :100.0%
+2026-09-18 14:42:32,959 INFO mAP-:99.2%
+2026-09-18 14:42:59,892 INFO {"arm": "C2", "epoch": 49, "iteration": 100, "loss": 7.189230918884277, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 14:43:25,713 INFO {"arm": "C2", "epoch": 49, "iteration": 200, "loss": 7.179428577423096, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 14:43:51,421 INFO {"arm": "C2", "epoch": 49, "iteration": 300, "loss": 7.178929328918457, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 14:44:17,060 INFO {"arm": "C2", "epoch": 49, "iteration": 400, "loss": 7.0762457847595215, "image_relations": 12, "proto_relations": 12, "amp_skip": 0}
+2026-09-18 14:44:42,867 INFO {"arm": "C2", "epoch": 49, "iteration": 500, "loss": 7.073297500610352, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 14:44:56,927 INFO processing batch 0/55
+2026-09-18 14:45:47,034 INFO CMC curve, Rank-1  :64.7%
+2026-09-18 14:45:47,035 INFO CMC curve, Rank-5  :71.5%
+2026-09-18 14:45:47,035 INFO CMC curve, Rank-10 :74.7%
+2026-09-18 14:45:47,035 INFO mAP-:62.7%
+2026-09-18 14:45:47,035 INFO Validation Results - Epoch: 49
+2026-09-18 14:45:48,015 INFO processing batch 0/57
+2026-09-18 14:46:39,471 INFO CMC curve, Rank-1  :100.0%
+2026-09-18 14:46:39,471 INFO CMC curve, Rank-5  :100.0%
+2026-09-18 14:46:39,471 INFO CMC curve, Rank-10 :100.0%
+2026-09-18 14:46:39,471 INFO mAP-:99.2%
+2026-09-18 14:47:05,961 INFO {"arm": "C2", "epoch": 50, "iteration": 100, "loss": 7.142092227935791, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 14:47:31,716 INFO {"arm": "C2", "epoch": 50, "iteration": 200, "loss": 7.217992782592773, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 14:47:57,476 INFO {"arm": "C2", "epoch": 50, "iteration": 300, "loss": 7.277799129486084, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 14:48:23,166 INFO {"arm": "C2", "epoch": 50, "iteration": 400, "loss": 7.077305316925049, "image_relations": 12, "proto_relations": 12, "amp_skip": 0}
+2026-09-18 14:48:48,958 INFO {"arm": "C2", "epoch": 50, "iteration": 500, "loss": 7.0854878425598145, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 14:49:02,987 INFO processing batch 0/55
+2026-09-18 14:49:52,386 INFO CMC curve, Rank-1  :64.5%
+2026-09-18 14:49:52,387 INFO CMC curve, Rank-5  :71.4%
+2026-09-18 14:49:52,387 INFO CMC curve, Rank-10 :74.8%
+2026-09-18 14:49:52,387 INFO mAP-:62.6%
+2026-09-18 14:49:52,387 INFO Validation Results - Epoch: 50
+2026-09-18 14:49:53,281 INFO processing batch 0/57
+2026-09-18 14:50:45,608 INFO CMC curve, Rank-1  :100.0%
+2026-09-18 14:50:45,608 INFO CMC curve, Rank-5  :100.0%
+2026-09-18 14:50:45,608 INFO CMC curve, Rank-10 :100.0%
+2026-09-18 14:50:45,608 INFO mAP-:99.2%
+2026-09-18 14:51:12,108 INFO {"arm": "C2", "epoch": 51, "iteration": 100, "loss": 7.1739325523376465, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 14:51:37,872 INFO {"arm": "C2", "epoch": 51, "iteration": 200, "loss": 7.15259313583374, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 14:52:03,683 INFO {"arm": "C2", "epoch": 51, "iteration": 300, "loss": 7.373870372772217, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 14:52:29,563 INFO {"arm": "C2", "epoch": 51, "iteration": 400, "loss": 7.054718494415283, "image_relations": 12, "proto_relations": 12, "amp_skip": 0}
+2026-09-18 14:52:55,417 INFO {"arm": "C2", "epoch": 51, "iteration": 500, "loss": 7.06053352355957, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 14:53:09,505 INFO processing batch 0/55
+2026-09-18 14:53:59,661 INFO CMC curve, Rank-1  :64.3%
+2026-09-18 14:53:59,662 INFO CMC curve, Rank-5  :71.2%
+2026-09-18 14:53:59,662 INFO CMC curve, Rank-10 :74.6%
+2026-09-18 14:53:59,662 INFO mAP-:62.6%
+2026-09-18 14:53:59,662 INFO Validation Results - Epoch: 51
+2026-09-18 14:54:00,556 INFO processing batch 0/57
+2026-09-18 14:54:52,783 INFO CMC curve, Rank-1  :100.0%
+2026-09-18 14:54:52,784 INFO CMC curve, Rank-5  :100.0%
+2026-09-18 14:54:52,784 INFO CMC curve, Rank-10 :100.0%
+2026-09-18 14:54:52,784 INFO mAP-:99.2%
+2026-09-18 14:55:19,483 INFO {"arm": "C2", "epoch": 52, "iteration": 100, "loss": 7.180465221405029, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 14:55:45,216 INFO {"arm": "C2", "epoch": 52, "iteration": 200, "loss": 7.183448314666748, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 14:56:10,947 INFO {"arm": "C2", "epoch": 52, "iteration": 300, "loss": 7.138055801391602, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 14:56:36,710 INFO {"arm": "C2", "epoch": 52, "iteration": 400, "loss": 7.05100154876709, "image_relations": 12, "proto_relations": 12, "amp_skip": 0}
+2026-09-18 14:57:02,584 INFO {"arm": "C2", "epoch": 52, "iteration": 500, "loss": 7.047416687011719, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 14:57:16,626 INFO processing batch 0/55
+2026-09-18 14:58:06,338 INFO CMC curve, Rank-1  :64.3%
+2026-09-18 14:58:06,338 INFO CMC curve, Rank-5  :71.4%
+2026-09-18 14:58:06,338 INFO CMC curve, Rank-10 :74.9%
+2026-09-18 14:58:06,338 INFO mAP-:62.8%
+2026-09-18 14:58:06,339 INFO Validation Results - Epoch: 52
+2026-09-18 14:58:07,246 INFO processing batch 0/57
+2026-09-18 14:58:59,523 INFO CMC curve, Rank-1  :100.0%
+2026-09-18 14:58:59,523 INFO CMC curve, Rank-5  :100.0%
+2026-09-18 14:58:59,523 INFO CMC curve, Rank-10 :100.0%
+2026-09-18 14:58:59,523 INFO mAP-:99.3%
+2026-09-18 14:59:26,225 INFO {"arm": "C2", "epoch": 53, "iteration": 100, "loss": 7.129469871520996, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 14:59:52,060 INFO {"arm": "C2", "epoch": 53, "iteration": 200, "loss": 7.152711391448975, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 15:00:17,963 INFO {"arm": "C2", "epoch": 53, "iteration": 300, "loss": 7.5155415534973145, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 15:00:44,155 INFO {"arm": "C2", "epoch": 53, "iteration": 400, "loss": 7.0586771965026855, "image_relations": 12, "proto_relations": 12, "amp_skip": 0}
+2026-09-18 15:01:10,065 INFO {"arm": "C2", "epoch": 53, "iteration": 500, "loss": 7.054388999938965, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 15:01:24,571 INFO processing batch 0/55
+2026-09-18 15:02:14,336 INFO CMC curve, Rank-1  :64.0%
+2026-09-18 15:02:14,337 INFO CMC curve, Rank-5  :70.8%
+2026-09-18 15:02:14,337 INFO CMC curve, Rank-10 :74.3%
+2026-09-18 15:02:14,337 INFO mAP-:62.4%
+2026-09-18 15:02:14,337 INFO Validation Results - Epoch: 53
+2026-09-18 15:02:15,223 INFO processing batch 0/57
+2026-09-18 15:03:07,341 INFO CMC curve, Rank-1  :100.0%
+2026-09-18 15:03:07,342 INFO CMC curve, Rank-5  :100.0%
+2026-09-18 15:03:07,342 INFO CMC curve, Rank-10 :100.0%
+2026-09-18 15:03:07,342 INFO mAP-:99.2%
+2026-09-18 15:03:34,393 INFO {"arm": "C2", "epoch": 54, "iteration": 100, "loss": 7.187687397003174, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 15:04:00,037 INFO {"arm": "C2", "epoch": 54, "iteration": 200, "loss": 7.157163619995117, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 15:04:25,973 INFO {"arm": "C2", "epoch": 54, "iteration": 300, "loss": 7.187399864196777, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 15:04:51,693 INFO {"arm": "C2", "epoch": 54, "iteration": 400, "loss": 7.058664798736572, "image_relations": 12, "proto_relations": 12, "amp_skip": 0}
+2026-09-18 15:05:17,455 INFO {"arm": "C2", "epoch": 54, "iteration": 500, "loss": 7.0294294357299805, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 15:05:31,528 INFO processing batch 0/55
+2026-09-18 15:06:21,174 INFO CMC curve, Rank-1  :63.8%
+2026-09-18 15:06:21,174 INFO CMC curve, Rank-5  :71.0%
+2026-09-18 15:06:21,174 INFO CMC curve, Rank-10 :74.2%
+2026-09-18 15:06:21,174 INFO mAP-:62.4%
+2026-09-18 15:06:21,174 INFO Validation Results - Epoch: 54
+2026-09-18 15:06:22,048 INFO processing batch 0/57
+2026-09-18 15:07:14,032 INFO CMC curve, Rank-1  :100.0%
+2026-09-18 15:07:14,032 INFO CMC curve, Rank-5  :100.0%
+2026-09-18 15:07:14,032 INFO CMC curve, Rank-10 :100.0%
+2026-09-18 15:07:14,032 INFO mAP-:99.3%
+2026-09-18 15:07:40,722 INFO {"arm": "C2", "epoch": 55, "iteration": 100, "loss": 7.123918533325195, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 15:08:06,495 INFO {"arm": "C2", "epoch": 55, "iteration": 200, "loss": 7.1628265380859375, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 15:08:32,296 INFO {"arm": "C2", "epoch": 55, "iteration": 300, "loss": 7.1691131591796875, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 15:08:58,253 INFO {"arm": "C2", "epoch": 55, "iteration": 400, "loss": 7.033327102661133, "image_relations": 12, "proto_relations": 12, "amp_skip": 0}
+2026-09-18 15:09:24,256 INFO {"arm": "C2", "epoch": 55, "iteration": 500, "loss": 7.047309398651123, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 15:09:38,297 INFO processing batch 0/55
+2026-09-18 15:10:28,157 INFO CMC curve, Rank-1  :63.8%
+2026-09-18 15:10:28,157 INFO CMC curve, Rank-5  :70.9%
+2026-09-18 15:10:28,157 INFO CMC curve, Rank-10 :74.1%
+2026-09-18 15:10:28,157 INFO mAP-:62.4%
+2026-09-18 15:10:28,157 INFO Validation Results - Epoch: 55
+2026-09-18 15:10:29,032 INFO processing batch 0/57
+2026-09-18 15:11:21,299 INFO CMC curve, Rank-1  :100.0%
+2026-09-18 15:11:21,299 INFO CMC curve, Rank-5  :100.0%
+2026-09-18 15:11:21,299 INFO CMC curve, Rank-10 :100.0%
+2026-09-18 15:11:21,299 INFO mAP-:99.3%
+2026-09-18 15:11:47,930 INFO {"arm": "C2", "epoch": 56, "iteration": 100, "loss": 7.130321979522705, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 15:12:13,700 INFO {"arm": "C2", "epoch": 56, "iteration": 200, "loss": 7.121164321899414, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 15:12:39,639 INFO {"arm": "C2", "epoch": 56, "iteration": 300, "loss": 7.211601257324219, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 15:13:05,552 INFO {"arm": "C2", "epoch": 56, "iteration": 400, "loss": 7.029568672180176, "image_relations": 12, "proto_relations": 12, "amp_skip": 0}
+2026-09-18 15:13:31,552 INFO {"arm": "C2", "epoch": 56, "iteration": 500, "loss": 7.0221848487854, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 15:13:45,787 INFO processing batch 0/55
+2026-09-18 15:14:35,218 INFO CMC curve, Rank-1  :63.8%
+2026-09-18 15:14:35,219 INFO CMC curve, Rank-5  :70.8%
+2026-09-18 15:14:35,219 INFO CMC curve, Rank-10 :74.1%
+2026-09-18 15:14:35,219 INFO mAP-:62.3%
+2026-09-18 15:14:35,219 INFO Validation Results - Epoch: 56
+2026-09-18 15:14:36,064 INFO processing batch 0/57
+2026-09-18 15:15:27,428 INFO CMC curve, Rank-1  :100.0%
+2026-09-18 15:15:27,428 INFO CMC curve, Rank-5  :100.0%
+2026-09-18 15:15:27,428 INFO CMC curve, Rank-10 :100.0%
+2026-09-18 15:15:27,428 INFO mAP-:99.2%
+2026-09-18 15:15:53,945 INFO {"arm": "C2", "epoch": 57, "iteration": 100, "loss": 7.122787952423096, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 15:16:19,532 INFO {"arm": "C2", "epoch": 57, "iteration": 200, "loss": 7.107725143432617, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 15:16:45,221 INFO {"arm": "C2", "epoch": 57, "iteration": 300, "loss": 7.190918922424316, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 15:17:10,992 INFO {"arm": "C2", "epoch": 57, "iteration": 400, "loss": 7.017878532409668, "image_relations": 12, "proto_relations": 12, "amp_skip": 0}
+2026-09-18 15:17:36,644 INFO {"arm": "C2", "epoch": 57, "iteration": 500, "loss": 7.040433883666992, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 15:17:50,603 INFO processing batch 0/55
+2026-09-18 15:18:39,979 INFO CMC curve, Rank-1  :63.7%
+2026-09-18 15:18:39,979 INFO CMC curve, Rank-5  :70.9%
+2026-09-18 15:18:39,979 INFO CMC curve, Rank-10 :74.2%
+2026-09-18 15:18:39,979 INFO mAP-:62.5%
+2026-09-18 15:18:39,979 INFO Validation Results - Epoch: 57
+2026-09-18 15:18:40,800 INFO processing batch 0/57
+2026-09-18 15:19:32,202 INFO CMC curve, Rank-1  :100.0%
+2026-09-18 15:19:32,202 INFO CMC curve, Rank-5  :100.0%
+2026-09-18 15:19:32,202 INFO CMC curve, Rank-10 :100.0%
+2026-09-18 15:19:32,202 INFO mAP-:99.3%
+2026-09-18 15:19:58,728 INFO {"arm": "C2", "epoch": 58, "iteration": 100, "loss": 7.134833335876465, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 15:20:24,309 INFO {"arm": "C2", "epoch": 58, "iteration": 200, "loss": 7.262700080871582, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 15:20:50,113 INFO {"arm": "C2", "epoch": 58, "iteration": 300, "loss": 8.038901329040527, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 15:21:15,811 INFO {"arm": "C2", "epoch": 58, "iteration": 400, "loss": 7.027798652648926, "image_relations": 12, "proto_relations": 12, "amp_skip": 0}
+2026-09-18 15:21:41,528 INFO {"arm": "C2", "epoch": 58, "iteration": 500, "loss": 7.03228235244751, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 15:21:55,598 INFO processing batch 0/55
+2026-09-18 15:22:45,071 INFO CMC curve, Rank-1  :64.1%
+2026-09-18 15:22:45,071 INFO CMC curve, Rank-5  :71.0%
+2026-09-18 15:22:45,071 INFO CMC curve, Rank-10 :74.5%
+2026-09-18 15:22:45,071 INFO mAP-:62.6%
+2026-09-18 15:22:45,071 INFO Validation Results - Epoch: 58
+2026-09-18 15:22:45,852 INFO processing batch 0/57
+2026-09-18 15:23:37,151 INFO CMC curve, Rank-1  :100.0%
+2026-09-18 15:23:37,151 INFO CMC curve, Rank-5  :100.0%
+2026-09-18 15:23:37,151 INFO CMC curve, Rank-10 :100.0%
+2026-09-18 15:23:37,151 INFO mAP-:99.3%
+2026-09-18 15:24:03,565 INFO {"arm": "C2", "epoch": 59, "iteration": 100, "loss": 7.21751070022583, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 15:24:29,303 INFO {"arm": "C2", "epoch": 59, "iteration": 200, "loss": 7.117257595062256, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 15:24:55,054 INFO {"arm": "C2", "epoch": 59, "iteration": 300, "loss": 7.084436416625977, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 15:25:20,852 INFO {"arm": "C2", "epoch": 59, "iteration": 400, "loss": 7.058468341827393, "image_relations": 12, "proto_relations": 12, "amp_skip": 0}
+2026-09-18 15:25:46,764 INFO {"arm": "C2", "epoch": 59, "iteration": 500, "loss": 7.106854438781738, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 15:26:00,708 INFO processing batch 0/55
+2026-09-18 15:26:49,591 INFO CMC curve, Rank-1  :64.0%
+2026-09-18 15:26:49,591 INFO CMC curve, Rank-5  :70.9%
+2026-09-18 15:26:49,591 INFO CMC curve, Rank-10 :74.3%
+2026-09-18 15:26:49,591 INFO mAP-:62.6%
+2026-09-18 15:26:49,591 INFO Validation Results - Epoch: 59
+2026-09-18 15:26:50,337 INFO processing batch 0/57
+2026-09-18 15:27:41,573 INFO CMC curve, Rank-1  :100.0%
+2026-09-18 15:27:41,573 INFO CMC curve, Rank-5  :100.0%
+2026-09-18 15:27:41,573 INFO CMC curve, Rank-10 :100.0%
+2026-09-18 15:27:41,573 INFO mAP-:99.3%
+2026-09-18 15:28:07,993 INFO {"arm": "C2", "epoch": 60, "iteration": 100, "loss": 7.126361846923828, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 15:28:33,598 INFO {"arm": "C2", "epoch": 60, "iteration": 200, "loss": 7.123224258422852, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 15:28:59,307 INFO {"arm": "C2", "epoch": 60, "iteration": 300, "loss": 7.094606876373291, "image_relations": 13, "proto_relations": 13, "amp_skip": 0}
+2026-09-18 15:29:24,863 INFO {"arm": "C2", "epoch": 60, "iteration": 400, "loss": 6.998082637786865, "image_relations": 12, "proto_relations": 12, "amp_skip": 0}
+2026-09-18 15:29:50,470 INFO {"arm": "C2", "epoch": 60, "iteration": 500, "loss": 7.160201072692871, "image_relations": 10, "proto_relations": 10, "amp_skip": 0}
+2026-09-18 15:30:04,274 INFO processing batch 0/55
+2026-09-18 15:30:53,139 INFO CMC curve, Rank-1  :64.2%
+2026-09-18 15:30:53,140 INFO CMC curve, Rank-5  :71.0%
+2026-09-18 15:30:53,140 INFO CMC curve, Rank-10 :74.5%
+2026-09-18 15:30:53,140 INFO mAP-:62.6%
+2026-09-18 15:30:53,140 INFO Validation Results - Epoch: 60
+2026-09-18 15:30:53,898 INFO processing batch 0/57
+2026-09-18 15:31:45,191 INFO CMC curve, Rank-1  :100.0%
+2026-09-18 15:31:45,191 INFO CMC curve, Rank-5  :100.0%
+2026-09-18 15:31:45,192 INFO CMC curve, Rank-10 :100.0%
+2026-09-18 15:31:45,192 INFO mAP-:99.3%

@@ -1,0 +1,36 @@
+/usr/local/lib/python3.10/site-packages/xformers/ops/fmha/flash.py:211: FutureWarning: `torch.library.impl_abstract` was renamed to `torch.library.register_fake`. Please use that instead; we will remove `torch.library.impl_abstract` in a future version of PyTorch.
+  @torch.library.impl_abstract("xformers_flash::flash_fwd")
+/usr/local/lib/python3.10/site-packages/xformers/ops/fmha/flash.py:344: FutureWarning: `torch.library.impl_abstract` was renamed to `torch.library.register_fake`. Please use that instead; we will remove `torch.library.impl_abstract` in a future version of PyTorch.
+  @torch.library.impl_abstract("xformers_flash::flash_bwd")
+/usr/local/lib/python3.10/site-packages/xformers/ops/swiglu_op.py:128: FutureWarning: `torch.cuda.amp.custom_fwd(args...)` is deprecated. Please use `torch.amp.custom_fwd(args..., device_type='cuda')` instead.
+  def forward(cls, ctx, x, w1, b1, w2, b2, w3, b3):
+/usr/local/lib/python3.10/site-packages/xformers/ops/swiglu_op.py:149: FutureWarning: `torch.cuda.amp.custom_bwd(args...)` is deprecated. Please use `torch.amp.custom_bwd(args..., device_type='cuda')` instead.
+  def backward(cls, ctx, dx5):
+2026-10-08 20:15:04,359 DIFFER_NPC INFO: 开始实验：数据集=ltcc，设置=N3，种子=1234，设备=PPU-ZW810E
+2026-10-08 20:15:04,359 DIFFER_NPC INFO: NPC 配置：
+DEBUG: False
+DYNAMIC_WEIGHT_ENABLED: True
+ENABLED: True
+GMM_ENABLED: True
+GMM_MIN_SAMPLES: 20
+GMM_THRESHOLD: 0.99
+MEMORY_LOSS_ENABLED: True
+MEMORY_LOSS_WEIGHT: 0.1
+MEMORY_UPDATE_FREQ: 1
+START_EPOCH: 1
+TEMP_LR_SCALE: 1.0
+TEMP_OPT_STEPS: 1
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/DIFFER_NPC/npc/runner.py", line 348, in <module>
+[rank0]:     run_directory = train(parse_args())
+[rank0]:   File "/home/DIFFER_NPC/npc/runner.py", line 198, in train
+[rank0]:     train_loader, _, _, dataset, train_sampler, val_loader, _ = build_dataloader(cfg)
+[rank0]:   File "/home/DIFFER_NPC/data/__init__.py", line 83, in build_dataloader
+[rank0]:     dataset = build_dataset(config)
+[rank0]:   File "/home/DIFFER_NPC/data/__init__.py", line 34, in build_dataset
+[rank0]:     dataset = __factory[config.DATA.DATASET](root=config.DATA.ROOT,
+[rank0]:   File "/home/DIFFER_NPC/data/datasets/ltcc.py", line 33, in __init__
+[rank0]:     self._check_before_run()
+[rank0]:   File "/home/DIFFER_NPC/data/datasets/ltcc.py", line 84, in _check_before_run
+[rank0]:     raise RuntimeError("'{}' is not available".format(self.dataset_dir))
+[rank0]: RuntimeError: '/home/data/LTCC_ReID' is not available

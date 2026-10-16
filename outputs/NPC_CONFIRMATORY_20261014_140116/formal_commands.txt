@@ -1,0 +1,10 @@
+正式实验根目录：/home/DIFFER_NPC/outputs/NPC_CONFIRMATORY_20261014_140116
+数据集：LTCC；种子：1234；最大 epoch：60；预训练：本地严格 EVA02-CLIP 预训练缓存
+配置：configs/ltcc/eva02_l_bio.yml
+覆盖项：DATA.ROOT=/home/data DATA.CAPTION_DIR=/home/data/DIFFER_TextCaption/LTCC_ReID DATA.TEST_BATCH=16 DATA.NUM_WORKERS=1 DATA.PIN_MEMORY=False SOLVER.SEED=1234 SOLVER.MAX_EPOCHS=60 TRAIN.START_EPOCH=1 TEST.WEIGHT=''
+
+python3 npc/runner.py --config_file configs/ltcc/eva02_l_bio.yml --variant B0 --output-root /home/DIFFER_NPC/outputs/NPC_CONFIRMATORY_20261014_140116 --max-epochs 60 DATA.ROOT /home/data DATA.CAPTION_DIR /home/data/DIFFER_TextCaption/LTCC_ReID DATA.TEST_BATCH 16 DATA.NUM_WORKERS 1 DATA.PIN_MEMORY False SOLVER.SEED 1234 SOLVER.MAX_EPOCHS 60 TRAIN.START_EPOCH 1 TEST.WEIGHT ''
+python3 npc/runner.py --config_file configs/ltcc/eva02_l_bio.yml --variant N2 --output-root /home/DIFFER_NPC/outputs/NPC_CONFIRMATORY_20261014_140116 --max-epochs 60 DATA.ROOT /home/data DATA.CAPTION_DIR /home/data/DIFFER_TextCaption/LTCC_ReID DATA.TEST_BATCH 16 DATA.NUM_WORKERS 1 DATA.PIN_MEMORY False SOLVER.SEED 1234 SOLVER.MAX_EPOCHS 60 TRAIN.START_EPOCH 1 TEST.WEIGHT ''
+python3 npc/runner.py --config_file configs/ltcc/eva02_l_bio.yml --variant N3 --output-root /home/DIFFER_NPC/outputs/NPC_CONFIRMATORY_20261014_140116 --max-epochs 60 DATA.ROOT /home/data DATA.CAPTION_DIR /home/data/DIFFER_TextCaption/LTCC_ReID DATA.TEST_BATCH 16 DATA.NUM_WORKERS 1 DATA.PIN_MEMORY False SOLVER.SEED 1234 SOLVER.MAX_EPOCHS 60 TRAIN.START_EPOCH 1 TEST.WEIGHT ''
+
+说明：以上三条命令由顺序监督器执行；B0 首次因旧采样器产生单身份 triplet batch 而在 epoch37 中止，失败目录已另行归档，未作为任何正式结果或初始化使用。当前 B0 是修复采样协议后的全新预训练启动。

@@ -1,0 +1,10 @@
+{
+  "status": "completed",
+  "dataset": "ltcc",
+  "variant": "N3",
+  "seed": 1234,
+  "best_rank1": 0.4948979616165161,
+  "best_epoch": 1,
+  "final_checkpoint": "outputs/PHASE_NPC_FIX_REAL_20261013_212000/ltcc/seed1234/N3/checkpoints/model_final.pth",
+  "elapsed_seconds": 238.31370329856873
+}

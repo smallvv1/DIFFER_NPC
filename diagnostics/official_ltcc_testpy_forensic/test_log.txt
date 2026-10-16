@@ -1,0 +1,180 @@
+2026-09-02 14:42:56,809 DIFFER INFO: Namespace(config_file='reports/FORENSIC_RECONSTRUCTED_LTCC_CONFIG.yml', opts=[], local_rank=0)
+2026-09-02 14:42:56,810 DIFFER INFO: Loaded configuration file reports/FORENSIC_RECONSTRUCTED_LTCC_CONFIG.yml
+2026-09-02 14:42:56,810 DIFFER INFO: 
+# FORENSIC RECONSTRUCTION FOR EVALUATION ONLY
+#
+# This is not the config.yml distributed beside the official checkpoint.
+# It is reconstructed from the LTCC train_log.txt, TensorBoard scalars,
+# checkpoint topology, released LTCC YAML, and the README loss command.
+# Provenance and confidence are recorded in FORENSIC_CONFIG_EVIDENCE.md.
+MODEL:
+  TYPE: eva02_cloth
+  NAME: eva02_l_bio
+  LOSS_TYPE: ['ce', 'triplet', 'clipBio', 'clipBioReverse']
+  NONBIO_HEAD: False
+  LAST_LAYER: 'clipFc'
+  IF_LABELSMOOTH: 'off'
+  IF_WITH_CENTER: 'no'
+  NO_MARGIN: True
+  CLIP_DIM: 512
+  SUBSPACE_DIM: 512
+  CLIP_LOSS_TYPE: 'constant'
+  DIST_TRAIN: False
+  CAMERA_XISHU: 3
+
+DATA:
+  IMG_HEIGHT: 224
+  IMG_WIDTH: 224
+  DATASET: 'ltcc'
+  # YACS/released loader representation; parsed as factors [1, 2].
+  NOBIO_INDEX: '1,2'
+  SUMMERY_TEXT: True
+  TEXT_MODEL: 'EVA02-CLIP'
+  TEXT_MODEL_VERSION: 'EVA02-CLIP-B-16'
+  NUM_INSTANCES: 2
+  BATCH_SIZE: 8
+  TEST_BATCH: 128
+  NUM_WORKERS: 1
+  PIN_MEMORY: False
+  ROOT: '/home/data'
+  CAPTION_DIR: '/home/data/DIFFER_TextCaption/LTCC_ReID'
+
+SOLVER:
+  OPTIMIZER_NAME: 'SGD'
+  MAX_EPOCHS: 60
+  BASE_LR: 2e-6
+  WARMUP_METHOD: 'linear'
+  WARMUP_EPOCHS: 20
+  WARMUP_FACTOR: 0.01
+  WARMUP_LR: 7.8125e-7
+  LARGE_FC_LR: False
+  CHECKPOINT_PERIOD: 60
+  LOG_PERIOD: 50
+  EVAL_PERIOD: 1
+  WEIGHT_DECAY: 0.05
+  WEIGHT_DECAY_BIAS: 0.05
+  BIAS_LR_FACTOR: 2
+  SEED: 1234
+  MARGIN: 0.3
+
+TEST:
+  WEIGHT: '/home/data/DIFFER_OfficialWeights/LTCC/eva02_l_bio_best.pth'
+  FEAT_NORM: 'yes'
+  TYPE: 'image_only'
+
+OUTPUT_DIR: '/home/DIFFER/diagnostics/official_ltcc_testpy_forensic'
+
+2026-09-02 14:42:56,810 DIFFER INFO: Running with config:
+AUG:
+  RC_PROB: 0.5
+  RE_PROB: 0.5
+  RF_PROB: 0.5
+  SAMPLING_STRIDE: 4
+  SEQ_LEN: 0
+DATA:
+  AUX_INFO: False
+  BATCH_SIZE: 8
+  BIO_INDEX: 0
+  CAPTION_DIR: /home/data/DIFFER_TextCaption/LTCC_ReID
+  DATASET: ltcc
+  IMG_HEIGHT: 224
+  IMG_WIDTH: 224
+  NOBIO_INDEX: [1, 2]
+  NUM_INSTANCES: 2
+  NUM_WORKERS: 1
+  PIN_MEMORY: False
+  PIXEL_MEAN: [0.485, 0.456, 0.406]
+  PIXEL_STD: [0.229, 0.224, 0.225]
+  ROOT: /home/data
+  SAMPLER: softmax_triplet
+  SAMPLING_STEP: 64
+  SUMMERY_TEXT: True
+  TEST_BATCH: 128
+  TEXT_MODEL: EVA02-CLIP
+  TEXT_MODEL_VERSION: EVA02-CLIP-B-16
+MODEL:
+  BOTTEL_NECK: False
+  CAMERA_XISHU: 3
+  CLIP_DIM: 512
+  CLIP_LOSS_TYPE: constant
+  COS_LAYER: False
+  DEVICE: cuda
+  DEVICE_ID: 0
+  DIST_TRAIN: False
+  EMBEDDING_DIM: 0
+  ID_LOSS_TYPE: softmax
+  ID_LOSS_WEIGHT: 1.0
+  IF_LABELSMOOTH: off
+  IF_WITH_CENTER: no
+  LAST_LAYER: clipFc
+  LOSS_TYPE: ['ce', 'triplet', 'clipBio', 'clipBioReverse']
+  META_DIMS: []
+  NAME: eva02_l_bio
+  NONBIO_HEAD: False
+  NORM_FEAT: False
+  NO_MARGIN: True
+  SUBSPACE_DIM: 512
+  TRIPLET_LOSS_WEIGHT: 1.0
+  TYPE: eva02_cloth
+OUTPUT_DIR: /home/DIFFER/diagnostics/official_ltcc_testpy_forensic
+OUTPUT_NAME: 
+SOLVER:
+  BASE_LR: 2e-06
+  BIAS_LR_FACTOR: 2
+  CENTER_LOSS_WEIGHT: 0.0005
+  CENTER_LR: 0.5
+  CHECKPOINT_PERIOD: 60
+  COSINE_MARGIN: 0.5
+  COSINE_SCALE: 30
+  EVAL_PERIOD: 1
+  FREEZE_EPOCH: 0
+  GAMMA: 0.1
+  LARGE_FC_FACTOR: 2.0
+  LARGE_FC_LR: False
+  LOG_PERIOD: 50
+  MARGIN: 0.3
+  MAX_EPOCHS: 60
+  MOMENTUM: 0.9
+  OPTIMIZER_NAME: SGD
+  SEED: 1234
+  STEPS: (40, 60)
+  WARMUP_EPOCHS: 20
+  WARMUP_FACTOR: 0.01
+  WARMUP_LR: 7.8125e-07
+  WARMUP_METHOD: linear
+  WEIGHT_DECAY: 0.05
+  WEIGHT_DECAY_BIAS: 0.05
+TEST:
+  FEAT_NORM: yes
+  STATUS: False
+  TYPE: image_only
+  WEIGHT: /home/data/DIFFER_OfficialWeights/LTCC/eva02_l_bio_best.pth
+TRAIN:
+  START_EPOCH: 1
+2026-09-02 14:42:56,814 DIFFER INFO: loading summery feature
+2026-09-02 14:42:58,473 DIFFER INFO: => LTCC loaded
+2026-09-02 14:42:58,473 DIFFER INFO: Dataset statistics:
+2026-09-02 14:42:58,473 DIFFER INFO:   ----------------------------------------
+2026-09-02 14:42:58,473 DIFFER INFO:   subset   | # ids | # images | # clothes
+2026-09-02 14:42:58,473 DIFFER INFO:   ----------------------------------------
+2026-09-02 14:42:58,473 DIFFER INFO:   train    |    77 |     9576 |       256
+2026-09-02 14:42:58,473 DIFFER INFO:   test     |    75 |     7543 |       221
+2026-09-02 14:42:58,473 DIFFER INFO:   query    |    75 |      493 |
+2026-09-02 14:42:58,473 DIFFER INFO:   gallery  |    75 |     7050 |
+2026-09-02 14:42:58,473 DIFFER INFO:   ----------------------------------------
+2026-09-02 14:42:58,473 DIFFER INFO:   total    |   152 |    17119 |       477
+2026-09-02 14:42:58,473 DIFFER INFO:   ----------------------------------------
+2026-09-02 14:43:05,666 DIFFER.test INFO: Enter inferencing
+2026-09-02 14:43:05,666 DIFFER.test INFO: transreid inferencing
+2026-09-02 14:43:05,827 DIFFER.test INFO: Clothes changing setting
+2026-09-02 14:43:06,290 DIFFER.test INFO: processing batch 0/59
+2026-09-02 14:43:57,933 DIFFER.test INFO: CMC curve, Rank-1  :58.9%
+2026-09-02 14:43:57,933 DIFFER.test INFO: CMC curve, Rank-5  :72.4%
+2026-09-02 14:43:57,933 DIFFER.test INFO: CMC curve, Rank-10 :75.8%
+2026-09-02 14:43:57,933 DIFFER.test INFO: mAP-:31.3%
+2026-09-02 14:43:57,944 DIFFER.test INFO: Standard setting
+2026-09-02 14:43:58,405 DIFFER.test INFO: processing batch 0/59
+2026-09-02 14:44:49,218 DIFFER.test INFO: CMC curve, Rank-1  :85.2%
+2026-09-02 14:44:49,218 DIFFER.test INFO: CMC curve, Rank-5  :90.7%
+2026-09-02 14:44:49,218 DIFFER.test INFO: CMC curve, Rank-10 :92.7%
+2026-09-02 14:44:49,218 DIFFER.test INFO: mAP-:52.8%

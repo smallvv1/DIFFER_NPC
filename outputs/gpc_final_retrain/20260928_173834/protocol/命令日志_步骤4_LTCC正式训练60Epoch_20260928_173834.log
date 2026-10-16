@@ -1,0 +1,1358 @@
+开始时间：2026-09-28T09:40:09Z
+执行命令：/usr/local/bin/torchrun --standalone --nproc_per_node=2 /home/DIFFER/scripts/train_final_gpc.py --mode train --dataset ltcc --arm gpc --seed 1234 --output-dir /home/DIFFER/outputs/gpc_final_retrain/20260928_173834
+
+PPU 环境初始化：source /usr/local/PPU_SDK/envsetup.sh ppu
+
+W0928 17:40:10.666000 2486146 site-packages/torch/distributed/run.py:792] 
+W0928 17:40:10.666000 2486146 site-packages/torch/distributed/run.py:792] *****************************************
+W0928 17:40:10.666000 2486146 site-packages/torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0928 17:40:10.666000 2486146 site-packages/torch/distributed/run.py:792] *****************************************
+/usr/local/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/helpers.py:7: FutureWarning: Importing from timm.models.helpers is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/helpers.py:7: FutureWarning: Importing from timm.models.helpers is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/usr/local/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/home/DIFFER/model/eva_embed.py:948: UserWarning: Overwriting eva02_large_patch14_clip_224 in registry with model.eva_embed.eva02_large_patch14_clip_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def eva02_large_patch14_clip_224(pretrained=False,config={}, **kwargs) -> Eva:
+/usr/local/lib/python3.10/site-packages/timm/models/registry.py:4: FutureWarning: Importing from timm.models.registry is deprecated, please import via timm.models
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.models", FutureWarning)
+/home/DIFFER/model/eva_embed.py:948: UserWarning: Overwriting eva02_large_patch14_clip_224 in registry with model.eva_embed.eva02_large_patch14_clip_224. This is because the name being registered conflicts with an existing name. Please check if this is not expected.
+  def eva02_large_patch14_clip_224(pretrained=False,config={}, **kwargs) -> Eva:
+using soft triplet loss for training
+using soft triplet loss for training
+/home/DIFFER/scripts/train_final_gpc.py:1479: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = amp.GradScaler(init_scale=int(spec["initial_scale"]))
+/home/DIFFER/scripts/train_final_gpc.py:1479: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = amp.GradScaler(init_scale=int(spec["initial_scale"]))
+==================================================
+数据集：LTCC
+方法：Bio + GPC
+GPC 中文名：通用同身份正样本一致性
+GPC 英文名：Generic Same-ID Positive Consistency
+随机种子：1234
+训练 Epoch：60
+批大小：8；NUM_INSTANCES：2
+优化器：SGD；基础学习率：2e-06；Warmup：20 个 Epoch；Scheduler：cosine
+GPC lambda：0.1
+AMP 初始 scale：1024
+PPU-only：是；CPU fallback：禁止
+启动时间：20260928_173834
+输出目录：/home/DIFFER/outputs/gpc_final_retrain/20260928_173834
+正式训练只使用 train split；训练期间不创建 query/gallery evaluator
+==================================================
+[LTCC][训练] 第 1/60 个 Epoch 开始
+/home/DIFFER/scripts/train_final_gpc.py:936: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(enabled=True):
+/home/DIFFER/scripts/train_final_gpc.py:936: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with amp.autocast(enabled=True):
+[2026-09-28 17:40:30:610277][ALINPU INFO]: [/job_3220189/source/acompute/include/accontext.hpp:174][34m ACOMPUTE: [device caps] dev=1, name=PPU-ZW810E, sm8.0, smem=256KB, num_of_sm=64, freq_of_sm=1700MHz[0m
+[2026-09-28 17:40:30:629074][ALINPU INFO]: [/job_3220189/source/acompute/include/accontext.hpp:174][34m ACOMPUTE: [device caps] dev=0, name=PPU-ZW810E, sm8.0, smem=256KB, num_of_sm=64, freq_of_sm=1700MHz[0m
+[2026-09-28 17:40:30:992931][ALINPU INFO]: [/job_3220189/source/acompute/include/accontext.hpp:174][34m ACOMPUTE: [device caps] dev=1, name=PPU-ZW810E, sm8.0, smem=256KB, num_of_sm=64, freq_of_sm=1700MHz[0m
+[2026-09-28 17:40:31:29129][ALINPU INFO]: [/job_3220189/source/acompute/include/accontext.hpp:174][34m ACOMPUTE: [device caps] dev=0, name=PPU-ZW810E, sm8.0, smem=256KB, num_of_sm=64, freq_of_sm=1700MHz[0m
+[33m[2026-09-28 17:40:31:613175][ALINPU WARNING]: [offline_cache.hpp:574]The set dir is not accessable: /PPU0010[0m
+[2026-09-28 17:40:31:613275][ALINPU INFO]: [offline_cache.hpp:583]Use root dir: /usr/local/PPU_SDK/rtccache/PPU0010
+[33m[2026-09-28 17:40:31:613342][ALINPU WARNING]: [offline_cache.hpp:574]The set dir is not accessable: /PPU0015[0m
+[2026-09-28 17:40:31:613366][ALINPU INFO]: [offline_cache.hpp:583]Use root dir: /usr/local/PPU_SDK/rtccache/PPU0015
+[2026-09-28 17:40:31:613632][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 3187888783, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_3187888783_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile32x128x16x32x128x3_layout1x0x0x0_align1x1x8x8_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:613707][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 3381009755, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_3381009755_gemm_ktype0_aiu1_mtype1_dtypeFP32xFP32xFP32xFP32xFP32_tile32x64x16x32x32x2_layout0x1x0x0_align1x1x1x1_splitk2_fusion5_prefetch0_fp32tc1_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:613800][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 2578511975, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_2578511975_gemm_ktype0_aiu1_mtype1_dtypeFP32xFP32xFP32xFP32xFP32_tile32x64x16x32x32x2_layout0x1x0x0_align1x1x4x4_splitk0_fusion5_prefetch0_fp32tc1_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:613902][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 3483791538, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_3483791538_gemm_ktype0_aiu1_mtype1_dtypeFP32xFP32xFP32xFP32xFP32_tile64x128x32x32x32x3_layout0x1x0x0_align1x1x4x4_splitk0_fusion5_prefetch0_fp32tc1_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:613977][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 1997282714, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_1997282714_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile32x64x16x32x64x2_layout0x1x0x0_align1x1x1x1_splitk2_fusion5_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:614061][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 3825267264, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_3825267264_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile32x128x16x32x128x3_layout1x1x0x0_align1x1x8x8_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:614171][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 2458468068, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_2458468068_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile32x64x16x32x128x3_layout0x1x0x0_align1x1x8x8_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:614322][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 3893190877, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_3893190877_gemm_ktype0_aiu1_mtype1_dtypeFP32xFP32xFP32xFP32xFP32_tile128x128x64x32x32x2_layout0x1x0x0_align1x1x4x4_splitk0_fusion5_prefetch0_fp32tc1_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:614489][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 2362312834, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_2362312834_gemm_ktype0_aiu1_mtype1_dtypeFP32xFP32xFP32xFP32xFP32_tile256x128x64x64x32x2_layout0x1x0x0_align1x1x4x4_splitk0_fusion5_prefetch0_fp32tc1_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:614557][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 3016079961, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_3016079961_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile32x128x16x32x128x3_layout0x1x0x0_align1x1x8x8_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:614644][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 3250026805, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_3250026805_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile64x256x32x32x64x3_layout1x1x0x0_align1x1x8x8_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:614715][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 1684667227, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_1684667227_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile16x64x16x16x128x4_layout0x1x0x0_align1x1x4x4_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:614791][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 2331872891, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_2331872891_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile32x32x16x16x256x4_layout1x0x0x0_align1x1x4x4_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:614873][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 2672809522, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_2672809522_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile32x64x16x32x128x3_layout1x0x0x0_align1x1x8x8_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:614944][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 128841845, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_128841845_gemm_ktype0_aiu1_mtype1_dtypeFP32xFP32xFP32xFP32xFP32_tile32x64x16x32x32x2_layout0x1x0x0_align1x1x2x2_splitk2_fusion5_prefetch0_fp32tc1_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:615029][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 3310122749, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_3310122749_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile32x64x16x32x128x3_layout1x1x0x0_align1x1x8x8_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:615172][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 2371056913, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_2371056913_gemm_ktype0_aiu1_mtype1_dtypeFP32xFP32xFP32xFP32xFP32_tile64x256x32x64x32x2_layout0x1x0x0_align1x1x4x4_splitk0_fusion5_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:615350][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 716768054, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_716768054_gemm_ktype0_aiu1_mtype1_dtypeFP32xFP32xFP32xFP32xFP32_tile256x128x64x64x32x2_layout0x1x0x0_align1x1x4x4_splitk0_fusion5_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:615401][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 1, hash: 157701950, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_157701950_reduction_dtypeFP32xFP32_align4_fusion5_prefetch0_conv0_ptrhost1.bin
+[2026-09-28 17:40:31:615491][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 2612320762, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_2612320762_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile64x256x32x32x64x3_layout1x0x0x0_align1x1x8x8_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:615548][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 1, hash: 1933543976, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_1933543976_reduction_dtypeFP32xFP32_align1_fusion5_prefetch0_conv0_ptrhost1.bin
+[2026-09-28 17:40:31:615638][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 2524066092, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_2524066092_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile64x256x32x32x64x3_layout0x1x0x0_align1x1x8x8_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:615770][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 1316645737, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_1316645737_gemm_ktype0_aiu1_mtype1_dtypeFP32xFP32xFP32xFP32xFP32_tile128x128x64x32x32x2_layout0x1x0x0_align1x1x4x4_splitk0_fusion5_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:615848][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 2268817069, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_2268817069_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile32x32x16x16x256x4_layout0x1x0x0_align1x1x4x4_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:616019][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 2938875072, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_2938875072_gemm_ktype0_aiu1_mtype1_dtypeFP32xFP32xFP32xFP32xFP32_tile128x128x64x32x32x2_layout0x1x0x0_align1x1x2x2_splitk0_fusion5_prefetch0_fp32tc1_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:616070][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 1, hash: 2852406823, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_2852406823_reduction_dtypeFP32xFP16_align1_fusion5_prefetch0_conv0_ptrhost1.bin
+[2026-09-28 17:40:31:616179][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 2697383773, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_2697383773_gemm_ktype0_aiu1_mtype1_dtypeFP32xFP32xFP32xFP32xFP32_tile128x64x32x32x32x2_layout0x1x0x0_align1x1x4x4_splitk0_fusion5_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:616250][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 1082864744, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_1082864744_gemm_ktype0_aiu1_mtype1_dtypeFP32xFP32xFP32xFP32xFP32_tile32x64x16x32x32x2_layout0x1x0x0_align1x1x4x4_splitk2_fusion5_prefetch0_fp32tc1_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:616328][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 1773081485, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_1773081485_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile16x64x16x16x128x4_layout1x0x0x0_align1x1x4x4_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:616411][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 2731029646, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_2731029646_gemm_ktype0_aiu1_mtype1_dtypeFP32xFP32xFP32xFP32xFP32_tile32x128x32x32x32x4_layout0x1x0x0_align1x1x4x4_splitk2_fusion5_prefetch0_fp32tc1_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:616808][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 3142132080, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_3142132080_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile256x128x64x64x64x2_layout0x1x0x0_align1x1x1x1_splitk0_fusion5_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:616875][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 379436221, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_379436221_gemm_ktype0_aiu1_mtype1_dtypeFP32xFP32xFP32xFP32xFP32_tile64x128x32x32x32x3_layout0x1x0x0_align1x1x4x4_splitk2_fusion5_prefetch0_fp32tc1_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:616929][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 1, hash: 1526152922, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_1526152922_reduction_dtypeFP32xFP32_align2_fusion5_prefetch0_conv0_ptrhost1.bin
+[2026-09-28 17:40:31:616994][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 3506319028, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_3506319028_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile32x32x16x16x256x4_layout1x1x0x0_align1x1x4x4_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:617241][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 3421029535, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_3421029535_gemm_ktype0_aiu1_mtype1_dtypeFP32xFP32xFP32xFP32xFP32_tile256x128x64x64x32x2_layout0x1x0x0_align1x1x2x2_splitk0_fusion5_prefetch0_fp32tc1_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:617446][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 1203465057, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_1203465057_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile128x128x32x64x64x2_layout0x1x0x0_align1x1x1x1_splitk0_fusion5_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:617511][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 866956098, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_866956098_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile16x64x16x16x128x4_layout1x1x0x0_align1x1x4x4_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:617525][ALINPU INFO]: [kernel_factory.cu:258]Rtc cache load all offline-cache done.
+
+[33m[2026-09-28 17:40:31:691258][ALINPU WARNING]: [offline_cache.hpp:574]The set dir is not accessable: /PPU0010[0m
+[2026-09-28 17:40:31:691362][ALINPU INFO]: [offline_cache.hpp:583]Use root dir: /usr/local/PPU_SDK/rtccache/PPU0010
+[33m[2026-09-28 17:40:31:691428][ALINPU WARNING]: [offline_cache.hpp:574]The set dir is not accessable: /PPU0015[0m
+[2026-09-28 17:40:31:691453][ALINPU INFO]: [offline_cache.hpp:583]Use root dir: /usr/local/PPU_SDK/rtccache/PPU0015
+[2026-09-28 17:40:31:691724][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 3187888783, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_3187888783_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile32x128x16x32x128x3_layout1x0x0x0_align1x1x8x8_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:691808][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 3381009755, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_3381009755_gemm_ktype0_aiu1_mtype1_dtypeFP32xFP32xFP32xFP32xFP32_tile32x64x16x32x32x2_layout0x1x0x0_align1x1x1x1_splitk2_fusion5_prefetch0_fp32tc1_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:691893][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 2578511975, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_2578511975_gemm_ktype0_aiu1_mtype1_dtypeFP32xFP32xFP32xFP32xFP32_tile32x64x16x32x32x2_layout0x1x0x0_align1x1x4x4_splitk0_fusion5_prefetch0_fp32tc1_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:692004][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 3483791538, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_3483791538_gemm_ktype0_aiu1_mtype1_dtypeFP32xFP32xFP32xFP32xFP32_tile64x128x32x32x32x3_layout0x1x0x0_align1x1x4x4_splitk0_fusion5_prefetch0_fp32tc1_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:692079][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 1997282714, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_1997282714_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile32x64x16x32x64x2_layout0x1x0x0_align1x1x1x1_splitk2_fusion5_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:692195][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 3825267264, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_3825267264_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile32x128x16x32x128x3_layout1x1x0x0_align1x1x8x8_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:692300][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 2458468068, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_2458468068_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile32x64x16x32x128x3_layout0x1x0x0_align1x1x8x8_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:692439][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 3893190877, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_3893190877_gemm_ktype0_aiu1_mtype1_dtypeFP32xFP32xFP32xFP32xFP32_tile128x128x64x32x32x2_layout0x1x0x0_align1x1x4x4_splitk0_fusion5_prefetch0_fp32tc1_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:692614][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 2362312834, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_2362312834_gemm_ktype0_aiu1_mtype1_dtypeFP32xFP32xFP32xFP32xFP32_tile256x128x64x64x32x2_layout0x1x0x0_align1x1x4x4_splitk0_fusion5_prefetch0_fp32tc1_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:692683][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 3016079961, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_3016079961_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile32x128x16x32x128x3_layout0x1x0x0_align1x1x8x8_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:692778][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 3250026805, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_3250026805_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile64x256x32x32x64x3_layout1x1x0x0_align1x1x8x8_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:692854][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 1684667227, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_1684667227_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile16x64x16x16x128x4_layout0x1x0x0_align1x1x4x4_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:692933][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 2331872891, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_2331872891_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile32x32x16x16x256x4_layout1x0x0x0_align1x1x4x4_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:693016][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 2672809522, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_2672809522_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile32x64x16x32x128x3_layout1x0x0x0_align1x1x8x8_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:693112][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 128841845, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_128841845_gemm_ktype0_aiu1_mtype1_dtypeFP32xFP32xFP32xFP32xFP32_tile32x64x16x32x32x2_layout0x1x0x0_align1x1x2x2_splitk2_fusion5_prefetch0_fp32tc1_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:693203][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 3310122749, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_3310122749_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile32x64x16x32x128x3_layout1x1x0x0_align1x1x8x8_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:693323][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 2371056913, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_2371056913_gemm_ktype0_aiu1_mtype1_dtypeFP32xFP32xFP32xFP32xFP32_tile64x256x32x64x32x2_layout0x1x0x0_align1x1x4x4_splitk0_fusion5_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:693508][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 716768054, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_716768054_gemm_ktype0_aiu1_mtype1_dtypeFP32xFP32xFP32xFP32xFP32_tile256x128x64x64x32x2_layout0x1x0x0_align1x1x4x4_splitk0_fusion5_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:693565][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 1, hash: 157701950, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_157701950_reduction_dtypeFP32xFP32_align4_fusion5_prefetch0_conv0_ptrhost1.bin
+[2026-09-28 17:40:31:693654][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 2612320762, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_2612320762_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile64x256x32x32x64x3_layout1x0x0x0_align1x1x8x8_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:693710][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 1, hash: 1933543976, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_1933543976_reduction_dtypeFP32xFP32_align1_fusion5_prefetch0_conv0_ptrhost1.bin
+[2026-09-28 17:40:31:693805][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 2524066092, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_2524066092_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile64x256x32x32x64x3_layout0x1x0x0_align1x1x8x8_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:693954][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 1316645737, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_1316645737_gemm_ktype0_aiu1_mtype1_dtypeFP32xFP32xFP32xFP32xFP32_tile128x128x64x32x32x2_layout0x1x0x0_align1x1x4x4_splitk0_fusion5_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:694034][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 2268817069, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_2268817069_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile32x32x16x16x256x4_layout0x1x0x0_align1x1x4x4_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:694205][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 2938875072, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_2938875072_gemm_ktype0_aiu1_mtype1_dtypeFP32xFP32xFP32xFP32xFP32_tile128x128x64x32x32x2_layout0x1x0x0_align1x1x2x2_splitk0_fusion5_prefetch0_fp32tc1_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:694261][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 1, hash: 2852406823, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_2852406823_reduction_dtypeFP32xFP16_align1_fusion5_prefetch0_conv0_ptrhost1.bin
+[2026-09-28 17:40:31:694361][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 2697383773, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_2697383773_gemm_ktype0_aiu1_mtype1_dtypeFP32xFP32xFP32xFP32xFP32_tile128x64x32x32x32x2_layout0x1x0x0_align1x1x4x4_splitk0_fusion5_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:694429][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 1082864744, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_1082864744_gemm_ktype0_aiu1_mtype1_dtypeFP32xFP32xFP32xFP32xFP32_tile32x64x16x32x32x2_layout0x1x0x0_align1x1x4x4_splitk2_fusion5_prefetch0_fp32tc1_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:694509][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 1773081485, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_1773081485_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile16x64x16x16x128x4_layout1x0x0x0_align1x1x4x4_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:694591][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 2731029646, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_2731029646_gemm_ktype0_aiu1_mtype1_dtypeFP32xFP32xFP32xFP32xFP32_tile32x128x32x32x32x4_layout0x1x0x0_align1x1x4x4_splitk2_fusion5_prefetch0_fp32tc1_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:694996][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 3142132080, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_3142132080_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile256x128x64x64x64x2_layout0x1x0x0_align1x1x1x1_splitk0_fusion5_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:695069][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 379436221, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_379436221_gemm_ktype0_aiu1_mtype1_dtypeFP32xFP32xFP32xFP32xFP32_tile64x128x32x32x32x3_layout0x1x0x0_align1x1x4x4_splitk2_fusion5_prefetch0_fp32tc1_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:695125][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 1, hash: 1526152922, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_1526152922_reduction_dtypeFP32xFP32_align2_fusion5_prefetch0_conv0_ptrhost1.bin
+[2026-09-28 17:40:31:695192][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 3506319028, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_3506319028_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile32x32x16x16x256x4_layout1x1x0x0_align1x1x4x4_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:695439][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 3421029535, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_3421029535_gemm_ktype0_aiu1_mtype1_dtypeFP32xFP32xFP32xFP32xFP32_tile256x128x64x64x32x2_layout0x1x0x0_align1x1x2x2_splitk0_fusion5_prefetch0_fp32tc1_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:695661][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 1203465057, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_1203465057_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile128x128x32x64x64x2_layout0x1x0x0_align1x1x1x1_splitk0_fusion5_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:695725][ALINPU INFO]: [kernel_factory.cu:201]Pre-load kernel type: 0, hash: 866956098, file: /usr/local/PPU_SDK/rtccache/PPU0010/1.6.1-14620b_866956098_gemm_ktype0_aiu1_mtype1_dtypeFP16xFP16xFP32xFP16xFP16_tile16x64x16x16x128x4_layout1x1x0x0_align1x1x4x4_splitk0_fusion0_prefetch0_fp32tc0_ptrhost1_schedule0.bin
+[2026-09-28 17:40:31:695740][ALINPU INFO]: [kernel_factory.cu:258]Rtc cache load all offline-cache done.
+
+[LTCC][训练] 第 1/60 个 Epoch，第 50/596 个 batch；总 Loss：7.734963；Base Loss：7.734963；GPC Loss：-0.000000；当前学习率：8.422e-07；身份准确率：0.0000
+[LTCC][AMP审计] 第 1 个 Epoch 第 53 个 batch 发生 found_inf；本次 optimizer step 被跳过；当前 scale：1024.0
+[LTCC][AMP审计] 第 1 个 Epoch 第 83 个 batch 发生 found_inf；本次 optimizer step 被跳过；当前 scale：512.0
+[LTCC][训练] 第 1/60 个 Epoch，第 100/596 个 batch；总 Loss：8.262949；Base Loss：8.254021；GPC Loss：0.089279；当前学习率：8.422e-07；身份准确率：0.0000
+[LTCC][训练] 第 1/60 个 Epoch，第 150/596 个 batch；总 Loss：7.847572；Base Loss：7.837057；GPC Loss：0.105148；当前学习率：8.422e-07；身份准确率：0.0000
+[LTCC][训练] 第 1/60 个 Epoch，第 200/596 个 batch；总 Loss：7.814734；Base Loss：7.808260；GPC Loss：0.064746；当前学习率：8.422e-07；身份准确率：0.0000
+[LTCC][训练] 第 1/60 个 Epoch，第 250/596 个 batch；总 Loss：7.023509；Base Loss：7.023509；GPC Loss：-0.000000；当前学习率：8.422e-07；身份准确率：0.0000
+[LTCC][训练] 第 1/60 个 Epoch，第 300/596 个 batch；总 Loss：7.395671；Base Loss：7.386139；GPC Loss：0.095319；当前学习率：8.422e-07；身份准确率：0.0000
+[LTCC][训练] 第 1/60 个 Epoch，第 350/596 个 batch；总 Loss：7.613940；Base Loss：7.613940；GPC Loss：0.000000；当前学习率：8.422e-07；身份准确率：0.5000
+[LTCC][训练] 第 1/60 个 Epoch，第 400/596 个 batch；总 Loss：6.609680；Base Loss：6.609680；GPC Loss：0.000000；当前学习率：8.422e-07；身份准确率：0.0000
+[LTCC][训练] 第 1/60 个 Epoch，第 450/596 个 batch；总 Loss：8.171997；Base Loss：8.171997；GPC Loss：0.000000；当前学习率：8.422e-07；身份准确率：0.2500
+[LTCC][训练] 第 1/60 个 Epoch，第 500/596 个 batch；总 Loss：7.025424；Base Loss：7.025424；GPC Loss：0.000000；当前学习率：8.422e-07；身份准确率：0.0000
+[LTCC][训练] 第 1/60 个 Epoch，第 550/596 个 batch；总 Loss：7.317618；Base Loss：7.308673；GPC Loss：0.089451；当前学习率：8.422e-07；身份准确率：0.2500
+[LTCC][训练] 当前学习率：8.422e-07
+[LTCC][训练] Base Loss：7.659528；GPC Loss：0.012997；总 Loss：7.660828
+[LTCC][训练] GPC 激活 batch 数：157；总 batch 数：1192；GPC active rate：0.13171141
+[LTCC][训练] GPC selected contribution 数：169；same-clothes contribution 数：54；cross-clothes contribution 数：115
+[LTCC][训练] same-clothes fraction：0.31952663；cross-clothes fraction：0.68047337；PID coverage：52/77（0.67532468）
+[LTCC][训练] 当前 AMP scale：256.0；found_inf 数：4；跳过 optimizer step 数：4；nonfinite 事件数：4
+[LTCC][训练] 第 1/60 个 Epoch 完成；Epoch wall time：138.74 秒
+[LTCC][训练] 第 2/60 个 Epoch 开始
+[LTCC][训练] 第 2/60 个 Epoch，第 50/596 个 batch；总 Loss：7.355495；Base Loss：7.349300；GPC Loss：0.061950；当前学习率：9.031e-07；身份准确率：0.0000
+[LTCC][训练] 第 2/60 个 Epoch，第 100/596 个 batch；总 Loss：6.572569；Base Loss：6.572569；GPC Loss：0.000000；当前学习率：9.031e-07；身份准确率：0.2500
+[LTCC][训练] 第 2/60 个 Epoch，第 150/596 个 batch；总 Loss：7.766855；Base Loss：7.766855；GPC Loss：0.000000；当前学习率：9.031e-07；身份准确率：0.0000
+[LTCC][训练] 第 2/60 个 Epoch，第 200/596 个 batch；总 Loss：6.913401；Base Loss：6.913401；GPC Loss：0.000000；当前学习率：9.031e-07；身份准确率：0.2500
+[LTCC][AMP审计] 第 2 个 Epoch 第 215 个 batch 发生 found_inf；本次 optimizer step 被跳过；当前 scale：256.0
+[LTCC][训练] 第 2/60 个 Epoch，第 250/596 个 batch；总 Loss：6.910074；Base Loss：6.910074；GPC Loss：0.000000；当前学习率：9.031e-07；身份准确率：0.0000
+[LTCC][训练] 第 2/60 个 Epoch，第 300/596 个 batch；总 Loss：7.405495；Base Loss：7.405495；GPC Loss：0.000000；当前学习率：9.031e-07；身份准确率：0.2500
+[LTCC][训练] 第 2/60 个 Epoch，第 350/596 个 batch；总 Loss：7.468297；Base Loss：7.468297；GPC Loss：0.000000；当前学习率：9.031e-07；身份准确率：0.0000
+[LTCC][训练] 第 2/60 个 Epoch，第 400/596 个 batch；总 Loss：6.936596；Base Loss：6.931142；GPC Loss：0.054539；当前学习率：9.031e-07；身份准确率：0.0000
+[LTCC][训练] 第 2/60 个 Epoch，第 450/596 个 batch；总 Loss：6.649734；Base Loss：6.649734；GPC Loss：0.000000；当前学习率：9.031e-07；身份准确率：0.2500
+[LTCC][训练] 第 2/60 个 Epoch，第 500/596 个 batch；总 Loss：6.461365；Base Loss：6.461365；GPC Loss：0.000000；当前学习率：9.031e-07；身份准确率：0.2500
+[LTCC][训练] 第 2/60 个 Epoch，第 550/596 个 batch；总 Loss：6.624085；Base Loss：6.624085；GPC Loss：0.000000；当前学习率：9.031e-07；身份准确率：0.0000
+[LTCC][训练] 当前学习率：9.031e-07
+[LTCC][训练] Base Loss：7.161447；GPC Loss：0.007441；总 Loss：7.162191
+[LTCC][训练] GPC 激活 batch 数：139；总 batch 数：1192；GPC active rate：0.11661074
+[LTCC][训练] GPC selected contribution 数：152；same-clothes contribution 数：59；cross-clothes contribution 数：93
+[LTCC][训练] same-clothes fraction：0.38815789；cross-clothes fraction：0.61184211；PID coverage：55/77（0.71428571）
+[LTCC][训练] 当前 AMP scale：128.0；found_inf 数：2；跳过 optimizer step 数：2；nonfinite 事件数：2
+[LTCC][训练] 第 2/60 个 Epoch 完成；Epoch wall time：134.68 秒
+[LTCC][训练] 第 3/60 个 Epoch 开始
+[LTCC][训练] 第 3/60 个 Epoch，第 50/596 个 batch；总 Loss：6.996854；Base Loss：6.996854；GPC Loss：0.000000；当前学习率：9.641e-07；身份准确率：0.0000
+[LTCC][训练] 第 3/60 个 Epoch，第 100/596 个 batch；总 Loss：6.872474；Base Loss：6.872474；GPC Loss：0.000000；当前学习率：9.641e-07；身份准确率：0.0000
+[LTCC][训练] 第 3/60 个 Epoch，第 150/596 个 batch；总 Loss：7.030761；Base Loss：7.030761；GPC Loss：0.000000；当前学习率：9.641e-07；身份准确率：0.0000
+[LTCC][训练] 第 3/60 个 Epoch，第 200/596 个 batch；总 Loss：8.027346；Base Loss：8.020735；GPC Loss：0.066112；当前学习率：9.641e-07；身份准确率：0.0000
+[LTCC][训练] 第 3/60 个 Epoch，第 250/596 个 batch；总 Loss：7.225965；Base Loss：7.225965；GPC Loss：0.000000；当前学习率：9.641e-07；身份准确率：0.0000
+[LTCC][训练] 第 3/60 个 Epoch，第 300/596 个 batch；总 Loss：7.200997；Base Loss：7.200997；GPC Loss：0.000000；当前学习率：9.641e-07；身份准确率：0.0000
+[LTCC][训练] 第 3/60 个 Epoch，第 350/596 个 batch；总 Loss：6.728837；Base Loss：6.728837；GPC Loss：0.000000；当前学习率：9.641e-07；身份准确率：0.0000
+[LTCC][训练] 第 3/60 个 Epoch，第 400/596 个 batch；总 Loss：7.133407；Base Loss：7.126568；GPC Loss：0.068388；当前学习率：9.641e-07；身份准确率：0.0000
+[LTCC][训练] 第 3/60 个 Epoch，第 450/596 个 batch；总 Loss：6.593012；Base Loss：6.593012；GPC Loss：0.000000；当前学习率：9.641e-07；身份准确率：0.2500
+[LTCC][训练] 第 3/60 个 Epoch，第 500/596 个 batch；总 Loss：7.050821；Base Loss：7.050821；GPC Loss：0.000000；当前学习率：9.641e-07；身份准确率：0.0000
+[LTCC][训练] 第 3/60 个 Epoch，第 550/596 个 batch；总 Loss：6.681652；Base Loss：6.681652；GPC Loss：0.000000；当前学习率：9.641e-07；身份准确率：0.0000
+[LTCC][训练] 当前学习率：9.641e-07
+[LTCC][训练] Base Loss：7.021269；GPC Loss：0.006252；总 Loss：7.021895
+[LTCC][训练] GPC 激活 batch 数：136；总 batch 数：1192；GPC active rate：0.11409396
+[LTCC][训练] GPC selected contribution 数：150；same-clothes contribution 数：54；cross-clothes contribution 数：96
+[LTCC][训练] same-clothes fraction：0.36000000；cross-clothes fraction：0.64000000；PID coverage：52/77（0.67532468）
+[LTCC][训练] 当前 AMP scale：128.0；found_inf 数：0；跳过 optimizer step 数：0；nonfinite 事件数：0
+[LTCC][训练] 第 3/60 个 Epoch 完成；Epoch wall time：130.66 秒
+[LTCC][训练] 第 4/60 个 Epoch 开始
+[LTCC][训练] 第 4/60 个 Epoch，第 50/596 个 batch；总 Loss：7.334884；Base Loss：7.334884；GPC Loss：0.000000；当前学习率：1.025e-06；身份准确率：0.2500
+[LTCC][训练] 第 4/60 个 Epoch，第 100/596 个 batch；总 Loss：6.900615；Base Loss：6.900615；GPC Loss：0.000000；当前学习率：1.025e-06；身份准确率：0.0000
+[LTCC][训练] 第 4/60 个 Epoch，第 150/596 个 batch；总 Loss：6.372487；Base Loss：6.372487；GPC Loss：0.000000；当前学习率：1.025e-06；身份准确率：0.0000
+[LTCC][训练] 第 4/60 个 Epoch，第 200/596 个 batch；总 Loss：7.919580；Base Loss：7.919580；GPC Loss：0.000000；当前学习率：1.025e-06；身份准确率：0.5000
+[LTCC][训练] 第 4/60 个 Epoch，第 250/596 个 batch；总 Loss：7.127386；Base Loss：7.127386；GPC Loss：0.000000；当前学习率：1.025e-06；身份准确率：0.0000
+[LTCC][训练] 第 4/60 个 Epoch，第 300/596 个 batch；总 Loss：6.798954；Base Loss：6.798954；GPC Loss：0.000000；当前学习率：1.025e-06；身份准确率：0.0000
+[LTCC][训练] 第 4/60 个 Epoch，第 350/596 个 batch；总 Loss：7.156177；Base Loss：7.153340；GPC Loss：0.028371；当前学习率：1.025e-06；身份准确率：0.0000
+[LTCC][训练] 第 4/60 个 Epoch，第 400/596 个 batch；总 Loss：6.671646；Base Loss：6.671646；GPC Loss：0.000000；当前学习率：1.025e-06；身份准确率：0.0000
+[LTCC][训练] 第 4/60 个 Epoch，第 450/596 个 batch；总 Loss：7.352172；Base Loss：7.352172；GPC Loss：0.000000；当前学习率：1.025e-06；身份准确率：0.0000
+[LTCC][训练] 第 4/60 个 Epoch，第 500/596 个 batch；总 Loss：6.615527；Base Loss：6.615527；GPC Loss：0.000000；当前学习率：1.025e-06；身份准确率：0.0000
+[LTCC][训练] 第 4/60 个 Epoch，第 550/596 个 batch；总 Loss：6.411167；Base Loss：6.411167；GPC Loss：0.000000；当前学习率：1.025e-06；身份准确率：0.2500
+[LTCC][训练] 当前学习率：1.025e-06
+[LTCC][训练] Base Loss：6.912633；GPC Loss：0.005623；总 Loss：6.913195
+[LTCC][训练] GPC 激活 batch 数：139；总 batch 数：1192；GPC active rate：0.11661074
+[LTCC][训练] GPC selected contribution 数：146；same-clothes contribution 数：51；cross-clothes contribution 数：95
+[LTCC][训练] same-clothes fraction：0.34931507；cross-clothes fraction：0.65068493；PID coverage：48/77（0.62337662）
+[LTCC][训练] 当前 AMP scale：128.0；found_inf 数：0；跳过 optimizer step 数：0；nonfinite 事件数：0
+[LTCC][训练] 第 4/60 个 Epoch 完成；Epoch wall time：131.40 秒
+[LTCC][训练] 第 5/60 个 Epoch 开始
+[LTCC][训练] 第 5/60 个 Epoch，第 50/596 个 batch；总 Loss：6.180715；Base Loss：6.180715；GPC Loss：0.000000；当前学习率：1.086e-06；身份准确率：0.0000
+[LTCC][训练] 第 5/60 个 Epoch，第 100/596 个 batch；总 Loss：7.128092；Base Loss：7.128092；GPC Loss：0.000000；当前学习率：1.086e-06；身份准确率：0.0000
+[LTCC][训练] 第 5/60 个 Epoch，第 150/596 个 batch；总 Loss：6.411450；Base Loss：6.411450；GPC Loss：0.000000；当前学习率：1.086e-06；身份准确率：0.0000
+[LTCC][训练] 第 5/60 个 Epoch，第 200/596 个 batch；总 Loss：6.910388；Base Loss：6.910388；GPC Loss：0.000000；当前学习率：1.086e-06；身份准确率：0.2500
+[LTCC][训练] 第 5/60 个 Epoch，第 250/596 个 batch；总 Loss：7.216628；Base Loss：7.216628；GPC Loss：0.000000；当前学习率：1.086e-06；身份准确率：0.2500
+[LTCC][训练] 第 5/60 个 Epoch，第 300/596 个 batch；总 Loss：6.984131；Base Loss：6.984131；GPC Loss：0.000000；当前学习率：1.086e-06；身份准确率：0.0000
+[LTCC][训练] 第 5/60 个 Epoch，第 350/596 个 batch；总 Loss：6.715252；Base Loss：6.715252；GPC Loss：0.000000；当前学习率：1.086e-06；身份准确率：0.0000
+[LTCC][训练] 第 5/60 个 Epoch，第 400/596 个 batch；总 Loss：6.543872；Base Loss：6.543872；GPC Loss：0.000000；当前学习率：1.086e-06；身份准确率：0.0000
+[LTCC][训练] 第 5/60 个 Epoch，第 450/596 个 batch；总 Loss：7.366602；Base Loss：7.366602；GPC Loss：0.000000；当前学习率：1.086e-06；身份准确率：0.2500
+[LTCC][训练] 第 5/60 个 Epoch，第 500/596 个 batch；总 Loss：7.821277；Base Loss：7.821277；GPC Loss：0.000000；当前学习率：1.086e-06；身份准确率：0.0000
+[LTCC][训练] 第 5/60 个 Epoch，第 550/596 个 batch；总 Loss：7.223101；Base Loss：7.223101；GPC Loss：0.000000；当前学习率：1.086e-06；身份准确率：0.0000
+[LTCC][训练] 当前学习率：1.086e-06
+[LTCC][训练] Base Loss：6.838582；GPC Loss：0.004811；总 Loss：6.839063
+[LTCC][训练] GPC 激活 batch 数：129；总 batch 数：1192；GPC active rate：0.10822148
+[LTCC][训练] GPC selected contribution 数：144；same-clothes contribution 数：52；cross-clothes contribution 数：92
+[LTCC][训练] same-clothes fraction：0.36111111；cross-clothes fraction：0.63888889；PID coverage：46/77（0.59740260）
+[LTCC][训练] 当前 AMP scale：256.0；found_inf 数：0；跳过 optimizer step 数：0；nonfinite 事件数：0
+[LTCC][训练] 第 5/60 个 Epoch 完成；Epoch wall time：131.89 秒
+[LTCC][训练] 第 6/60 个 Epoch 开始
+[LTCC][训练] 第 6/60 个 Epoch，第 50/596 个 batch；总 Loss：6.840519；Base Loss：6.834238；GPC Loss：0.062807；当前学习率：1.147e-06；身份准确率：0.0000
+[LTCC][训练] 第 6/60 个 Epoch，第 100/596 个 batch；总 Loss：7.605079；Base Loss：7.605079；GPC Loss：0.000000；当前学习率：1.147e-06；身份准确率：0.0000
+[LTCC][训练] 第 6/60 个 Epoch，第 150/596 个 batch；总 Loss：6.252869；Base Loss：6.252869；GPC Loss：0.000000；当前学习率：1.147e-06；身份准确率：0.5000
+[LTCC][训练] 第 6/60 个 Epoch，第 200/596 个 batch；总 Loss：6.971088；Base Loss：6.971088；GPC Loss：0.000000；当前学习率：1.147e-06；身份准确率：0.2500
+[LTCC][训练] 第 6/60 个 Epoch，第 250/596 个 batch；总 Loss：7.345191；Base Loss：7.340436；GPC Loss：0.047550；当前学习率：1.147e-06；身份准确率：0.0000
+[LTCC][训练] 第 6/60 个 Epoch，第 300/596 个 batch；总 Loss：6.757476；Base Loss：6.757476；GPC Loss：0.000000；当前学习率：1.147e-06；身份准确率：0.2500
+[LTCC][训练] 第 6/60 个 Epoch，第 350/596 个 batch；总 Loss：6.508069；Base Loss：6.508069；GPC Loss：0.000000；当前学习率：1.147e-06；身份准确率：0.2500
+[LTCC][训练] 第 6/60 个 Epoch，第 400/596 个 batch；总 Loss：6.530569；Base Loss：6.530569；GPC Loss：0.000000；当前学习率：1.147e-06；身份准确率：0.0000
+[LTCC][训练] 第 6/60 个 Epoch，第 450/596 个 batch；总 Loss：6.365940；Base Loss：6.362133；GPC Loss：0.038069；当前学习率：1.147e-06；身份准确率：0.0000
+[LTCC][训练] 第 6/60 个 Epoch，第 500/596 个 batch；总 Loss：6.482086；Base Loss：6.482086；GPC Loss：0.000000；当前学习率：1.147e-06；身份准确率：0.0000
+[LTCC][训练] 第 6/60 个 Epoch，第 550/596 个 batch；总 Loss：6.662677；Base Loss：6.662677；GPC Loss：0.000000；当前学习率：1.147e-06；身份准确率：0.0000
+[LTCC][训练] 当前学习率：1.147e-06
+[LTCC][训练] Base Loss：6.780004；GPC Loss：0.004469；总 Loss：6.780451
+[LTCC][训练] GPC 激活 batch 数：138；总 batch 数：1192；GPC active rate：0.11577181
+[LTCC][训练] GPC selected contribution 数：148；same-clothes contribution 数：62；cross-clothes contribution 数：86
+[LTCC][训练] same-clothes fraction：0.41891892；cross-clothes fraction：0.58108108；PID coverage：47/77（0.61038961）
+[LTCC][训练] 当前 AMP scale：256.0；found_inf 数：0；跳过 optimizer step 数：0；nonfinite 事件数：0
+[LTCC][训练] 第 6/60 个 Epoch 完成；Epoch wall time：131.50 秒
+[LTCC][训练] 第 7/60 个 Epoch 开始
+[LTCC][训练] 第 7/60 个 Epoch，第 50/596 个 batch；总 Loss：7.032326；Base Loss：7.032326；GPC Loss：0.000000；当前学习率：1.208e-06；身份准确率：0.0000
+[LTCC][训练] 第 7/60 个 Epoch，第 100/596 个 batch；总 Loss：6.551950；Base Loss：6.551950；GPC Loss：0.000000；当前学习率：1.208e-06；身份准确率：0.0000
+[LTCC][训练] 第 7/60 个 Epoch，第 150/596 个 batch；总 Loss：6.727045；Base Loss：6.727045；GPC Loss：0.000000；当前学习率：1.208e-06；身份准确率：0.2500
+[LTCC][训练] 第 7/60 个 Epoch，第 200/596 个 batch；总 Loss：7.722368；Base Loss：7.722368；GPC Loss：0.000000；当前学习率：1.208e-06；身份准确率：0.0000
+[LTCC][训练] 第 7/60 个 Epoch，第 250/596 个 batch；总 Loss：6.163422；Base Loss：6.163422；GPC Loss：0.000000；当前学习率：1.208e-06；身份准确率：0.2500
+[LTCC][训练] 第 7/60 个 Epoch，第 300/596 个 batch；总 Loss：6.811612；Base Loss：6.811612；GPC Loss：0.000000；当前学习率：1.208e-06；身份准确率：0.0000
+[LTCC][训练] 第 7/60 个 Epoch，第 350/596 个 batch；总 Loss：6.213109；Base Loss：6.213109；GPC Loss：0.000000；当前学习率：1.208e-06；身份准确率：0.0000
+[LTCC][训练] 第 7/60 个 Epoch，第 400/596 个 batch；总 Loss：6.509760；Base Loss：6.509760；GPC Loss：0.000000；当前学习率：1.208e-06；身份准确率：0.0000
+[LTCC][训练] 第 7/60 个 Epoch，第 450/596 个 batch；总 Loss：6.637712；Base Loss：6.637712；GPC Loss：0.000000；当前学习率：1.208e-06；身份准确率：0.1250
+[LTCC][训练] 第 7/60 个 Epoch，第 500/596 个 batch；总 Loss：6.966216；Base Loss：6.966216；GPC Loss：0.000000；当前学习率：1.208e-06；身份准确率：0.2500
+[LTCC][训练] 第 7/60 个 Epoch，第 550/596 个 batch；总 Loss：6.928363；Base Loss：6.928363；GPC Loss：0.000000；当前学习率：1.208e-06；身份准确率：0.2500
+[LTCC][训练] 当前学习率：1.208e-06
+[LTCC][训练] Base Loss：6.709108；GPC Loss：0.003867；总 Loss：6.709494
+[LTCC][训练] GPC 激活 batch 数：133；总 batch 数：1192；GPC active rate：0.11157718
+[LTCC][训练] GPC selected contribution 数：142；same-clothes contribution 数：47；cross-clothes contribution 数：95
+[LTCC][训练] same-clothes fraction：0.33098592；cross-clothes fraction：0.66901408；PID coverage：47/77（0.61038961）
+[LTCC][训练] 当前 AMP scale：256.0；found_inf 数：0；跳过 optimizer step 数：0；nonfinite 事件数：0
+[LTCC][训练] 第 7/60 个 Epoch 完成；Epoch wall time：131.23 秒
+[LTCC][训练] 第 8/60 个 Epoch 开始
+[LTCC][训练] 第 8/60 个 Epoch，第 50/596 个 batch；总 Loss：6.865557；Base Loss：6.865557；GPC Loss：0.000000；当前学习率：1.269e-06；身份准确率：0.2500
+[LTCC][训练] 第 8/60 个 Epoch，第 100/596 个 batch；总 Loss：6.077066；Base Loss：6.077066；GPC Loss：0.000000；当前学习率：1.269e-06；身份准确率：0.0000
+[LTCC][训练] 第 8/60 个 Epoch，第 150/596 个 batch；总 Loss：6.887154；Base Loss：6.887154；GPC Loss：0.000000；当前学习率：1.269e-06；身份准确率：0.0000
+[LTCC][训练] 第 8/60 个 Epoch，第 200/596 个 batch；总 Loss：7.014745；Base Loss：7.014745；GPC Loss：0.000000；当前学习率：1.269e-06；身份准确率：0.0000
+[LTCC][训练] 第 8/60 个 Epoch，第 250/596 个 batch；总 Loss：7.094284；Base Loss：7.094284；GPC Loss：0.000000；当前学习率：1.269e-06；身份准确率：0.0000
+[LTCC][训练] 第 8/60 个 Epoch，第 300/596 个 batch；总 Loss：6.734479；Base Loss：6.734479；GPC Loss：0.000000；当前学习率：1.269e-06；身份准确率：0.0000
+[LTCC][训练] 第 8/60 个 Epoch，第 350/596 个 batch；总 Loss：6.841716；Base Loss：6.841716；GPC Loss：0.000000；当前学习率：1.269e-06；身份准确率：0.2500
+[LTCC][训练] 第 8/60 个 Epoch，第 400/596 个 batch；总 Loss：6.662926；Base Loss：6.662926；GPC Loss：0.000000；当前学习率：1.269e-06；身份准确率：0.2500
+[LTCC][训练] 第 8/60 个 Epoch，第 450/596 个 batch；总 Loss：6.672810；Base Loss：6.670022；GPC Loss：0.027885；当前学习率：1.269e-06；身份准确率：0.0000
+[LTCC][训练] 第 8/60 个 Epoch，第 500/596 个 batch；总 Loss：6.647838；Base Loss：6.647838；GPC Loss：0.000000；当前学习率：1.269e-06；身份准确率：0.0000
+[LTCC][训练] 第 8/60 个 Epoch，第 550/596 个 batch；总 Loss：6.273413；Base Loss：6.273413；GPC Loss：0.000000；当前学习率：1.269e-06；身份准确率：0.0000
+[LTCC][训练] 当前学习率：1.269e-06
+[LTCC][训练] Base Loss：6.669976；GPC Loss：0.003642；总 Loss：6.670340
+[LTCC][训练] GPC 激活 batch 数：135；总 batch 数：1192；GPC active rate：0.11325503
+[LTCC][训练] GPC selected contribution 数：145；same-clothes contribution 数：53；cross-clothes contribution 数：92
+[LTCC][训练] same-clothes fraction：0.36551724；cross-clothes fraction：0.63448276；PID coverage：53/77（0.68831169）
+[LTCC][训练] 当前 AMP scale：256.0；found_inf 数：0；跳过 optimizer step 数：0；nonfinite 事件数：0
+[LTCC][训练] 第 8/60 个 Epoch 完成；Epoch wall time：130.76 秒
+[LTCC][训练] 第 9/60 个 Epoch 开始
+[LTCC][训练] 第 9/60 个 Epoch，第 50/596 个 batch；总 Loss：6.200146；Base Loss：6.200146；GPC Loss：0.000000；当前学习率：1.330e-06；身份准确率：0.0000
+[LTCC][训练] 第 9/60 个 Epoch，第 100/596 个 batch；总 Loss：6.299451；Base Loss：6.299451；GPC Loss：0.000000；当前学习率：1.330e-06；身份准确率：0.0000
+[LTCC][训练] 第 9/60 个 Epoch，第 150/596 个 batch；总 Loss：6.618119；Base Loss：6.616110；GPC Loss：0.020092；当前学习率：1.330e-06；身份准确率：0.2500
+[LTCC][训练] 第 9/60 个 Epoch，第 200/596 个 batch；总 Loss：6.660823；Base Loss：6.660823；GPC Loss：0.000000；当前学习率：1.330e-06；身份准确率：0.0000
+[LTCC][训练] 第 9/60 个 Epoch，第 250/596 个 batch；总 Loss：6.849360；Base Loss：6.849360；GPC Loss：0.000000；当前学习率：1.330e-06；身份准确率：0.0000
+[LTCC][训练] 第 9/60 个 Epoch，第 300/596 个 batch；总 Loss：6.558259；Base Loss：6.558259；GPC Loss：0.000000；当前学习率：1.330e-06；身份准确率：0.0000
+[LTCC][训练] 第 9/60 个 Epoch，第 350/596 个 batch；总 Loss：6.425174；Base Loss：6.425174；GPC Loss：0.000000；当前学习率：1.330e-06；身份准确率：0.0000
+[LTCC][训练] 第 9/60 个 Epoch，第 400/596 个 batch；总 Loss：7.088469；Base Loss：7.088469；GPC Loss：0.000000；当前学习率：1.330e-06；身份准确率：0.0000
+[LTCC][训练] 第 9/60 个 Epoch，第 450/596 个 batch；总 Loss：6.318415；Base Loss：6.318415；GPC Loss：0.000000；当前学习率：1.330e-06；身份准确率：0.2500
+[LTCC][训练] 第 9/60 个 Epoch，第 500/596 个 batch；总 Loss：6.752160；Base Loss：6.752160；GPC Loss：0.000000；当前学习率：1.330e-06；身份准确率：0.2500
+[LTCC][训练] 第 9/60 个 Epoch，第 550/596 个 batch；总 Loss：6.761455；Base Loss：6.761455；GPC Loss：0.000000；当前学习率：1.330e-06；身份准确率：0.0000
+[LTCC][训练] 当前学习率：1.330e-06
+[LTCC][训练] Base Loss：6.629413；GPC Loss：0.003995；总 Loss：6.629813
+[LTCC][训练] GPC 激活 batch 数：137；总 batch 数：1192；GPC active rate：0.11493289
+[LTCC][训练] GPC selected contribution 数：148；same-clothes contribution 数：50；cross-clothes contribution 数：98
+[LTCC][训练] same-clothes fraction：0.33783784；cross-clothes fraction：0.66216216；PID coverage：51/77（0.66233766）
+[LTCC][训练] 当前 AMP scale：512.0；found_inf 数：0；跳过 optimizer step 数：0；nonfinite 事件数：0
+[LTCC][训练] 第 9/60 个 Epoch 完成；Epoch wall time：131.77 秒
+[LTCC][训练] 第 10/60 个 Epoch 开始
+[LTCC][训练] 第 10/60 个 Epoch，第 50/596 个 batch；总 Loss：6.521334；Base Loss：6.521334；GPC Loss：0.000000；当前学习率：1.391e-06；身份准确率：0.0000
+[LTCC][训练] 第 10/60 个 Epoch，第 100/596 个 batch；总 Loss：5.696277；Base Loss：5.696277；GPC Loss：0.000000；当前学习率：1.391e-06；身份准确率：0.5000
+[LTCC][训练] 第 10/60 个 Epoch，第 150/596 个 batch；总 Loss：5.604342；Base Loss：5.604342；GPC Loss：0.000000；当前学习率：1.391e-06；身份准确率：0.7500
+[LTCC][训练] 第 10/60 个 Epoch，第 200/596 个 batch；总 Loss：6.915646；Base Loss：6.915646；GPC Loss：0.000000；当前学习率：1.391e-06；身份准确率：0.0000
+[LTCC][训练] 第 10/60 个 Epoch，第 250/596 个 batch；总 Loss：6.361969；Base Loss：6.361969；GPC Loss：0.000000；当前学习率：1.391e-06；身份准确率：0.0000
+[LTCC][训练] 第 10/60 个 Epoch，第 300/596 个 batch；总 Loss：6.356430；Base Loss：6.356430；GPC Loss：0.000000；当前学习率：1.391e-06；身份准确率：0.1250
+[LTCC][训练] 第 10/60 个 Epoch，第 350/596 个 batch；总 Loss：5.915386；Base Loss：5.915386；GPC Loss：0.000000；当前学习率：1.391e-06；身份准确率：0.5000
+[LTCC][训练] 第 10/60 个 Epoch，第 400/596 个 batch；总 Loss：6.195920；Base Loss：6.192988；GPC Loss：0.029317；当前学习率：1.391e-06；身份准确率：0.5000
+[LTCC][训练] 第 10/60 个 Epoch，第 450/596 个 batch；总 Loss：6.457218；Base Loss：6.457218；GPC Loss：0.000000；当前学习率：1.391e-06；身份准确率：0.0000
+[LTCC][训练] 第 10/60 个 Epoch，第 500/596 个 batch；总 Loss：7.316811；Base Loss：7.316811；GPC Loss：0.000000；当前学习率：1.391e-06；身份准确率：0.0000
+[LTCC][训练] 第 10/60 个 Epoch，第 550/596 个 batch；总 Loss：6.188338；Base Loss：6.183744；GPC Loss：0.045942；当前学习率：1.391e-06；身份准确率：0.2500
+[LTCC][训练] 当前学习率：1.391e-06
+[LTCC][训练] Base Loss：6.575227；GPC Loss：0.004094；总 Loss：6.575636
+[LTCC][训练] GPC 激活 batch 数：139；总 batch 数：1192；GPC active rate：0.11661074
+[LTCC][训练] GPC selected contribution 数：150；same-clothes contribution 数：61；cross-clothes contribution 数：89
+[LTCC][训练] same-clothes fraction：0.40666667；cross-clothes fraction：0.59333333；PID coverage：53/77（0.68831169）
+[LTCC][训练] 当前 AMP scale：512.0；found_inf 数：0；跳过 optimizer step 数：0；nonfinite 事件数：0
+[LTCC][训练] 第 10/60 个 Epoch 完成；Epoch wall time：132.09 秒
+[LTCC][训练] 第 11/60 个 Epoch 开始
+[LTCC][训练] 第 11/60 个 Epoch，第 50/596 个 batch；总 Loss：6.516585；Base Loss：6.516585；GPC Loss：0.000000；当前学习率：1.452e-06；身份准确率：0.0000
+[LTCC][训练] 第 11/60 个 Epoch，第 100/596 个 batch；总 Loss：6.603079；Base Loss：6.603079；GPC Loss：0.000000；当前学习率：1.452e-06；身份准确率：0.0000
+[LTCC][训练] 第 11/60 个 Epoch，第 150/596 个 batch；总 Loss：6.613080；Base Loss：6.613080；GPC Loss：0.000000；当前学习率：1.452e-06；身份准确率：0.0000
+[LTCC][训练] 第 11/60 个 Epoch，第 200/596 个 batch；总 Loss：6.075786；Base Loss：6.075786；GPC Loss：0.000000；当前学习率：1.452e-06；身份准确率：0.0000
+[LTCC][训练] 第 11/60 个 Epoch，第 250/596 个 batch；总 Loss：6.311433；Base Loss：6.311433；GPC Loss：0.000000；当前学习率：1.452e-06；身份准确率：0.2500
+[LTCC][训练] 第 11/60 个 Epoch，第 300/596 个 batch；总 Loss：6.183042；Base Loss：6.178071；GPC Loss：0.049711；当前学习率：1.452e-06；身份准确率：0.2500
+[LTCC][训练] 第 11/60 个 Epoch，第 350/596 个 batch；总 Loss：6.942950；Base Loss：6.942950；GPC Loss：0.000000；当前学习率：1.452e-06；身份准确率：0.2500
+[LTCC][训练] 第 11/60 个 Epoch，第 400/596 个 batch；总 Loss：6.694230；Base Loss：6.694230；GPC Loss：0.000000；当前学习率：1.452e-06；身份准确率：0.0000
+[LTCC][训练] 第 11/60 个 Epoch，第 450/596 个 batch；总 Loss：7.120670；Base Loss：7.120670；GPC Loss：0.000000；当前学习率：1.452e-06；身份准确率：0.0000
+[LTCC][训练] 第 11/60 个 Epoch，第 500/596 个 batch；总 Loss：6.590285；Base Loss：6.590285；GPC Loss：0.000000；当前学习率：1.452e-06；身份准确率：0.0000
+[LTCC][训练] 第 11/60 个 Epoch，第 550/596 个 batch；总 Loss：7.225550；Base Loss：7.225550；GPC Loss：0.000000；当前学习率：1.452e-06；身份准确率：0.0000
+[LTCC][训练] 当前学习率：1.452e-06
+[LTCC][训练] Base Loss：6.507387；GPC Loss：0.003902；总 Loss：6.507777
+[LTCC][训练] GPC 激活 batch 数：129；总 batch 数：1192；GPC active rate：0.10822148
+[LTCC][训练] GPC selected contribution 数：138；same-clothes contribution 数：56；cross-clothes contribution 数：82
+[LTCC][训练] same-clothes fraction：0.40579710；cross-clothes fraction：0.59420290；PID coverage：53/77（0.68831169）
+[LTCC][训练] 当前 AMP scale：512.0；found_inf 数：0；跳过 optimizer step 数：0；nonfinite 事件数：0
+[LTCC][训练] 第 11/60 个 Epoch 完成；Epoch wall time：133.05 秒
+[LTCC][训练] 第 12/60 个 Epoch 开始
+[LTCC][训练] 第 12/60 个 Epoch，第 50/596 个 batch；总 Loss：5.947104；Base Loss：5.947104；GPC Loss：0.000000；当前学习率：1.512e-06；身份准确率：0.5000
+[LTCC][训练] 第 12/60 个 Epoch，第 100/596 个 batch；总 Loss：5.802572；Base Loss：5.802572；GPC Loss：0.000000；当前学习率：1.512e-06；身份准确率：0.5000
+[LTCC][训练] 第 12/60 个 Epoch，第 150/596 个 batch；总 Loss：6.456959；Base Loss：6.456959；GPC Loss：0.000000；当前学习率：1.512e-06；身份准确率：0.0000
+[LTCC][训练] 第 12/60 个 Epoch，第 200/596 个 batch；总 Loss：6.663281；Base Loss：6.663281；GPC Loss：0.000000；当前学习率：1.512e-06；身份准确率：0.0000
+[LTCC][训练] 第 12/60 个 Epoch，第 250/596 个 batch；总 Loss：7.212810；Base Loss：7.212810；GPC Loss：0.000000；当前学习率：1.512e-06；身份准确率：0.0000
+[LTCC][训练] 第 12/60 个 Epoch，第 300/596 个 batch；总 Loss：5.929078；Base Loss：5.925258；GPC Loss：0.038198；当前学习率：1.512e-06；身份准确率：0.2500
+[LTCC][训练] 第 12/60 个 Epoch，第 350/596 个 batch；总 Loss：6.725065；Base Loss：6.725065；GPC Loss：0.000000；当前学习率：1.512e-06；身份准确率：0.0000
+[LTCC][训练] 第 12/60 个 Epoch，第 400/596 个 batch；总 Loss：6.180747；Base Loss：6.180747；GPC Loss：0.000000；当前学习率：1.512e-06；身份准确率：0.2500
+[LTCC][AMP审计] 第 12 个 Epoch 第 440 个 batch 发生 found_inf；本次 optimizer step 被跳过；当前 scale：1024.0
+[LTCC][训练] 第 12/60 个 Epoch，第 450/596 个 batch；总 Loss：6.391603；Base Loss：6.386049；GPC Loss：0.055541；当前学习率：1.512e-06；身份准确率：0.2500
+[LTCC][训练] 第 12/60 个 Epoch，第 500/596 个 batch；总 Loss：6.828153；Base Loss：6.828153；GPC Loss：0.000000；当前学习率：1.512e-06；身份准确率：0.0000
+[LTCC][训练] 第 12/60 个 Epoch，第 550/596 个 batch；总 Loss：6.687060；Base Loss：6.687060；GPC Loss：0.000000；当前学习率：1.512e-06；身份准确率：0.0000
+[LTCC][训练] 当前学习率：1.512e-06
+[LTCC][训练] Base Loss：6.472872；GPC Loss：0.004466；总 Loss：6.473319
+[LTCC][训练] GPC 激活 batch 数：139；总 batch 数：1192；GPC active rate：0.11661074
+[LTCC][训练] GPC selected contribution 数：150；same-clothes contribution 数：55；cross-clothes contribution 数：95
+[LTCC][训练] same-clothes fraction：0.36666667；cross-clothes fraction：0.63333333；PID coverage：48/77（0.62337662）
+[LTCC][训练] 当前 AMP scale：512.0；found_inf 数：2；跳过 optimizer step 数：2；nonfinite 事件数：2
+[LTCC][训练] 第 12/60 个 Epoch 完成；Epoch wall time：130.95 秒
+[LTCC][训练] 第 13/60 个 Epoch 开始
+[LTCC][训练] 第 13/60 个 Epoch，第 50/596 个 batch；总 Loss：6.684105；Base Loss：6.681873；GPC Loss：0.022318；当前学习率：1.573e-06；身份准确率：0.1250
+[LTCC][训练] 第 13/60 个 Epoch，第 100/596 个 batch；总 Loss：5.599714；Base Loss：5.599714；GPC Loss：0.000000；当前学习率：1.573e-06；身份准确率：0.5000
+[LTCC][训练] 第 13/60 个 Epoch，第 150/596 个 batch；总 Loss：6.588058；Base Loss：6.588058；GPC Loss：0.000000；当前学习率：1.573e-06；身份准确率：0.0000
+[LTCC][训练] 第 13/60 个 Epoch，第 200/596 个 batch；总 Loss：6.398582；Base Loss：6.398582；GPC Loss：0.000000；当前学习率：1.573e-06；身份准确率：0.0000
+[LTCC][训练] 第 13/60 个 Epoch，第 250/596 个 batch；总 Loss：6.685703；Base Loss：6.685703；GPC Loss：0.000000；当前学习率：1.573e-06；身份准确率：0.0000
+[LTCC][训练] 第 13/60 个 Epoch，第 300/596 个 batch；总 Loss：6.076292；Base Loss：6.076292；GPC Loss：0.000000；当前学习率：1.573e-06；身份准确率：0.2500
+[LTCC][训练] 第 13/60 个 Epoch，第 350/596 个 batch；总 Loss：6.876088；Base Loss：6.876088；GPC Loss：0.000000；当前学习率：1.573e-06；身份准确率：0.0000
+[LTCC][训练] 第 13/60 个 Epoch，第 400/596 个 batch；总 Loss：6.836658；Base Loss：6.836658；GPC Loss：0.000000；当前学习率：1.573e-06；身份准确率：0.0000
+[LTCC][训练] 第 13/60 个 Epoch，第 450/596 个 batch；总 Loss：6.140001；Base Loss：6.140001；GPC Loss：0.000000；当前学习率：1.573e-06；身份准确率：0.2500
+[LTCC][训练] 第 13/60 个 Epoch，第 500/596 个 batch；总 Loss：6.141494；Base Loss：6.141494；GPC Loss：0.000000；当前学习率：1.573e-06；身份准确率：0.2500
+[LTCC][训练] 第 13/60 个 Epoch，第 550/596 个 batch；总 Loss：6.450089；Base Loss：6.450089；GPC Loss：0.000000；当前学习率：1.573e-06；身份准确率：0.0000
+[LTCC][训练] 当前学习率：1.573e-06
+[LTCC][训练] Base Loss：6.420914；GPC Loss：0.004695；总 Loss：6.421383
+[LTCC][训练] GPC 激活 batch 数：138；总 batch 数：1192；GPC active rate：0.11577181
+[LTCC][训练] GPC selected contribution 数：150；same-clothes contribution 数：57；cross-clothes contribution 数：93
+[LTCC][训练] same-clothes fraction：0.38000000；cross-clothes fraction：0.62000000；PID coverage：53/77（0.68831169）
+[LTCC][训练] 当前 AMP scale：512.0；found_inf 数：0；跳过 optimizer step 数：0；nonfinite 事件数：0
+[LTCC][训练] 第 13/60 个 Epoch 完成；Epoch wall time：131.51 秒
+[LTCC][训练] 第 14/60 个 Epoch 开始
+[LTCC][训练] 第 14/60 个 Epoch，第 50/596 个 batch；总 Loss：6.229032；Base Loss：6.229032；GPC Loss：0.000000；当前学习率：1.634e-06；身份准确率：0.0000
+[LTCC][训练] 第 14/60 个 Epoch，第 100/596 个 batch；总 Loss：6.188285；Base Loss：6.184370；GPC Loss：0.039151；当前学习率：1.634e-06；身份准确率：0.0000
+[LTCC][训练] 第 14/60 个 Epoch，第 150/596 个 batch；总 Loss：6.538160；Base Loss：6.538160；GPC Loss：0.000000；当前学习率：1.634e-06；身份准确率：0.5000
+[LTCC][训练] 第 14/60 个 Epoch，第 200/596 个 batch；总 Loss：6.973965；Base Loss：6.973965；GPC Loss：0.000000；当前学习率：1.634e-06；身份准确率：0.0000
+[LTCC][训练] 第 14/60 个 Epoch，第 250/596 个 batch；总 Loss：6.502515；Base Loss：6.499142；GPC Loss：0.033737；当前学习率：1.634e-06；身份准确率：0.0000
+[LTCC][AMP审计] 第 14 个 Epoch 第 293 个 batch 发生 found_inf；本次 optimizer step 被跳过；当前 scale：512.0
+[LTCC][训练] 第 14/60 个 Epoch，第 300/596 个 batch；总 Loss：6.844770；Base Loss：6.844770；GPC Loss：0.000000；当前学习率：1.634e-06；身份准确率：0.0000
+[LTCC][训练] 第 14/60 个 Epoch，第 350/596 个 batch；总 Loss：7.050777；Base Loss：7.050777；GPC Loss：0.000000；当前学习率：1.634e-06；身份准确率：0.0000
+[LTCC][训练] 第 14/60 个 Epoch，第 400/596 个 batch；总 Loss：6.541075；Base Loss：6.541075；GPC Loss：0.000000；当前学习率：1.634e-06；身份准确率：0.2500
+[LTCC][训练] 第 14/60 个 Epoch，第 450/596 个 batch；总 Loss：6.450463；Base Loss：6.450463；GPC Loss：0.000000；当前学习率：1.634e-06；身份准确率：0.0000
+[LTCC][训练] 第 14/60 个 Epoch，第 500/596 个 batch；总 Loss：6.316369；Base Loss：6.316369；GPC Loss：0.000000；当前学习率：1.634e-06；身份准确率：0.0000
+[LTCC][训练] 第 14/60 个 Epoch，第 550/596 个 batch；总 Loss：6.597373；Base Loss：6.591654；GPC Loss：0.057185；当前学习率：1.634e-06；身份准确率：0.0000
+[LTCC][训练] 当前学习率：1.634e-06
+[LTCC][训练] Base Loss：6.382756；GPC Loss：0.004903；总 Loss：6.383246
+[LTCC][训练] GPC 激活 batch 数：141；总 batch 数：1192；GPC active rate：0.11828859
+[LTCC][训练] GPC selected contribution 数：155；same-clothes contribution 数：60；cross-clothes contribution 数：95
+[LTCC][训练] same-clothes fraction：0.38709677；cross-clothes fraction：0.61290323；PID coverage：52/77（0.67532468）
+[LTCC][训练] 当前 AMP scale：256.0；found_inf 数：2；跳过 optimizer step 数：2；nonfinite 事件数：2
+[LTCC][训练] 第 14/60 个 Epoch 完成；Epoch wall time：132.34 秒
+[LTCC][训练] 第 15/60 个 Epoch 开始
+[LTCC][训练] 第 15/60 个 Epoch，第 50/596 个 batch；总 Loss：6.461304；Base Loss：6.455839；GPC Loss：0.054649；当前学习率：1.695e-06；身份准确率：0.0000
+[LTCC][训练] 第 15/60 个 Epoch，第 100/596 个 batch；总 Loss：5.858383；Base Loss：5.858383；GPC Loss：0.000000；当前学习率：1.695e-06；身份准确率：0.2500
+[LTCC][训练] 第 15/60 个 Epoch，第 150/596 个 batch；总 Loss：6.402171；Base Loss：6.396902；GPC Loss：0.052691；当前学习率：1.695e-06；身份准确率：0.2500
+[LTCC][训练] 第 15/60 个 Epoch，第 200/596 个 batch；总 Loss：6.265782；Base Loss：6.265782；GPC Loss：0.000000；当前学习率：1.695e-06；身份准确率：0.0000
+[LTCC][训练] 第 15/60 个 Epoch，第 250/596 个 batch；总 Loss：6.589778；Base Loss：6.589778；GPC Loss：0.000000；当前学习率：1.695e-06；身份准确率：0.0000
+[LTCC][训练] 第 15/60 个 Epoch，第 300/596 个 batch；总 Loss：6.332576；Base Loss：6.332576；GPC Loss：0.000000；当前学习率：1.695e-06；身份准确率：0.2500
+[LTCC][训练] 第 15/60 个 Epoch，第 350/596 个 batch；总 Loss：6.228928；Base Loss：6.228928；GPC Loss：0.000000；当前学习率：1.695e-06；身份准确率：0.0000
+[LTCC][训练] 第 15/60 个 Epoch，第 400/596 个 batch；总 Loss：6.284261；Base Loss：6.284261；GPC Loss：0.000000；当前学习率：1.695e-06；身份准确率：0.0000
+[LTCC][训练] 第 15/60 个 Epoch，第 450/596 个 batch；总 Loss：7.117002；Base Loss：7.117002；GPC Loss：0.000000；当前学习率：1.695e-06；身份准确率：0.2500
+[LTCC][训练] 第 15/60 个 Epoch，第 500/596 个 batch；总 Loss：7.116142；Base Loss：7.116142；GPC Loss：0.000000；当前学习率：1.695e-06；身份准确率：0.0000
+[LTCC][训练] 第 15/60 个 Epoch，第 550/596 个 batch；总 Loss：6.147243；Base Loss：6.147243；GPC Loss：0.000000；当前学习率：1.695e-06；身份准确率：0.2500
+[LTCC][训练] 当前学习率：1.695e-06
+[LTCC][训练] Base Loss：6.356441；GPC Loss：0.005560；总 Loss：6.356997
+[LTCC][训练] GPC 激活 batch 数：134；总 batch 数：1192；GPC active rate：0.11241611
+[LTCC][训练] GPC selected contribution 数：139；same-clothes contribution 数：48；cross-clothes contribution 数：91
+[LTCC][训练] same-clothes fraction：0.34532374；cross-clothes fraction：0.65467626；PID coverage：47/77（0.61038961）
+[LTCC][训练] 当前 AMP scale：256.0；found_inf 数：0；跳过 optimizer step 数：0；nonfinite 事件数：0
+[LTCC][训练] 第 15/60 个 Epoch 完成；Epoch wall time：131.60 秒
+[LTCC][训练] 第 16/60 个 Epoch 开始
+[LTCC][训练] 第 16/60 个 Epoch，第 50/596 个 batch；总 Loss：6.485512；Base Loss：6.485512；GPC Loss：0.000000；当前学习率：1.756e-06；身份准确率：0.0000
+[LTCC][训练] 第 16/60 个 Epoch，第 100/596 个 batch；总 Loss：5.993208；Base Loss：5.993208；GPC Loss：0.000000；当前学习率：1.756e-06；身份准确率：0.2500
+[LTCC][训练] 第 16/60 个 Epoch，第 150/596 个 batch；总 Loss：6.101815；Base Loss：6.101815；GPC Loss：0.000000；当前学习率：1.756e-06；身份准确率：0.0000
+[LTCC][训练] 第 16/60 个 Epoch，第 200/596 个 batch；总 Loss：7.023015；Base Loss：7.023015；GPC Loss：0.000000；当前学习率：1.756e-06；身份准确率：0.0000
+[LTCC][训练] 第 16/60 个 Epoch，第 250/596 个 batch；总 Loss：6.769964；Base Loss：6.769964；GPC Loss：0.000000；当前学习率：1.756e-06；身份准确率：0.2500
+[LTCC][训练] 第 16/60 个 Epoch，第 300/596 个 batch；总 Loss：5.506665；Base Loss：5.506665；GPC Loss：0.000000；当前学习率：1.756e-06；身份准确率：0.2500
+[LTCC][训练] 第 16/60 个 Epoch，第 350/596 个 batch；总 Loss：6.261834；Base Loss：6.261834；GPC Loss：0.000000；当前学习率：1.756e-06；身份准确率：0.0000
+[LTCC][训练] 第 16/60 个 Epoch，第 400/596 个 batch；总 Loss：6.130671；Base Loss：6.130671；GPC Loss：0.000000；当前学习率：1.756e-06；身份准确率：0.2500
+[LTCC][训练] 第 16/60 个 Epoch，第 450/596 个 batch；总 Loss：5.726043；Base Loss：5.726043；GPC Loss：0.000000；当前学习率：1.756e-06；身份准确率：0.2500
+[LTCC][训练] 第 16/60 个 Epoch，第 500/596 个 batch；总 Loss：5.914814；Base Loss：5.914814；GPC Loss：0.000000；当前学习率：1.756e-06；身份准确率：0.2500
+[LTCC][训练] 第 16/60 个 Epoch，第 550/596 个 batch；总 Loss：6.656377；Base Loss：6.651111；GPC Loss：0.052664；当前学习率：1.756e-06；身份准确率：0.0000
+[LTCC][训练] 当前学习率：1.756e-06
+[LTCC][训练] Base Loss：6.328317；GPC Loss：0.006057；总 Loss：6.328923
+[LTCC][训练] GPC 激活 batch 数：132；总 batch 数：1192；GPC active rate：0.11073826
+[LTCC][训练] GPC selected contribution 数：147；same-clothes contribution 数：48；cross-clothes contribution 数：99
+[LTCC][训练] same-clothes fraction：0.32653061；cross-clothes fraction：0.67346939；PID coverage：48/77（0.62337662）
+[LTCC][训练] 当前 AMP scale：256.0；found_inf 数：0；跳过 optimizer step 数：0；nonfinite 事件数：0
+[LTCC][训练] 第 16/60 个 Epoch 完成；Epoch wall time：131.88 秒
+[LTCC][训练] 第 17/60 个 Epoch 开始
+[LTCC][训练] 第 17/60 个 Epoch，第 50/596 个 batch；总 Loss：5.908035；Base Loss：5.908035；GPC Loss：0.000000；当前学习率：1.817e-06；身份准确率：0.0000
+[LTCC][训练] 第 17/60 个 Epoch，第 100/596 个 batch；总 Loss：6.850257；Base Loss：6.850257；GPC Loss：0.000000；当前学习率：1.817e-06；身份准确率：0.2500
+[LTCC][训练] 第 17/60 个 Epoch，第 150/596 个 batch；总 Loss：6.359383；Base Loss：6.359383；GPC Loss：0.000000；当前学习率：1.817e-06；身份准确率：0.5000
+[LTCC][训练] 第 17/60 个 Epoch，第 200/596 个 batch；总 Loss：6.984262；Base Loss：6.984262；GPC Loss：0.000000；当前学习率：1.817e-06；身份准确率：0.0000
+[LTCC][训练] 第 17/60 个 Epoch，第 250/596 个 batch；总 Loss：6.276404；Base Loss：6.276404；GPC Loss：0.000000；当前学习率：1.817e-06；身份准确率：0.0000
+[LTCC][训练] 第 17/60 个 Epoch，第 300/596 个 batch；总 Loss：6.214802；Base Loss：6.214802；GPC Loss：0.000000；当前学习率：1.817e-06；身份准确率：0.0000
+[LTCC][训练] 第 17/60 个 Epoch，第 350/596 个 batch；总 Loss：6.573133；Base Loss：6.573133；GPC Loss：0.000000；当前学习率：1.817e-06；身份准确率：0.0000
+[LTCC][训练] 第 17/60 个 Epoch，第 400/596 个 batch；总 Loss：6.290510；Base Loss：6.290510；GPC Loss：0.000000；当前学习率：1.817e-06；身份准确率：0.0000
+[LTCC][训练] 第 17/60 个 Epoch，第 450/596 个 batch；总 Loss：7.192205；Base Loss：7.192205；GPC Loss：0.000000；当前学习率：1.817e-06；身份准确率：0.0000
+[LTCC][训练] 第 17/60 个 Epoch，第 500/596 个 batch；总 Loss：5.979413；Base Loss：5.970263；GPC Loss：0.091503；当前学习率：1.817e-06；身份准确率：0.2500
+[LTCC][训练] 第 17/60 个 Epoch，第 550/596 个 batch；总 Loss：6.953349；Base Loss：6.953349；GPC Loss：0.000000；当前学习率：1.817e-06；身份准确率：0.0000
+[LTCC][AMP审计] 第 17 个 Epoch 第 569 个 batch 发生 found_inf；本次 optimizer step 被跳过；当前 scale：512.0
+[LTCC][训练] 当前学习率：1.817e-06
+[LTCC][训练] Base Loss：6.288305；GPC Loss：0.006844；总 Loss：6.288989
+[LTCC][训练] GPC 激活 batch 数：135；总 batch 数：1192；GPC active rate：0.11325503
+[LTCC][训练] GPC selected contribution 数：141；same-clothes contribution 数：57；cross-clothes contribution 数：84
+[LTCC][训练] same-clothes fraction：0.40425532；cross-clothes fraction：0.59574468；PID coverage：49/77（0.63636364）
+[LTCC][训练] 当前 AMP scale：256.0；found_inf 数：2；跳过 optimizer step 数：2；nonfinite 事件数：2
+[LTCC][训练] 第 17/60 个 Epoch 完成；Epoch wall time：130.87 秒
+[LTCC][训练] 第 18/60 个 Epoch 开始
+[LTCC][训练] 第 18/60 个 Epoch，第 50/596 个 batch；总 Loss：7.188627；Base Loss：7.188627；GPC Loss：0.000000；当前学习率：1.878e-06；身份准确率：0.0000
+[LTCC][训练] 第 18/60 个 Epoch，第 100/596 个 batch；总 Loss：6.168195；Base Loss：6.168195；GPC Loss：0.000000；当前学习率：1.878e-06；身份准确率：0.2500
+[LTCC][训练] 第 18/60 个 Epoch，第 150/596 个 batch；总 Loss：5.715380；Base Loss：5.715380；GPC Loss：0.000000；当前学习率：1.878e-06；身份准确率：0.2500
+[LTCC][训练] 第 18/60 个 Epoch，第 200/596 个 batch；总 Loss：6.103097；Base Loss：6.103097；GPC Loss：0.000000；当前学习率：1.878e-06；身份准确率：0.0000
+[LTCC][训练] 第 18/60 个 Epoch，第 250/596 个 batch；总 Loss：6.128786；Base Loss：6.128786；GPC Loss：0.000000；当前学习率：1.878e-06；身份准确率：0.2500
+[LTCC][训练] 第 18/60 个 Epoch，第 300/596 个 batch；总 Loss：6.492722；Base Loss：6.492722；GPC Loss：0.000000；当前学习率：1.878e-06；身份准确率：0.2500
+[LTCC][训练] 第 18/60 个 Epoch，第 350/596 个 batch；总 Loss：5.981749；Base Loss：5.981749；GPC Loss：0.000000；当前学习率：1.878e-06；身份准确率：0.2500
+[LTCC][训练] 第 18/60 个 Epoch，第 400/596 个 batch；总 Loss：6.446204；Base Loss：6.446204；GPC Loss：0.000000；当前学习率：1.878e-06；身份准确率：0.0000
+[LTCC][训练] 第 18/60 个 Epoch，第 450/596 个 batch；总 Loss：6.125379；Base Loss：6.125379；GPC Loss：0.000000；当前学习率：1.878e-06；身份准确率：0.2500
+[LTCC][训练] 第 18/60 个 Epoch，第 500/596 个 batch；总 Loss：7.266101；Base Loss：7.266101；GPC Loss：0.000000；当前学习率：1.878e-06；身份准确率：0.0000
+[LTCC][训练] 第 18/60 个 Epoch，第 550/596 个 batch；总 Loss：5.728958；Base Loss：5.728958；GPC Loss：0.000000；当前学习率：1.878e-06；身份准确率：0.2500
+[LTCC][训练] 当前学习率：1.878e-06
+[LTCC][训练] Base Loss：6.263921；GPC Loss：0.008202；总 Loss：6.264741
+[LTCC][训练] GPC 激活 batch 数：141；总 batch 数：1192；GPC active rate：0.11828859
+[LTCC][训练] GPC selected contribution 数：154；same-clothes contribution 数：57；cross-clothes contribution 数：97
+[LTCC][训练] same-clothes fraction：0.37012987；cross-clothes fraction：0.62987013；PID coverage：53/77（0.68831169）
+[LTCC][训练] 当前 AMP scale：256.0；found_inf 数：0；跳过 optimizer step 数：0；nonfinite 事件数：0
+[LTCC][训练] 第 18/60 个 Epoch 完成；Epoch wall time：131.50 秒
+[LTCC][训练] 第 19/60 个 Epoch 开始
+[LTCC][训练] 第 19/60 个 Epoch，第 50/596 个 batch；总 Loss：5.762613；Base Loss：5.762613；GPC Loss：0.000000；当前学习率：1.939e-06；身份准确率：0.0000
+[LTCC][训练] 第 19/60 个 Epoch，第 100/596 个 batch；总 Loss：6.376825；Base Loss：6.370855；GPC Loss：0.059702；当前学习率：1.939e-06；身份准确率：0.0000
+[LTCC][训练] 第 19/60 个 Epoch，第 150/596 个 batch；总 Loss：6.053622；Base Loss：6.053622；GPC Loss：0.000000；当前学习率：1.939e-06；身份准确率：0.0000
+[LTCC][训练] 第 19/60 个 Epoch，第 200/596 个 batch；总 Loss：5.666269；Base Loss：5.666269；GPC Loss：0.000000；当前学习率：1.939e-06；身份准确率：0.2500
+[LTCC][训练] 第 19/60 个 Epoch，第 250/596 个 batch；总 Loss：6.118881；Base Loss：6.108931；GPC Loss：0.099502；当前学习率：1.939e-06；身份准确率：0.0000
+[LTCC][训练] 第 19/60 个 Epoch，第 300/596 个 batch；总 Loss：6.373652；Base Loss：6.373652；GPC Loss：0.000000；当前学习率：1.939e-06；身份准确率：0.0000
+[LTCC][训练] 第 19/60 个 Epoch，第 350/596 个 batch；总 Loss：6.298035；Base Loss：6.298035；GPC Loss：0.000000；当前学习率：1.939e-06；身份准确率：0.0000
+[LTCC][训练] 第 19/60 个 Epoch，第 400/596 个 batch；总 Loss：6.060552；Base Loss：6.060552；GPC Loss：0.000000；当前学习率：1.939e-06；身份准确率：0.2500
+[LTCC][训练] 第 19/60 个 Epoch，第 450/596 个 batch；总 Loss：6.498719；Base Loss：6.498719；GPC Loss：0.000000；当前学习率：1.939e-06；身份准确率：0.0000
+[LTCC][训练] 第 19/60 个 Epoch，第 500/596 个 batch；总 Loss：5.918755；Base Loss：5.918755；GPC Loss：0.000000；当前学习率：1.939e-06；身份准确率：0.0000
+[LTCC][训练] 第 19/60 个 Epoch，第 550/596 个 batch；总 Loss：6.841388；Base Loss：6.841388；GPC Loss：0.000000；当前学习率：1.939e-06；身份准确率：0.0000
+[LTCC][训练] 当前学习率：1.939e-06
+[LTCC][训练] Base Loss：6.221568；GPC Loss：0.008466；总 Loss：6.222414
+[LTCC][训练] GPC 激活 batch 数：132；总 batch 数：1192；GPC active rate：0.11073826
+[LTCC][训练] GPC selected contribution 数：144；same-clothes contribution 数：51；cross-clothes contribution 数：93
+[LTCC][训练] same-clothes fraction：0.35416667；cross-clothes fraction：0.64583333；PID coverage：52/77（0.67532468）
+[LTCC][训练] 当前 AMP scale：256.0；found_inf 数：0；跳过 optimizer step 数：0；nonfinite 事件数：0
+[LTCC][训练] 第 19/60 个 Epoch 完成；Epoch wall time：131.71 秒
+[LTCC][训练] 第 20/60 个 Epoch 开始
+[LTCC][训练] 第 20/60 个 Epoch，第 50/596 个 batch；总 Loss：7.253067；Base Loss：7.253067；GPC Loss：0.000000；当前学习率：1.550e-06；身份准确率：0.0000
+[LTCC][训练] 第 20/60 个 Epoch，第 100/596 个 batch；总 Loss：5.639230；Base Loss：5.639230；GPC Loss：0.000000；当前学习率：1.550e-06；身份准确率：0.2500
+[LTCC][训练] 第 20/60 个 Epoch，第 150/596 个 batch；总 Loss：6.529289；Base Loss：6.529289；GPC Loss：0.000000；当前学习率：1.550e-06；身份准确率：0.0000
+[LTCC][训练] 第 20/60 个 Epoch，第 200/596 个 batch；总 Loss：5.589238；Base Loss：5.589238；GPC Loss：0.000000；当前学习率：1.550e-06；身份准确率：0.2500
+[LTCC][训练] 第 20/60 个 Epoch，第 250/596 个 batch；总 Loss：6.086082；Base Loss：6.086082；GPC Loss：0.000000；当前学习率：1.550e-06；身份准确率：0.0000
+[LTCC][训练] 第 20/60 个 Epoch，第 300/596 个 batch；总 Loss：5.834683；Base Loss：5.834683；GPC Loss：0.000000；当前学习率：1.550e-06；身份准确率：0.0000
+[LTCC][训练] 第 20/60 个 Epoch，第 350/596 个 batch；总 Loss：4.710754；Base Loss：4.710754；GPC Loss：0.000000；当前学习率：1.550e-06；身份准确率：0.7500
+[LTCC][训练] 第 20/60 个 Epoch，第 400/596 个 batch；总 Loss：5.822021；Base Loss：5.822021；GPC Loss：0.000000；当前学习率：1.550e-06；身份准确率：0.2500
+[LTCC][训练] 第 20/60 个 Epoch，第 450/596 个 batch；总 Loss：5.776856；Base Loss：5.776856；GPC Loss：0.000000；当前学习率：1.550e-06；身份准确率：0.0000
+[LTCC][训练] 第 20/60 个 Epoch，第 500/596 个 batch；总 Loss：6.176364；Base Loss：6.168616；GPC Loss：0.077479；当前学习率：1.550e-06；身份准确率：0.0000
+[LTCC][训练] 第 20/60 个 Epoch，第 550/596 个 batch；总 Loss：6.521825；Base Loss：6.521825；GPC Loss：0.000000；当前学习率：1.550e-06；身份准确率：0.0000
+[LTCC][训练] 当前学习率：1.550e-06
+[LTCC][训练] Base Loss：6.170013；GPC Loss：0.009890；总 Loss：6.171002
+[LTCC][训练] GPC 激活 batch 数：135；总 batch 数：1192；GPC active rate：0.11325503
+[LTCC][训练] GPC selected contribution 数：143；same-clothes contribution 数：58；cross-clothes contribution 数：85
+[LTCC][训练] same-clothes fraction：0.40559441；cross-clothes fraction：0.59440559；PID coverage：58/77（0.75324675）
+[LTCC][训练] 当前 AMP scale：256.0；found_inf 数：0；跳过 optimizer step 数：0；nonfinite 事件数：0
+[LTCC][训练] 第 20/60 个 Epoch 完成；Epoch wall time：131.92 秒
+[LTCC][训练] 第 21/60 个 Epoch 开始
+[LTCC][训练] 第 21/60 个 Epoch，第 50/596 个 batch；总 Loss：7.533173；Base Loss：7.533173；GPC Loss：0.000000；当前学习率：1.509e-06；身份准确率：0.0000
+[LTCC][训练] 第 21/60 个 Epoch，第 100/596 个 batch；总 Loss：5.698518；Base Loss：5.698518；GPC Loss：0.000000；当前学习率：1.509e-06；身份准确率：0.2500
+[LTCC][训练] 第 21/60 个 Epoch，第 150/596 个 batch；总 Loss：5.434844；Base Loss：5.434844；GPC Loss：0.000000；当前学习率：1.509e-06；身份准确率：0.5000
+[LTCC][训练] 第 21/60 个 Epoch，第 200/596 个 batch；总 Loss：6.312750；Base Loss：6.312750；GPC Loss：0.000000；当前学习率：1.509e-06；身份准确率：0.2500
+[LTCC][训练] 第 21/60 个 Epoch，第 250/596 个 batch；总 Loss：6.136976；Base Loss：6.136976；GPC Loss：0.000000；当前学习率：1.509e-06；身份准确率：0.2500
+[LTCC][训练] 第 21/60 个 Epoch，第 300/596 个 batch；总 Loss：5.689178；Base Loss：5.689178；GPC Loss：0.000000；当前学习率：1.509e-06；身份准确率：0.2500
+[LTCC][训练] 第 21/60 个 Epoch，第 350/596 个 batch；总 Loss：6.229458；Base Loss：6.229458；GPC Loss：0.000000；当前学习率：1.509e-06；身份准确率：0.0000
+[LTCC][训练] 第 21/60 个 Epoch，第 400/596 个 batch；总 Loss：6.188205；Base Loss：6.188205；GPC Loss：0.000000；当前学习率：1.509e-06；身份准确率：0.5000
+[LTCC][训练] 第 21/60 个 Epoch，第 450/596 个 batch；总 Loss：6.359971；Base Loss：6.359971；GPC Loss：0.000000；当前学习率：1.509e-06；身份准确率：0.0000
+[LTCC][训练] 第 21/60 个 Epoch，第 500/596 个 batch；总 Loss：6.394066；Base Loss：6.383901；GPC Loss：0.101653；当前学习率：1.509e-06；身份准确率：0.0000
+[LTCC][训练] 第 21/60 个 Epoch，第 550/596 个 batch；总 Loss：5.489729；Base Loss：5.489729；GPC Loss：0.000000；当前学习率：1.509e-06；身份准确率：0.0000
+[LTCC][训练] 当前学习率：1.509e-06
+[LTCC][训练] Base Loss：6.153639；GPC Loss：0.012822；总 Loss：6.154921
+[LTCC][训练] GPC 激活 batch 数：145；总 batch 数：1192；GPC active rate：0.12164430
+[LTCC][训练] GPC selected contribution 数：157；same-clothes contribution 数：50；cross-clothes contribution 数：107
+[LTCC][训练] same-clothes fraction：0.31847134；cross-clothes fraction：0.68152866；PID coverage：45/77（0.58441558）
+[LTCC][训练] 当前 AMP scale：512.0；found_inf 数：0；跳过 optimizer step 数：0；nonfinite 事件数：0
+[LTCC][训练] 第 21/60 个 Epoch 完成；Epoch wall time：137.59 秒
+[LTCC][训练] 第 22/60 个 Epoch 开始
+[LTCC][训练] 第 22/60 个 Epoch，第 50/596 个 batch；总 Loss：6.473368；Base Loss：6.473368；GPC Loss：0.000000；当前学习率：1.466e-06；身份准确率：0.0000
+[LTCC][训练] 第 22/60 个 Epoch，第 100/596 个 batch；总 Loss：5.760794；Base Loss：5.760794；GPC Loss：0.000000；当前学习率：1.466e-06；身份准确率：0.2500
+[LTCC][训练] 第 22/60 个 Epoch，第 150/596 个 batch；总 Loss：5.806008；Base Loss：5.806008；GPC Loss：0.000000；当前学习率：1.466e-06；身份准确率：0.0000
+[LTCC][训练] 第 22/60 个 Epoch，第 200/596 个 batch；总 Loss：5.734559；Base Loss：5.734559；GPC Loss：0.000000；当前学习率：1.466e-06；身份准确率：0.2500
+[LTCC][训练] 第 22/60 个 Epoch，第 250/596 个 batch；总 Loss：7.526762；Base Loss：7.526762；GPC Loss：0.000000；当前学习率：1.466e-06；身份准确率：0.0000
+[LTCC][训练] 第 22/60 个 Epoch，第 300/596 个 batch；总 Loss：6.032240；Base Loss：6.032240；GPC Loss：0.000000；当前学习率：1.466e-06；身份准确率：0.0000
+[LTCC][训练] 第 22/60 个 Epoch，第 350/596 个 batch；总 Loss：5.780859；Base Loss：5.780859；GPC Loss：0.000000；当前学习率：1.466e-06；身份准确率：0.0000
+[LTCC][训练] 第 22/60 个 Epoch，第 400/596 个 batch；总 Loss：5.168715；Base Loss：5.168715；GPC Loss：0.000000；当前学习率：1.466e-06；身份准确率：0.2500
+[LTCC][训练] 第 22/60 个 Epoch，第 450/596 个 batch；总 Loss：5.681440；Base Loss：5.681440；GPC Loss：0.000000；当前学习率：1.466e-06；身份准确率：0.2500
+[LTCC][训练] 第 22/60 个 Epoch，第 500/596 个 batch；总 Loss：6.091733；Base Loss：6.091733；GPC Loss：0.000000；当前学习率：1.466e-06；身份准确率：0.0000
+[LTCC][训练] 第 22/60 个 Epoch，第 550/596 个 batch；总 Loss：5.621634；Base Loss：5.621634；GPC Loss：0.000000；当前学习率：1.466e-06；身份准确率：0.2500
+[LTCC][训练] 当前学习率：1.466e-06
+[LTCC][训练] Base Loss：6.094191；GPC Loss：0.014272；总 Loss：6.095618
+[LTCC][训练] GPC 激活 batch 数：141；总 batch 数：1192；GPC active rate：0.11828859
+[LTCC][训练] GPC selected contribution 数：149；same-clothes contribution 数：60；cross-clothes contribution 数：89
+[LTCC][训练] same-clothes fraction：0.40268456；cross-clothes fraction：0.59731544；PID coverage：58/77（0.75324675）
+[LTCC][训练] 当前 AMP scale：512.0；found_inf 数：0；跳过 optimizer step 数：0；nonfinite 事件数：0
+[LTCC][训练] 第 22/60 个 Epoch 完成；Epoch wall time：131.20 秒
+[LTCC][训练] 第 23/60 个 Epoch 开始
+[LTCC][训练] 第 23/60 个 Epoch，第 50/596 个 batch；总 Loss：6.122326；Base Loss：6.122326；GPC Loss：0.000000；当前学习率：1.423e-06；身份准确率：0.0000
+[LTCC][训练] 第 23/60 个 Epoch，第 100/596 个 batch；总 Loss：6.231763；Base Loss：6.231763；GPC Loss：0.000000；当前学习率：1.423e-06；身份准确率：0.0000
+[LTCC][训练] 第 23/60 个 Epoch，第 150/596 个 batch；总 Loss：5.972593；Base Loss：5.972593；GPC Loss：0.000000；当前学习率：1.423e-06；身份准确率：0.2500
+[LTCC][训练] 第 23/60 个 Epoch，第 200/596 个 batch；总 Loss：5.815261；Base Loss：5.815261；GPC Loss：0.000000；当前学习率：1.423e-06；身份准确率：0.0000
+[LTCC][训练] 第 23/60 个 Epoch，第 250/596 个 batch；总 Loss：5.555219；Base Loss：5.547060；GPC Loss：0.081591；当前学习率：1.423e-06；身份准确率：0.2500
+[LTCC][训练] 第 23/60 个 Epoch，第 300/596 个 batch；总 Loss：6.229924；Base Loss：6.229924；GPC Loss：0.000000；当前学习率：1.423e-06；身份准确率：0.0000
+[LTCC][训练] 第 23/60 个 Epoch，第 350/596 个 batch；总 Loss：6.680706；Base Loss：6.680706；GPC Loss：0.000000；当前学习率：1.423e-06；身份准确率：0.1250
+[LTCC][训练] 第 23/60 个 Epoch，第 400/596 个 batch；总 Loss：5.658895；Base Loss：5.658895；GPC Loss：0.000000；当前学习率：1.423e-06；身份准确率：0.0000
+[LTCC][训练] 第 23/60 个 Epoch，第 450/596 个 batch；总 Loss：5.782013；Base Loss：5.782013；GPC Loss：0.000000；当前学习率：1.423e-06；身份准确率：0.0000
+[LTCC][训练] 第 23/60 个 Epoch，第 500/596 个 batch；总 Loss：5.394957；Base Loss：5.394957；GPC Loss：0.000000；当前学习率：1.423e-06；身份准确率：0.2500
+[LTCC][训练] 第 23/60 个 Epoch，第 550/596 个 batch；总 Loss：5.930545；Base Loss：5.930545；GPC Loss：0.000000；当前学习率：1.423e-06；身份准确率：0.0000
+[LTCC][训练] 当前学习率：1.423e-06
+[LTCC][训练] Base Loss：6.055785；GPC Loss：0.016671；总 Loss：6.057452
+[LTCC][训练] GPC 激活 batch 数：144；总 batch 数：1192；GPC active rate：0.12080537
+[LTCC][训练] GPC selected contribution 数：157；same-clothes contribution 数：60；cross-clothes contribution 数：97
+[LTCC][训练] same-clothes fraction：0.38216561；cross-clothes fraction：0.61783439；PID coverage：52/77（0.67532468）
+[LTCC][训练] 当前 AMP scale：512.0；found_inf 数：0；跳过 optimizer step 数：0；nonfinite 事件数：0
+[LTCC][训练] 第 23/60 个 Epoch 完成；Epoch wall time：131.00 秒
+[LTCC][训练] 第 24/60 个 Epoch 开始
+[LTCC][训练] 第 24/60 个 Epoch，第 50/596 个 batch；总 Loss：6.826238；Base Loss：6.801116；GPC Loss：0.251228；当前学习率：1.378e-06；身份准确率：0.0000
+[LTCC][训练] 第 24/60 个 Epoch，第 100/596 个 batch；总 Loss：7.084010；Base Loss：7.084010；GPC Loss：0.000000；当前学习率：1.378e-06；身份准确率：0.0000
+[LTCC][训练] 第 24/60 个 Epoch，第 150/596 个 batch；总 Loss：6.875592；Base Loss：6.875592；GPC Loss：0.000000；当前学习率：1.378e-06；身份准确率：0.0000
+[LTCC][训练] 第 24/60 个 Epoch，第 200/596 个 batch；总 Loss：5.565005；Base Loss：5.553698；GPC Loss：0.113079；当前学习率：1.378e-06；身份准确率：0.2500
+[LTCC][训练] 第 24/60 个 Epoch，第 250/596 个 batch；总 Loss：6.035071；Base Loss：6.035071；GPC Loss：0.000000；当前学习率：1.378e-06；身份准确率：0.0000
+[LTCC][训练] 第 24/60 个 Epoch，第 300/596 个 batch；总 Loss：6.099333；Base Loss：6.099333；GPC Loss：0.000000；当前学习率：1.378e-06；身份准确率：0.0000
+[LTCC][AMP审计] 第 24 个 Epoch 第 327 个 batch 发生 found_inf；本次 optimizer step 被跳过；当前 scale：512.0
+[LTCC][训练] 第 24/60 个 Epoch，第 350/596 个 batch；总 Loss：6.024436；Base Loss：6.024436；GPC Loss：0.000000；当前学习率：1.378e-06；身份准确率：0.0000
+[LTCC][训练] 第 24/60 个 Epoch，第 400/596 个 batch；总 Loss：6.285765；Base Loss：6.285765；GPC Loss：0.000000；当前学习率：1.378e-06；身份准确率：0.2500
+[LTCC][训练] 第 24/60 个 Epoch，第 450/596 个 batch；总 Loss：6.183779；Base Loss：6.183779；GPC Loss：0.000000；当前学习率：1.378e-06；身份准确率：0.0000
+[LTCC][训练] 第 24/60 个 Epoch，第 500/596 个 batch；总 Loss：6.225201；Base Loss：6.225201；GPC Loss：0.000000；当前学习率：1.378e-06；身份准确率：0.2500
+[LTCC][训练] 第 24/60 个 Epoch，第 550/596 个 batch；总 Loss：6.120861；Base Loss：6.103392；GPC Loss：0.174691；当前学习率：1.378e-06；身份准确率：0.0000
+[LTCC][训练] 当前学习率：1.378e-06
+[LTCC][训练] Base Loss：6.022999；GPC Loss：0.016824；总 Loss：6.024681
+[LTCC][训练] GPC 激活 batch 数：124；总 batch 数：1192；GPC active rate：0.10402685
+[LTCC][训练] GPC selected contribution 数：134；same-clothes contribution 数：55；cross-clothes contribution 数：79
+[LTCC][训练] same-clothes fraction：0.41044776；cross-clothes fraction：0.58955224；PID coverage：50/77（0.64935065）
+[LTCC][训练] 当前 AMP scale：256.0；found_inf 数：2；跳过 optimizer step 数：2；nonfinite 事件数：2
+[LTCC][训练] 第 24/60 个 Epoch 完成；Epoch wall time：131.14 秒
+[LTCC][训练] 第 25/60 个 Epoch 开始
+[LTCC][训练] 第 25/60 个 Epoch，第 50/596 个 batch；总 Loss：6.653224；Base Loss：6.653224；GPC Loss：0.000000；当前学习率：1.333e-06；身份准确率：0.0000
+[LTCC][训练] 第 25/60 个 Epoch，第 100/596 个 batch；总 Loss：5.846140；Base Loss：5.846140；GPC Loss：0.000000；当前学习率：1.333e-06；身份准确率：0.0000
+[LTCC][训练] 第 25/60 个 Epoch，第 150/596 个 batch；总 Loss：6.249599；Base Loss：6.249599；GPC Loss：0.000000；当前学习率：1.333e-06；身份准确率：0.2500
+[LTCC][训练] 第 25/60 个 Epoch，第 200/596 个 batch；总 Loss：5.773948；Base Loss：5.773948；GPC Loss：0.000000；当前学习率：1.333e-06；身份准确率：0.2500
+[LTCC][训练] 第 25/60 个 Epoch，第 250/596 个 batch；总 Loss：8.304997；Base Loss：8.299297；GPC Loss：0.056999；当前学习率：1.333e-06；身份准确率：0.0000
+[LTCC][训练] 第 25/60 个 Epoch，第 300/596 个 batch；总 Loss：5.652720；Base Loss：5.652720；GPC Loss：0.000000；当前学习率：1.333e-06；身份准确率：0.2500
+[LTCC][训练] 第 25/60 个 Epoch，第 350/596 个 batch；总 Loss：5.209282；Base Loss：5.209282；GPC Loss：0.000000；当前学习率：1.333e-06；身份准确率：0.1250
+[LTCC][训练] 第 25/60 个 Epoch，第 400/596 个 batch；总 Loss：5.736987；Base Loss：5.736987；GPC Loss：0.000000；当前学习率：1.333e-06；身份准确率：0.0000
+[LTCC][训练] 第 25/60 个 Epoch，第 450/596 个 batch；总 Loss：5.978715；Base Loss：5.978715；GPC Loss：0.000000；当前学习率：1.333e-06；身份准确率：0.0000
+[LTCC][训练] 第 25/60 个 Epoch，第 500/596 个 batch；总 Loss：5.487815；Base Loss：5.459733；GPC Loss：0.280820；当前学习率：1.333e-06；身份准确率：0.2500
+[LTCC][训练] 第 25/60 个 Epoch，第 550/596 个 batch；总 Loss：5.725714；Base Loss：5.725714；GPC Loss：0.000000；当前学习率：1.333e-06；身份准确率：0.1250
+[LTCC][训练] 当前学习率：1.333e-06
+[LTCC][训练] Base Loss：5.952590；GPC Loss：0.021555；总 Loss：5.954746
+[LTCC][训练] GPC 激活 batch 数：135；总 batch 数：1192；GPC active rate：0.11325503
+[LTCC][训练] GPC selected contribution 数：142；same-clothes contribution 数：47；cross-clothes contribution 数：95
+[LTCC][训练] same-clothes fraction：0.33098592；cross-clothes fraction：0.66901408；PID coverage：49/77（0.63636364）
+[LTCC][训练] 当前 AMP scale：256.0；found_inf 数：0；跳过 optimizer step 数：0；nonfinite 事件数：0
+[LTCC][训练] 第 25/60 个 Epoch 完成；Epoch wall time：130.82 秒
+[LTCC][训练] 第 26/60 个 Epoch 开始
+[LTCC][AMP审计] 第 26 个 Epoch 第 28 个 batch 发生 found_inf；本次 optimizer step 被跳过；当前 scale：256.0
+[LTCC][训练] 第 26/60 个 Epoch，第 50/596 个 batch；总 Loss：7.205642；Base Loss：7.205642；GPC Loss：0.000000；当前学习率：1.287e-06；身份准确率：0.0000
+[LTCC][训练] 第 26/60 个 Epoch，第 100/596 个 batch；总 Loss：6.160450；Base Loss：6.148456；GPC Loss：0.119943；当前学习率：1.287e-06；身份准确率：0.0000
+[LTCC][训练] 第 26/60 个 Epoch，第 150/596 个 batch；总 Loss：5.879791；Base Loss：5.879791；GPC Loss：0.000000；当前学习率：1.287e-06；身份准确率：0.0000
+[LTCC][训练] 第 26/60 个 Epoch，第 200/596 个 batch；总 Loss：5.340561；Base Loss：5.340561；GPC Loss：0.000000；当前学习率：1.287e-06；身份准确率：0.2500
+[LTCC][训练] 第 26/60 个 Epoch，第 250/596 个 batch；总 Loss：5.885610；Base Loss：5.885610；GPC Loss：0.000000；当前学习率：1.287e-06；身份准确率：0.0000
+[LTCC][训练] 第 26/60 个 Epoch，第 300/596 个 batch；总 Loss：5.455440；Base Loss：5.455440；GPC Loss：0.000000；当前学习率：1.287e-06；身份准确率：0.5000
+[LTCC][训练] 第 26/60 个 Epoch，第 350/596 个 batch；总 Loss：4.868277；Base Loss：4.868277；GPC Loss：0.000000；当前学习率：1.287e-06；身份准确率：0.5000
+[LTCC][训练] 第 26/60 个 Epoch，第 400/596 个 batch；总 Loss：5.043749；Base Loss：5.043749；GPC Loss：0.000000；当前学习率：1.287e-06；身份准确率：0.5000
+[LTCC][训练] 第 26/60 个 Epoch，第 450/596 个 batch；总 Loss：5.164364；Base Loss：5.164364；GPC Loss：0.000000；当前学习率：1.287e-06；身份准确率：0.5000
+[LTCC][训练] 第 26/60 个 Epoch，第 500/596 个 batch；总 Loss：4.751120；Base Loss：4.751120；GPC Loss：0.000000；当前学习率：1.287e-06；身份准确率：0.7500
+[LTCC][训练] 第 26/60 个 Epoch，第 550/596 个 batch；总 Loss：5.565725；Base Loss：5.565725；GPC Loss：0.000000；当前学习率：1.287e-06；身份准确率：0.0000
+[LTCC][AMP审计] 第 26 个 Epoch 第 585 个 batch 发生 found_inf；本次 optimizer step 被跳过；当前 scale：128.0
+[LTCC][训练] 当前学习率：1.287e-06
+[LTCC][训练] Base Loss：5.913790；GPC Loss：0.022383；总 Loss：5.916029
+[LTCC][训练] GPC 激活 batch 数：130；总 batch 数：1192；GPC active rate：0.10906040
+[LTCC][训练] GPC selected contribution 数：143；same-clothes contribution 数：43；cross-clothes contribution 数：100
+[LTCC][训练] same-clothes fraction：0.30069930；cross-clothes fraction：0.69930070；PID coverage：51/77（0.66233766）
+[LTCC][训练] 当前 AMP scale：64.0；found_inf 数：4；跳过 optimizer step 数：4；nonfinite 事件数：4
+[LTCC][训练] 第 26/60 个 Epoch 完成；Epoch wall time：130.39 秒
+[LTCC][训练] 第 27/60 个 Epoch 开始
+[LTCC][训练] 第 27/60 个 Epoch，第 50/596 个 batch；总 Loss：4.954029；Base Loss：4.954029；GPC Loss：0.000000；当前学习率：1.241e-06；身份准确率：0.3750
+[LTCC][训练] 第 27/60 个 Epoch，第 100/596 个 batch；总 Loss：6.049722；Base Loss：6.049722；GPC Loss：0.000000；当前学习率：1.241e-06；身份准确率：0.1250
+[LTCC][训练] 第 27/60 个 Epoch，第 150/596 个 batch；总 Loss：4.765378；Base Loss：4.765378；GPC Loss：0.000000；当前学习率：1.241e-06；身份准确率：0.3750
+[LTCC][训练] 第 27/60 个 Epoch，第 200/596 个 batch；总 Loss：5.996697；Base Loss：5.996697；GPC Loss：0.000000；当前学习率：1.241e-06；身份准确率：0.2500
+[LTCC][训练] 第 27/60 个 Epoch，第 250/596 个 batch；总 Loss：6.769170；Base Loss：6.769170；GPC Loss：0.000000；当前学习率：1.241e-06；身份准确率：0.0000
+[LTCC][训练] 第 27/60 个 Epoch，第 300/596 个 batch；总 Loss：5.228218；Base Loss：5.228218；GPC Loss：0.000000；当前学习率：1.241e-06；身份准确率：0.5000
+[LTCC][训练] 第 27/60 个 Epoch，第 350/596 个 batch；总 Loss：7.176342；Base Loss：7.176342；GPC Loss：0.000000；当前学习率：1.241e-06；身份准确率：0.0000
+[LTCC][训练] 第 27/60 个 Epoch，第 400/596 个 batch；总 Loss：5.698593；Base Loss：5.670530；GPC Loss：0.280626；当前学习率：1.241e-06；身份准确率：0.2500
+[LTCC][训练] 第 27/60 个 Epoch，第 450/596 个 batch；总 Loss：5.021894；Base Loss：5.021894；GPC Loss：0.000000；当前学习率：1.241e-06；身份准确率：0.3750
+[LTCC][训练] 第 27/60 个 Epoch，第 500/596 个 batch；总 Loss：5.503365；Base Loss：5.471441；GPC Loss：0.319242；当前学习率：1.241e-06；身份准确率：0.0000
+[LTCC][训练] 第 27/60 个 Epoch，第 550/596 个 batch；总 Loss：5.580772；Base Loss：5.580772；GPC Loss：0.000000；当前学习率：1.241e-06；身份准确率：0.2500
+[LTCC][训练] 当前学习率：1.241e-06
+[LTCC][训练] Base Loss：5.854799；GPC Loss：0.025561；总 Loss：5.857355
+[LTCC][训练] GPC 激活 batch 数：138；总 batch 数：1192；GPC active rate：0.11577181
+[LTCC][训练] GPC selected contribution 数：143；same-clothes contribution 数：56；cross-clothes contribution 数：87
+[LTCC][训练] same-clothes fraction：0.39160839；cross-clothes fraction：0.60839161；PID coverage：52/77（0.67532468）
+[LTCC][训练] 当前 AMP scale：64.0；found_inf 数：0；跳过 optimizer step 数：0；nonfinite 事件数：0
+[LTCC][训练] 第 27/60 个 Epoch 完成；Epoch wall time：130.90 秒
+[LTCC][训练] 第 28/60 个 Epoch 开始
+[LTCC][训练] 第 28/60 个 Epoch，第 50/596 个 batch；总 Loss：7.180381；Base Loss：7.180381；GPC Loss：0.000000；当前学习率：1.194e-06；身份准确率：0.0000
+[LTCC][训练] 第 28/60 个 Epoch，第 100/596 个 batch；总 Loss：5.277452；Base Loss：5.258256；GPC Loss：0.191958；当前学习率：1.194e-06；身份准确率：0.2500
+[LTCC][训练] 第 28/60 个 Epoch，第 150/596 个 batch；总 Loss：5.121450；Base Loss：5.121450；GPC Loss：0.000000；当前学习率：1.194e-06；身份准确率：0.7500
+[LTCC][训练] 第 28/60 个 Epoch，第 200/596 个 batch；总 Loss：6.357626；Base Loss：6.357626；GPC Loss：0.000000；当前学习率：1.194e-06；身份准确率：0.0000
+[LTCC][训练] 第 28/60 个 Epoch，第 250/596 个 batch；总 Loss：7.064906；Base Loss：7.064906；GPC Loss：0.000000；当前学习率：1.194e-06；身份准确率：0.2500
+[LTCC][训练] 第 28/60 个 Epoch，第 300/596 个 batch；总 Loss：5.653821；Base Loss：5.653821；GPC Loss：0.000000；当前学习率：1.194e-06；身份准确率：0.2500
+[LTCC][训练] 第 28/60 个 Epoch，第 350/596 个 batch；总 Loss：6.341085；Base Loss：6.341085；GPC Loss：0.000000；当前学习率：1.194e-06；身份准确率：0.1250
+[LTCC][训练] 第 28/60 个 Epoch，第 400/596 个 batch；总 Loss：5.511740；Base Loss：5.511740；GPC Loss：0.000000；当前学习率：1.194e-06；身份准确率：0.2500
+[LTCC][训练] 第 28/60 个 Epoch，第 450/596 个 batch；总 Loss：6.190264；Base Loss：6.190264；GPC Loss：0.000000；当前学习率：1.194e-06；身份准确率：0.0000
+[LTCC][训练] 第 28/60 个 Epoch，第 500/596 个 batch；总 Loss：5.947349；Base Loss：5.947349；GPC Loss：0.000000；当前学习率：1.194e-06；身份准确率：0.0000
+[LTCC][训练] 第 28/60 个 Epoch，第 550/596 个 batch；总 Loss：6.140226；Base Loss：6.140226；GPC Loss：0.000000；当前学习率：1.194e-06；身份准确率：0.2500
+[LTCC][训练] 当前学习率：1.194e-06
+[LTCC][训练] Base Loss：5.803454；GPC Loss：0.028015；总 Loss：5.806255
+[LTCC][训练] GPC 激活 batch 数：139；总 batch 数：1192；GPC active rate：0.11661074
+[LTCC][训练] GPC selected contribution 数：149；same-clothes contribution 数：51；cross-clothes contribution 数：98
+[LTCC][训练] same-clothes fraction：0.34228188；cross-clothes fraction：0.65771812；PID coverage：51/77（0.66233766）
+[LTCC][训练] 当前 AMP scale：64.0；found_inf 数：0；跳过 optimizer step 数：0；nonfinite 事件数：0
+[LTCC][训练] 第 28/60 个 Epoch 完成；Epoch wall time：131.78 秒
+[LTCC][训练] 第 29/60 个 Epoch 开始
+[LTCC][训练] 第 29/60 个 Epoch，第 50/596 个 batch；总 Loss：5.700841；Base Loss：5.700841；GPC Loss：0.000000；当前学习率：1.147e-06；身份准确率：0.5000
+[LTCC][训练] 第 29/60 个 Epoch，第 100/596 个 batch；总 Loss：5.652740；Base Loss：5.652740；GPC Loss：0.000000；当前学习率：1.147e-06；身份准确率：0.2500
+[LTCC][训练] 第 29/60 个 Epoch，第 150/596 个 batch；总 Loss：5.259011；Base Loss：5.259011；GPC Loss：0.000000；当前学习率：1.147e-06；身份准确率：0.2500
+[LTCC][训练] 第 29/60 个 Epoch，第 200/596 个 batch；总 Loss：5.659673；Base Loss：5.659673；GPC Loss：0.000000；当前学习率：1.147e-06；身份准确率：0.2500
+[LTCC][训练] 第 29/60 个 Epoch，第 250/596 个 batch；总 Loss：5.732513；Base Loss：5.732513；GPC Loss：0.000000；当前学习率：1.147e-06；身份准确率：0.0000
+[LTCC][训练] 第 29/60 个 Epoch，第 300/596 个 batch；总 Loss：5.301007；Base Loss：5.301007；GPC Loss：0.000000；当前学习率：1.147e-06；身份准确率：0.3750
+[LTCC][训练] 第 29/60 个 Epoch，第 350/596 个 batch；总 Loss：6.131162；Base Loss：6.131162；GPC Loss：0.000000；当前学习率：1.147e-06；身份准确率：0.0000
+[LTCC][训练] 第 29/60 个 Epoch，第 400/596 个 batch；总 Loss：5.799835；Base Loss：5.799835；GPC Loss：0.000000；当前学习率：1.147e-06；身份准确率：0.0000
+[LTCC][训练] 第 29/60 个 Epoch，第 450/596 个 batch；总 Loss：6.749217；Base Loss：6.749217；GPC Loss：0.000000；当前学习率：1.147e-06；身份准确率：0.2500
+[LTCC][训练] 第 29/60 个 Epoch，第 500/596 个 batch；总 Loss：5.250039；Base Loss：5.250039；GPC Loss：0.000000；当前学习率：1.147e-06；身份准确率：0.2500
+[LTCC][训练] 第 29/60 个 Epoch，第 550/596 个 batch；总 Loss：6.183783；Base Loss：6.183783；GPC Loss：0.000000；当前学习率：1.147e-06；身份准确率：0.2500
+[LTCC][训练] 当前学习率：1.147e-06
+[LTCC][训练] Base Loss：5.736424；GPC Loss：0.027366；总 Loss：5.739161
+[LTCC][训练] GPC 激活 batch 数：131；总 batch 数：1192；GPC active rate：0.10989933
+[LTCC][训练] GPC selected contribution 数：146；same-clothes contribution 数：46；cross-clothes contribution 数：100
+[LTCC][训练] same-clothes fraction：0.31506849；cross-clothes fraction：0.68493151；PID coverage：50/77（0.64935065）
+[LTCC][训练] 当前 AMP scale：64.0；found_inf 数：0；跳过 optimizer step 数：0；nonfinite 事件数：0
+[LTCC][训练] 第 29/60 个 Epoch 完成；Epoch wall time：131.81 秒
+[LTCC][训练] 第 30/60 个 Epoch 开始
+[LTCC][训练] 第 30/60 个 Epoch，第 50/596 个 batch；总 Loss：5.950474；Base Loss：5.950474；GPC Loss：0.000000；当前学习率：1.100e-06；身份准确率：0.2500
+[LTCC][训练] 第 30/60 个 Epoch，第 100/596 个 batch；总 Loss：5.587917；Base Loss：5.587917；GPC Loss：0.000000；当前学习率：1.100e-06；身份准确率：0.2500
+[LTCC][训练] 第 30/60 个 Epoch，第 150/596 个 batch；总 Loss：6.583733；Base Loss：6.583733；GPC Loss：0.000000；当前学习率：1.100e-06；身份准确率：0.0000
+[LTCC][训练] 第 30/60 个 Epoch，第 200/596 个 batch；总 Loss：6.278326；Base Loss：6.257452；GPC Loss：0.208741；当前学习率：1.100e-06；身份准确率：0.2500
+[LTCC][训练] 第 30/60 个 Epoch，第 250/596 个 batch；总 Loss：5.702143；Base Loss：5.679931；GPC Loss：0.222119；当前学习率：1.100e-06；身份准确率：0.2500
+[LTCC][训练] 第 30/60 个 Epoch，第 300/596 个 batch；总 Loss：5.460479；Base Loss：5.460479；GPC Loss：0.000000；当前学习率：1.100e-06；身份准确率：0.1250
+[LTCC][训练] 第 30/60 个 Epoch，第 350/596 个 batch；总 Loss：5.442611；Base Loss：5.442611；GPC Loss：0.000000；当前学习率：1.100e-06；身份准确率：0.3750
+[LTCC][训练] 第 30/60 个 Epoch，第 400/596 个 batch；总 Loss：6.238295；Base Loss：6.238295；GPC Loss：0.000000；当前学习率：1.100e-06；身份准确率：0.2500
+[LTCC][训练] 第 30/60 个 Epoch，第 450/596 个 batch；总 Loss：5.825856；Base Loss：5.800448；GPC Loss：0.254085；当前学习率：1.100e-06；身份准确率：0.0000
+[LTCC][训练] 第 30/60 个 Epoch，第 500/596 个 batch；总 Loss：5.769330；Base Loss：5.769330；GPC Loss：0.000000；当前学习率：1.100e-06；身份准确率：0.3750
+[LTCC][训练] 第 30/60 个 Epoch，第 550/596 个 batch；总 Loss：5.180648；Base Loss：5.180648；GPC Loss：0.000000；当前学习率：1.100e-06；身份准确率：0.5000
+[LTCC][训练] 当前学习率：1.100e-06
+[LTCC][训练] Base Loss：5.760228；GPC Loss：0.027149；总 Loss：5.762943
+[LTCC][训练] GPC 激活 batch 数：135；总 batch 数：1192；GPC active rate：0.11325503
+[LTCC][训练] GPC selected contribution 数：148；same-clothes contribution 数：59；cross-clothes contribution 数：89
+[LTCC][训练] same-clothes fraction：0.39864865；cross-clothes fraction：0.60135135；PID coverage：53/77（0.68831169）
+[LTCC][训练] 当前 AMP scale：128.0；found_inf 数：0；跳过 optimizer step 数：0；nonfinite 事件数：0
+[LTCC][训练] 第 30/60 个 Epoch 完成；Epoch wall time：130.74 秒
+[LTCC][训练] 第 31/60 个 Epoch 开始
+[LTCC][训练] 第 31/60 个 Epoch，第 50/596 个 batch；总 Loss：6.169586；Base Loss：6.169586；GPC Loss：0.000000；当前学习率：1.053e-06；身份准确率：0.0000
+[LTCC][训练] 第 31/60 个 Epoch，第 100/596 个 batch；总 Loss：6.610744；Base Loss：6.610744；GPC Loss：0.000000；当前学习率：1.053e-06；身份准确率：0.0000
+[LTCC][训练] 第 31/60 个 Epoch，第 150/596 个 batch；总 Loss：4.914651；Base Loss：4.914651；GPC Loss：0.000000；当前学习率：1.053e-06；身份准确率：0.2500
+[LTCC][训练] 第 31/60 个 Epoch，第 200/596 个 batch；总 Loss：5.555912；Base Loss：5.555912；GPC Loss：0.000000；当前学习率：1.053e-06；身份准确率：0.2500
+[LTCC][训练] 第 31/60 个 Epoch，第 250/596 个 batch；总 Loss：6.060338；Base Loss：6.060338；GPC Loss：0.000000；当前学习率：1.053e-06；身份准确率：0.2500
+[LTCC][训练] 第 31/60 个 Epoch，第 300/596 个 batch；总 Loss：5.845932；Base Loss：5.845932；GPC Loss：0.000000；当前学习率：1.053e-06；身份准确率：0.5000
+[LTCC][训练] 第 31/60 个 Epoch，第 350/596 个 batch；总 Loss：4.671250；Base Loss：4.671250；GPC Loss：0.000000；当前学习率：1.053e-06；身份准确率：0.7500
+[LTCC][训练] 第 31/60 个 Epoch，第 400/596 个 batch；总 Loss：5.235258；Base Loss：5.235258；GPC Loss：0.000000；当前学习率：1.053e-06；身份准确率：0.0000
+[LTCC][训练] 第 31/60 个 Epoch，第 450/596 个 batch；总 Loss：4.522093；Base Loss：4.522093；GPC Loss：0.000000；当前学习率：1.053e-06；身份准确率：0.7500
+[LTCC][训练] 第 31/60 个 Epoch，第 500/596 个 batch；总 Loss：6.972308；Base Loss：6.972308；GPC Loss：0.000000；当前学习率：1.053e-06；身份准确率：0.0000
+[LTCC][训练] 第 31/60 个 Epoch，第 550/596 个 batch；总 Loss：5.531704；Base Loss：5.531704；GPC Loss：0.000000；当前学习率：1.053e-06；身份准确率：0.2500
+[LTCC][训练] 当前学习率：1.053e-06
+[LTCC][训练] Base Loss：5.657400；GPC Loss：0.031098；总 Loss：5.660510
+[LTCC][训练] GPC 激活 batch 数：140；总 batch 数：1192；GPC active rate：0.11744966
+[LTCC][训练] GPC selected contribution 数：154；same-clothes contribution 数：53；cross-clothes contribution 数：101
+[LTCC][训练] same-clothes fraction：0.34415584；cross-clothes fraction：0.65584416；PID coverage：51/77（0.66233766）
+[LTCC][训练] 当前 AMP scale：128.0；found_inf 数：0；跳过 optimizer step 数：0；nonfinite 事件数：0
+[LTCC][训练] 第 31/60 个 Epoch 完成；Epoch wall time：130.89 秒
+[LTCC][训练] 第 32/60 个 Epoch 开始
+[LTCC][训练] 第 32/60 个 Epoch，第 50/596 个 batch；总 Loss：5.131371；Base Loss：5.131371；GPC Loss：0.000000；当前学习率：1.006e-06；身份准确率：0.5000
+[LTCC][训练] 第 32/60 个 Epoch，第 100/596 个 batch；总 Loss：5.550270；Base Loss：5.515110；GPC Loss：0.351594；当前学习率：1.006e-06；身份准确率：0.0000
+[LTCC][训练] 第 32/60 个 Epoch，第 150/596 个 batch；总 Loss：6.968981；Base Loss：6.968981；GPC Loss：0.000000；当前学习率：1.006e-06；身份准确率：0.1250
+[LTCC][训练] 第 32/60 个 Epoch，第 200/596 个 batch；总 Loss：5.060953；Base Loss：5.060953；GPC Loss：0.000000；当前学习率：1.006e-06；身份准确率：0.2500
+[LTCC][训练] 第 32/60 个 Epoch，第 250/596 个 batch；总 Loss：4.837012；Base Loss：4.837012；GPC Loss：0.000000；当前学习率：1.006e-06；身份准确率：0.3750
+[LTCC][训练] 第 32/60 个 Epoch，第 300/596 个 batch；总 Loss：5.932756；Base Loss：5.932756；GPC Loss：0.000000；当前学习率：1.006e-06；身份准确率：0.3750
+[LTCC][训练] 第 32/60 个 Epoch，第 350/596 个 batch；总 Loss：5.187163；Base Loss：5.187163；GPC Loss：0.000000；当前学习率：1.006e-06；身份准确率：0.2500
+[LTCC][训练] 第 32/60 个 Epoch，第 400/596 个 batch；总 Loss：6.556149；Base Loss：6.544949；GPC Loss：0.111997；当前学习率：1.006e-06；身份准确率：0.0000
+[LTCC][训练] 第 32/60 个 Epoch，第 450/596 个 batch；总 Loss：5.422941；Base Loss：5.422941；GPC Loss：0.000000；当前学习率：1.006e-06；身份准确率：0.3750
+[LTCC][训练] 第 32/60 个 Epoch，第 500/596 个 batch；总 Loss：5.401199；Base Loss：5.401199；GPC Loss：0.000000；当前学习率：1.006e-06；身份准确率：0.1250
+[LTCC][训练] 第 32/60 个 Epoch，第 550/596 个 batch；总 Loss：5.772290；Base Loss：5.772290；GPC Loss：0.000000；当前学习率：1.006e-06；身份准确率：0.5000
+[LTCC][训练] 当前学习率：1.006e-06
+[LTCC][训练] Base Loss：5.605655；GPC Loss：0.031676；总 Loss：5.608823
+[LTCC][训练] GPC 激活 batch 数：139；总 batch 数：1192；GPC active rate：0.11661074
+[LTCC][训练] GPC selected contribution 数：147；same-clothes contribution 数：52；cross-clothes contribution 数：95
+[LTCC][训练] same-clothes fraction：0.35374150；cross-clothes fraction：0.64625850；PID coverage：54/77（0.70129870）
+[LTCC][训练] 当前 AMP scale：128.0；found_inf 数：0；跳过 optimizer step 数：0；nonfinite 事件数：0
+[LTCC][训练] 第 32/60 个 Epoch 完成；Epoch wall time：130.98 秒
+[LTCC][训练] 第 33/60 个 Epoch 开始
+[LTCC][训练] 第 33/60 个 Epoch，第 50/596 个 batch；总 Loss：5.246513；Base Loss：5.246513；GPC Loss：0.000000；当前学习率：9.592e-07；身份准确率：0.2500
+[LTCC][训练] 第 33/60 个 Epoch，第 100/596 个 batch；总 Loss：5.303190；Base Loss：5.303190；GPC Loss：0.000000；当前学习率：9.592e-07；身份准确率：0.2500
+[LTCC][训练] 第 33/60 个 Epoch，第 150/596 个 batch；总 Loss：5.778991；Base Loss：5.778991；GPC Loss：0.000000；当前学习率：9.592e-07；身份准确率：0.6250
+[LTCC][训练] 第 33/60 个 Epoch，第 200/596 个 batch；总 Loss：5.249101；Base Loss：5.249101；GPC Loss：0.000000；当前学习率：9.592e-07；身份准确率：0.3750
+[LTCC][训练] 第 33/60 个 Epoch，第 250/596 个 batch；总 Loss：5.278224；Base Loss：5.278224；GPC Loss：0.000000；当前学习率：9.592e-07；身份准确率：0.6250
+[LTCC][训练] 第 33/60 个 Epoch，第 300/596 个 batch；总 Loss：5.326274；Base Loss：5.326274；GPC Loss：0.000000；当前学习率：9.592e-07；身份准确率：0.2500
+[LTCC][训练] 第 33/60 个 Epoch，第 350/596 个 batch；总 Loss：5.775511；Base Loss：5.775511；GPC Loss：0.000000；当前学习率：9.592e-07；身份准确率：0.0000
+[LTCC][训练] 第 33/60 个 Epoch，第 400/596 个 batch；总 Loss：5.061507；Base Loss：5.061507；GPC Loss：0.000000；当前学习率：9.592e-07；身份准确率：0.7500
+[LTCC][训练] 第 33/60 个 Epoch，第 450/596 个 batch；总 Loss：4.685561；Base Loss：4.685561；GPC Loss：0.000000；当前学习率：9.592e-07；身份准确率：0.5000
+[LTCC][训练] 第 33/60 个 Epoch，第 500/596 个 batch；总 Loss：5.626188；Base Loss：5.626188；GPC Loss：0.000000；当前学习率：9.592e-07；身份准确率：0.0000
+[LTCC][训练] 第 33/60 个 Epoch，第 550/596 个 batch；总 Loss：6.564975；Base Loss：6.564975；GPC Loss：0.000000；当前学习率：9.592e-07；身份准确率：0.0000
+[LTCC][训练] 当前学习率：9.592e-07
+[LTCC][训练] Base Loss：5.579087；GPC Loss：0.029797；总 Loss：5.582067
+[LTCC][训练] GPC 激活 batch 数：133；总 batch 数：1192；GPC active rate：0.11157718
+[LTCC][训练] GPC selected contribution 数：139；same-clothes contribution 数：58；cross-clothes contribution 数：81
+[LTCC][训练] same-clothes fraction：0.41726619；cross-clothes fraction：0.58273381；PID coverage：52/77（0.67532468）
+[LTCC][训练] 当前 AMP scale：256.0；found_inf 数：0；跳过 optimizer step 数：0；nonfinite 事件数：0
+[LTCC][训练] 第 33/60 个 Epoch 完成；Epoch wall time：131.70 秒
+[LTCC][训练] 第 34/60 个 Epoch 开始
+[LTCC][训练] 第 34/60 个 Epoch，第 50/596 个 batch；总 Loss：4.395735；Base Loss：4.395735；GPC Loss：0.000000；当前学习率：9.129e-07；身份准确率：0.7500
+[LTCC][训练] 第 34/60 个 Epoch，第 100/596 个 batch；总 Loss：4.941458；Base Loss：4.941458；GPC Loss：0.000000；当前学习率：9.129e-07；身份准确率：0.3750
+[LTCC][训练] 第 34/60 个 Epoch，第 150/596 个 batch；总 Loss：5.824152；Base Loss：5.824152；GPC Loss：0.000000；当前学习率：9.129e-07；身份准确率：0.2500
+[LTCC][AMP审计] 第 34 个 Epoch 第 158 个 batch 发生 found_inf；本次 optimizer step 被跳过；当前 scale：256.0
+[LTCC][训练] 第 34/60 个 Epoch，第 200/596 个 batch；总 Loss：5.444623；Base Loss：5.419086；GPC Loss：0.255370；当前学习率：9.129e-07；身份准确率：0.2500
+[LTCC][训练] 第 34/60 个 Epoch，第 250/596 个 batch；总 Loss：5.981419；Base Loss：5.981419；GPC Loss：0.000000；当前学习率：9.129e-07；身份准确率：0.0000
+[LTCC][训练] 第 34/60 个 Epoch，第 300/596 个 batch；总 Loss：5.643868；Base Loss：5.643868；GPC Loss：0.000000；当前学习率：9.129e-07；身份准确率：0.2500
+[LTCC][训练] 第 34/60 个 Epoch，第 350/596 个 batch；总 Loss：5.955392；Base Loss：5.955392；GPC Loss：0.000000；当前学习率：9.129e-07；身份准确率：0.2500
+[LTCC][训练] 第 34/60 个 Epoch，第 400/596 个 batch；总 Loss：5.887538；Base Loss：5.887538；GPC Loss：0.000000；当前学习率：9.129e-07；身份准确率：0.0000
+[LTCC][训练] 第 34/60 个 Epoch，第 450/596 个 batch；总 Loss：5.868710；Base Loss：5.868710；GPC Loss：0.000000；当前学习率：9.129e-07；身份准确率：0.2500
+[LTCC][训练] 第 34/60 个 Epoch，第 500/596 个 batch；总 Loss：5.289780；Base Loss：5.289780；GPC Loss：0.000000；当前学习率：9.129e-07；身份准确率：0.2500
+[LTCC][训练] 第 34/60 个 Epoch，第 550/596 个 batch；总 Loss：5.367843；Base Loss：5.367843；GPC Loss：0.000000；当前学习率：9.129e-07；身份准确率：0.2500
+[LTCC][训练] 当前学习率：9.129e-07
+[LTCC][训练] Base Loss：5.484949；GPC Loss：0.032315；总 Loss：5.488181
+[LTCC][训练] GPC 激活 batch 数：138；总 batch 数：1192；GPC active rate：0.11577181
+[LTCC][训练] GPC selected contribution 数：152；same-clothes contribution 数：56；cross-clothes contribution 数：96
+[LTCC][训练] same-clothes fraction：0.36842105；cross-clothes fraction：0.63157895；PID coverage：51/77（0.66233766）
+[LTCC][训练] 当前 AMP scale：128.0；found_inf 数：2；跳过 optimizer step 数：2；nonfinite 事件数：2
+[LTCC][训练] 第 34/60 个 Epoch 完成；Epoch wall time：131.30 秒
+[LTCC][训练] 第 35/60 个 Epoch 开始
+[LTCC][训练] 第 35/60 个 Epoch，第 50/596 个 batch；总 Loss：6.187004；Base Loss：6.150517；GPC Loss：0.364872；当前学习率：8.671e-07；身份准确率：0.0000
+[LTCC][训练] 第 35/60 个 Epoch，第 100/596 个 batch；总 Loss：6.053213；Base Loss：6.053213；GPC Loss：0.000000；当前学习率：8.671e-07；身份准确率：0.0000
+[LTCC][训练] 第 35/60 个 Epoch，第 150/596 个 batch；总 Loss：5.289708；Base Loss：5.289708；GPC Loss：0.000000；当前学习率：8.671e-07；身份准确率：0.2500
+[LTCC][训练] 第 35/60 个 Epoch，第 200/596 个 batch；总 Loss：7.535415；Base Loss：7.535415；GPC Loss：0.000000；当前学习率：8.671e-07；身份准确率：0.5000
+[LTCC][训练] 第 35/60 个 Epoch，第 250/596 个 batch；总 Loss：5.603568；Base Loss：5.603568；GPC Loss：0.000000；当前学习率：8.671e-07；身份准确率：0.2500
+[LTCC][训练] 第 35/60 个 Epoch，第 300/596 个 batch；总 Loss：6.122457；Base Loss：6.122457；GPC Loss：0.000000；当前学习率：8.671e-07；身份准确率：0.5000
+[LTCC][AMP审计] 第 35 个 Epoch 第 335 个 batch 发生 found_inf；本次 optimizer step 被跳过；当前 scale：128.0
+[LTCC][训练] 第 35/60 个 Epoch，第 350/596 个 batch；总 Loss：5.087728；Base Loss：5.087728；GPC Loss：0.000000；当前学习率：8.671e-07；身份准确率：0.3750
+[LTCC][训练] 第 35/60 个 Epoch，第 400/596 个 batch；总 Loss：4.814569；Base Loss：4.814569；GPC Loss：0.000000；当前学习率：8.671e-07；身份准确率：0.5000
+[LTCC][训练] 第 35/60 个 Epoch，第 450/596 个 batch；总 Loss：5.740361；Base Loss：5.740361；GPC Loss：0.000000；当前学习率：8.671e-07；身份准确率：0.2500
+[LTCC][训练] 第 35/60 个 Epoch，第 500/596 个 batch；总 Loss：5.218513；Base Loss：5.196435；GPC Loss：0.220773；当前学习率：8.671e-07；身份准确率：0.5000
+[LTCC][训练] 第 35/60 个 Epoch，第 550/596 个 batch；总 Loss：6.838933；Base Loss：6.838933；GPC Loss：0.000000；当前学习率：8.671e-07；身份准确率：0.2500
+[LTCC][训练] 当前学习率：8.671e-07
+[LTCC][训练] Base Loss：5.455876；GPC Loss：0.029147；总 Loss：5.458791
+[LTCC][训练] GPC 激活 batch 数：123；总 batch 数：1192；GPC active rate：0.10318792
+[LTCC][训练] GPC selected contribution 数：137；same-clothes contribution 数：36；cross-clothes contribution 数：101
+[LTCC][训练] same-clothes fraction：0.26277372；cross-clothes fraction：0.73722628；PID coverage：45/77（0.58441558）
+[LTCC][训练] 当前 AMP scale：64.0；found_inf 数：2；跳过 optimizer step 数：2；nonfinite 事件数：2
+[LTCC][训练] 第 35/60 个 Epoch 完成；Epoch wall time：131.21 秒
+[LTCC][训练] 第 36/60 个 Epoch 开始
+[LTCC][训练] 第 36/60 个 Epoch，第 50/596 个 batch；总 Loss：5.573809；Base Loss：5.573809；GPC Loss：0.000000；当前学习率：8.219e-07；身份准确率：0.0000
+[LTCC][训练] 第 36/60 个 Epoch，第 100/596 个 batch；总 Loss：5.865847；Base Loss：5.865847；GPC Loss：0.000000；当前学习率：8.219e-07；身份准确率：0.5000
+[LTCC][训练] 第 36/60 个 Epoch，第 150/596 个 batch；总 Loss：5.117249；Base Loss：5.117249；GPC Loss：0.000000；当前学习率：8.219e-07；身份准确率：0.6250
+[LTCC][训练] 第 36/60 个 Epoch，第 200/596 个 batch；总 Loss：4.916202；Base Loss：4.916202；GPC Loss：0.000000；当前学习率：8.219e-07；身份准确率：0.2500
+[LTCC][训练] 第 36/60 个 Epoch，第 250/596 个 batch；总 Loss：5.593023；Base Loss：5.556493；GPC Loss：0.365303；当前学习率：8.219e-07；身份准确率：0.0000
+[LTCC][训练] 第 36/60 个 Epoch，第 300/596 个 batch；总 Loss：5.079048；Base Loss：5.062352；GPC Loss：0.166957；当前学习率：8.219e-07；身份准确率：0.2500
+[LTCC][训练] 第 36/60 个 Epoch，第 350/596 个 batch；总 Loss：4.828392；Base Loss：4.828392；GPC Loss：0.000000；当前学习率：8.219e-07；身份准确率：0.5000
+[LTCC][训练] 第 36/60 个 Epoch，第 400/596 个 batch；总 Loss：5.604764；Base Loss：5.604764；GPC Loss：0.000000；当前学习率：8.219e-07；身份准确率：0.1250
+[LTCC][训练] 第 36/60 个 Epoch，第 450/596 个 batch；总 Loss：5.215088；Base Loss：5.215088；GPC Loss：0.000000；当前学习率：8.219e-07；身份准确率：0.3750
+[LTCC][训练] 第 36/60 个 Epoch，第 500/596 个 batch；总 Loss：5.385956；Base Loss：5.385956；GPC Loss：0.000000；当前学习率：8.219e-07；身份准确率：0.2500
+[LTCC][训练] 第 36/60 个 Epoch，第 550/596 个 batch；总 Loss：5.836183；Base Loss：5.836183；GPC Loss：0.000000；当前学习率：8.219e-07；身份准确率：0.2500
+[LTCC][训练] 当前学习率：8.219e-07
+[LTCC][训练] Base Loss：5.406157；GPC Loss：0.037781；总 Loss：5.409935
+[LTCC][训练] GPC 激活 batch 数：144；总 batch 数：1192；GPC active rate：0.12080537
+[LTCC][训练] GPC selected contribution 数：159；same-clothes contribution 数：46；cross-clothes contribution 数：113
+[LTCC][训练] same-clothes fraction：0.28930818；cross-clothes fraction：0.71069182；PID coverage：54/77（0.70129870）
+[LTCC][训练] 当前 AMP scale：64.0；found_inf 数：0；跳过 optimizer step 数：0；nonfinite 事件数：0
+[LTCC][训练] 第 36/60 个 Epoch 完成；Epoch wall time：130.85 秒
+[LTCC][训练] 第 37/60 个 Epoch 开始
+[LTCC][训练] 第 37/60 个 Epoch，第 50/596 个 batch；总 Loss：5.341132；Base Loss：5.341132；GPC Loss：0.000000；当前学习率：7.775e-07；身份准确率：0.3750
+[LTCC][训练] 第 37/60 个 Epoch，第 100/596 个 batch；总 Loss：4.922083；Base Loss：4.884228；GPC Loss：0.378558；当前学习率：7.775e-07；身份准确率：0.5000
+[LTCC][训练] 第 37/60 个 Epoch，第 150/596 个 batch；总 Loss：5.370625；Base Loss：5.370625；GPC Loss：0.000000；当前学习率：7.775e-07；身份准确率：0.2500
+[LTCC][训练] 第 37/60 个 Epoch，第 200/596 个 batch；总 Loss：5.239415；Base Loss：5.239415；GPC Loss：0.000000；当前学习率：7.775e-07；身份准确率：0.3750
+[LTCC][训练] 第 37/60 个 Epoch，第 250/596 个 batch；总 Loss：4.952273；Base Loss：4.952273；GPC Loss：0.000000；当前学习率：7.775e-07；身份准确率：0.5000
+[LTCC][训练] 第 37/60 个 Epoch，第 300/596 个 batch；总 Loss：4.715276；Base Loss：4.715276；GPC Loss：0.000000；当前学习率：7.775e-07；身份准确率：0.5000
+[LTCC][训练] 第 37/60 个 Epoch，第 350/596 个 batch；总 Loss：6.988344；Base Loss：6.988344；GPC Loss：0.000000；当前学习率：7.775e-07；身份准确率：0.0000
+[LTCC][训练] 第 37/60 个 Epoch，第 400/596 个 batch；总 Loss：6.571692；Base Loss：6.571692；GPC Loss：0.000000；当前学习率：7.775e-07；身份准确率：0.6250
+[LTCC][训练] 第 37/60 个 Epoch，第 450/596 个 batch；总 Loss：5.347817；Base Loss：5.347817；GPC Loss：0.000000；当前学习率：7.775e-07；身份准确率：0.2500
+[LTCC][训练] 第 37/60 个 Epoch，第 500/596 个 batch；总 Loss：5.214281；Base Loss：5.186519；GPC Loss：0.277624；当前学习率：7.775e-07；身份准确率：0.5000
+[LTCC][训练] 第 37/60 个 Epoch，第 550/596 个 batch；总 Loss：5.611512；Base Loss：5.611512；GPC Loss：0.000000；当前学习率：7.775e-07；身份准确率：0.1250
+[LTCC][训练] 当前学习率：7.775e-07
+[LTCC][训练] Base Loss：5.383288；GPC Loss：0.034804；总 Loss：5.386769
+[LTCC][训练] GPC 激活 batch 数：138；总 batch 数：1192；GPC active rate：0.11577181
+[LTCC][训练] GPC selected contribution 数：152；same-clothes contribution 数：54；cross-clothes contribution 数：98
+[LTCC][训练] same-clothes fraction：0.35526316；cross-clothes fraction：0.64473684；PID coverage：52/77（0.67532468）
+[LTCC][训练] 当前 AMP scale：64.0；found_inf 数：0；跳过 optimizer step 数：0；nonfinite 事件数：0
+[LTCC][训练] 第 37/60 个 Epoch 完成；Epoch wall time：131.58 秒
+[LTCC][训练] 第 38/60 个 Epoch 开始
+[LTCC][训练] 第 38/60 个 Epoch，第 50/596 个 batch；总 Loss：4.883836；Base Loss：4.883836；GPC Loss：0.000000；当前学习率：7.339e-07；身份准确率：0.3750
+[LTCC][训练] 第 38/60 个 Epoch，第 100/596 个 batch；总 Loss：6.020058；Base Loss：6.020058；GPC Loss：0.000000；当前学习率：7.339e-07；身份准确率：0.2500
+[LTCC][训练] 第 38/60 个 Epoch，第 150/596 个 batch；总 Loss：5.285936；Base Loss：5.285936；GPC Loss：0.000000；当前学习率：7.339e-07；身份准确率：0.1250
+[LTCC][训练] 第 38/60 个 Epoch，第 200/596 个 batch；总 Loss：6.536638；Base Loss：6.536638；GPC Loss：0.000000；当前学习率：7.339e-07；身份准确率：0.3750
+[LTCC][训练] 第 38/60 个 Epoch，第 250/596 个 batch；总 Loss：5.709029；Base Loss：5.709029；GPC Loss：0.000000；当前学习率：7.339e-07；身份准确率：0.0000
+[LTCC][训练] 第 38/60 个 Epoch，第 300/596 个 batch；总 Loss：6.253927；Base Loss：6.253927；GPC Loss：0.000000；当前学习率：7.339e-07；身份准确率：0.2500
+[LTCC][训练] 第 38/60 个 Epoch，第 350/596 个 batch；总 Loss：4.763452；Base Loss：4.763452；GPC Loss：0.000000；当前学习率：7.339e-07；身份准确率：0.5000
+[LTCC][训练] 第 38/60 个 Epoch，第 400/596 个 batch；总 Loss：6.904118；Base Loss：6.874969；GPC Loss：0.291495；当前学习率：7.339e-07；身份准确率：0.1250
+[LTCC][训练] 第 38/60 个 Epoch，第 450/596 个 batch；总 Loss：5.086117；Base Loss：5.086117；GPC Loss：0.000000；当前学习率：7.339e-07；身份准确率：0.3750
+[LTCC][训练] 第 38/60 个 Epoch，第 500/596 个 batch；总 Loss：4.928095；Base Loss：4.928095；GPC Loss：0.000000；当前学习率：7.339e-07；身份准确率：0.5000
+[LTCC][训练] 第 38/60 个 Epoch，第 550/596 个 batch；总 Loss：5.186563；Base Loss：5.186563；GPC Loss：0.000000；当前学习率：7.339e-07；身份准确率：0.2500
+[LTCC][训练] 当前学习率：7.339e-07
+[LTCC][训练] Base Loss：5.351339；GPC Loss：0.032693；总 Loss：5.354608
+[LTCC][训练] GPC 激活 batch 数：134；总 batch 数：1192；GPC active rate：0.11241611
+[LTCC][训练] GPC selected contribution 数：143；same-clothes contribution 数：60；cross-clothes contribution 数：83
+[LTCC][训练] same-clothes fraction：0.41958042；cross-clothes fraction：0.58041958；PID coverage：51/77（0.66233766）
+[LTCC][训练] 当前 AMP scale：128.0；found_inf 数：0；跳过 optimizer step 数：0；nonfinite 事件数：0
+[LTCC][训练] 第 38/60 个 Epoch 完成；Epoch wall time：131.55 秒
+[LTCC][训练] 第 39/60 个 Epoch 开始
+[LTCC][训练] 第 39/60 个 Epoch，第 50/596 个 batch；总 Loss：5.101468；Base Loss：5.101468；GPC Loss：0.000000；当前学习率：6.914e-07；身份准确率：0.2500
+[LTCC][训练] 第 39/60 个 Epoch，第 100/596 个 batch；总 Loss：5.675554；Base Loss：5.675554；GPC Loss：0.000000；当前学习率：6.914e-07；身份准确率：0.1250
+[LTCC][训练] 第 39/60 个 Epoch，第 150/596 个 batch；总 Loss：5.595033；Base Loss：5.595033；GPC Loss：0.000000；当前学习率：6.914e-07；身份准确率：0.2500
+[LTCC][训练] 第 39/60 个 Epoch，第 200/596 个 batch；总 Loss：5.963068；Base Loss：5.963068；GPC Loss：0.000000；当前学习率：6.914e-07；身份准确率：0.5000
+[LTCC][训练] 第 39/60 个 Epoch，第 250/596 个 batch；总 Loss：5.367230；Base Loss：5.367230；GPC Loss：0.000000；当前学习率：6.914e-07；身份准确率：0.2500
+[LTCC][训练] 第 39/60 个 Epoch，第 300/596 个 batch；总 Loss：5.084620；Base Loss：5.084620；GPC Loss：0.000000；当前学习率：6.914e-07；身份准确率：0.5000
+[LTCC][训练] 第 39/60 个 Epoch，第 350/596 个 batch；总 Loss：5.674770；Base Loss：5.654726；GPC Loss：0.200439；当前学习率：6.914e-07；身份准确率：0.2500
+[LTCC][训练] 第 39/60 个 Epoch，第 400/596 个 batch；总 Loss：5.620322；Base Loss：5.584049；GPC Loss：0.362725；当前学习率：6.914e-07；身份准确率：0.5000
+[LTCC][训练] 第 39/60 个 Epoch，第 450/596 个 batch；总 Loss：4.765116；Base Loss：4.765116；GPC Loss：0.000000；当前学习率：6.914e-07；身份准确率：0.7500
+[LTCC][训练] 第 39/60 个 Epoch，第 500/596 个 batch；总 Loss：4.342973；Base Loss：4.342973；GPC Loss：0.000000；当前学习率：6.914e-07；身份准确率：1.0000
+[LTCC][训练] 第 39/60 个 Epoch，第 550/596 个 batch；总 Loss：5.770311；Base Loss：5.770311；GPC Loss：0.000000；当前学习率：6.914e-07；身份准确率：0.0000
+[LTCC][训练] 当前学习率：6.914e-07
+[LTCC][训练] Base Loss：5.297089；GPC Loss：0.033758；总 Loss：5.300465
+[LTCC][训练] GPC 激活 batch 数：136；总 batch 数：1192；GPC active rate：0.11409396
+[LTCC][训练] GPC selected contribution 数：142；same-clothes contribution 数：60；cross-clothes contribution 数：82
+[LTCC][训练] same-clothes fraction：0.42253521；cross-clothes fraction：0.57746479；PID coverage：54/77（0.70129870）
+[LTCC][训练] 当前 AMP scale：128.0；found_inf 数：0；跳过 optimizer step 数：0；nonfinite 事件数：0
+[LTCC][训练] 第 39/60 个 Epoch 完成；Epoch wall time：131.29 秒
+[LTCC][训练] 第 40/60 个 Epoch 开始
+[LTCC][训练] 第 40/60 个 Epoch，第 50/596 个 batch；总 Loss：4.146488；Base Loss：4.146488；GPC Loss：0.000000；当前学习率：6.500e-07；身份准确率：0.7500
+[LTCC][训练] 第 40/60 个 Epoch，第 100/596 个 batch；总 Loss：5.414688；Base Loss：5.414688；GPC Loss：0.000000；当前学习率：6.500e-07；身份准确率：0.2500
+[LTCC][训练] 第 40/60 个 Epoch，第 150/596 个 batch；总 Loss：4.435393；Base Loss：4.435393；GPC Loss：0.000000；当前学习率：6.500e-07；身份准确率：0.2500
+[LTCC][训练] 第 40/60 个 Epoch，第 200/596 个 batch；总 Loss：4.792503；Base Loss：4.792503；GPC Loss：0.000000；当前学习率：6.500e-07；身份准确率：0.3750
+[LTCC][训练] 第 40/60 个 Epoch，第 250/596 个 batch；总 Loss：4.684762；Base Loss：4.684762；GPC Loss：0.000000；当前学习率：6.500e-07；身份准确率：0.6250
+[LTCC][训练] 第 40/60 个 Epoch，第 300/596 个 batch；总 Loss：5.510519；Base Loss：5.510519；GPC Loss：0.000000；当前学习率：6.500e-07；身份准确率：0.2500
+[LTCC][训练] 第 40/60 个 Epoch，第 350/596 个 batch；总 Loss：4.503020；Base Loss：4.503020；GPC Loss：0.000000；当前学习率：6.500e-07；身份准确率：0.6250
+[LTCC][训练] 第 40/60 个 Epoch，第 400/596 个 batch；总 Loss：5.711472；Base Loss：5.711472；GPC Loss：0.000000；当前学习率：6.500e-07；身份准确率：0.6250
+[LTCC][训练] 第 40/60 个 Epoch，第 450/596 个 batch；总 Loss：4.921265；Base Loss：4.921265；GPC Loss：0.000000；当前学习率：6.500e-07；身份准确率：0.6250
+[LTCC][训练] 第 40/60 个 Epoch，第 500/596 个 batch；总 Loss：5.181060；Base Loss：5.181060；GPC Loss：0.000000；当前学习率：6.500e-07；身份准确率：0.3750
+[LTCC][训练] 第 40/60 个 Epoch，第 550/596 个 batch；总 Loss：5.193444；Base Loss：5.193444；GPC Loss：0.000000；当前学习率：6.500e-07；身份准确率：0.7500
+[LTCC][训练] 当前学习率：6.500e-07
+[LTCC][训练] Base Loss：5.272639；GPC Loss：0.034321；总 Loss：5.276071
+[LTCC][训练] GPC 激活 batch 数：142；总 batch 数：1192；GPC active rate：0.11912752
+[LTCC][训练] GPC selected contribution 数：149；same-clothes contribution 数：65；cross-clothes contribution 数：84
+[LTCC][训练] same-clothes fraction：0.43624161；cross-clothes fraction：0.56375839；PID coverage：56/77（0.72727273）
+[LTCC][训练] 当前 AMP scale：128.0；found_inf 数：0；跳过 optimizer step 数：0；nonfinite 事件数：0
+[LTCC][训练] 第 40/60 个 Epoch 完成；Epoch wall time：130.97 秒
+[LTCC][训练] 第 41/60 个 Epoch 开始
+[LTCC][训练] 第 41/60 个 Epoch，第 50/596 个 batch；总 Loss：5.378296；Base Loss：5.378296；GPC Loss：0.000000；当前学习率：6.098e-07；身份准确率：0.7500
+[LTCC][训练] 第 41/60 个 Epoch，第 100/596 个 batch；总 Loss：4.870024；Base Loss：4.870024；GPC Loss：0.000000；当前学习率：6.098e-07；身份准确率：0.3750
+[LTCC][训练] 第 41/60 个 Epoch，第 150/596 个 batch；总 Loss：5.226985；Base Loss：5.226985；GPC Loss：0.000000；当前学习率：6.098e-07；身份准确率：0.2500
+[LTCC][训练] 第 41/60 个 Epoch，第 200/596 个 batch；总 Loss：4.642383；Base Loss：4.642383；GPC Loss：0.000000；当前学习率：6.098e-07；身份准确率：0.2500
+[LTCC][训练] 第 41/60 个 Epoch，第 250/596 个 batch；总 Loss：4.353245；Base Loss：4.353245；GPC Loss：0.000000；当前学习率：6.098e-07；身份准确率：0.3750
+[LTCC][训练] 第 41/60 个 Epoch，第 300/596 个 batch；总 Loss：4.301929；Base Loss：4.301929；GPC Loss：0.000000；当前学习率：6.098e-07；身份准确率：0.7500
+[LTCC][训练] 第 41/60 个 Epoch，第 350/596 个 batch；总 Loss：4.501474；Base Loss：4.476574；GPC Loss：0.249000；当前学习率：6.098e-07；身份准确率：0.5000
+[LTCC][训练] 第 41/60 个 Epoch，第 400/596 个 batch；总 Loss：5.566280；Base Loss：5.566280；GPC Loss：0.000000；当前学习率：6.098e-07；身份准确率：0.0000
+[LTCC][训练] 第 41/60 个 Epoch，第 450/596 个 batch；总 Loss：5.972586；Base Loss：5.972586；GPC Loss：0.000000；当前学习率：6.098e-07；身份准确率：0.0000
+[LTCC][训练] 第 41/60 个 Epoch，第 500/596 个 batch；总 Loss：5.521509；Base Loss：5.521509；GPC Loss：0.000000；当前学习率：6.098e-07；身份准确率：0.0000
+[LTCC][训练] 第 41/60 个 Epoch，第 550/596 个 batch；总 Loss：4.787807；Base Loss：4.787807；GPC Loss：0.000000；当前学习率：6.098e-07；身份准确率：0.8750
+[LTCC][训练] 当前学习率：6.098e-07
+[LTCC][训练] Base Loss：5.242569；GPC Loss：0.033172；总 Loss：5.245887
+[LTCC][训练] GPC 激活 batch 数：130；总 batch 数：1192；GPC active rate：0.10906040
+[LTCC][训练] GPC selected contribution 数：143；same-clothes contribution 数：48；cross-clothes contribution 数：95
+[LTCC][训练] same-clothes fraction：0.33566434；cross-clothes fraction：0.66433566；PID coverage：50/77（0.64935065）
+[LTCC][训练] 当前 AMP scale：128.0；found_inf 数：0；跳过 optimizer step 数：0；nonfinite 事件数：0
+[LTCC][训练] 第 41/60 个 Epoch 完成；Epoch wall time：132.77 秒
+[LTCC][训练] 第 42/60 个 Epoch 开始
+[LTCC][训练] 第 42/60 个 Epoch，第 50/596 个 batch；总 Loss：4.231002；Base Loss：4.231002；GPC Loss：0.000000；当前学习率：5.710e-07；身份准确率：0.6250
+[LTCC][训练] 第 42/60 个 Epoch，第 100/596 个 batch；总 Loss：4.357471；Base Loss：4.357471；GPC Loss：0.000000；当前学习率：5.710e-07；身份准确率：0.7500
+[LTCC][训练] 第 42/60 个 Epoch，第 150/596 个 batch；总 Loss：4.025492；Base Loss：4.025492；GPC Loss：0.000000；当前学习率：5.710e-07；身份准确率：0.7500
+[LTCC][训练] 第 42/60 个 Epoch，第 200/596 个 batch；总 Loss：5.824235；Base Loss：5.780480；GPC Loss：0.437549；当前学习率：5.710e-07；身份准确率：0.3750
+[LTCC][训练] 第 42/60 个 Epoch，第 250/596 个 batch；总 Loss：6.203617；Base Loss：6.203617；GPC Loss：0.000000；当前学习率：5.710e-07；身份准确率：0.0000
+[LTCC][训练] 第 42/60 个 Epoch，第 300/596 个 batch；总 Loss：4.684261；Base Loss：4.684261；GPC Loss：0.000000；当前学习率：5.710e-07；身份准确率：0.3750
+[LTCC][训练] 第 42/60 个 Epoch，第 350/596 个 batch；总 Loss：5.567861；Base Loss：5.567861；GPC Loss：0.000000；当前学习率：5.710e-07；身份准确率：0.2500
+[LTCC][训练] 第 42/60 个 Epoch，第 400/596 个 batch；总 Loss：5.860188；Base Loss：5.860188；GPC Loss：0.000000；当前学习率：5.710e-07；身份准确率：0.3750
+[LTCC][AMP审计] 第 42 个 Epoch 第 418 个 batch 发生 found_inf；本次 optimizer step 被跳过；当前 scale：256.0
+[LTCC][训练] 第 42/60 个 Epoch，第 450/596 个 batch；总 Loss：5.989620；Base Loss：5.989620；GPC Loss：0.000000；当前学习率：5.710e-07；身份准确率：0.2500
+[LTCC][训练] 第 42/60 个 Epoch，第 500/596 个 batch；总 Loss：5.243927；Base Loss：5.243927；GPC Loss：0.000000；当前学习率：5.710e-07；身份准确率：0.3750
+[LTCC][训练] 第 42/60 个 Epoch，第 550/596 个 batch；总 Loss：4.916222；Base Loss：4.916222；GPC Loss：0.000000；当前学习率：5.710e-07；身份准确率：0.3750
+[LTCC][训练] 当前学习率：5.710e-07
+[LTCC][训练] Base Loss：5.233179；GPC Loss：0.035478；总 Loss：5.236727
+[LTCC][训练] GPC 激活 batch 数：137；总 batch 数：1192；GPC active rate：0.11493289
+[LTCC][训练] GPC selected contribution 数：146；same-clothes contribution 数：54；cross-clothes contribution 数：92
+[LTCC][训练] same-clothes fraction：0.36986301；cross-clothes fraction：0.63013699；PID coverage：53/77（0.68831169）
+[LTCC][训练] 当前 AMP scale：128.0；found_inf 数：2；跳过 optimizer step 数：2；nonfinite 事件数：2
+[LTCC][训练] 第 42/60 个 Epoch 完成；Epoch wall time：131.65 秒
+[LTCC][训练] 第 43/60 个 Epoch 开始
+[LTCC][训练] 第 43/60 个 Epoch，第 50/596 个 batch；总 Loss：5.785090；Base Loss：5.785090；GPC Loss：0.000000；当前学习率：5.336e-07；身份准确率：0.3750
+[LTCC][训练] 第 43/60 个 Epoch，第 100/596 个 batch；总 Loss：4.014853；Base Loss：4.014853；GPC Loss：0.000000；当前学习率：5.336e-07；身份准确率：0.7500
+[LTCC][训练] 第 43/60 个 Epoch，第 150/596 个 batch；总 Loss：4.708830；Base Loss：4.708830；GPC Loss：0.000000；当前学习率：5.336e-07；身份准确率：0.6250
+[LTCC][训练] 第 43/60 个 Epoch，第 200/596 个 batch；总 Loss：6.022236；Base Loss：6.022236；GPC Loss：0.000000；当前学习率：5.336e-07；身份准确率：0.0000
+[LTCC][训练] 第 43/60 个 Epoch，第 250/596 个 batch；总 Loss：5.232422；Base Loss：5.212974；GPC Loss：0.194482；当前学习率：5.336e-07；身份准确率：0.2500
+[LTCC][训练] 第 43/60 个 Epoch，第 300/596 个 batch；总 Loss：5.148569；Base Loss：5.148569；GPC Loss：0.000000；当前学习率：5.336e-07；身份准确率：0.5000
+[LTCC][训练] 第 43/60 个 Epoch，第 350/596 个 batch；总 Loss：5.281347；Base Loss：5.281347；GPC Loss：0.000000；当前学习率：5.336e-07；身份准确率：0.2500
+[LTCC][训练] 第 43/60 个 Epoch，第 400/596 个 batch；总 Loss：5.732677；Base Loss：5.732677；GPC Loss：0.000000；当前学习率：5.336e-07；身份准确率：0.5000
+[LTCC][训练] 第 43/60 个 Epoch，第 450/596 个 batch；总 Loss：4.597661；Base Loss：4.597661；GPC Loss：0.000000；当前学习率：5.336e-07；身份准确率：0.5000
+[LTCC][训练] 第 43/60 个 Epoch，第 500/596 个 batch；总 Loss：4.572532；Base Loss：4.572532；GPC Loss：0.000000；当前学习率：5.336e-07；身份准确率：0.3750
+[LTCC][训练] 第 43/60 个 Epoch，第 550/596 个 batch；总 Loss：4.960605；Base Loss：4.960605；GPC Loss：0.000000；当前学习率：5.336e-07；身份准确率：0.3750
+[LTCC][训练] 当前学习率：5.336e-07
+[LTCC][训练] Base Loss：5.209392；GPC Loss：0.034954；总 Loss：5.212887
+[LTCC][训练] GPC 激活 batch 数：140；总 batch 数：1192；GPC active rate：0.11744966
+[LTCC][训练] GPC selected contribution 数：147；same-clothes contribution 数：53；cross-clothes contribution 数：94
+[LTCC][训练] same-clothes fraction：0.36054422；cross-clothes fraction：0.63945578；PID coverage：53/77（0.68831169）
+[LTCC][训练] 当前 AMP scale：128.0；found_inf 数：0；跳过 optimizer step 数：0；nonfinite 事件数：0
+[LTCC][训练] 第 43/60 个 Epoch 完成；Epoch wall time：131.03 秒
+[LTCC][训练] 第 44/60 个 Epoch 开始
+[LTCC][训练] 第 44/60 个 Epoch，第 50/596 个 batch；总 Loss：4.561732；Base Loss：4.561732；GPC Loss：0.000000；当前学习率：4.978e-07；身份准确率：0.6250
+[LTCC][训练] 第 44/60 个 Epoch，第 100/596 个 batch；总 Loss：5.148881；Base Loss：5.148881；GPC Loss：0.000000；当前学习率：4.978e-07；身份准确率：0.5000
+[LTCC][训练] 第 44/60 个 Epoch，第 150/596 个 batch；总 Loss：5.433465；Base Loss：5.390183；GPC Loss：0.432819；当前学习率：4.978e-07；身份准确率：0.2500
+[LTCC][训练] 第 44/60 个 Epoch，第 200/596 个 batch；总 Loss：5.799304；Base Loss：5.799304；GPC Loss：0.000000；当前学习率：4.978e-07；身份准确率：0.0000
+[LTCC][训练] 第 44/60 个 Epoch，第 250/596 个 batch；总 Loss：5.731494；Base Loss：5.731494；GPC Loss：0.000000；当前学习率：4.978e-07；身份准确率：0.6250
+[LTCC][训练] 第 44/60 个 Epoch，第 300/596 个 batch；总 Loss：5.390183；Base Loss：5.344296；GPC Loss：0.458871；当前学习率：4.978e-07；身份准确率：0.6250
+[LTCC][训练] 第 44/60 个 Epoch，第 350/596 个 batch；总 Loss：4.949909；Base Loss：4.949909；GPC Loss：0.000000；当前学习率：4.978e-07；身份准确率：0.5000
+[LTCC][训练] 第 44/60 个 Epoch，第 400/596 个 batch；总 Loss：4.893266；Base Loss：4.893266；GPC Loss：0.000000；当前学习率：4.978e-07；身份准确率：0.2500
+[LTCC][训练] 第 44/60 个 Epoch，第 450/596 个 batch；总 Loss：4.829329；Base Loss：4.829329；GPC Loss：0.000000；当前学习率：4.978e-07；身份准确率：0.1250
+[LTCC][训练] 第 44/60 个 Epoch，第 500/596 个 batch；总 Loss：7.302700；Base Loss：7.302700；GPC Loss：0.000000；当前学习率：4.978e-07；身份准确率：0.0000
+[LTCC][训练] 第 44/60 个 Epoch，第 550/596 个 batch；总 Loss：4.486946；Base Loss：4.470267；GPC Loss：0.166794；当前学习率：4.978e-07；身份准确率：0.8750
+[LTCC][训练] 当前学习率：4.978e-07
+[LTCC][训练] Base Loss：5.189155；GPC Loss：0.034469；总 Loss：5.192602
+[LTCC][训练] GPC 激活 batch 数：132；总 batch 数：1192；GPC active rate：0.11073826
+[LTCC][训练] GPC selected contribution 数：142；same-clothes contribution 数：51；cross-clothes contribution 数：91
+[LTCC][训练] same-clothes fraction：0.35915493；cross-clothes fraction：0.64084507；PID coverage：52/77（0.67532468）
+[LTCC][训练] 当前 AMP scale：128.0；found_inf 数：0；跳过 optimizer step 数：0；nonfinite 事件数：0
+[LTCC][训练] 第 44/60 个 Epoch 完成；Epoch wall time：130.57 秒
+[LTCC][训练] 第 45/60 个 Epoch 开始
+[LTCC][训练] 第 45/60 个 Epoch，第 50/596 个 batch；总 Loss：5.781301；Base Loss：5.781301；GPC Loss：0.000000；当前学习率：4.636e-07；身份准确率：0.2500
+[LTCC][训练] 第 45/60 个 Epoch，第 100/596 个 batch；总 Loss：5.370849；Base Loss：5.370849；GPC Loss：0.000000；当前学习率：4.636e-07；身份准确率：0.2500
+[LTCC][训练] 第 45/60 个 Epoch，第 150/596 个 batch；总 Loss：3.678572；Base Loss：3.678572；GPC Loss：0.000000；当前学习率：4.636e-07；身份准确率：0.8750
+[LTCC][训练] 第 45/60 个 Epoch，第 200/596 个 batch；总 Loss：6.701238；Base Loss：6.701238；GPC Loss：0.000000；当前学习率：4.636e-07；身份准确率：0.5000
+[LTCC][训练] 第 45/60 个 Epoch，第 250/596 个 batch；总 Loss：5.888629；Base Loss：5.864887；GPC Loss：0.237420；当前学习率：4.636e-07；身份准确率：0.0000
+[LTCC][训练] 第 45/60 个 Epoch，第 300/596 个 batch；总 Loss：5.937999；Base Loss：5.910800；GPC Loss：0.271992；当前学习率：4.636e-07；身份准确率：0.2500
+[LTCC][训练] 第 45/60 个 Epoch，第 350/596 个 batch；总 Loss：5.230224；Base Loss：5.230224；GPC Loss：0.000000；当前学习率：4.636e-07；身份准确率：0.3750
+[LTCC][训练] 第 45/60 个 Epoch，第 400/596 个 batch；总 Loss：5.084258；Base Loss：5.084258；GPC Loss：0.000000；当前学习率：4.636e-07；身份准确率：0.2500
+[LTCC][训练] 第 45/60 个 Epoch，第 450/596 个 batch；总 Loss：5.030859；Base Loss：5.030859；GPC Loss：0.000000；当前学习率：4.636e-07；身份准确率：0.5000
+[LTCC][训练] 第 45/60 个 Epoch，第 500/596 个 batch；总 Loss：5.348198；Base Loss：5.348198；GPC Loss：0.000000；当前学习率：4.636e-07；身份准确率：0.1250
+[LTCC][训练] 第 45/60 个 Epoch，第 550/596 个 batch；总 Loss：6.321639；Base Loss：6.321639；GPC Loss：0.000000；当前学习率：4.636e-07；身份准确率：0.5000
+[LTCC][训练] 当前学习率：4.636e-07
+[LTCC][训练] Base Loss：5.144845；GPC Loss：0.033545；总 Loss：5.148199
+[LTCC][训练] GPC 激活 batch 数：132；总 batch 数：1192；GPC active rate：0.11073826
+[LTCC][训练] GPC selected contribution 数：139；same-clothes contribution 数：65；cross-clothes contribution 数：74
+[LTCC][训练] same-clothes fraction：0.46762590；cross-clothes fraction：0.53237410；PID coverage：57/77（0.74025974）
+[LTCC][训练] 当前 AMP scale：128.0；found_inf 数：0；跳过 optimizer step 数：0；nonfinite 事件数：0
+[LTCC][训练] 第 45/60 个 Epoch 完成；Epoch wall time：132.32 秒
+[LTCC][训练] 第 46/60 个 Epoch 开始
+[LTCC][训练] 第 46/60 个 Epoch，第 50/596 个 batch；总 Loss：5.180657；Base Loss：5.180657；GPC Loss：0.000000；当前学习率：4.312e-07；身份准确率：0.0000
+[LTCC][训练] 第 46/60 个 Epoch，第 100/596 个 batch；总 Loss：4.720716；Base Loss：4.720716；GPC Loss：0.000000；当前学习率：4.312e-07；身份准确率：0.6250
+[LTCC][训练] 第 46/60 个 Epoch，第 150/596 个 batch；总 Loss：5.312547；Base Loss：5.312547；GPC Loss：0.000000；当前学习率：4.312e-07；身份准确率：0.5000
+[LTCC][训练] 第 46/60 个 Epoch，第 200/596 个 batch；总 Loss：4.342244；Base Loss：4.342244；GPC Loss：0.000000；当前学习率：4.312e-07；身份准确率：0.5000
+[LTCC][训练] 第 46/60 个 Epoch，第 250/596 个 batch；总 Loss：4.995566；Base Loss：4.973668；GPC Loss：0.218985；当前学习率：4.312e-07；身份准确率：0.2500
+[LTCC][训练] 第 46/60 个 Epoch，第 300/596 个 batch；总 Loss：6.580399；Base Loss：6.580399；GPC Loss：0.000000；当前学习率：4.312e-07；身份准确率：0.2500
+[LTCC][训练] 第 46/60 个 Epoch，第 350/596 个 batch；总 Loss：4.391783；Base Loss：4.391783；GPC Loss：0.000000；当前学习率：4.312e-07；身份准确率：0.8750
+[LTCC][训练] 第 46/60 个 Epoch，第 400/596 个 batch；总 Loss：5.741524；Base Loss：5.741524；GPC Loss：0.000000；当前学习率：4.312e-07；身份准确率：0.6250
+[LTCC][训练] 第 46/60 个 Epoch，第 450/596 个 batch；总 Loss：5.509953；Base Loss：5.509953；GPC Loss：0.000000；当前学习率：4.312e-07；身份准确率：0.2500
+[LTCC][训练] 第 46/60 个 Epoch，第 500/596 个 batch；总 Loss：4.463201；Base Loss：4.463201；GPC Loss：0.000000；当前学习率：4.312e-07；身份准确率：0.6250
+[LTCC][训练] 第 46/60 个 Epoch，第 550/596 个 batch；总 Loss：5.319006；Base Loss：5.319006；GPC Loss：0.000000；当前学习率：4.312e-07；身份准确率：0.5000
+[LTCC][训练] 当前学习率：4.312e-07
+[LTCC][训练] Base Loss：5.120086；GPC Loss：0.035595；总 Loss：5.123646
+[LTCC][训练] GPC 激活 batch 数：138；总 batch 数：1192；GPC active rate：0.11577181
+[LTCC][训练] GPC selected contribution 数：150；same-clothes contribution 数：57；cross-clothes contribution 数：93
+[LTCC][训练] same-clothes fraction：0.38000000；cross-clothes fraction：0.62000000；PID coverage：50/77（0.64935065）
+[LTCC][训练] 当前 AMP scale：256.0；found_inf 数：0；跳过 optimizer step 数：0；nonfinite 事件数：0
+[LTCC][训练] 第 46/60 个 Epoch 完成；Epoch wall time：131.76 秒
+[LTCC][训练] 第 47/60 个 Epoch 开始
+[LTCC][训练] 第 47/60 个 Epoch，第 50/596 个 batch；总 Loss：5.720107；Base Loss：5.654295；GPC Loss：0.658123；当前学习率：4.006e-07；身份准确率：0.0000
+[LTCC][训练] 第 47/60 个 Epoch，第 100/596 个 batch；总 Loss：5.049340；Base Loss：5.049340；GPC Loss：0.000000；当前学习率：4.006e-07；身份准确率：0.5000
+[LTCC][训练] 第 47/60 个 Epoch，第 150/596 个 batch；总 Loss：4.349646；Base Loss：4.349646；GPC Loss：0.000000；当前学习率：4.006e-07；身份准确率：0.7500
+[LTCC][训练] 第 47/60 个 Epoch，第 200/596 个 batch；总 Loss：5.278080；Base Loss：5.278080；GPC Loss：0.000000；当前学习率：4.006e-07；身份准确率：0.2500
+[LTCC][训练] 第 47/60 个 Epoch，第 250/596 个 batch；总 Loss：4.062954；Base Loss：4.062954；GPC Loss：0.000000；当前学习率：4.006e-07；身份准确率：0.5000
+[LTCC][训练] 第 47/60 个 Epoch，第 300/596 个 batch；总 Loss：4.783185；Base Loss：4.783185；GPC Loss：0.000000；当前学习率：4.006e-07；身份准确率：0.5000
+[LTCC][训练] 第 47/60 个 Epoch，第 350/596 个 batch；总 Loss：5.949137；Base Loss：5.949137；GPC Loss：0.000000；当前学习率：4.006e-07；身份准确率：0.2500
+[LTCC][训练] 第 47/60 个 Epoch，第 400/596 个 batch；总 Loss：6.165921；Base Loss：6.165921；GPC Loss：0.000000；当前学习率：4.006e-07；身份准确率：0.2500
+[LTCC][训练] 第 47/60 个 Epoch，第 450/596 个 batch；总 Loss：4.533223；Base Loss：4.533223；GPC Loss：0.000000；当前学习率：4.006e-07；身份准确率：0.5000
+[LTCC][训练] 第 47/60 个 Epoch，第 500/596 个 batch；总 Loss：5.004218；Base Loss：5.004218；GPC Loss：0.000000；当前学习率：4.006e-07；身份准确率：0.5000
+[LTCC][训练] 第 47/60 个 Epoch，第 550/596 个 batch；总 Loss：5.497908；Base Loss：5.497908；GPC Loss：0.000000；当前学习率：4.006e-07；身份准确率：0.1250
+[LTCC][训练] 当前学习率：4.006e-07
+[LTCC][训练] Base Loss：5.099047；GPC Loss：0.036074；总 Loss：5.102654
+[LTCC][训练] GPC 激活 batch 数：135；总 batch 数：1192；GPC active rate：0.11325503
+[LTCC][训练] GPC selected contribution 数：149；same-clothes contribution 数：66；cross-clothes contribution 数：83
+[LTCC][训练] same-clothes fraction：0.44295302；cross-clothes fraction：0.55704698；PID coverage：55/77（0.71428571）
+[LTCC][训练] 当前 AMP scale：256.0；found_inf 数：0；跳过 optimizer step 数：0；nonfinite 事件数：0
+[LTCC][训练] 第 47/60 个 Epoch 完成；Epoch wall time：131.38 秒
+[LTCC][训练] 第 48/60 个 Epoch 开始
+[LTCC][训练] 第 48/60 个 Epoch，第 50/596 个 batch；总 Loss：5.476698；Base Loss：5.476698；GPC Loss：0.000000；当前学习率：3.719e-07；身份准确率：0.7500
+[LTCC][训练] 第 48/60 个 Epoch，第 100/596 个 batch；总 Loss：4.045504；Base Loss：4.017615；GPC Loss：0.278892；当前学习率：3.719e-07；身份准确率：0.8750
+[LTCC][训练] 第 48/60 个 Epoch，第 150/596 个 batch；总 Loss：4.987612；Base Loss：4.987612；GPC Loss：0.000000；当前学习率：3.719e-07；身份准确率：0.5000
+[LTCC][训练] 第 48/60 个 Epoch，第 200/596 个 batch；总 Loss：5.300433；Base Loss：5.300433；GPC Loss：0.000000；当前学习率：3.719e-07；身份准确率：0.5000
+[LTCC][训练] 第 48/60 个 Epoch，第 250/596 个 batch；总 Loss：6.501400；Base Loss：6.501400；GPC Loss：0.000000；当前学习率：3.719e-07；身份准确率：0.1250
+[LTCC][训练] 第 48/60 个 Epoch，第 300/596 个 batch；总 Loss：5.252025；Base Loss：5.252025；GPC Loss：0.000000；当前学习率：3.719e-07；身份准确率：0.5000
+[LTCC][训练] 第 48/60 个 Epoch，第 350/596 个 batch；总 Loss：6.166465；Base Loss：6.166465；GPC Loss：0.000000；当前学习率：3.719e-07；身份准确率：0.2500
+[LTCC][训练] 第 48/60 个 Epoch，第 400/596 个 batch；总 Loss：5.044828；Base Loss：5.044828；GPC Loss：0.000000；当前学习率：3.719e-07；身份准确率：0.5000
+[LTCC][训练] 第 48/60 个 Epoch，第 450/596 个 batch；总 Loss：4.295693；Base Loss：4.295693；GPC Loss：0.000000；当前学习率：3.719e-07；身份准确率：0.6250
+[LTCC][训练] 第 48/60 个 Epoch，第 500/596 个 batch；总 Loss：4.499563；Base Loss：4.499563；GPC Loss：0.000000；当前学习率：3.719e-07；身份准确率：0.5000
+[LTCC][训练] 第 48/60 个 Epoch，第 550/596 个 batch；总 Loss：6.302405；Base Loss：6.261438；GPC Loss：0.409677；当前学习率：3.719e-07；身份准确率：0.2500
+[LTCC][训练] 当前学习率：3.719e-07
+[LTCC][训练] Base Loss：5.086836；GPC Loss：0.037594；总 Loss：5.090596
+[LTCC][训练] GPC 激活 batch 数：137；总 batch 数：1192；GPC active rate：0.11493289
+[LTCC][训练] GPC selected contribution 数：144；same-clothes contribution 数：41；cross-clothes contribution 数：103
+[LTCC][训练] same-clothes fraction：0.28472222；cross-clothes fraction：0.71527778；PID coverage：49/77（0.63636364）
+[LTCC][训练] 当前 AMP scale：256.0；found_inf 数：0；跳过 optimizer step 数：0；nonfinite 事件数：0
+[LTCC][训练] 第 48/60 个 Epoch 完成；Epoch wall time：130.28 秒
+[LTCC][训练] 第 49/60 个 Epoch 开始
+[LTCC][训练] 第 49/60 个 Epoch，第 50/596 个 batch；总 Loss：5.349944；Base Loss：5.349944；GPC Loss：0.000000；当前学习率：3.452e-07；身份准确率：0.3750
+[LTCC][训练] 第 49/60 个 Epoch，第 100/596 个 batch；总 Loss：5.244121；Base Loss：5.244121；GPC Loss：0.000000；当前学习率：3.452e-07；身份准确率：0.3750
+[LTCC][AMP审计] 第 49 个 Epoch 第 140 个 batch 发生 found_inf；本次 optimizer step 被跳过；当前 scale：256.0
+[LTCC][训练] 第 49/60 个 Epoch，第 150/596 个 batch；总 Loss：4.469503；Base Loss：4.469503；GPC Loss：0.000000；当前学习率：3.452e-07；身份准确率：0.7500
+[LTCC][训练] 第 49/60 个 Epoch，第 200/596 个 batch；总 Loss：4.439716；Base Loss：4.439716；GPC Loss：0.000000；当前学习率：3.452e-07；身份准确率：0.6250
+[LTCC][训练] 第 49/60 个 Epoch，第 250/596 个 batch；总 Loss：4.059786；Base Loss：4.059786；GPC Loss：0.000000；当前学习率：3.452e-07；身份准确率：0.7500
+[LTCC][训练] 第 49/60 个 Epoch，第 300/596 个 batch；总 Loss：5.429702；Base Loss：5.429702；GPC Loss：0.000000；当前学习率：3.452e-07；身份准确率：0.3750
+[LTCC][训练] 第 49/60 个 Epoch，第 350/596 个 batch；总 Loss：5.250130；Base Loss：5.250130；GPC Loss：0.000000；当前学习率：3.452e-07；身份准确率：0.2500
+[LTCC][训练] 第 49/60 个 Epoch，第 400/596 个 batch；总 Loss：5.190156；Base Loss：5.190156；GPC Loss：0.000000；当前学习率：3.452e-07；身份准确率：0.3750
+[LTCC][训练] 第 49/60 个 Epoch，第 450/596 个 batch；总 Loss：5.412522；Base Loss：5.412522；GPC Loss：0.000000；当前学习率：3.452e-07；身份准确率：0.3750
+[LTCC][训练] 第 49/60 个 Epoch，第 500/596 个 batch；总 Loss：5.502720；Base Loss：5.480519；GPC Loss：0.222008；当前学习率：3.452e-07；身份准确率：0.3750
+[LTCC][训练] 第 49/60 个 Epoch，第 550/596 个 batch；总 Loss：5.057591；Base Loss：5.033230；GPC Loss：0.243616；当前学习率：3.452e-07；身份准确率：0.2500
+[LTCC][训练] 当前学习率：3.452e-07
+[LTCC][训练] Base Loss：5.065038；GPC Loss：0.035285；总 Loss：5.068566
+[LTCC][训练] GPC 激活 batch 数：135；总 batch 数：1192；GPC active rate：0.11325503
+[LTCC][训练] GPC selected contribution 数：150；same-clothes contribution 数：60；cross-clothes contribution 数：90
+[LTCC][训练] same-clothes fraction：0.40000000；cross-clothes fraction：0.60000000；PID coverage：52/77（0.67532468）
+[LTCC][训练] 当前 AMP scale：128.0；found_inf 数：2；跳过 optimizer step 数：2；nonfinite 事件数：2
+[LTCC][训练] 第 49/60 个 Epoch 完成；Epoch wall time：131.12 秒
+[LTCC][训练] 第 50/60 个 Epoch 开始
+[LTCC][训练] 第 50/60 个 Epoch，第 50/596 个 batch；总 Loss：5.542793；Base Loss：5.542793；GPC Loss：0.000000；当前学习率：3.206e-07；身份准确率：0.5000
+[LTCC][训练] 第 50/60 个 Epoch，第 100/596 个 batch；总 Loss：4.579501；Base Loss：4.579501；GPC Loss：0.000000；当前学习率：3.206e-07；身份准确率：0.7500
+[LTCC][训练] 第 50/60 个 Epoch，第 150/596 个 batch；总 Loss：5.176200；Base Loss：5.176200；GPC Loss：0.000000；当前学习率：3.206e-07；身份准确率：0.5000
+[LTCC][AMP审计] 第 50 个 Epoch 第 187 个 batch 发生 found_inf；本次 optimizer step 被跳过；当前 scale：128.0
+[LTCC][训练] 第 50/60 个 Epoch，第 200/596 个 batch；总 Loss：5.228051；Base Loss：5.228051；GPC Loss：0.000000；当前学习率：3.206e-07；身份准确率：0.2500
+[LTCC][训练] 第 50/60 个 Epoch，第 250/596 个 batch；总 Loss：5.361332；Base Loss：5.361332；GPC Loss：0.000000；当前学习率：3.206e-07；身份准确率：0.2500
+[LTCC][训练] 第 50/60 个 Epoch，第 300/596 个 batch；总 Loss：5.080097；Base Loss：5.080097；GPC Loss：0.000000；当前学习率：3.206e-07；身份准确率：0.3750
+[LTCC][训练] 第 50/60 个 Epoch，第 350/596 个 batch；总 Loss：4.619051；Base Loss：4.582104；GPC Loss：0.369470；当前学习率：3.206e-07；身份准确率：0.2500
+[LTCC][训练] 第 50/60 个 Epoch，第 400/596 个 batch；总 Loss：4.784315；Base Loss：4.784315；GPC Loss：0.000000；当前学习率：3.206e-07；身份准确率：0.2500
+[LTCC][训练] 第 50/60 个 Epoch，第 450/596 个 batch；总 Loss：5.535968；Base Loss：5.512738；GPC Loss：0.232297；当前学习率：3.206e-07；身份准确率：0.0000
+[LTCC][训练] 第 50/60 个 Epoch，第 500/596 个 batch；总 Loss：6.014917；Base Loss：6.014917；GPC Loss：0.000000；当前学习率：3.206e-07；身份准确率：0.2500
+[LTCC][训练] 第 50/60 个 Epoch，第 550/596 个 batch；总 Loss：4.707421；Base Loss：4.707421；GPC Loss：0.000000；当前学习率：3.206e-07；身份准确率：0.6250
+[LTCC][训练] 当前学习率：3.206e-07
+[LTCC][训练] Base Loss：5.070028；GPC Loss：0.033790；总 Loss：5.073407
+[LTCC][训练] GPC 激活 batch 数：127；总 batch 数：1192；GPC active rate：0.10654362
+[LTCC][训练] GPC selected contribution 数：134；same-clothes contribution 数：53；cross-clothes contribution 数：81
+[LTCC][训练] same-clothes fraction：0.39552239；cross-clothes fraction：0.60447761；PID coverage：49/77（0.63636364）
+[LTCC][训练] 当前 AMP scale：64.0；found_inf 数：2；跳过 optimizer step 数：2；nonfinite 事件数：2
+[LTCC][训练] 第 50/60 个 Epoch 完成；Epoch wall time：131.13 秒
+[LTCC][训练] 第 51/60 个 Epoch 开始
+[LTCC][训练] 第 51/60 个 Epoch，第 50/596 个 batch；总 Loss：4.593870；Base Loss：4.593870；GPC Loss：0.000000；当前学习率：2.981e-07；身份准确率：0.5000
+[LTCC][训练] 第 51/60 个 Epoch，第 100/596 个 batch；总 Loss：6.270397；Base Loss：6.270397；GPC Loss：0.000000；当前学习率：2.981e-07；身份准确率：0.2500
+[LTCC][训练] 第 51/60 个 Epoch，第 150/596 个 batch；总 Loss：5.053572；Base Loss：5.053572；GPC Loss：0.000000；当前学习率：2.981e-07；身份准确率：0.2500
+[LTCC][训练] 第 51/60 个 Epoch，第 200/596 个 batch；总 Loss：4.471109；Base Loss：4.471109；GPC Loss：0.000000；当前学习率：2.981e-07；身份准确率：0.7500
+[LTCC][训练] 第 51/60 个 Epoch，第 250/596 个 batch；总 Loss：4.538006；Base Loss：4.538006；GPC Loss：0.000000；当前学习率：2.981e-07；身份准确率：0.5000
+[LTCC][训练] 第 51/60 个 Epoch，第 300/596 个 batch；总 Loss：6.828589；Base Loss：6.828589；GPC Loss：0.000000；当前学习率：2.981e-07；身份准确率：0.5000
+[LTCC][训练] 第 51/60 个 Epoch，第 350/596 个 batch；总 Loss：5.157375；Base Loss：5.157375；GPC Loss：0.000000；当前学习率：2.981e-07；身份准确率：0.2500
+[LTCC][训练] 第 51/60 个 Epoch，第 400/596 个 batch；总 Loss：4.825428；Base Loss：4.825428；GPC Loss：0.000000；当前学习率：2.981e-07；身份准确率：0.5000
+[LTCC][训练] 第 51/60 个 Epoch，第 450/596 个 batch；总 Loss：5.719256；Base Loss：5.719256；GPC Loss：0.000000；当前学习率：2.981e-07；身份准确率：0.1250
+[LTCC][训练] 第 51/60 个 Epoch，第 500/596 个 batch；总 Loss：4.765636；Base Loss：4.765636；GPC Loss：0.000000；当前学习率：2.981e-07；身份准确率：0.5000
+[LTCC][训练] 第 51/60 个 Epoch，第 550/596 个 batch；总 Loss：4.123141；Base Loss：4.123141；GPC Loss：0.000000；当前学习率：2.981e-07；身份准确率：0.8750
+[LTCC][训练] 当前学习率：2.981e-07
+[LTCC][训练] Base Loss：5.056913；GPC Loss：0.032815；总 Loss：5.060195
+[LTCC][训练] GPC 激活 batch 数：135；总 batch 数：1192；GPC active rate：0.11325503
+[LTCC][训练] GPC selected contribution 数：143；same-clothes contribution 数：48；cross-clothes contribution 数：95
+[LTCC][训练] same-clothes fraction：0.33566434；cross-clothes fraction：0.66433566；PID coverage：49/77（0.63636364）
+[LTCC][训练] 当前 AMP scale：64.0；found_inf 数：0；跳过 optimizer step 数：0；nonfinite 事件数：0
+[LTCC][训练] 第 51/60 个 Epoch 完成；Epoch wall time：132.50 秒
+[LTCC][训练] 第 52/60 个 Epoch 开始
+[LTCC][训练] 第 52/60 个 Epoch，第 50/596 个 batch；总 Loss：5.179804；Base Loss：5.179804；GPC Loss：0.000000；当前学习率：2.778e-07；身份准确率：0.2500
+[LTCC][训练] 第 52/60 个 Epoch，第 100/596 个 batch；总 Loss：4.443167；Base Loss：4.443167；GPC Loss：0.000000；当前学习率：2.778e-07；身份准确率：0.6250
+[LTCC][训练] 第 52/60 个 Epoch，第 150/596 个 batch；总 Loss：8.431147；Base Loss：8.431147；GPC Loss：0.000000；当前学习率：2.778e-07；身份准确率：0.5000
+[LTCC][训练] 第 52/60 个 Epoch，第 200/596 个 batch；总 Loss：5.703827；Base Loss：5.653980；GPC Loss：0.498467；当前学习率：2.778e-07；身份准确率：0.2500
+[LTCC][训练] 第 52/60 个 Epoch，第 250/596 个 batch；总 Loss：5.021765；Base Loss：5.021765；GPC Loss：0.000000；当前学习率：2.778e-07；身份准确率：0.5000
+[LTCC][训练] 第 52/60 个 Epoch，第 300/596 个 batch；总 Loss：5.495590；Base Loss：5.461728；GPC Loss：0.338624；当前学习率：2.778e-07；身份准确率：0.1250
+[LTCC][训练] 第 52/60 个 Epoch，第 350/596 个 batch；总 Loss：4.785523；Base Loss：4.785523；GPC Loss：0.000000；当前学习率：2.778e-07；身份准确率：0.7500
+[LTCC][训练] 第 52/60 个 Epoch，第 400/596 个 batch；总 Loss：5.041829；Base Loss：5.041829；GPC Loss：0.000000；当前学习率：2.778e-07；身份准确率：0.5000
+[LTCC][训练] 第 52/60 个 Epoch，第 450/596 个 batch；总 Loss：4.423849；Base Loss：4.423849；GPC Loss：0.000000；当前学习率：2.778e-07；身份准确率：0.7500
+[LTCC][训练] 第 52/60 个 Epoch，第 500/596 个 batch；总 Loss：5.000067；Base Loss：5.000067；GPC Loss：0.000000；当前学习率：2.778e-07；身份准确率：0.5000
+[LTCC][训练] 第 52/60 个 Epoch，第 550/596 个 batch；总 Loss：5.224824；Base Loss：5.224824；GPC Loss：0.000000；当前学习率：2.778e-07；身份准确率：0.0000
+[LTCC][训练] 当前学习率：2.778e-07
+[LTCC][训练] Base Loss：5.035915；GPC Loss：0.039585；总 Loss：5.039874
+[LTCC][训练] GPC 激活 batch 数：147；总 batch 数：1192；GPC active rate：0.12332215
+[LTCC][训练] GPC selected contribution 数：158；same-clothes contribution 数：59；cross-clothes contribution 数：99
+[LTCC][训练] same-clothes fraction：0.37341772；cross-clothes fraction：0.62658228；PID coverage：46/77（0.59740260）
+[LTCC][训练] 当前 AMP scale：64.0；found_inf 数：0；跳过 optimizer step 数：0；nonfinite 事件数：0
+[LTCC][训练] 第 52/60 个 Epoch 完成；Epoch wall time：131.57 秒
+[LTCC][训练] 第 53/60 个 Epoch 开始
+[LTCC][训练] 第 53/60 个 Epoch，第 50/596 个 batch；总 Loss：5.469298；Base Loss：5.469298；GPC Loss：0.000000；当前学习率：2.598e-07；身份准确率：0.1250
+[LTCC][训练] 第 53/60 个 Epoch，第 100/596 个 batch；总 Loss：4.218540；Base Loss：4.191530；GPC Loss：0.270097；当前学习率：2.598e-07；身份准确率：0.5000
+[LTCC][训练] 第 53/60 个 Epoch，第 150/596 个 batch；总 Loss：4.443593；Base Loss：4.443593；GPC Loss：0.000000；当前学习率：2.598e-07；身份准确率：0.5000
+[LTCC][训练] 第 53/60 个 Epoch，第 200/596 个 batch；总 Loss：5.082489；Base Loss：5.082489；GPC Loss：0.000000；当前学习率：2.598e-07；身份准确率：0.2500
+[LTCC][训练] 第 53/60 个 Epoch，第 250/596 个 batch；总 Loss：4.574228；Base Loss：4.574228；GPC Loss：0.000000；当前学习率：2.598e-07；身份准确率：0.6250
+[LTCC][训练] 第 53/60 个 Epoch，第 300/596 个 batch；总 Loss：6.033264；Base Loss：6.033264；GPC Loss：0.000000；当前学习率：2.598e-07；身份准确率：0.5000
+[LTCC][训练] 第 53/60 个 Epoch，第 350/596 个 batch；总 Loss：4.806829；Base Loss：4.806829；GPC Loss：0.000000；当前学习率：2.598e-07；身份准确率：0.3750
+[LTCC][训练] 第 53/60 个 Epoch，第 400/596 个 batch；总 Loss：6.393952；Base Loss：6.393952；GPC Loss：0.000000；当前学习率：2.598e-07；身份准确率：0.6250
+[LTCC][训练] 第 53/60 个 Epoch，第 450/596 个 batch；总 Loss：4.648688；Base Loss：4.648688；GPC Loss：0.000000；当前学习率：2.598e-07；身份准确率：0.6250
+[LTCC][训练] 第 53/60 个 Epoch，第 500/596 个 batch；总 Loss：4.377109；Base Loss：4.377109；GPC Loss：0.000000；当前学习率：2.598e-07；身份准确率：0.5000
+[LTCC][训练] 第 53/60 个 Epoch，第 550/596 个 batch；总 Loss：5.139020；Base Loss：5.139020；GPC Loss：0.000000；当前学习率：2.598e-07；身份准确率：0.2500
+[LTCC][训练] 当前学习率：2.598e-07
+[LTCC][训练] Base Loss：5.017794；GPC Loss：0.038218；总 Loss：5.021616
+[LTCC][训练] GPC 激活 batch 数：146；总 batch 数：1192；GPC active rate：0.12248322
+[LTCC][训练] GPC selected contribution 数：157；same-clothes contribution 数：54；cross-clothes contribution 数：103
+[LTCC][训练] same-clothes fraction：0.34394904；cross-clothes fraction：0.65605096；PID coverage：50/77（0.64935065）
+[LTCC][训练] 当前 AMP scale：128.0；found_inf 数：0；跳过 optimizer step 数：0；nonfinite 事件数：0
+[LTCC][训练] 第 53/60 个 Epoch 完成；Epoch wall time：132.53 秒
+[LTCC][训练] 第 54/60 个 Epoch 开始
+[LTCC][训练] 第 54/60 个 Epoch，第 50/596 个 batch；总 Loss：5.479223；Base Loss：5.479223；GPC Loss：0.000000；当前学习率：2.440e-07；身份准确率：0.3750
+[LTCC][训练] 第 54/60 个 Epoch，第 100/596 个 batch；总 Loss：4.732504；Base Loss：4.732504；GPC Loss：0.000000；当前学习率：2.440e-07；身份准确率：0.6250
+[LTCC][训练] 第 54/60 个 Epoch，第 150/596 个 batch；总 Loss：5.106142；Base Loss：5.106142；GPC Loss：0.000000；当前学习率：2.440e-07；身份准确率：0.5000
+[LTCC][训练] 第 54/60 个 Epoch，第 200/596 个 batch；总 Loss：5.238146；Base Loss：5.238146；GPC Loss：0.000000；当前学习率：2.440e-07；身份准确率：0.3750
+[LTCC][训练] 第 54/60 个 Epoch，第 250/596 个 batch；总 Loss：3.837821；Base Loss：3.837821；GPC Loss：0.000000；当前学习率：2.440e-07；身份准确率：0.7500
+[LTCC][训练] 第 54/60 个 Epoch，第 300/596 个 batch；总 Loss：5.651708；Base Loss：5.651708；GPC Loss：0.000000；当前学习率：2.440e-07；身份准确率：0.2500
+[LTCC][训练] 第 54/60 个 Epoch，第 350/596 个 batch；总 Loss：4.785178；Base Loss：4.785178；GPC Loss：0.000000；当前学习率：2.440e-07；身份准确率：0.5000
+[LTCC][训练] 第 54/60 个 Epoch，第 400/596 个 batch；总 Loss：5.090313；Base Loss：5.055552；GPC Loss：0.347613；当前学习率：2.440e-07；身份准确率：0.6250
+[LTCC][训练] 第 54/60 个 Epoch，第 450/596 个 batch；总 Loss：4.397673；Base Loss：4.397673；GPC Loss：0.000000；当前学习率：2.440e-07；身份准确率：0.5000
+[LTCC][训练] 第 54/60 个 Epoch，第 500/596 个 batch；总 Loss：3.724242；Base Loss：3.724242；GPC Loss：0.000000；当前学习率：2.440e-07；身份准确率：0.6250
+[LTCC][训练] 第 54/60 个 Epoch，第 550/596 个 batch；总 Loss：5.229652；Base Loss：5.229652；GPC Loss：0.000000；当前学习率：2.440e-07；身份准确率：0.2500
+[LTCC][训练] 当前学习率：2.440e-07
+[LTCC][训练] Base Loss：4.994082；GPC Loss：0.036718；总 Loss：4.997753
+[LTCC][训练] GPC 激活 batch 数：139；总 batch 数：1192；GPC active rate：0.11661074
+[LTCC][训练] GPC selected contribution 数：150；same-clothes contribution 数：44；cross-clothes contribution 数：106
+[LTCC][训练] same-clothes fraction：0.29333333；cross-clothes fraction：0.70666667；PID coverage：55/77（0.71428571）
+[LTCC][训练] 当前 AMP scale：128.0；found_inf 数：0；跳过 optimizer step 数：0；nonfinite 事件数：0
+[LTCC][训练] 第 54/60 个 Epoch 完成；Epoch wall time：129.49 秒
+[LTCC][训练] 第 55/60 个 Epoch 开始
+[LTCC][训练] 第 55/60 个 Epoch，第 50/596 个 batch；总 Loss：6.371528；Base Loss：6.371528；GPC Loss：0.000000；当前学习率：2.307e-07；身份准确率：0.5000
+[LTCC][训练] 第 55/60 个 Epoch，第 100/596 个 batch；总 Loss：4.763333；Base Loss：4.763333；GPC Loss：0.000000；当前学习率：2.307e-07；身份准确率：0.5000
+[LTCC][训练] 第 55/60 个 Epoch，第 150/596 个 batch；总 Loss：4.761048；Base Loss：4.761048；GPC Loss：0.000000；当前学习率：2.307e-07；身份准确率：0.3750
+[LTCC][训练] 第 55/60 个 Epoch，第 200/596 个 batch；总 Loss：5.472524；Base Loss：5.431734；GPC Loss：0.407895；当前学习率：2.307e-07；身份准确率：0.5000
+[LTCC][训练] 第 55/60 个 Epoch，第 250/596 个 batch；总 Loss：5.375984；Base Loss：5.375984；GPC Loss：0.000000；当前学习率：2.307e-07；身份准确率：0.2500
+[LTCC][训练] 第 55/60 个 Epoch，第 300/596 个 batch；总 Loss：5.004512；Base Loss：5.004512；GPC Loss：0.000000；当前学习率：2.307e-07；身份准确率：0.3750
+[LTCC][训练] 第 55/60 个 Epoch，第 350/596 个 batch；总 Loss：4.595579；Base Loss：4.595579；GPC Loss：0.000000；当前学习率：2.307e-07；身份准确率：0.3750
+[LTCC][训练] 第 55/60 个 Epoch，第 400/596 个 batch；总 Loss：5.643985；Base Loss：5.643985；GPC Loss：0.000000；当前学习率：2.307e-07；身份准确率：0.2500
+[LTCC][训练] 第 55/60 个 Epoch，第 450/596 个 batch；总 Loss：4.725927；Base Loss：4.725927；GPC Loss：0.000000；当前学习率：2.307e-07；身份准确率：0.3750
+[LTCC][训练] 第 55/60 个 Epoch，第 500/596 个 batch；总 Loss：4.158595；Base Loss：4.158595；GPC Loss：0.000000；当前学习率：2.307e-07；身份准确率：1.0000
+[LTCC][训练] 第 55/60 个 Epoch，第 550/596 个 batch；总 Loss：4.611575；Base Loss：4.611575；GPC Loss：0.000000；当前学习率：2.307e-07；身份准确率：0.5000
+[LTCC][训练] 当前学习率：2.307e-07
+[LTCC][训练] Base Loss：4.992309；GPC Loss：0.036381；总 Loss：4.995947
+[LTCC][训练] GPC 激活 batch 数：135；总 batch 数：1192；GPC active rate：0.11325503
+[LTCC][训练] GPC selected contribution 数：149；same-clothes contribution 数：52；cross-clothes contribution 数：97
+[LTCC][训练] same-clothes fraction：0.34899329；cross-clothes fraction：0.65100671；PID coverage：50/77（0.64935065）
+[LTCC][训练] 当前 AMP scale：128.0；found_inf 数：0；跳过 optimizer step 数：0；nonfinite 事件数：0
+[LTCC][训练] 第 55/60 个 Epoch 完成；Epoch wall time：132.41 秒
+[LTCC][训练] 第 56/60 个 Epoch 开始
+[LTCC][训练] 第 56/60 个 Epoch，第 50/596 个 batch；总 Loss：4.882572；Base Loss：4.882572；GPC Loss：0.000000；当前学习率：2.197e-07；身份准确率：0.2500
+[LTCC][训练] 第 56/60 个 Epoch，第 100/596 个 batch；总 Loss：4.028320；Base Loss：4.028320；GPC Loss：0.000000；当前学习率：2.197e-07；身份准确率：0.6250
+[LTCC][训练] 第 56/60 个 Epoch，第 150/596 个 batch；总 Loss：5.293619；Base Loss：5.293619；GPC Loss：0.000000；当前学习率：2.197e-07；身份准确率：0.2500
+[LTCC][训练] 第 56/60 个 Epoch，第 200/596 个 batch；总 Loss：5.378988；Base Loss：5.378988；GPC Loss：0.000000；当前学习率：2.197e-07；身份准确率：0.2500
+[LTCC][训练] 第 56/60 个 Epoch，第 250/596 个 batch；总 Loss：4.288713；Base Loss：4.288713；GPC Loss：0.000000；当前学习率：2.197e-07；身份准确率：0.7500
+[LTCC][训练] 第 56/60 个 Epoch，第 300/596 个 batch；总 Loss：5.161394；Base Loss：5.161394；GPC Loss：0.000000；当前学习率：2.197e-07；身份准确率：0.2500
+[LTCC][训练] 第 56/60 个 Epoch，第 350/596 个 batch；总 Loss：4.589374；Base Loss：4.589374；GPC Loss：0.000000；当前学习率：2.197e-07；身份准确率：0.3750
+[LTCC][训练] 第 56/60 个 Epoch，第 400/596 个 batch；总 Loss：6.426702；Base Loss：6.426702；GPC Loss：0.000000；当前学习率：2.197e-07；身份准确率：0.1250
+[LTCC][训练] 第 56/60 个 Epoch，第 450/596 个 batch；总 Loss：4.311927；Base Loss：4.311927；GPC Loss：0.000000；当前学习率：2.197e-07；身份准确率：0.7500
+[LTCC][训练] 第 56/60 个 Epoch，第 500/596 个 batch；总 Loss：5.505993；Base Loss：5.505993；GPC Loss：0.000000；当前学习率：2.197e-07；身份准确率：0.1250
+[LTCC][训练] 第 56/60 个 Epoch，第 550/596 个 batch；总 Loss：4.853689；Base Loss：4.836992；GPC Loss：0.166970；当前学习率：2.197e-07；身份准确率：0.5000
+[LTCC][训练] 当前学习率：2.197e-07
+[LTCC][训练] Base Loss：4.972042；GPC Loss：0.038776；总 Loss：4.975920
+[LTCC][训练] GPC 激活 batch 数：141；总 batch 数：1192；GPC active rate：0.11828859
+[LTCC][训练] GPC selected contribution 数：147；same-clothes contribution 数：47；cross-clothes contribution 数：100
+[LTCC][训练] same-clothes fraction：0.31972789；cross-clothes fraction：0.68027211；PID coverage：52/77（0.67532468）
+[LTCC][训练] 当前 AMP scale：128.0；found_inf 数：0；跳过 optimizer step 数：0；nonfinite 事件数：0
+[LTCC][训练] 第 56/60 个 Epoch 完成；Epoch wall time：131.43 秒
+[LTCC][训练] 第 57/60 个 Epoch 开始
+[LTCC][训练] 第 57/60 个 Epoch，第 50/596 个 batch；总 Loss：6.355218；Base Loss：6.355218；GPC Loss：0.000000；当前学习率：2.111e-07；身份准确率：0.1250
+[LTCC][训练] 第 57/60 个 Epoch，第 100/596 个 batch；总 Loss：5.635837；Base Loss：5.635837；GPC Loss：0.000000；当前学习率：2.111e-07；身份准确率：0.2500
+[LTCC][AMP审计] 第 57 个 Epoch 第 125 个 batch 发生 found_inf；本次 optimizer step 被跳过；当前 scale：256.0
+[LTCC][训练] 第 57/60 个 Epoch，第 150/596 个 batch；总 Loss：5.230802；Base Loss：5.201250；GPC Loss：0.295517；当前学习率：2.111e-07；身份准确率：0.1250
+[LTCC][训练] 第 57/60 个 Epoch，第 200/596 个 batch；总 Loss：5.070930；Base Loss：5.070930；GPC Loss：0.000000；当前学习率：2.111e-07；身份准确率：0.6250
+[LTCC][训练] 第 57/60 个 Epoch，第 250/596 个 batch；总 Loss：4.741336；Base Loss：4.741336；GPC Loss：0.000000；当前学习率：2.111e-07；身份准确率：0.3750
+[LTCC][训练] 第 57/60 个 Epoch，第 300/596 个 batch；总 Loss：4.074337；Base Loss：4.074337；GPC Loss：0.000000；当前学习率：2.111e-07；身份准确率：1.0000
+[LTCC][训练] 第 57/60 个 Epoch，第 350/596 个 batch；总 Loss：5.649208；Base Loss：5.649208；GPC Loss：0.000000；当前学习率：2.111e-07；身份准确率：0.1250
+[LTCC][训练] 第 57/60 个 Epoch，第 400/596 个 batch；总 Loss：3.806222；Base Loss：3.790040；GPC Loss：0.161822；当前学习率：2.111e-07；身份准确率：1.0000
+[LTCC][训练] 第 57/60 个 Epoch，第 450/596 个 batch；总 Loss：5.148481；Base Loss：5.148481；GPC Loss：0.000000；当前学习率：2.111e-07；身份准确率：0.2500
+[LTCC][训练] 第 57/60 个 Epoch，第 500/596 个 batch；总 Loss：3.956146；Base Loss：3.956146；GPC Loss：0.000000；当前学习率：2.111e-07；身份准确率：0.8750
+[LTCC][训练] 第 57/60 个 Epoch，第 550/596 个 batch；总 Loss：4.866373；Base Loss：4.866373；GPC Loss：0.000000；当前学习率：2.111e-07；身份准确率：0.0000
+[LTCC][训练] 当前学习率：2.111e-07
+[LTCC][训练] Base Loss：4.986875；GPC Loss：0.037580；总 Loss：4.990633
+[LTCC][训练] GPC 激活 batch 数：137；总 batch 数：1192；GPC active rate：0.11493289
+[LTCC][训练] GPC selected contribution 数：146；same-clothes contribution 数：57；cross-clothes contribution 数：89
+[LTCC][训练] same-clothes fraction：0.39041096；cross-clothes fraction：0.60958904；PID coverage：52/77（0.67532468）
+[LTCC][训练] 当前 AMP scale：128.0；found_inf 数：2；跳过 optimizer step 数：2；nonfinite 事件数：2
+[LTCC][训练] 第 57/60 个 Epoch 完成；Epoch wall time：132.43 秒
+[LTCC][训练] 第 58/60 个 Epoch 开始
+[LTCC][训练] 第 58/60 个 Epoch，第 50/596 个 batch；总 Loss：4.782120；Base Loss：4.782120；GPC Loss：0.000000；当前学习率：2.049e-07；身份准确率：0.5000
+[LTCC][训练] 第 58/60 个 Epoch，第 100/596 个 batch；总 Loss：4.954588；Base Loss：4.954588；GPC Loss：0.000000；当前学习率：2.049e-07；身份准确率：0.3750
+[LTCC][训练] 第 58/60 个 Epoch，第 150/596 个 batch；总 Loss：4.636909；Base Loss：4.636909；GPC Loss：0.000000；当前学习率：2.049e-07；身份准确率：0.7500
+[LTCC][训练] 第 58/60 个 Epoch，第 200/596 个 batch；总 Loss：4.439980；Base Loss：4.439980；GPC Loss：0.000000；当前学习率：2.049e-07；身份准确率：0.6250
+[LTCC][训练] 第 58/60 个 Epoch，第 250/596 个 batch；总 Loss：5.215916；Base Loss：5.215916；GPC Loss：0.000000；当前学习率：2.049e-07；身份准确率：0.3750
+[LTCC][训练] 第 58/60 个 Epoch，第 300/596 个 batch；总 Loss：5.210782；Base Loss：5.166661；GPC Loss：0.441203；当前学习率：2.049e-07；身份准确率：0.2500
+[LTCC][训练] 第 58/60 个 Epoch，第 350/596 个 batch；总 Loss：5.693640；Base Loss：5.693640；GPC Loss：0.000000；当前学习率：2.049e-07；身份准确率：0.1250
+[LTCC][训练] 第 58/60 个 Epoch，第 400/596 个 batch；总 Loss：5.281280；Base Loss：5.281280；GPC Loss：0.000000；当前学习率：2.049e-07；身份准确率：0.1250
+[LTCC][训练] 第 58/60 个 Epoch，第 450/596 个 batch；总 Loss：3.822281；Base Loss：3.822281；GPC Loss：0.000000；当前学习率：2.049e-07；身份准确率：0.7500
+[LTCC][训练] 第 58/60 个 Epoch，第 500/596 个 batch；总 Loss：4.958999；Base Loss：4.958999；GPC Loss：0.000000；当前学习率：2.049e-07；身份准确率：0.5000
+[LTCC][训练] 第 58/60 个 Epoch，第 550/596 个 batch；总 Loss：4.722683；Base Loss：4.722683；GPC Loss：0.000000；当前学习率：2.049e-07；身份准确率：0.6250
+[LTCC][训练] 当前学习率：2.049e-07
+[LTCC][训练] Base Loss：4.955867；GPC Loss：0.036843；总 Loss：4.959552
+[LTCC][训练] GPC 激活 batch 数：136；总 batch 数：1192；GPC active rate：0.11409396
+[LTCC][训练] GPC selected contribution 数：144；same-clothes contribution 数：56；cross-clothes contribution 数：88
+[LTCC][训练] same-clothes fraction：0.38888889；cross-clothes fraction：0.61111111；PID coverage：48/77（0.62337662）
+[LTCC][训练] 当前 AMP scale：128.0；found_inf 数：0；跳过 optimizer step 数：0；nonfinite 事件数：0
+[LTCC][训练] 第 58/60 个 Epoch 完成；Epoch wall time：130.78 秒
+[LTCC][训练] 第 59/60 个 Epoch 开始
+[LTCC][训练] 第 59/60 个 Epoch，第 50/596 个 batch；总 Loss：5.170560；Base Loss：5.170560；GPC Loss：0.000000；当前学习率：2.012e-07；身份准确率：0.5000
+[LTCC][训练] 第 59/60 个 Epoch，第 100/596 个 batch；总 Loss：5.052801；Base Loss：5.052801；GPC Loss：0.000000；当前学习率：2.012e-07；身份准确率：0.7500
+[LTCC][训练] 第 59/60 个 Epoch，第 150/596 个 batch；总 Loss：4.771974；Base Loss：4.771974；GPC Loss：0.000000；当前学习率：2.012e-07；身份准确率：0.7500
+[LTCC][训练] 第 59/60 个 Epoch，第 200/596 个 batch；总 Loss：4.953223；Base Loss：4.953223；GPC Loss：0.000000；当前学习率：2.012e-07；身份准确率：0.2500
+[LTCC][训练] 第 59/60 个 Epoch，第 250/596 个 batch；总 Loss：4.589747；Base Loss：4.560024；GPC Loss：0.297233；当前学习率：2.012e-07；身份准确率：0.6250
+[LTCC][训练] 第 59/60 个 Epoch，第 300/596 个 batch；总 Loss：5.318124；Base Loss：5.318124；GPC Loss：0.000000；当前学习率：2.012e-07；身份准确率：0.2500
+[LTCC][训练] 第 59/60 个 Epoch，第 350/596 个 batch；总 Loss：5.677760；Base Loss：5.677760；GPC Loss：0.000000；当前学习率：2.012e-07；身份准确率：0.1250
+[LTCC][训练] 第 59/60 个 Epoch，第 400/596 个 batch；总 Loss：5.769214；Base Loss：5.769214；GPC Loss：0.000000；当前学习率：2.012e-07；身份准确率：0.2500
+[LTCC][训练] 第 59/60 个 Epoch，第 450/596 个 batch；总 Loss：4.038096；Base Loss：4.038096；GPC Loss：0.000000；当前学习率：2.012e-07；身份准确率：0.8750
+[LTCC][训练] 第 59/60 个 Epoch，第 500/596 个 batch；总 Loss：4.560596；Base Loss：4.560596；GPC Loss：0.000000；当前学习率：2.012e-07；身份准确率：0.6250
+[LTCC][训练] 第 59/60 个 Epoch，第 550/596 个 batch；总 Loss：5.621533；Base Loss：5.621533；GPC Loss：0.000000；当前学习率：2.012e-07；身份准确率：0.1250
+[LTCC][训练] 当前学习率：2.012e-07
+[LTCC][训练] Base Loss：4.959365；GPC Loss：0.033730；总 Loss：4.962738
+[LTCC][训练] GPC 激活 batch 数：131；总 batch 数：1192；GPC active rate：0.10989933
+[LTCC][训练] GPC selected contribution 数：147；same-clothes contribution 数：57；cross-clothes contribution 数：90
+[LTCC][训练] same-clothes fraction：0.38775510；cross-clothes fraction：0.61224490；PID coverage：51/77（0.66233766）
+[LTCC][训练] 当前 AMP scale：128.0；found_inf 数：0；跳过 optimizer step 数：0；nonfinite 事件数：0
+[LTCC][训练] 第 59/60 个 Epoch 完成；Epoch wall time：131.79 秒
+[LTCC][训练] 第 60/60 个 Epoch 开始
+[LTCC][训练] 第 60/60 个 Epoch，第 50/596 个 batch；总 Loss：4.938932；Base Loss：4.938932；GPC Loss：0.000000；当前学习率：2.000e-07；身份准确率：0.2500
+[LTCC][训练] 第 60/60 个 Epoch，第 100/596 个 batch；总 Loss：5.357423；Base Loss：5.357423；GPC Loss：0.000000；当前学习率：2.000e-07；身份准确率：0.0000
+[LTCC][训练] 第 60/60 个 Epoch，第 150/596 个 batch；总 Loss：4.688639；Base Loss：4.688639；GPC Loss：0.000000；当前学习率：2.000e-07；身份准确率：0.6250
+[LTCC][训练] 第 60/60 个 Epoch，第 200/596 个 batch；总 Loss：4.685037；Base Loss：4.685037；GPC Loss：0.000000；当前学习率：2.000e-07；身份准确率：0.5000
+[LTCC][训练] 第 60/60 个 Epoch，第 250/596 个 batch；总 Loss：5.640560；Base Loss：5.640560；GPC Loss：0.000000；当前学习率：2.000e-07；身份准确率：0.2500
+[LTCC][训练] 第 60/60 个 Epoch，第 300/596 个 batch；总 Loss：5.463578；Base Loss：5.463578；GPC Loss：0.000000；当前学习率：2.000e-07；身份准确率：0.2500
+[LTCC][训练] 第 60/60 个 Epoch，第 350/596 个 batch；总 Loss：5.711978；Base Loss：5.711978；GPC Loss：0.000000；当前学习率：2.000e-07；身份准确率：0.3750
+[LTCC][训练] 第 60/60 个 Epoch，第 400/596 个 batch；总 Loss：4.768923；Base Loss：4.768923；GPC Loss：0.000000；当前学习率：2.000e-07；身份准确率：0.5000
+[LTCC][训练] 第 60/60 个 Epoch，第 450/596 个 batch；总 Loss：4.764018；Base Loss：4.764018；GPC Loss：0.000000；当前学习率：2.000e-07；身份准确率：0.5000
+[LTCC][训练] 第 60/60 个 Epoch，第 500/596 个 batch；总 Loss：5.163105；Base Loss：5.163105；GPC Loss：0.000000；当前学习率：2.000e-07；身份准确率：0.5000
+[LTCC][训练] 第 60/60 个 Epoch，第 550/596 个 batch；总 Loss：4.246633；Base Loss：4.246633；GPC Loss：0.000000；当前学习率：2.000e-07；身份准确率：0.6250
+[LTCC][训练] 当前学习率：2.000e-07
+[LTCC][训练] Base Loss：4.963501；GPC Loss：0.034958；总 Loss：4.966997
+[LTCC][训练] GPC 激活 batch 数：136；总 batch 数：1192；GPC active rate：0.11409396
+[LTCC][训练] GPC selected contribution 数：142；same-clothes contribution 数：59；cross-clothes contribution 数：83
+[LTCC][训练] same-clothes fraction：0.41549296；cross-clothes fraction：0.58450704；PID coverage：48/77（0.62337662）
+[LTCC][训练] 当前 AMP scale：256.0；found_inf 数：0；跳过 optimizer step 数：0；nonfinite 事件数：0
+[LTCC][训练] 第 60/60 个 Epoch 完成；Epoch wall time：131.61 秒
+[LTCC][训练] 60 个 Epoch 已完整完成
+[LTCC][训练] model_final.pth 已冻结；Epoch：60；SHA256：1d29d93d4c2958b2ff6bf046b338459ab72d9ada5257d971e7d1da45de6dc4d6
+[LTCC][训练] 公共最终 checkpoint：/home/DIFFER/outputs/gpc_final_retrain/20260928_173834/LTCC/checkpoints/model_final.pth
+{
+  "arm": "gpc",
+  "dataset": "ltcc",
+  "epochs_completed": 60,
+  "final_checkpoint": {
+    "arm": "gpc",
+    "checkpoint_sha256": "1d29d93d4c2958b2ff6bf046b338459ab72d9ada5257d971e7d1da45de6dc4d6",
+    "checkpoint_state_hash": "d915e8e1ec7f0b4cca9a4bfb9b78e71cfb19803a6cdc6bf0c0d6364cd29e6eda",
+    "dataset": "ltcc",
+    "epoch": 60,
+    "frozen": true,
+    "global_step": 35760,
+    "loss_type": [
+      "ce",
+      "triplet",
+      "clipBio"
+    ],
+    "no_model_best": true,
+    "public_checkpoint_epoch": 60,
+    "public_checkpoint_sha256": "1d29d93d4c2958b2ff6bf046b338459ab72d9ada5257d971e7d1da45de6dc4d6",
+    "public_path": "/home/DIFFER/outputs/gpc_final_retrain/20260928_173834/LTCC/checkpoints/model_final.pth",
+    "saved_utc": "2026-09-28T11:53:08Z",
+    "state_key_count": 515,
+    "state_numel": 303933965,
+    "test_metric_used": false,
+    "test_started": false
+  }
+}
+{
+  "arm": "gpc",
+  "dataset": "ltcc",
+  "epochs_completed": 60,
+  "final_checkpoint": {
+    "arm": "gpc",
+    "checkpoint_sha256": "1d29d93d4c2958b2ff6bf046b338459ab72d9ada5257d971e7d1da45de6dc4d6",
+    "checkpoint_state_hash": "d915e8e1ec7f0b4cca9a4bfb9b78e71cfb19803a6cdc6bf0c0d6364cd29e6eda",
+    "dataset": "ltcc",
+    "epoch": 60,
+    "frozen": true,
+    "global_step": 35760,
+    "loss_type": [
+      "ce",
+      "triplet",
+      "clipBio"
+    ],
+    "no_model_best": true,
+    "public_checkpoint_epoch": 60,
+    "public_checkpoint_sha256": "1d29d93d4c2958b2ff6bf046b338459ab72d9ada5257d971e7d1da45de6dc4d6",
+    "public_path": "/home/DIFFER/outputs/gpc_final_retrain/20260928_173834/LTCC/checkpoints/model_final.pth",
+    "saved_utc": "2026-09-28T11:53:08Z",
+    "state_key_count": 515,
+    "state_numel": 303933965,
+    "test_metric_used": false,
+    "test_started": false
+  }
+}
+
+结束时间：2026-09-28T11:53:17Z
+返回码：0
