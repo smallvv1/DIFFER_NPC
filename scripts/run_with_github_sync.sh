@@ -5,7 +5,7 @@ set -u
 # 用法：
 #   run_with_github_sync.sh --run-dir outputs/RUN --label "实验名称" -- command arg1 arg2
 
-ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)")"
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 RUN_DIR=""
 RUN_LABEL="实验运行"
 
