@@ -66,6 +66,9 @@ _C.MODEL.NPC.GMM_THRESHOLD = 0.99
 _C.MODEL.NPC.GMM_MIN_SAMPLES = 20
 _C.MODEL.NPC.MEMORY_UPDATE_FREQ = 1
 _C.MODEL.NPC.TEMP_OPT_STEPS = 1
+# Opt-in: recompute the pre-update anchor under FP32, matching post-update anchor.
+# False keeps historical N3 semantics and preserves existing checkpoints/experiments.
+_C.MODEL.NPC.PREAWARE_FP32_ANCHOR = False
 _C.MODEL.NPC.TEMP_LR_SCALE = 1.0
 _C.MODEL.NPC.MEMORY_LOSS_WEIGHT = 0.1
 _C.MODEL.NPC.START_EPOCH = 1
