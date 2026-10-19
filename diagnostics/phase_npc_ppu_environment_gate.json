@@ -1,0 +1,13 @@
+{
+  "status": "blocked_before_ppu_diagnostic",
+  "observed_at": "2026-10-19",
+  "torch": "2.3.1+cpu",
+  "cuda_available": false,
+  "visible_accelerator_devices": [],
+  "processor_runtime_path": "/home/processor",
+  "processor_runtime_present": false,
+  "checkpoint_optimizer_state_available": false,
+  "checkpoint_optimizer_state_basis": "N3 model_best.pth and model_final.pth load as OrderedDicts containing only 515 model tensors; no optimizer/state payload",
+  "ppu_short_iteration_executed": false,
+  "reason": "The PR#4 audit script rejects CPU fallback, and the current container has no PPU/CUDA device or external processor runtime package."
+}
