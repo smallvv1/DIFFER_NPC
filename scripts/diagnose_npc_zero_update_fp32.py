@@ -164,8 +164,16 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--output", type=Path, default=None)
     parser.add_argument("--trials-per-mode", type=int, default=4)
+    parser.add_argument("--num-batches", type=int, default=8, help="使用相同随机种子抽取的真实 LTCC 训练批次数")
+    parser.add_argument("--checkpoint", type=Path, default=CHECKPOINT_PATH, help="仅用于诊断的已有检查点")
+    parser.add_argument("--checkpoint-epoch", type=int, default=17, help="该检查点对应的训练 epoch，用于重拟合 GMM")
     parser.add_argument("--fp32-anchor", action="store_true", help="校准前更新锚点到FP32，默认历史路径")
     args = parser.parse_args()
+    if args.trials_per_mode < 1 or args.num_batches < 1 or args.checkpoint_epoch < 1:
+        parser.error("trials-per-mode、num-batches、checkpoint-epoch 必须为正数")
+    checkpoint_path = args.checkpoint.expanduser().resolve()
+    if not checkpoint_path.is_file():
+        parser.error(f"检查点不存在：{checkpoint_path}")
 
     timestamp = datetime.now(ZoneInfo("Asia/Shanghai")).strftime("%Y%m%d_%H%M%S")
     output = args.output or PROJECT / "outputs" / f"NPC零更新FP32锚点审计_{'calibrated' if args.fp32_anchor else 'legacy'}_{timestamp}"
@@ -235,8 +243,8 @@ def main() -> None:
                 logger.info("正在用 LTCC train-only 建库：%d/%d batches", index, total)
             yield batch
 
-    logger.info("加载已完成训练的 N3 最优检查点（用于诊断，不作为正式训练初始化）：%s", CHECKPOINT_PATH)
-    memory_init = controller.initialize_memory(model, progress_loader(), loss_fn, epoch=17)
+    logger.info("加载已完成训练的 N3 检查点（仅用于诊断，不作为正式训练初始化）：%s", checkpoint_path)
+    memory_init = controller.initialize_memory(model, progress_loader(), loss_fn, epoch=args.checkpoint_epoch)
     bank = controller.memory_bank
     if bank is None:
         raise RuntimeError("记忆库未成功建立")
@@ -259,10 +267,10 @@ def main() -> None:
     if not len(valid_indices) or self_refs or identity_mismatches:
         raise RuntimeError("记忆库有效参考为空、包含自引用或身份错配，停止审计")
 
-    # 固定 8 个真实 train-loader batch；同一图像增强重复多次，以估计前向噪声而不混入换批差异。
+    # 固定真实 train-loader batch；同一图像增强重复多次，以估计前向噪声而不混入换批差异。
     batches = []
     iterator = iter(train_loader)
-    for _ in range(8):
+    for _ in range(args.num_batches):
         try:
             batches.append(next(iterator))
         except StopIteration:
@@ -363,7 +371,7 @@ def main() -> None:
                 before_call = snapshot_state(base_model)
                 weights, stats = controller.preaware_weights(
                     base_model, loss_fn, raw, score, feat, target, camid, caption, clothes,
-                    epoch=17, iteration=(1000 if mode == "amp" else 2000) + repeat * 100 + batch_index,
+                    epoch=args.checkpoint_epoch, iteration=(1000 if mode == "amp" else 2000) + repeat * 100 + batch_index,
                 )
                 trial_call_count[mode] += 1
                 weights_by_mode[mode].extend(weights.detach().float().cpu().tolist())
@@ -442,9 +450,10 @@ def main() -> None:
         "timestamp_beijing": timestamp,
         "branch": "experiment/npc-fp32-anchor-preaware-20261019",
         "code_head": os.popen(f"git -C {PROJECT} rev-parse HEAD").read().strip(),
-        "checkpoint": str(CHECKPOINT_PATH),
-        "checkpoint_sha256": sha256(CHECKPOINT_PATH),
-        "checkpoint_semantics": "已完成训练的 N3 epoch17 best checkpoint；仅用于风险诊断，不用于正式训练续训",
+        "checkpoint": str(checkpoint_path),
+        "checkpoint_sha256": sha256(checkpoint_path),
+        "checkpoint_epoch_for_gmm": args.checkpoint_epoch,
+        "checkpoint_semantics": "已完成训练的 N3 检查点；仅用于风险诊断，不用于正式训练续训",
         "device": torch.cuda.get_device_name(0),
         "torch_version": torch.__version__,
         "configuration": {
@@ -456,6 +465,8 @@ def main() -> None:
             "temporary_optimizer_steps": int(cfg.MODEL.NPC.TEMP_OPT_STEPS),
             "gmm_threshold": float(cfg.MODEL.NPC.GMM_THRESHOLD),
             "amp_enabled_for_anchor": True,
+            "num_batches": len(batches),
+            "trials_per_mode": args.trials_per_mode,
         },
         "memory_coverage": memory_coverage,
         "memory_validation": {
