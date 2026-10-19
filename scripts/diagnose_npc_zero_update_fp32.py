@@ -214,7 +214,10 @@ def main() -> None:
     logger.info("LTCC train-only 数据：%d 条记录、%d 个身份；完整库 batch=%d", len(dataset.train), dataset.num_train_pids, cfg.DATA.TEST_BATCH)
 
     model = build_model(cfg, dataset.num_train_pids, dataset.num_camera)
-    state = torch.load(CHECKPOINT_PATH, map_location="cpu", weights_only=False)
+    # IMPORTANT: use the parsed --checkpoint, not the legacy fixed default path.
+    # Without this, multi-checkpoint audits silently reuse model_best.pth.
+    logger.info("实际装载检查点：%s，SHA256=%s", checkpoint_path, sha256(checkpoint_path))
+    state = torch.load(checkpoint_path, map_location="cpu", weights_only=False)
     state = {key.replace("module.", ""): value for key, value in state.items()}
     incompatible = model.load_state_dict(state, strict=False)
     if incompatible.missing_keys or incompatible.unexpected_keys:
