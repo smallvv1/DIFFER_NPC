@@ -4,6 +4,7 @@ from __future__ import annotations
 
 from typing import Any
 
+import math
 import torch
 import torch.nn.functional as F
 
@@ -59,6 +60,8 @@ def calculate_npc_weights(
     pre_reference: torch.Tensor,
     post_reference: torch.Tensor,
     eps: float = 1e-8,
+    policy: str = "original",
+    smooth_beta: float = 1.0,
 ) -> tuple[torch.Tensor, torch.Tensor, torch.Tensor]:
     """实现 NPC 比值与权重公式，并显式支持两项信号变化不一致的情况。"""
     tensors = [pre_identity, post_identity, pre_reference, post_reference]
@@ -68,7 +71,18 @@ def calculate_npc_weights(
     q_ratio = q_before.clamp_min(eps) / q_after.clamp_min(eps)
     ratio = 0.5 * (p_ratio + q_ratio)
     ratio = torch.nan_to_num(ratio, nan=1.0, posinf=1.0, neginf=0.0)
-    weights = torch.where(ratio < 1.0, torch.tanh(ratio), torch.ones_like(ratio))
+    # The original NPC rule has a discontinuity near ratio=1:
+    # tanh(1-) ~= 0.7616, while w(1) == 1. The continuous alternative
+    # is an opt-in diagnostic ablation, not a claimed improvement.
+    if policy == "original":
+        weights = torch.where(ratio < 1.0, torch.tanh(ratio), torch.ones_like(ratio))
+    elif policy == "continuous":
+        if not math.isfinite(float(smooth_beta)) or float(smooth_beta) <= 0:
+            raise ValueError("WEIGHT_SMOOTH_BETA must be finite and > 0")
+        risk = (1.0 - ratio).clamp_min(0.0)
+        weights = torch.exp(-float(smooth_beta) * risk)
+    else:
+        raise ValueError(f"Unsupported NPC weight policy: {policy}")
     weights = torch.nan_to_num(weights, nan=0.0, posinf=1.0, neginf=0.0).clamp(0.0, 1.0)
     return ratio, weights, torch.stack((p_ratio, q_ratio), dim=-1)
 
