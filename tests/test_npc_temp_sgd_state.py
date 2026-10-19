@@ -17,6 +17,7 @@ def make_controller(tmp_path, model, optimizer, copy_state=False):
         ENABLED=False, GMM_ENABLED=False,
         DYNAMIC_WEIGHT_ENABLED=False, MEMORY_LOSS_ENABLED=False,
         TEMP_COPY_OPT_STATE=copy_state, TEMP_LR_SCALE=1.0,
+        GMM_THRESHOLD=0.99, TEMP_OPT_STEPS=1, MEMORY_LOSS_WEIGHT=0.1,
     )
     cfg = SimpleNamespace(MODEL=SimpleNamespace(NPC=npc))
     controller = NPCController(
