@@ -1,0 +1,46 @@
+{
+  "status": "partial_blocked",
+  "code_commit": "83d453a0fa0a188f302c05f45d15c0235e90deb2",
+  "test": {
+    "command": "PYTHONPATH=. /home/DIFFER_NPC_worktrees/.venv-npc-cpu/bin/python -m pytest -q tests/test_npc_audit_checkpoint.py",
+    "result": "2 passed in 0.02s"
+  },
+  "loader_runtime": {
+    "torch": "2.3.1+cpu",
+    "cuda_available": false,
+    "ppu_audit_executed": false,
+    "blockers": [
+      "no visible CUDA/PPU/NPU device",
+      "external /home/processor runtime package is absent",
+      "audit script rejects CPU fallback"
+    ]
+  },
+  "checkpoints": [
+    {
+      "label": "best",
+      "path": "/home/DIFFER_NPC/outputs/NPC_CONFIRMATORY_20261014_140116/ltcc/seed1234/N3/checkpoints/model_best.pth",
+      "bytes": 1215917953,
+      "sha256": "0b33bc4d02b70a1d8d83a7ecdc8dd801a479c307685fa537a39276e2188ee7db",
+      "torch_load": "PASS",
+      "object_type": "OrderedDict",
+      "tensor_keys": 515,
+      "total_tensor_numel": 303933965
+    },
+    {
+      "label": "final",
+      "path": "/home/DIFFER_NPC/outputs/NPC_CONFIRMATORY_20261014_140116/ltcc/seed1234/N3/checkpoints/model_final.pth",
+      "bytes": 1215918472,
+      "sha256": "e275cdcabc199988fbe5f77a17e3a70abcf9c28b4c03bb5d70d0befe5b08137b",
+      "torch_load": "PASS",
+      "object_type": "OrderedDict",
+      "tensor_keys": 515,
+      "total_tensor_numel": 303933965
+    }
+  ],
+  "pairwise_model_comparison": {
+    "keys_equal": true,
+    "different_tensor_keys": 513,
+    "max_abs_diff": 0.9905719757080078,
+    "global_l2_diff": 20.178871006464497
+  }
+}
