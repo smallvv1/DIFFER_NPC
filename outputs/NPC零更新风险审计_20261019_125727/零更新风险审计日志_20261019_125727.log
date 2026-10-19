@@ -1,0 +1,5 @@
+2026-10-19 12:57:27 INFO 开始真实 LTCC 零更新审计；输出目录：/home/DIFFER_NPC_worktrees/npc-continuous-weight-20261019/outputs/NPC零更新风险审计_20261019_125727
+2026-10-19 12:57:27 INFO 设备：PPU-ZW810E；设备数：1；PyTorch：2.4.0
+2026-10-19 12:57:27 INFO 代码分支：experiment/npc-continuous-weight-20261019；工作树：/home/DIFFER_NPC_worktrees/npc-continuous-weight-20261019
+2026-10-19 12:57:28 INFO LTCC train-only 数据：9576 条记录、77 个身份；完整库 batch=16
+2026-10-19 12:57:33 ERROR 启动失败：当前独立 worktree 不含被忽略的大型 N3 checkpoint；尚未装载模型或建立记忆库。后续只读使用 main 中原有 checkpoint 路径重跑。

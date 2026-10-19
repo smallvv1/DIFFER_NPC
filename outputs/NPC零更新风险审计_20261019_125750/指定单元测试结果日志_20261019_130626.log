@@ -1,0 +1,5 @@
+本次审计开始前运行指定 NPC 单元测试（秒级时间未单独保留）。
+命令：PYTHONPATH=.:/home/DIFFER_NPC python3 -m pytest -q tests/test_npc.py tests/test_npc_continuous_weight.py
+结果：21 passed，1 warning，4.81s。
+说明：唯一警告为 utils/metrics.py 中既有的 PyTorch addmm_ 弃用警告；测试通过。
+正式训练：未启动。
