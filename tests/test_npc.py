@@ -329,3 +329,49 @@ def test_identity_sampler_keeps_multiple_pids_in_every_triplet_batch():
         pids = [records[index]["pid"] for index in indices[start:start + 8]]
         assert len(set(pids)) == 4
         assert sorted(pids.count(pid) for pid in set(pids)) == [2, 2, 2, 2]
+
+
+def test_fp32_anchor_preaware_excludes_simulated_amp_anchor_error(tmp_path):
+    """At zero LR an artificial AMP-like anchor perturbation must not bias q."""
+    records, batch = make_data()
+    model = TinyReID()
+    optimizer = torch.optim.SGD(model.parameters(), lr=0.05)
+    model.train()
+    score, feat = model(batch["image"], cam_label=batch["camid"])
+    # Only simulate the precision discrepancy in the already-computed anchor
+    # feature passed from the official forward, not in model parameters/images.
+    perturbed_feat = [feat[0].detach() + torch.tensor([0.0, 0.3, 0.0, 0.0])]
+
+    def measure(name: str, corrected: bool):
+        cfg = make_cfg(tmp_path / name, dynamic=True, memory=True)
+        cfg.MODEL.NPC.GMM_THRESHOLD = 0.0
+        cfg.MODEL.NPC.TEMP_LR_SCALE = 0.0
+        cfg.MODEL.NPC.PREAWARE_FP32_ANCHOR = corrected
+        controller = NPCController(
+            cfg, SimpleNamespace(train=records), optimizer, tmp_path / name,
+            torch.device("cpu"), reference_dataset=TinyReferenceDataset(records, batch),
+        )
+        controller.initialize_memory(model, [batch], tiny_loss, epoch=1)
+        state_before = {k: v.detach().clone() for k, v in model.state_dict().items()}
+        weights, stats = controller.preaware_weights(
+            model, tiny_loss, batch, score, perturbed_feat, batch["pid"],
+            batch["camid"], None, batch["clothes_id"], epoch=1, iteration=1,
+        )
+        assert stats["preaware_fp32_anchor"] is corrected
+        assert stats["valid_reference_count"] == 4
+        for key, value in model.state_dict().items():
+            assert torch.equal(value, state_before[key])
+        with open(tmp_path / name / "npc_diagnostics" / "npc_weights.csv",
+                  newline="", encoding="utf-8") as handle:
+            rows = list(csv.DictReader(handle))
+        controller.close()
+        return weights, rows
+
+    _, legacy = measure("legacy", False)
+    corrected_weights, corrected = measure("corrected", True)
+    legacy_q_error = max(abs(float(row["pre_reference"]) - float(row["post_reference"])) for row in legacy)
+    corrected_q_error = max(abs(float(row["pre_reference"]) - float(row["post_reference"])) for row in corrected)
+    assert legacy_q_error > 1e-4
+    assert corrected_q_error < 1e-6
+    assert torch.allclose(corrected_weights, torch.ones_like(corrected_weights), atol=1e-6)
+    assert all(abs(float(row["ratio"]) - 1.0) < 1e-6 for row in corrected)

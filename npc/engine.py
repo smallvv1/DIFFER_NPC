@@ -365,19 +365,42 @@ class NPCController:
             base_training = base_model.training
             # DIFFER 的 forward 在 eval() 时只返回推理特征；NPC 需要训练态
             # 的 (score, feat) 接口，但这里仍然完全关闭梯度。
+            # The historical N3 used the AMP training anchor as the pre-update
+            # representation, while the post-update anchor/reference used FP32.
+            # Even at zero temporary LR this precision mismatch biases q_ratio.
+            # With the opt-in switch we re-forward the *same valid anchor images*
+            # under FP32, with the same train mode and batch membership as post.
+            use_fp32_anchor = bool(getattr(self.npc_cfg, "PREAWARE_FP32_ANCHOR", False))
             base_model.train()
-            with torch.no_grad(), _disabled_autocast():
-                pre_reference_score, pre_reference_feat = base_model(
-                    reference_batch["image"], cam_label=reference_batch["camid"]
-                )
-                pre_identity_valid = per_sample_identity_ce(
-                    pre_reference_score, reference_batch["pid"]
-                )
-                pre_reference_features = extract_reid_features(pre_reference_feat)
-            base_model.train(base_training)
+            try:
+                with torch.no_grad(), _disabled_autocast():
+                    if use_fp32_anchor:
+                        valid_positions = torch.nonzero(reference_valid, as_tuple=False).flatten()
+                        valid_images = data["image"].index_select(
+                            0, valid_positions.to(data["image"].device)
+                        ).to(self.device)
+                        valid_camids = camids.index_select(0, valid_positions.to(camids.device))
+                        pre_anchor_score, pre_anchor_feat = base_model(
+                            valid_images, cam_label=valid_camids
+                        )
+                        pre_anchor_features = extract_reid_features(pre_anchor_feat)
+                        anchor_pre_identity[reference_valid] = per_sample_identity_ce(
+                            pre_anchor_score, targets[reference_valid]
+                        ).float()
+                    else:
+                        pre_anchor_features = current_features[reference_valid]
+                    pre_reference_score, pre_reference_feat = base_model(
+                        reference_batch["image"], cam_label=reference_batch["camid"]
+                    )
+                    pre_identity_valid = per_sample_identity_ce(
+                        pre_reference_score, reference_batch["pid"]
+                    )
+                    pre_reference_features = extract_reid_features(pre_reference_feat)
+            finally:
+                base_model.train(base_training)
             pre_identity[reference_valid] = pre_identity_valid
             pre_reference[reference_valid] = per_sample_reference_consistency(
-                current_features[reference_valid], pre_reference_features
+                pre_anchor_features, pre_reference_features
             )
 
         # 无可靠参考的样本不参与记忆监督或负面影响估计，权重明确为 1。
@@ -485,6 +508,7 @@ class NPCController:
             "anchor_pre_identity_mean_valid": float(anchor_pre_identity[reference_valid].mean().item()) if bool(reference_valid.any()) else float("nan"),
             "anchor_post_identity_mean_valid": float(anchor_post_identity[reference_valid].mean().item()) if finite and bool(reference_valid.any()) else float("nan"),
             "preaware_loss_object": "valid_reference_entries",
+            "preaware_fp32_anchor": bool(getattr(self.npc_cfg, "PREAWARE_FP32_ANCHOR", False)),
         }
         if not bool(reference_valid.any()):
             anchor_post_identity = torch.full_like(anchor_pre_identity, float("nan"))
