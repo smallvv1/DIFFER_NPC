@@ -467,6 +467,8 @@ class NPCController:
                     post_identity[reference_valid],
                     pre_reference[reference_valid],
                     post_reference[reference_valid],
+                    policy=str(getattr(self.npc_cfg, "WEIGHT_POLICY", "original")),
+                    smooth_beta=float(getattr(self.npc_cfg, "WEIGHT_SMOOTH_BETA", 1.0)),
                 )
                 ratio[reference_valid] = ratio_valid
                 weights[reference_valid] = weights_valid
