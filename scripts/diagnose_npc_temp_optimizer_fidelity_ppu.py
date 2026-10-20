@@ -582,7 +582,11 @@ def main() -> None:
         raise RuntimeError("记忆库初始化失败")
     batches = []
     selected = None
-    for batch in full_train_loader:
+    # Formal DIFFER uses the sampler-backed train_loader, not the sequential
+    # train-only memory loader. Keep the exact sampler batches fixed after the
+    # memory bank is built so Triplet receives the same identity multiplicity
+    # contract as a real training step.
+    for batch in train_loader:
         frozen = clone_batch(batch)
         batches.append(frozen)
         indices = controller_false._batch_indices(frozen)
