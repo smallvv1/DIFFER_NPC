@@ -106,11 +106,15 @@ def build_plan(
         })
     left, right = (list(x["command"]) for x in arms)
     assert left[6] == right[6] == "--output-root"
-    # Different per-arm output roots are mandatory; normalize them before
-    # comparing the actual model/training flags.
+    key = "MODEL.NPC.TEMP_COPY_OPT_STATE"
+    li, ri = left.index(key), right.index(key)
+    assert li == ri
+    assert left[li + 1] == "False" and right[ri + 1] == "True"
+    # Only two differences are legitimate: an isolated output folder and
+    # the explicit momentum state flag. Normalize both before comparing.
     left[7] = right[7] = "<arm-output>"
-    assert left[:-1] == right[:-1], "Only the momentum boolean may differ"
-    assert left[-1] == "False" and right[-1] == "True"
+    left[li + 1] = right[ri + 1] = "<momentum-flag>"
+    assert left == right, "Unexpected difference beyond momentum flag/output path"
     return {
         "protocol": "LTCC / N3 / FP32-only versus FP32+SGD momentum; one variable",
         "version": 1,
