@@ -56,8 +56,9 @@ def test_dry_run_arms_only_differ_by_momentum_and_output(tmp_path, monkeypatch):
     )
     left, right = [x["command"] for x in plan["arms"]]
     assert left[7] != right[7]
-    assert left[-1] == "False" and right[-1] == "True"
-    assert left[-3] == "MODEL.NPC.TEMP_COPY_OPT_STATE"
+    a = left.index("MODEL.NPC.TEMP_COPY_OPT_STATE")
+    b = right.index("MODEL.NPC.TEMP_COPY_OPT_STATE")
+    assert left[a + 1] == "False" and right[b + 1] == "True"
     assert "--max-iterations" not in left
     assert not (tmp_path / "run").exists()
 
