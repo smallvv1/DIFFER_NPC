@@ -1,0 +1,985 @@
+{
+  "sources": [
+    {
+      "path": "/home/DIFFER_NPC_worktrees/npc-risk-signal-audit-20261020/outputs/PHASE_NPC_TEMP_OPTIMIZER_MULTIBATCH_PPU_20261020_retry/temp_optimizer_multibatch_ppu.json",
+      "summary": {
+        "target_policy": "paired mean of near-identical actual formal CE/reference deltas, identical proxy label for both modes",
+        "max_actual_delta_difference_between_modes": 5.4836273193359375e-06,
+        "schema_version": 1,
+        "source_checkpoint": "/home/DIFFER_NPC/outputs/NPC_CONFIRMATORY_20261014_140116/ltcc/seed1234/N3/checkpoints/model_best.pth",
+        "source_checkpoint_sha256": "0b33bc4d02b70a1d8d83a7ecdc8dd801a479c307685fa537a39276e2188ee7db",
+        "batch_count": 16,
+        "thresholds": [
+          0.0,
+          1e-05,
+          0.0001
+        ],
+        "modes": {
+          "TEMP_COPY_OPT_STATE_FALSE": {
+            "observations": 60,
+            "unique_anchor_reference_pairs": 60,
+            "unique_identity_count": 4,
+            "original_risk_positive_count": 2,
+            "identity_risk_positive_count": 0,
+            "consistency_risk_positive_count": 3,
+            "either_channel_risk_count": 3,
+            "both_channels_risk_count": 0,
+            "opposing_direction_count": 3,
+            "either_channel_masked_by_average_count": 1,
+            "masked_identity_only_count": 0,
+            "masked_consistency_only_count": 1,
+            "actual_weight_lt_0_9_count": 2,
+            "threshold_comparisons": {
+              "0.0": {
+                "proxy_harmful_count": 28,
+                "rules": {
+                  "original_mean_ratio": {
+                    "TP": 2,
+                    "FP": 0,
+                    "FN": 26,
+                    "TN": 32,
+                    "precision": 1.0,
+                    "recall": 0.07142857142857142,
+                    "false_positive_rate": 0.0
+                  },
+                  "identity_only": {
+                    "TP": 0,
+                    "FP": 0,
+                    "FN": 28,
+                    "TN": 32,
+                    "precision": null,
+                    "recall": 0.0,
+                    "false_positive_rate": 0.0
+                  },
+                  "consistency_only": {
+                    "TP": 3,
+                    "FP": 0,
+                    "FN": 25,
+                    "TN": 32,
+                    "precision": 1.0,
+                    "recall": 0.10714285714285714,
+                    "false_positive_rate": 0.0
+                  },
+                  "either_channel": {
+                    "TP": 3,
+                    "FP": 0,
+                    "FN": 25,
+                    "TN": 32,
+                    "precision": 1.0,
+                    "recall": 0.10714285714285714,
+                    "false_positive_rate": 0.0
+                  },
+                  "both_channels": {
+                    "TP": 0,
+                    "FP": 0,
+                    "FN": 28,
+                    "TN": 32,
+                    "precision": null,
+                    "recall": 0.0,
+                    "false_positive_rate": 0.0
+                  }
+                },
+                "wrong_downweight_lt_0_9": 0,
+                "missed_actual_harm_by_original": 26,
+                "masked_by_average_and_actually_harmful": 1
+              },
+              "1e-05": {
+                "proxy_harmful_count": 27,
+                "rules": {
+                  "original_mean_ratio": {
+                    "TP": 2,
+                    "FP": 0,
+                    "FN": 25,
+                    "TN": 33,
+                    "precision": 1.0,
+                    "recall": 0.07407407407407407,
+                    "false_positive_rate": 0.0
+                  },
+                  "identity_only": {
+                    "TP": 0,
+                    "FP": 0,
+                    "FN": 27,
+                    "TN": 33,
+                    "precision": null,
+                    "recall": 0.0,
+                    "false_positive_rate": 0.0
+                  },
+                  "consistency_only": {
+                    "TP": 3,
+                    "FP": 0,
+                    "FN": 24,
+                    "TN": 33,
+                    "precision": 1.0,
+                    "recall": 0.1111111111111111,
+                    "false_positive_rate": 0.0
+                  },
+                  "either_channel": {
+                    "TP": 3,
+                    "FP": 0,
+                    "FN": 24,
+                    "TN": 33,
+                    "precision": 1.0,
+                    "recall": 0.1111111111111111,
+                    "false_positive_rate": 0.0
+                  },
+                  "both_channels": {
+                    "TP": 0,
+                    "FP": 0,
+                    "FN": 27,
+                    "TN": 33,
+                    "precision": null,
+                    "recall": 0.0,
+                    "false_positive_rate": 0.0
+                  }
+                },
+                "wrong_downweight_lt_0_9": 0,
+                "missed_actual_harm_by_original": 25,
+                "masked_by_average_and_actually_harmful": 1
+              },
+              "0.0001": {
+                "proxy_harmful_count": 22,
+                "rules": {
+                  "original_mean_ratio": {
+                    "TP": 0,
+                    "FP": 2,
+                    "FN": 22,
+                    "TN": 36,
+                    "precision": 0.0,
+                    "recall": 0.0,
+                    "false_positive_rate": 0.05263157894736842
+                  },
+                  "identity_only": {
+                    "TP": 0,
+                    "FP": 0,
+                    "FN": 22,
+                    "TN": 38,
+                    "precision": null,
+                    "recall": 0.0,
+                    "false_positive_rate": 0.0
+                  },
+                  "consistency_only": {
+                    "TP": 1,
+                    "FP": 2,
+                    "FN": 21,
+                    "TN": 36,
+                    "precision": 0.3333333333333333,
+                    "recall": 0.045454545454545456,
+                    "false_positive_rate": 0.05263157894736842
+                  },
+                  "either_channel": {
+                    "TP": 1,
+                    "FP": 2,
+                    "FN": 21,
+                    "TN": 36,
+                    "precision": 0.3333333333333333,
+                    "recall": 0.045454545454545456,
+                    "false_positive_rate": 0.05263157894736842
+                  },
+                  "both_channels": {
+                    "TP": 0,
+                    "FP": 0,
+                    "FN": 22,
+                    "TN": 38,
+                    "precision": null,
+                    "recall": 0.0,
+                    "false_positive_rate": 0.0
+                  }
+                },
+                "wrong_downweight_lt_0_9": 2,
+                "missed_actual_harm_by_original": 22,
+                "masked_by_average_and_actually_harmful": 1
+              }
+            },
+            "masking_examples": [
+              {
+                "sample_index": 3495,
+                "reference_index": 4021,
+                "pid": 29,
+                "predicted_identity_delta": -0.0004936456680297852,
+                "predicted_reference_delta": 6.139278411865234e-06,
+                "actual_identity_delta": 0.0005281567573547363,
+                "actual_reference_delta": 0.0003241300582885742,
+                "ratio": 1.000111699104309,
+                "weight": 1.0
+              }
+            ]
+          },
+          "TEMP_COPY_OPT_STATE_TRUE": {
+            "observations": 60,
+            "unique_anchor_reference_pairs": 60,
+            "unique_identity_count": 4,
+            "original_risk_positive_count": 19,
+            "identity_risk_positive_count": 3,
+            "consistency_risk_positive_count": 20,
+            "either_channel_risk_count": 22,
+            "both_channels_risk_count": 1,
+            "opposing_direction_count": 21,
+            "either_channel_masked_by_average_count": 3,
+            "masked_identity_only_count": 2,
+            "masked_consistency_only_count": 1,
+            "actual_weight_lt_0_9_count": 19,
+            "threshold_comparisons": {
+              "0.0": {
+                "proxy_harmful_count": 28,
+                "rules": {
+                  "original_mean_ratio": {
+                    "TP": 16,
+                    "FP": 3,
+                    "FN": 12,
+                    "TN": 29,
+                    "precision": 0.8421052631578947,
+                    "recall": 0.5714285714285714,
+                    "false_positive_rate": 0.09375
+                  },
+                  "identity_only": {
+                    "TP": 3,
+                    "FP": 0,
+                    "FN": 25,
+                    "TN": 32,
+                    "precision": 1.0,
+                    "recall": 0.10714285714285714,
+                    "false_positive_rate": 0.0
+                  },
+                  "consistency_only": {
+                    "TP": 17,
+                    "FP": 3,
+                    "FN": 11,
+                    "TN": 29,
+                    "precision": 0.85,
+                    "recall": 0.6071428571428571,
+                    "false_positive_rate": 0.09375
+                  },
+                  "either_channel": {
+                    "TP": 19,
+                    "FP": 3,
+                    "FN": 9,
+                    "TN": 29,
+                    "precision": 0.8636363636363636,
+                    "recall": 0.6785714285714286,
+                    "false_positive_rate": 0.09375
+                  },
+                  "both_channels": {
+                    "TP": 1,
+                    "FP": 0,
+                    "FN": 27,
+                    "TN": 32,
+                    "precision": 1.0,
+                    "recall": 0.03571428571428571,
+                    "false_positive_rate": 0.0
+                  }
+                },
+                "wrong_downweight_lt_0_9": 3,
+                "missed_actual_harm_by_original": 12,
+                "masked_by_average_and_actually_harmful": 3
+              },
+              "1e-05": {
+                "proxy_harmful_count": 27,
+                "rules": {
+                  "original_mean_ratio": {
+                    "TP": 15,
+                    "FP": 4,
+                    "FN": 12,
+                    "TN": 29,
+                    "precision": 0.7894736842105263,
+                    "recall": 0.5555555555555556,
+                    "false_positive_rate": 0.12121212121212122
+                  },
+                  "identity_only": {
+                    "TP": 3,
+                    "FP": 0,
+                    "FN": 24,
+                    "TN": 33,
+                    "precision": 1.0,
+                    "recall": 0.1111111111111111,
+                    "false_positive_rate": 0.0
+                  },
+                  "consistency_only": {
+                    "TP": 16,
+                    "FP": 4,
+                    "FN": 11,
+                    "TN": 29,
+                    "precision": 0.8,
+                    "recall": 0.5925925925925926,
+                    "false_positive_rate": 0.12121212121212122
+                  },
+                  "either_channel": {
+                    "TP": 18,
+                    "FP": 4,
+                    "FN": 9,
+                    "TN": 29,
+                    "precision": 0.8181818181818182,
+                    "recall": 0.6666666666666666,
+                    "false_positive_rate": 0.12121212121212122
+                  },
+                  "both_channels": {
+                    "TP": 1,
+                    "FP": 0,
+                    "FN": 26,
+                    "TN": 33,
+                    "precision": 1.0,
+                    "recall": 0.037037037037037035,
+                    "false_positive_rate": 0.0
+                  }
+                },
+                "wrong_downweight_lt_0_9": 4,
+                "missed_actual_harm_by_original": 12,
+                "masked_by_average_and_actually_harmful": 3
+              },
+              "0.0001": {
+                "proxy_harmful_count": 22,
+                "rules": {
+                  "original_mean_ratio": {
+                    "TP": 12,
+                    "FP": 7,
+                    "FN": 10,
+                    "TN": 31,
+                    "precision": 0.631578947368421,
+                    "recall": 0.5454545454545454,
+                    "false_positive_rate": 0.18421052631578946
+                  },
+                  "identity_only": {
+                    "TP": 3,
+                    "FP": 0,
+                    "FN": 19,
+                    "TN": 38,
+                    "precision": 1.0,
+                    "recall": 0.13636363636363635,
+                    "false_positive_rate": 0.0
+                  },
+                  "consistency_only": {
+                    "TP": 13,
+                    "FP": 7,
+                    "FN": 9,
+                    "TN": 31,
+                    "precision": 0.65,
+                    "recall": 0.5909090909090909,
+                    "false_positive_rate": 0.18421052631578946
+                  },
+                  "either_channel": {
+                    "TP": 15,
+                    "FP": 7,
+                    "FN": 7,
+                    "TN": 31,
+                    "precision": 0.6818181818181818,
+                    "recall": 0.6818181818181818,
+                    "false_positive_rate": 0.18421052631578946
+                  },
+                  "both_channels": {
+                    "TP": 1,
+                    "FP": 0,
+                    "FN": 21,
+                    "TN": 38,
+                    "precision": 1.0,
+                    "recall": 0.045454545454545456,
+                    "false_positive_rate": 0.0
+                  }
+                },
+                "wrong_downweight_lt_0_9": 7,
+                "missed_actual_harm_by_original": 10,
+                "masked_by_average_and_actually_harmful": 3
+              }
+            },
+            "masking_examples": [
+              {
+                "sample_index": 3782,
+                "reference_index": 3853,
+                "pid": 29,
+                "predicted_identity_delta": 4.7087669372558594e-05,
+                "predicted_reference_delta": -0.00027447938919067383,
+                "actual_identity_delta": 0.0003707408905029297,
+                "actual_reference_delta": -0.0002786219120025635,
+                "ratio": 1.0008782148361206,
+                "weight": 1.0
+              },
+              {
+                "sample_index": 1079,
+                "reference_index": 1230,
+                "pid": 6,
+                "predicted_identity_delta": 0.004583477973937988,
+                "predicted_reference_delta": -0.00118178129196167,
+                "actual_identity_delta": 0.004109621047973633,
+                "actual_reference_delta": -0.0017420053482055664,
+                "ratio": 1.0009602308273315,
+                "weight": 1.0
+              },
+              {
+                "sample_index": 1059,
+                "reference_index": 1231,
+                "pid": 6,
+                "predicted_identity_delta": -0.0016082525253295898,
+                "predicted_reference_delta": 9.191036224365234e-05,
+                "actual_identity_delta": -0.0016700029373168945,
+                "actual_reference_delta": 0.00025132298469543457,
+                "ratio": 1.0000195503234863,
+                "weight": 1.0
+              }
+            ]
+          }
+        },
+        "interpretation": "Proxy harm means the formal reference identity CE OR cross-clothes consistency loss delta exceeds the threshold; this is not measured ReID damage. Alternative decisions are shadow audits only, and do not change NPC training."
+      }
+    },
+    {
+      "path": "/home/DIFFER_NPC_worktrees/npc-risk-signal-audit-20261020/outputs/PHASE_NPC_TEMP_OPTIMIZER_MULTIBATCH_PPU_20261020_final/temp_optimizer_multibatch_ppu.json",
+      "summary": {
+        "target_policy": "paired mean of near-identical actual formal CE/reference deltas, identical proxy label for both modes",
+        "max_actual_delta_difference_between_modes": 2.8908252716064453e-06,
+        "schema_version": 1,
+        "source_checkpoint": "/home/DIFFER_NPC/outputs/NPC_CONFIRMATORY_20261014_140116/ltcc/seed1234/N3/checkpoints/model_final.pth",
+        "source_checkpoint_sha256": "e275cdcabc199988fbe5f77a17e3a70abcf9c28b4c03bb5d70d0befe5b08137b",
+        "batch_count": 16,
+        "thresholds": [
+          0.0,
+          1e-05,
+          0.0001
+        ],
+        "modes": {
+          "TEMP_COPY_OPT_STATE_FALSE": {
+            "observations": 70,
+            "unique_anchor_reference_pairs": 70,
+            "unique_identity_count": 13,
+            "original_risk_positive_count": 6,
+            "identity_risk_positive_count": 11,
+            "consistency_risk_positive_count": 7,
+            "either_channel_risk_count": 13,
+            "both_channels_risk_count": 5,
+            "opposing_direction_count": 8,
+            "either_channel_masked_by_average_count": 7,
+            "masked_identity_only_count": 6,
+            "masked_consistency_only_count": 1,
+            "actual_weight_lt_0_9_count": 6,
+            "threshold_comparisons": {
+              "0.0": {
+                "proxy_harmful_count": 50,
+                "rules": {
+                  "original_mean_ratio": {
+                    "TP": 6,
+                    "FP": 0,
+                    "FN": 44,
+                    "TN": 20,
+                    "precision": 1.0,
+                    "recall": 0.12,
+                    "false_positive_rate": 0.0
+                  },
+                  "identity_only": {
+                    "TP": 10,
+                    "FP": 1,
+                    "FN": 40,
+                    "TN": 19,
+                    "precision": 0.9090909090909091,
+                    "recall": 0.2,
+                    "false_positive_rate": 0.05
+                  },
+                  "consistency_only": {
+                    "TP": 7,
+                    "FP": 0,
+                    "FN": 43,
+                    "TN": 20,
+                    "precision": 1.0,
+                    "recall": 0.14,
+                    "false_positive_rate": 0.0
+                  },
+                  "either_channel": {
+                    "TP": 12,
+                    "FP": 1,
+                    "FN": 38,
+                    "TN": 19,
+                    "precision": 0.9230769230769231,
+                    "recall": 0.24,
+                    "false_positive_rate": 0.05
+                  },
+                  "both_channels": {
+                    "TP": 5,
+                    "FP": 0,
+                    "FN": 45,
+                    "TN": 20,
+                    "precision": 1.0,
+                    "recall": 0.1,
+                    "false_positive_rate": 0.0
+                  }
+                },
+                "wrong_downweight_lt_0_9": 0,
+                "missed_actual_harm_by_original": 44,
+                "masked_by_average_and_actually_harmful": 6
+              },
+              "1e-05": {
+                "proxy_harmful_count": 48,
+                "rules": {
+                  "original_mean_ratio": {
+                    "TP": 6,
+                    "FP": 0,
+                    "FN": 42,
+                    "TN": 22,
+                    "precision": 1.0,
+                    "recall": 0.125,
+                    "false_positive_rate": 0.0
+                  },
+                  "identity_only": {
+                    "TP": 9,
+                    "FP": 2,
+                    "FN": 39,
+                    "TN": 20,
+                    "precision": 0.8181818181818182,
+                    "recall": 0.1875,
+                    "false_positive_rate": 0.09090909090909091
+                  },
+                  "consistency_only": {
+                    "TP": 7,
+                    "FP": 0,
+                    "FN": 41,
+                    "TN": 22,
+                    "precision": 1.0,
+                    "recall": 0.14583333333333334,
+                    "false_positive_rate": 0.0
+                  },
+                  "either_channel": {
+                    "TP": 11,
+                    "FP": 2,
+                    "FN": 37,
+                    "TN": 20,
+                    "precision": 0.8461538461538461,
+                    "recall": 0.22916666666666666,
+                    "false_positive_rate": 0.09090909090909091
+                  },
+                  "both_channels": {
+                    "TP": 5,
+                    "FP": 0,
+                    "FN": 43,
+                    "TN": 22,
+                    "precision": 1.0,
+                    "recall": 0.10416666666666667,
+                    "false_positive_rate": 0.0
+                  }
+                },
+                "wrong_downweight_lt_0_9": 0,
+                "missed_actual_harm_by_original": 42,
+                "masked_by_average_and_actually_harmful": 5
+              },
+              "0.0001": {
+                "proxy_harmful_count": 31,
+                "rules": {
+                  "original_mean_ratio": {
+                    "TP": 6,
+                    "FP": 0,
+                    "FN": 25,
+                    "TN": 39,
+                    "precision": 1.0,
+                    "recall": 0.1935483870967742,
+                    "false_positive_rate": 0.0
+                  },
+                  "identity_only": {
+                    "TP": 8,
+                    "FP": 3,
+                    "FN": 23,
+                    "TN": 36,
+                    "precision": 0.7272727272727273,
+                    "recall": 0.25806451612903225,
+                    "false_positive_rate": 0.07692307692307693
+                  },
+                  "consistency_only": {
+                    "TP": 7,
+                    "FP": 0,
+                    "FN": 24,
+                    "TN": 39,
+                    "precision": 1.0,
+                    "recall": 0.22580645161290322,
+                    "false_positive_rate": 0.0
+                  },
+                  "either_channel": {
+                    "TP": 10,
+                    "FP": 3,
+                    "FN": 21,
+                    "TN": 36,
+                    "precision": 0.7692307692307693,
+                    "recall": 0.3225806451612903,
+                    "false_positive_rate": 0.07692307692307693
+                  },
+                  "both_channels": {
+                    "TP": 5,
+                    "FP": 0,
+                    "FN": 26,
+                    "TN": 39,
+                    "precision": 1.0,
+                    "recall": 0.16129032258064516,
+                    "false_positive_rate": 0.0
+                  }
+                },
+                "wrong_downweight_lt_0_9": 0,
+                "missed_actual_harm_by_original": 25,
+                "masked_by_average_and_actually_harmful": 4
+              }
+            },
+            "masking_examples": [
+              {
+                "sample_index": 963,
+                "reference_index": 804,
+                "pid": 6,
+                "predicted_identity_delta": 8.89897346496582e-05,
+                "predicted_reference_delta": -0.009518742561340332,
+                "actual_identity_delta": 0.00016010552644729614,
+                "actual_reference_delta": -0.009422898292541504,
+                "ratio": 1.011735439300537,
+                "weight": 1.0
+              },
+              {
+                "sample_index": 8510,
+                "reference_index": 8610,
+                "pid": 71,
+                "predicted_identity_delta": 1.0132789611816406e-06,
+                "predicted_reference_delta": -6.633996963500977e-05,
+                "actual_identity_delta": -0.0002575516700744629,
+                "actual_reference_delta": 8.58306884765625e-06,
+                "ratio": 1.000238299369812,
+                "weight": 1.0
+              },
+              {
+                "sample_index": 8730,
+                "reference_index": 8553,
+                "pid": 71,
+                "predicted_identity_delta": 5.602836608886719e-06,
+                "predicted_reference_delta": -0.0007517337799072266,
+                "actual_identity_delta": -0.0004381537437438965,
+                "actual_reference_delta": -0.0001804828643798828,
+                "ratio": 1.0009437799453735,
+                "weight": 1.0
+              },
+              {
+                "sample_index": 9500,
+                "reference_index": 9307,
+                "pid": 76,
+                "predicted_identity_delta": -0.0006094872951507568,
+                "predicted_reference_delta": 1.823902130126953e-05,
+                "actual_identity_delta": -0.0006384402513504028,
+                "actual_reference_delta": 0.00035431981086730957,
+                "ratio": 1.0006591081619263,
+                "weight": 1.0
+              },
+              {
+                "sample_index": 1303,
+                "reference_index": 1535,
+                "pid": 7,
+                "predicted_identity_delta": 0.0002593696117401123,
+                "predicted_reference_delta": -0.00019758939743041992,
+                "actual_identity_delta": 3.096461296081543e-05,
+                "actual_reference_delta": -4.89354133605957e-05,
+                "ratio": 1.0003774166107178,
+                "weight": 1.0
+              },
+              {
+                "sample_index": 8727,
+                "reference_index": 8484,
+                "pid": 71,
+                "predicted_identity_delta": 0.00011026859283447266,
+                "predicted_reference_delta": -0.001366257667541504,
+                "actual_identity_delta": 0.00025887787342071533,
+                "actual_reference_delta": -0.0011208951473236084,
+                "ratio": 1.00198495388031,
+                "weight": 1.0
+              },
+              {
+                "sample_index": 8722,
+                "reference_index": 8553,
+                "pid": 71,
+                "predicted_identity_delta": 2.7805566787719727e-05,
+                "predicted_reference_delta": -0.00929635763168335,
+                "actual_identity_delta": 0.00010761618614196777,
+                "actual_reference_delta": -0.01476144790649414,
+                "ratio": 1.0062649250030518,
+                "weight": 1.0
+              }
+            ]
+          },
+          "TEMP_COPY_OPT_STATE_TRUE": {
+            "observations": 70,
+            "unique_anchor_reference_pairs": 70,
+            "unique_identity_count": 13,
+            "original_risk_positive_count": 19,
+            "identity_risk_positive_count": 27,
+            "consistency_risk_positive_count": 17,
+            "either_channel_risk_count": 32,
+            "both_channels_risk_count": 12,
+            "opposing_direction_count": 20,
+            "either_channel_masked_by_average_count": 13,
+            "masked_identity_only_count": 9,
+            "masked_consistency_only_count": 4,
+            "actual_weight_lt_0_9_count": 19,
+            "threshold_comparisons": {
+              "0.0": {
+                "proxy_harmful_count": 50,
+                "rules": {
+                  "original_mean_ratio": {
+                    "TP": 19,
+                    "FP": 0,
+                    "FN": 31,
+                    "TN": 20,
+                    "precision": 1.0,
+                    "recall": 0.38,
+                    "false_positive_rate": 0.0
+                  },
+                  "identity_only": {
+                    "TP": 27,
+                    "FP": 0,
+                    "FN": 23,
+                    "TN": 20,
+                    "precision": 1.0,
+                    "recall": 0.54,
+                    "false_positive_rate": 0.0
+                  },
+                  "consistency_only": {
+                    "TP": 17,
+                    "FP": 0,
+                    "FN": 33,
+                    "TN": 20,
+                    "precision": 1.0,
+                    "recall": 0.34,
+                    "false_positive_rate": 0.0
+                  },
+                  "either_channel": {
+                    "TP": 32,
+                    "FP": 0,
+                    "FN": 18,
+                    "TN": 20,
+                    "precision": 1.0,
+                    "recall": 0.64,
+                    "false_positive_rate": 0.0
+                  },
+                  "both_channels": {
+                    "TP": 12,
+                    "FP": 0,
+                    "FN": 38,
+                    "TN": 20,
+                    "precision": 1.0,
+                    "recall": 0.24,
+                    "false_positive_rate": 0.0
+                  }
+                },
+                "wrong_downweight_lt_0_9": 0,
+                "missed_actual_harm_by_original": 31,
+                "masked_by_average_and_actually_harmful": 13
+              },
+              "1e-05": {
+                "proxy_harmful_count": 48,
+                "rules": {
+                  "original_mean_ratio": {
+                    "TP": 19,
+                    "FP": 0,
+                    "FN": 29,
+                    "TN": 22,
+                    "precision": 1.0,
+                    "recall": 0.3958333333333333,
+                    "false_positive_rate": 0.0
+                  },
+                  "identity_only": {
+                    "TP": 26,
+                    "FP": 1,
+                    "FN": 22,
+                    "TN": 21,
+                    "precision": 0.9629629629629629,
+                    "recall": 0.5416666666666666,
+                    "false_positive_rate": 0.045454545454545456
+                  },
+                  "consistency_only": {
+                    "TP": 16,
+                    "FP": 1,
+                    "FN": 32,
+                    "TN": 21,
+                    "precision": 0.9411764705882353,
+                    "recall": 0.3333333333333333,
+                    "false_positive_rate": 0.045454545454545456
+                  },
+                  "either_channel": {
+                    "TP": 30,
+                    "FP": 2,
+                    "FN": 18,
+                    "TN": 20,
+                    "precision": 0.9375,
+                    "recall": 0.625,
+                    "false_positive_rate": 0.09090909090909091
+                  },
+                  "both_channels": {
+                    "TP": 12,
+                    "FP": 0,
+                    "FN": 36,
+                    "TN": 22,
+                    "precision": 1.0,
+                    "recall": 0.25,
+                    "false_positive_rate": 0.0
+                  }
+                },
+                "wrong_downweight_lt_0_9": 0,
+                "missed_actual_harm_by_original": 29,
+                "masked_by_average_and_actually_harmful": 11
+              },
+              "0.0001": {
+                "proxy_harmful_count": 31,
+                "rules": {
+                  "original_mean_ratio": {
+                    "TP": 12,
+                    "FP": 7,
+                    "FN": 19,
+                    "TN": 32,
+                    "precision": 0.631578947368421,
+                    "recall": 0.3870967741935484,
+                    "false_positive_rate": 0.1794871794871795
+                  },
+                  "identity_only": {
+                    "TP": 17,
+                    "FP": 10,
+                    "FN": 14,
+                    "TN": 29,
+                    "precision": 0.6296296296296297,
+                    "recall": 0.5483870967741935,
+                    "false_positive_rate": 0.2564102564102564
+                  },
+                  "consistency_only": {
+                    "TP": 9,
+                    "FP": 8,
+                    "FN": 22,
+                    "TN": 31,
+                    "precision": 0.5294117647058824,
+                    "recall": 0.2903225806451613,
+                    "false_positive_rate": 0.20512820512820512
+                  },
+                  "either_channel": {
+                    "TP": 18,
+                    "FP": 14,
+                    "FN": 13,
+                    "TN": 25,
+                    "precision": 0.5625,
+                    "recall": 0.5806451612903226,
+                    "false_positive_rate": 0.358974358974359
+                  },
+                  "both_channels": {
+                    "TP": 8,
+                    "FP": 4,
+                    "FN": 23,
+                    "TN": 35,
+                    "precision": 0.6666666666666666,
+                    "recall": 0.25806451612903225,
+                    "false_positive_rate": 0.10256410256410256
+                  }
+                },
+                "wrong_downweight_lt_0_9": 7,
+                "missed_actual_harm_by_original": 19,
+                "masked_by_average_and_actually_harmful": 6
+              }
+            },
+            "masking_examples": [
+              {
+                "sample_index": 8516,
+                "reference_index": 8604,
+                "pid": 71,
+                "predicted_identity_delta": -0.00020137429237365723,
+                "predicted_reference_delta": 3.8504600524902344e-05,
+                "actual_identity_delta": -0.00019977986812591553,
+                "actual_reference_delta": 3.5315752029418945e-05,
+                "ratio": 1.0001577138900757,
+                "weight": 1.0
+              },
+              {
+                "sample_index": 3584,
+                "reference_index": 3717,
+                "pid": 29,
+                "predicted_identity_delta": 1.2390315532684326e-05,
+                "predicted_reference_delta": -2.378225326538086e-05,
+                "actual_identity_delta": 5.118176341056824e-05,
+                "actual_reference_delta": 0.00010067224502563477,
+                "ratio": 1.0000935792922974,
+                "weight": 1.0
+              },
+              {
+                "sample_index": 3719,
+                "reference_index": 3587,
+                "pid": 29,
+                "predicted_identity_delta": 7.293373346328735e-05,
+                "predicted_reference_delta": -0.00011134147644042969,
+                "actual_identity_delta": 0.00026800110936164856,
+                "actual_reference_delta": 2.7120113372802734e-05,
+                "ratio": 1.000246524810791,
+                "weight": 1.0
+              },
+              {
+                "sample_index": 963,
+                "reference_index": 804,
+                "pid": 6,
+                "predicted_identity_delta": 0.00015351176261901855,
+                "predicted_reference_delta": -0.009458422660827637,
+                "actual_identity_delta": 0.00016010552644729614,
+                "actual_reference_delta": -0.009422898292541504,
+                "ratio": 1.0113754272460938,
+                "weight": 1.0
+              },
+              {
+                "sample_index": 3856,
+                "reference_index": 3964,
+                "pid": 29,
+                "predicted_identity_delta": 6.556510925292969e-07,
+                "predicted_reference_delta": -6.848573684692383e-05,
+                "actual_identity_delta": 8.490309119224548e-05,
+                "actual_reference_delta": 2.3245811462402344e-05,
+                "ratio": 1.000403881072998,
+                "weight": 1.0
+              },
+              {
+                "sample_index": 3727,
+                "reference_index": 3566,
+                "pid": 29,
+                "predicted_identity_delta": -7.271021604537964e-05,
+                "predicted_reference_delta": 2.6166439056396484e-05,
+                "actual_identity_delta": -7.680431008338928e-05,
+                "actual_reference_delta": 1.7404556274414062e-05,
+                "ratio": 1.0001999139785767,
+                "weight": 1.0
+              },
+              {
+                "sample_index": 7939,
+                "reference_index": 7779,
+                "pid": 66,
+                "predicted_identity_delta": 2.0742416381835938e-05,
+                "predicted_reference_delta": -9.620189666748047e-05,
+                "actual_identity_delta": 2.0742416381835938e-05,
+                "actual_reference_delta": -0.00011146068572998047,
+                "ratio": 1.0002338886260986,
+                "weight": 1.0
+              },
+              {
+                "sample_index": 1059,
+                "reference_index": 1232,
+                "pid": 6,
+                "predicted_identity_delta": 1.601874828338623e-05,
+                "predicted_reference_delta": -2.9385089874267578e-05,
+                "actual_identity_delta": 1.5042722225189209e-05,
+                "actual_reference_delta": -2.950429916381836e-05,
+                "ratio": 1.0001760721206665,
+                "weight": 1.0
+              },
+              {
+                "sample_index": 736,
+                "reference_index": 1254,
+                "pid": 6,
+                "predicted_identity_delta": 0.00016582012176513672,
+                "predicted_reference_delta": -8.26120376586914e-05,
+                "actual_identity_delta": 0.00015880167484283447,
+                "actual_reference_delta": -8.282065391540527e-05,
+                "ratio": 1.0000277757644653,
+                "weight": 1.0
+              },
+              {
+                "sample_index": 8510,
+                "reference_index": 8610,
+                "pid": 71,
+                "predicted_identity_delta": -0.0002528727054595947,
+                "predicted_reference_delta": 1.627206802368164e-05,
+                "actual_identity_delta": -0.0002575516700744629,
+                "actual_reference_delta": 8.58306884765625e-06,
+                "ratio": 1.0002928972244263,
+                "weight": 1.0
+              }
+            ]
+          }
+        },
+        "interpretation": "Proxy harm means the formal reference identity CE OR cross-clothes consistency loss delta exceeds the threshold; this is not measured ReID damage. Alternative decisions are shadow audits only, and do not change NPC training."
+      }
+    }
+  ]
+}
