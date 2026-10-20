@@ -41,6 +41,7 @@ from data import build_dataloader
 from loss import make_loss
 from model import build_model
 from npc.audit_utils import align_valid_reference_losses
+from npc.risk_validation import aggregate_paired_risk
 from npc.engine import NPCController
 from npc.losses import (
     extract_reid_features,
@@ -434,8 +435,15 @@ def mode_result(
         raise RuntimeError(f"正式短更新损失非有限：mode={mode}")
     scaler.scale(total_loss).backward()
     scaler.unscale_(optimizer)
+    formal_scale_before = float(scaler.get_scale())
     scaler.step(optimizer)
     scaler.update()
+    formal_scale_after = float(scaler.get_scale())
+    changed_formal = model_state_difference(base_model_state, model)
+    if changed_formal["changed_tensor_count"] == 0:
+        raise RuntimeError(
+            "正式更新没有改变任何模型状态；可能发生 AMP 跳步，拒绝使用其作为风险真实目标"
+        )
     direction = cross_delta_metrics(base_model_state, temp_model, model)
     # The preaware temporary forwards are isolated in parameters/optimizer, but
     # may still consume dropout RNG. Reset before reference evaluation so both
@@ -525,7 +533,9 @@ def mode_result(
             "total_loss": float(total_loss.detach().float().item()),
             "base_loss": float(base_loss.detach().float().item()),
             "memory_loss": float(memory_loss.detach().float().item()),
-            "amp_scale_after": float(scaler.get_scale()),
+            "amp_scale_before": formal_scale_before,
+            "amp_scale_after": formal_scale_after,
+            "formal_changed_tensor_count": changed_formal["changed_tensor_count"],
         },
         "optimizer_after_formal_update": optimizer_summary(model, optimizer),
         "csv_valid_row_count": len(rows),
@@ -760,6 +770,7 @@ def main() -> None:
         "scanned_batch_limit": args.scan_limit,
         "formal_target_policy": "neutral w=1 for both modes; no risk-dependent ground-truth confound",
         "paired_results": paired_results,
+        "aggregated_risk_diagnostics": aggregate_paired_risk(paired_results),
         "interpretation": {
             "temporary_vs_formal_update_direction": "temporary_l2/formal_l2/cosine are computed from the exact same pre-comparison model state and batch",
             "risk_prediction_target": "temporary pre/post reliable-reference identity and consistency loss deltas versus actual formal post-update deltas",
