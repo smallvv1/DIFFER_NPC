@@ -19,7 +19,7 @@ for position, sample_index, identity_value, consistency_value in zip(
     ...
 ```
 
-`valid_positions` 和参考损失均已过滤，但 `indices` 未过滤。如果有效位置不是 batch 起始连续区间，实际 post-loss 将与错误样本索引配对。该错误使最新报告的 **reference identity/consistency 损失预测 MAE 和方向一致率无可靠解释性**。原更新方向余弦从独立的模型参数差值计算，暂未发现此索引 bug 直接污染余弦结果，但也需复核。
+`valid_positions` 和参考损失均已过滤，但 `indices` 未过滤。如果有效位置不是 batch 起始连续区间，实际 post-loss 将与错误样本索引配对。**额外核验关键限定：**已读取成功 retry 的两份实际 `npc_weights.csv`，其中唯一用于最新报告的 batch size 8，恰有前6个位置 [0,1,2,3,4,5] 为有效参考，最后两个位置无效。因此该具体批次虽然走过错误代码，但全批索引的前6个恰好对应全部有效位置，**没有实际触发样本错配**；该报告的 MAE/方向一致率可保留为6样本的初步观察性证据。对于任何非前缀有效 mask，原代码确实会产生错误映射，不能扩展至其他批次而不修复。原更新方向余弦另由模型参数差值计算，未受该潜在映射错误直接影响。
 
 ## 已提交的修复
 
