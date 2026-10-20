@@ -60,7 +60,37 @@ def summarize_risk_signals(
         raise ValueError("No paired batch records")
     if any((not math.isfinite(float(t)) or float(t) < 0) for t in thresholds):
         raise ValueError("Thresholds must be finite and >= 0")
+    # Both modes predict the same neutral formal update, but GPU kernels
+    # may yield tiny numerical drift. Use one midpoint-based ground-truth
+    # delta for each *paired* sample, so both modes have identical labels.
+    # The 1e-4 guard is the same as the PPU paired-risks contract.
+    canonical_batches = []
+    target_max_difference = 0.0
+    for batch in batches:
+        left = batch[MODES[0]]["paired_reference_rows"]
+        right = batch[MODES[1]]["paired_reference_rows"]
+        if len(left) != len(right):
+            raise ValueError("Modes have different valid-reference counts")
+        canonical = {mode: {"paired_reference_rows": []} for mode in MODES}
+        for a, b in zip(left, right):
+            if (int(a["sample_index"]), int(a["reference_index"])) != (
+                int(b["sample_index"]), int(b["reference_index"])
+            ):
+                raise ValueError("Paired modes have misaligned sample/reference indices")
+            pooled = {}
+            for key in ("actual_identity_delta", "actual_reference_delta"):
+                x, y = _finite(a, key), _finite(b, key)
+                target_max_difference = max(target_max_difference, abs(x - y))
+                if abs(x - y) > 1e-4:
+                    raise ValueError("Formal target mismatch between modes")
+                pooled[key] = 0.5 * (x + y)
+            for mode, row in ((MODES[0], a), (MODES[1], b)):
+                canonical[mode]["paired_reference_rows"].append({**row, **pooled})
+        canonical_batches.append(canonical)
+    batches = canonical_batches
     result = {
+        "target_policy": "paired mean of near-identical actual formal CE/reference deltas, identical proxy label for both modes",
+        "max_actual_delta_difference_between_modes": target_max_difference,
         "schema_version": 1,
         "source_checkpoint": payload.get("checkpoint"),
         "source_checkpoint_sha256": payload.get("checkpoint_sha256"),
