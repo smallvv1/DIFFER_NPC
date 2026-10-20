@@ -70,6 +70,9 @@ _C.MODEL.NPC.TEMP_OPT_STEPS = 1
 # False keeps historical N3 semantics and preserves existing checkpoints/experiments.
 _C.MODEL.NPC.PREAWARE_FP32_ANCHOR = False
 _C.MODEL.NPC.TEMP_LR_SCALE = 1.0
+# Independent risk-estimation ablation: copy SGD momentum buffers into temporary optimizer.
+# False reproduces the historical newly-initialized temporary SGD behavior.
+_C.MODEL.NPC.TEMP_COPY_OPT_STATE = False
 _C.MODEL.NPC.MEMORY_LOSS_WEIGHT = 0.1
 _C.MODEL.NPC.START_EPOCH = 1
 _C.MODEL.NPC.DEBUG = False

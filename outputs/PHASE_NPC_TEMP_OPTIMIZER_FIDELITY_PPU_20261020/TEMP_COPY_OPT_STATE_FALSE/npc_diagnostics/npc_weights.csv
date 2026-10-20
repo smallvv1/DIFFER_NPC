@@ -1,0 +1,1 @@
+epoch,iteration,sample_index,pid,clothes_id,clean_probability,gmm_selected,reference_valid,invalid_reference_reason,reference_index,reference_clothes_id,pre_identity,post_identity,pre_reference,post_reference,ratio,p_ratio,q_ratio,weight,reference_cross_clothes,anchor_pre_identity,anchor_post_identity

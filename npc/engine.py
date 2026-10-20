@@ -307,17 +307,47 @@ class NPCController:
         return {"enabled": True, **gmm_payload, "memory_coverage": memory_coverage}
 
     def _make_temporary_optimizer(self, base_model: torch.nn.Module) -> torch.optim.Optimizer:
-        """按正式优化器的参数组超参创建独立临时优化器。"""
+        """建立隔离的临时优化器；可选继承正式 SGD 的动量状态以研究轨迹差异。
+
+        默认沿用历史实现（每批新动量），只有独立消融打开开关才复制状态。
+        这并不能消除正式 AMP、有效样本筛选和 Triplet 分支的不一致。
+        """
+        if self.temp_model is None:
+            raise RuntimeError("必须先初始化临时模型")
+        carry_state = bool(cfg_value(self.cfg, "MODEL.NPC.TEMP_COPY_OPT_STATE", False))
+        if carry_state and not isinstance(self.optimizer, torch.optim.SGD):
+            raise RuntimeError("TEMP_COPY_OPT_STATE 当前仅支持 SGD 动量状态")
         temp_parameters = dict(self.temp_model.named_parameters())
         base_names = {id(parameter): name for name, parameter in base_model.named_parameters()}
         groups = []
+        aligned = []
         for group in self.optimizer.param_groups:
-            params = [temp_parameters[base_names[id(parameter)]] for parameter in group["params"] if id(parameter) in base_names]
+            params = []
+            for base_parameter in group["params"]:
+                name = base_names.get(id(base_parameter))
+                if name is None:
+                    raise RuntimeError("正式优化器含有未在 base_model 中找到的参数")
+                if name not in temp_parameters:
+                    raise RuntimeError(f"临时模型缺少参数：{name}")
+                temp_parameter = temp_parameters[name]
+                params.append(temp_parameter)
+                aligned.append((base_parameter, temp_parameter))
             options = {key: value for key, value in group.items() if key != "params" and key != "initial_lr"}
             if "lr" in options:
                 options["lr"] = float(options["lr"]) * float(cfg_value(self.cfg, "MODEL.NPC.TEMP_LR_SCALE", 1.0))
             groups.append({"params": params, **options})
-        return type(self.optimizer)(groups)
+        temp_optimizer = type(self.optimizer)(groups)
+        if carry_state:
+            # Copy, never alias, state buffers; the temporary optimizer must
+            # not mutate formal SGD history or leave any state on the wrong device.
+            for base_parameter, temp_parameter in aligned:
+                if base_parameter in self.optimizer.state:
+                    cloned = copy.deepcopy(self.optimizer.state[base_parameter])
+                    for key, value in cloned.items():
+                        if torch.is_tensor(value):
+                            cloned[key] = value.detach().to(device=temp_parameter.device).clone()
+                    temp_optimizer.state[temp_parameter] = cloned
+        return temp_optimizer
 
     def _ensure_temp_model(self, model: torch.nn.Module) -> None:
         if self.temp_model is None:
