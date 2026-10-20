@@ -1,0 +1,6 @@
+2026-10-20 10:38:36 INFO 开始真实 PPU 临时 SGD 动量诊断；输出=/home/DIFFER_NPC_worktrees/npc-temp-sgd-fidelity-20261019/outputs/PHASE_NPC_TEMP_OPTIMIZER_FIDELITY_PPU_20261020
+2026-10-20 10:38:36 INFO 设备=PPU-ZW810E；PyTorch=2.4.0；代码提交=5d67d78a263f4a179c16d24f58e8e0f8376e7317
+2026-10-20 10:38:37 INFO 实际检查点=/home/DIFFER_NPC/outputs/NPC_CONFIRMATORY_20261014_140116/ltcc/seed1234/N3/checkpoints/model_best.pth；SHA256=0b33bc4d02b70a1d8d83a7ecdc8dd801a479c307685fa537a39276e2188ee7db
+2026-10-20 10:38:50 INFO NPC 配置：enabled=True, GMM=True, dynamic=True, memory_loss=True, threshold=0.9900, temp_steps=1, lambda_MB=0.100000
+2026-10-20 10:40:09 INFO NPC 记忆库 epoch=17：GMM选中 1269/9576（13.25%），身份覆盖 5.19%，有效参考 18.72%，有效参考中的跨服装 100.00%，同服装回退 0.00%，无效参考 81.28%
+2026-10-20 10:40:12 INFO 固定比较批次：预热批次=3，batch_size=16，可靠参考=16
