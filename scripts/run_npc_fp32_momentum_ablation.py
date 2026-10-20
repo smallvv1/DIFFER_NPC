@@ -60,7 +60,7 @@ def arm_command(
         python, str(ROOT / "npc/runner.py"),
         "--config_file", str(CONFIG), "--variant", "N3",
         "--output-root", str(output_root),
-        "--max-epochs", str(1 if smoke_iterations else epochs),
+        "--max-epochs", str(2 if smoke_iterations else epochs),
     ]
     if smoke_iterations:
         command.extend(["--max-iterations", str(smoke_iterations)])
@@ -105,7 +105,11 @@ def build_plan(
             "status": "not_started",
         })
     left, right = (list(x["command"]) for x in arms)
-    assert left[:-1] == right[:-1], "Only the last momentum boolean may differ"
+    assert left[6] == right[6] == "--output-root"
+    # Different per-arm output roots are mandatory; normalize them before
+    # comparing the actual model/training flags.
+    left[7] = right[7] = "<arm-output>"
+    assert left[:-1] == right[:-1], "Only the momentum boolean may differ"
     assert left[-1] == "False" and right[-1] == "True"
     return {
         "protocol": "LTCC / N3 / FP32-only versus FP32+SGD momentum; one variable",
