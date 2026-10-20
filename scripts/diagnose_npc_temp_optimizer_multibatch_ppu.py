@@ -274,12 +274,17 @@ def cross_delta_metrics(
         right_max = max(right_max, float(right.abs().max().item()))
     left_norm = left_sq ** 0.5
     right_norm = right_sq ** 0.5
+    cosine = dot / max(left_norm * right_norm, 1e-30)
     return {
         "temporary_l2": left_norm,
         "formal_l2": right_norm,
         "temporary_max_abs": left_max,
         "formal_max_abs": right_max,
-        "temporary_formal_cosine": dot / max(left_norm * right_norm, 1e-30),
+        # ``cosine`` is the multibatch aggregation schema. Keep the
+        # descriptive legacy key for compatibility with the single-batch
+        # fidelity report.
+        "cosine": cosine,
+        "temporary_formal_cosine": cosine,
     }
 
 
