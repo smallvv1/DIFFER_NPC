@@ -64,3 +64,20 @@ def test_reject_nan_values_and_invalid_threshold():
     good = row(10, 15, 0, 0, 0, 0, 1.0)
     with pytest.raises(ValueError, match="Thresholds"):
         summarize_risk_signals(payload([good], [good]), [-0.1])
+
+
+def test_reject_wrongly_paired_modes():
+    a = row(1, 5, 0, 0, 0, 0, 1)
+    b = row(1, 6, 0, 0, 0, 0, 1)
+    with pytest.raises(ValueError, match="misaligned"):
+        summarize_risk_signals(payload([a], [b]))
+
+
+def test_canonical_formal_target_gives_both_modes_identical_harm_labels():
+    a = row(1, 5, 0.0001, 0, 0.000009, 0, 0.99, 0.76)
+    b = row(1, 5, 0.0001, 0, 0.000011, 0, 0.99, 0.76)
+    summary = summarize_risk_signals(payload([a], [b]))
+    for mode in ("TEMP_COPY_OPT_STATE_FALSE", "TEMP_COPY_OPT_STATE_TRUE"):
+        result = summary["modes"][mode]["threshold_comparisons"]["1e-05"]
+        assert result["proxy_harmful_count"] == 0  # midpoint == threshold
+    assert summary["max_actual_delta_difference_between_modes"] == pytest.approx(2e-6)
