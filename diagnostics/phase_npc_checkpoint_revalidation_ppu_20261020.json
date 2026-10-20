@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-20",
+  "code_commit": "d333fbba63b482b4648416177fca0e3a003ecad4",
+  "device": "PPU-ZW810E",
+  "torch_version": "2.4.0",
+  "dataset": "LTCC train-only",
+  "protocol": {
+    "num_records": 9576,
+    "num_ids": 77,
+    "batch_size": 16,
+    "num_batches": 16,
+    "trials_per_mode": 4,
+    "temporary_lr_scale": 0.0,
+    "temporary_optimizer_steps": 1,
+    "gmm_threshold": 0.99,
+    "formal_training_started": false
+  },
+  "checkpoints": {
+    "best": {
+      "path": "/home/DIFFER_NPC/outputs/NPC_CONFIRMATORY_20261014_140116/ltcc/seed1234/N3/checkpoints/model_best.pth",
+      "sha256": "0b33bc4d02b70a1d8d83a7ecdc8dd801a479c307685fa537a39276e2188ee7db",
+      "epoch": 17,
+      "runs": {
+        "legacy": {
+          "preaware_fp32_anchor": false,
+          "valid_reference_count": 1793,
+          "gmm_selected_count": 1269,
+          "gmm_selected_ratio": 0.1325187969924812,
+          "reliable_identity_coverage": 0.05194805194805195,
+          "cross_clothes_ratio": 1.0,
+          "valid_entry_count": 152,
+          "risk_ratio_mean": 0.9999126305705622,
+          "p_ratio_mean": 1.0,
+          "q_ratio_mean": 0.9998252470242349,
+          "weight_mean": 0.9057497884097853,
+          "strict_r_lt_1_ratio": 0.39473684210526316,
+          "r_lt_0_999_ratio": 0.10526315789473684,
+          "weight_lt_0_99_ratio": 0.39473684210526316,
+          "actual_preaware_trials": {"amp": 64, "fp32": 64},
+          "formal_model_changed_tensors": 0,
+          "temporary_zero_lr_changed_trials": 0
+        },
+        "fp32_anchor": {
+          "preaware_fp32_anchor": true,
+          "valid_reference_count": 1793,
+          "gmm_selected_count": 1269,
+          "gmm_selected_ratio": 0.1325187969924812,
+          "reliable_identity_coverage": 0.05194805194805195,
+          "cross_clothes_ratio": 1.0,
+          "valid_entry_count": 152,
+          "risk_ratio_mean": 1.0,
+          "p_ratio_mean": 1.0,
+          "q_ratio_mean": 1.0,
+          "weight_mean": 1.0,
+          "strict_r_lt_1_ratio": 0.0,
+          "r_lt_0_999_ratio": 0.0,
+          "weight_lt_0_99_ratio": 0.0,
+          "actual_preaware_trials": {"amp": 64, "fp32": 64},
+          "formal_model_changed_tensors": 0,
+          "temporary_zero_lr_changed_trials": 0
+        }
+      }
+    },
+    "final": {
+      "path": "/home/DIFFER_NPC/outputs/NPC_CONFIRMATORY_20261014_140116/ltcc/seed1234/N3/checkpoints/model_final.pth",
+      "sha256": "e275cdcabc199988fbe5f77a17e3a70abcf9c28b4c03bb5d70d0befe5b08137b",
+      "epoch": 60,
+      "runs": {
+        "legacy": {
+          "preaware_fp32_anchor": false,
+          "valid_reference_count": 4976,
+          "gmm_selected_count": 3324,
+          "gmm_selected_ratio": 0.34711779448621555,
+          "reliable_identity_coverage": 0.22077922077922077,
+          "cross_clothes_ratio": 0.9883440514469454,
+          "valid_entry_count": 232,
+          "risk_ratio_mean": 0.9999423037315237,
+          "p_ratio_mean": 1.0,
+          "q_ratio_mean": 0.9998845992417171,
+          "weight_mean": 0.8724342019393526,
+          "strict_r_lt_1_ratio": 0.5344827586206896,
+          "r_lt_0_999_ratio": 0.10344827586206896,
+          "weight_lt_0_99_ratio": 0.5344827586206896,
+          "actual_preaware_trials": {"amp": 64, "fp32": 64},
+          "formal_model_changed_tensors": 0,
+          "temporary_zero_lr_changed_trials": 0
+        },
+        "fp32_anchor": {
+          "preaware_fp32_anchor": true,
+          "valid_reference_count": 4976,
+          "gmm_selected_count": 3324,
+          "gmm_selected_ratio": 0.34711779448621555,
+          "reliable_identity_coverage": 0.22077922077922077,
+          "cross_clothes_ratio": 0.9883440514469454,
+          "valid_entry_count": 232,
+          "risk_ratio_mean": 1.0,
+          "p_ratio_mean": 1.0,
+          "q_ratio_mean": 1.0,
+          "weight_mean": 1.0,
+          "strict_r_lt_1_ratio": 0.0,
+          "r_lt_0_999_ratio": 0.0,
+          "weight_lt_0_99_ratio": 0.0,
+          "actual_preaware_trials": {"amp": 64, "fp32": 64},
+          "formal_model_changed_tensors": 0,
+          "temporary_zero_lr_changed_trials": 0
+        }
+      }
+    }
+  },
+  "state_integrity": {
+    "all_formal_model_state_deltas_changed_tensor_count": 0,
+    "all_formal_model_state_deltas_max_abs": 0.0,
+    "all_temporary_zero_lr_state_deltas_changed_trial_count": 0
+  }
+}
