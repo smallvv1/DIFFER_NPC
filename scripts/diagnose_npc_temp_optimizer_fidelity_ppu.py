@@ -211,6 +211,22 @@ def optimizer_summary(model: torch.nn.Module, optimizer: torch.optim.Optimizer) 
     }
 
 
+def capture_rng_state() -> dict:
+    return {
+        "cpu": torch.get_rng_state().clone(),
+        "cuda": [state.clone() for state in torch.cuda.get_rng_state_all()],
+        "numpy": np.random.get_state(),
+        "python": random.getstate(),
+    }
+
+
+def restore_rng_state(state: dict) -> None:
+    torch.set_rng_state(state["cpu"])
+    torch.cuda.set_rng_state_all(state["cuda"])
+    np.random.set_state(state["numpy"])
+    random.setstate(state["python"])
+
+
 def parameter_delta_metrics(before: torch.nn.Module, after: torch.nn.Module) -> dict:
     dot = 0.0
     before_sq = 0.0
@@ -369,10 +385,12 @@ def mode_result(
     logger: logging.Logger,
     base_model_state: dict[str, torch.Tensor],
     base_optimizer_state: dict,
+    base_rng_state: dict,
     iteration: int,
 ) -> dict:
     restore_model_state(model, base_model_state)
     restore_optimizer_state(model, optimizer, base_optimizer_state)
+    restore_rng_state(base_rng_state)
     model.train()
     cfg.defrost()
     cfg.MODEL.NPC.TEMP_COPY_OPT_STATE = mode
@@ -417,6 +435,10 @@ def mode_result(
     scaler.step(optimizer)
     scaler.update()
     direction = cross_delta_metrics(base_model_state, temp_model, model)
+    # The preaware temporary forwards are isolated in parameters/optimizer, but
+    # may still consume dropout RNG. Reset before reference evaluation so both
+    # modes use an identical post-update evaluation RNG state as well.
+    restore_rng_state(base_rng_state)
     formal_reference = reference_post_metrics(controller, model, data)
     rows = read_mode_rows(controller, iteration)
     predicted_identity = []
@@ -609,6 +631,7 @@ def main() -> None:
 
     base_model_state = capture_model_state(model)
     base_optimizer_state = capture_optimizer_state(model, optimizer)
+    base_rng_state = capture_rng_state()
     momentum_summary = optimizer_summary(model, optimizer)
     if momentum_summary["momentum_buffer_count"] == 0:
         raise RuntimeError("预热后没有形成正式 SGD momentum_buffer")
@@ -616,6 +639,7 @@ def main() -> None:
     false_result = mode_result(
         False, cfg, controller_false, model, optimizer, loss_fn, selected, output,
         logger, base_model_state, base_optimizer_state, iteration=9001,
+        base_rng_state=base_rng_state,
     )
     controller_false.close()
 
@@ -632,6 +656,7 @@ def main() -> None:
     true_result = mode_result(
         True, cfg, controller_true, model, optimizer, loss_fn, selected, output,
         logger, base_model_state, base_optimizer_state, iteration=9002,
+        base_rng_state=base_rng_state,
     )
     controller_true.close()
 
