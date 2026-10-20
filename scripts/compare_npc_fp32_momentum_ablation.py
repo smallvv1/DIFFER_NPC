@@ -70,6 +70,18 @@ def normalized_config(path: Path, momentum: bool, seed: int, epochs: int) -> dic
         raise ValueError("Must enable N3 dynamic weights")
     if data["MODEL"]["NPC"]["MEMORY_LOSS_ENABLED"] is not True:
         raise ValueError("Must enable N3 memory supervision")
+    npc = data["MODEL"]["NPC"]
+    expected_controls = {
+        "GMM_ENABLED": True,
+        "GMM_THRESHOLD": 0.99,
+        "MEMORY_LOSS_WEIGHT": 0.1,
+        "TEMP_LR_SCALE": 1.0,
+        "TEMP_OPT_STEPS": 1,
+        "MEMORY_UPDATE_FREQ": 1,
+    }
+    for key, expected in expected_controls.items():
+        if npc.get(key) != expected:
+            raise ValueError(f"{path}: NPC control {key} differs from pre-registered {expected}")
     # Only the existing model switch and paths may differ between paired arms.
     data.pop("OUTPUT_DIR", None)
     data["MODEL"]["NPC"].pop("TEMP_COPY_OPT_STATE", None)
