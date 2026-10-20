@@ -67,6 +67,9 @@ def summarize_risk_signals(
     canonical_batches = []
     target_max_difference = 0.0
     for batch in batches:
+        for mode in MODES:
+            if mode not in batch:
+                raise ValueError(f"Missing {mode} in paired batch")
         left = batch[MODES[0]]["paired_reference_rows"]
         right = batch[MODES[1]]["paired_reference_rows"]
         if len(left) != len(right):
