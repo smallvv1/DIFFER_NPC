@@ -176,6 +176,17 @@ def main() -> None:
         raise FileExistsError(f"拒绝覆盖已经存在的实验目录：{root}")
     if not args.data_root.is_dir() or not args.caption_dir.is_dir():
         raise FileNotFoundError("服务器数据根目录或 CAPTION_DIR 不存在；终止训练")
+    # A git worktree sits below /home/DIFFER_NPC_worktrees/, while the
+    # original processor package remains at /home/processor. The original
+    # runner adds PROJECT_ROOT.parent (worktrees), not /home; fix module
+    # search paths for subprocesses without mixing model source branches.
+    external_parent = next((p for p in ROOT.parents if (p / "processor").is_dir()), None)
+    if external_parent is None:
+        raise FileNotFoundError("无法定位旧版共享 processor 包所在上级目录")
+    child_env = dict(os.environ)
+    child_env["PYTHONPATH"] = os.pathsep.join(
+        [str(ROOT), str(external_parent), child_env.get("PYTHONPATH", "")]
+    )
     if plan["mode"] == "formal" and (args.seed != 1234 or args.epochs != 60):
         raise ValueError("本次正式确认实验预注册为 Seed1234/60 epoch，不能静默更改")
     root.mkdir(parents=True, exist_ok=False)
@@ -191,7 +202,7 @@ def main() -> None:
         with run_log.open("w", encoding="utf-8") as handle:
             result = subprocess.run(
                 arm["command"], cwd=str(ROOT), stdout=handle,
-                stderr=subprocess.STDOUT, check=False,
+                stderr=subprocess.STDOUT, check=False, env=child_env,
             )
         arm["returncode"] = result.returncode
         arm["finished_at_bj"] = datetime.now(ZoneInfo("Asia/Shanghai")).isoformat()
