@@ -40,6 +40,7 @@ from config import cfg
 from data import build_dataloader
 from loss import make_loss
 from model import build_model
+from npc.audit_utils import align_valid_reference_losses
 from npc.engine import NPCController
 from npc.losses import (
     extract_reid_features,
@@ -340,18 +341,15 @@ def reference_post_metrics(
             extract_reid_features(anchor_feat), extract_reid_features(reference_feat)
         ).float().cpu().numpy()
     model.train(original_training)
-    result = {}
-    for position, sample_index, identity_value, consistency_value in zip(
-        valid_positions.detach().cpu().tolist(),
-        indices.detach().cpu().tolist(),
+    # Match values to the *same masked anchors* used by the reference forward.
+    # The previous implementation zipped valid_positions with the UNMASKED
+    # full indices and silently associated most reference losses to wrong PIDs.
+    return align_valid_reference_losses(
+        indices,
+        valid_positions,
         identity.tolist(),
         consistency.tolist(),
-    ):
-        result[int(sample_index)] = {
-            "post_identity": float(identity_value),
-            "post_reference": float(consistency_value),
-        }
-    return result
+    )
 
 
 def batch_triplet_info(controller: NPCController, data: dict) -> dict:
