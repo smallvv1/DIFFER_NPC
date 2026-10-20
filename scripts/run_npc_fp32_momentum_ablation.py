@@ -174,6 +174,11 @@ def main() -> None:
 
     if root.exists():
         raise FileExistsError(f"拒绝覆盖已经存在的实验目录：{root}")
+    changed_tracked = git_value("status", "--porcelain", "--untracked-files=no")
+    if changed_tracked:
+        raise RuntimeError(
+            "检测到未提交的代码或配置修改，拒绝正式训练：\n" + changed_tracked
+        )
     if not args.data_root.is_dir() or not args.caption_dir.is_dir():
         raise FileNotFoundError("服务器数据根目录或 CAPTION_DIR 不存在；终止训练")
     # A git worktree sits below /home/DIFFER_NPC_worktrees/, while the
@@ -195,6 +200,10 @@ def main() -> None:
     write_plan(manifest, plan)
 
     for arm in plan["arms"]:
+        if git_value("rev-parse", "HEAD") != plan["code_git_head"]:
+            raise RuntimeError("两个实验臂间Git HEAD发生变化，拒绝不公平配对")
+        if git_value("status", "--porcelain", "--untracked-files=no"):
+            raise RuntimeError("两个实验臂间存在未提交代码修改，拒绝不公平配对")
         run_log = root / f"{arm['arm']}.launcher.log"
         arm["status"] = "running"
         arm["started_at_bj"] = datetime.now(ZoneInfo("Asia/Shanghai")).isoformat()
